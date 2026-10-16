@@ -1,0 +1,33 @@
+CARMEL VALLEY CONDOS — IMAGE CHECKLIST
+========================================
+
+Put your 10 photos in THIS folder, named EXACTLY as listed below
+(all lowercase, hyphens, .jpg). The names are SEO-optimized — do not change them.
+
+Before adding each photo:
+  1. Resize to roughly the width shown
+  2. Compress at https://tinypng.com (drag all 10 in at once)
+  3. Save as .jpg with the exact name below
+
+---------------------------------------------------------------------------
+#   FILENAME (name your photo exactly this)                  WIDTH   SHOWS
+---------------------------------------------------------------------------
+1   carmel-valley-condos-townhomes-san-diego.jpg            ~2000px  Hero banner (top)
+2   carmel-valley-real-estate-sez-sezer.jpg                 ~1000px  Intro section photo
+3   carmel-valley-condos-for-sale.jpg                       ~1100px  "Condos" card
+4   carmel-valley-townhomes-for-sale.jpg                    ~1100px  "Townhomes" card
+5   arborlake-condos-carmel-valley.jpg                       ~800px  Arborlake card
+6   carmel-pointe-condos-carmel-valley.jpg                   ~800px  Carmel Pointe card
+7   the-lakes-condos-carmel-valley.jpg                       ~800px  The Lakes card
+8   palmilla-townhomes-carmel-valley.jpg                     ~800px  Palmilla card
+9   andalucia-townhomes-carmel-valley.jpg                    ~800px  Andalucia card
+10  pacifica-townhomes-carmel-valley.jpg                     ~800px  Pacifica card
+---------------------------------------------------------------------------
+
+IMPORTANT:
+- Use ONLY your own photos, commissioned shots, or licensed stock.
+- Do NOT use photos from the MLS, Zillow, or other agents' listings (copyright).
+- Match the photo to the name: the Arborlake file should actually be Arborlake.
+
+Once all 10 are in here, you can delete this .txt file before uploading
+(optional — it won't hurt anything if left in).
