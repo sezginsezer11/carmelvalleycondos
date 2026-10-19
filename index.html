@@ -127,10 +127,27 @@
   @media(max-width:900px){.comm-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:600px){.comm-grid{grid-template-columns:1fr}}
 
-  /* realscout listings CTA */
-  .listings{background:var(--paper)}
-  .rs-cta{text-align:center;max-width:680px;margin:0 auto;background:var(--white);border:1px solid var(--line);padding:54px 44px}
-  .rs-cta p{font-size:17px;color:#55606a;margin-bottom:30px}
+  /* top listings map (full-width, click-to-fullscreen) */
+  .top-map{background:var(--white)}
+  .rs-embed{width:100%;background:var(--white);position:relative}
+  .rs-embed iframe{width:100%;height:640px;border:0;display:block}
+  @media(min-width:901px){
+    .rs-embed:not(.is-fullscreen) iframe{height:88vh}
+  }
+  .map-expand-hint{position:absolute;top:16px;right:16px;z-index:3;background:rgba(26,31,36,.78);color:var(--white);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .2s ease}
+  .map-expand-hint:hover{background:var(--lake-dark)}
+  .map-expand-hint svg{width:13px;height:13px}
+  .map-click-catch{position:absolute;inset:0;z-index:2;cursor:pointer;background:transparent}
+
+  .rs-embed.is-fullscreen{position:fixed;inset:0;z-index:9999;width:100%;margin:0;border:0;box-shadow:none;display:flex;flex-direction:column}
+  .rs-embed.is-fullscreen iframe{height:100%;flex:1 1 auto}
+  .fs-bar{display:none;align-items:center;justify-content:space-between;background:var(--lake-dark);color:var(--white);padding:12px 20px;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;flex:0 0 auto}
+  .rs-embed.is-fullscreen .fs-bar{display:flex}
+  .fs-bar a{color:var(--white);font-weight:600;display:flex;align-items:center;gap:8px}
+  .fs-bar a:hover{color:var(--gold)}
+  .fs-bar button{background:none;border:none;color:var(--white);font-size:22px;line-height:1;cursor:pointer;padding:0 4px}
+  .fs-bar button:hover{color:var(--gold)}
+  body.map-fs-lock{overflow:hidden}
 
   /* guides */
   .guides{background:var(--white)}
@@ -221,6 +238,54 @@
     </nav>
   </div>
 </header>
+
+<!-- ============ LIVE LISTINGS MAP (first thing on the page) ============ -->
+<section class="top-map">
+    <div class="rs-embed" id="homeMapEmbed">
+      <div class="fs-bar">
+        <a href="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          Open in New Tab
+        </a>
+        <button type="button" id="homeMapClose" aria-label="Close fullscreen map">&times;</button>
+      </div>
+      <div class="map-click-catch" id="homeMapCatch"></div>
+      <div class="map-expand-hint" id="homeMapHint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+        Expand
+      </div>
+      <iframe src="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" title="Carmel Valley Condos & Townhomes — Live Listings"></iframe>
+    </div>
+</section>
+
+<script>
+(function(){
+  var embed = document.getElementById('homeMapEmbed');
+  var catcher = document.getElementById('homeMapCatch');
+  var hint = document.getElementById('homeMapHint');
+  var closeBtn = document.getElementById('homeMapClose');
+
+  function openFullscreen(){
+    embed.classList.add('is-fullscreen');
+    document.body.classList.add('map-fs-lock');
+    catcher.style.display = 'none';
+    hint.style.display = 'none';
+  }
+  function closeFullscreen(){
+    embed.classList.remove('is-fullscreen');
+    document.body.classList.remove('map-fs-lock');
+    catcher.style.display = '';
+    hint.style.display = '';
+  }
+
+  catcher.addEventListener('click', openFullscreen);
+  hint.addEventListener('click', openFullscreen);
+  closeBtn.addEventListener('click', closeFullscreen);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeFullscreen();
+  });
+})();
+</script>
 
 <!-- ============ HERO ============ -->
 <section class="hero" style="padding:0">
@@ -350,22 +415,6 @@
     <div class="comm-all">
       <a href="/communities/" class="btn btn-solid" style="background:var(--lake);color:var(--white)!important">View All Communities</a>
     </div>
-  </div>
-</section>
-
-<!-- ============ LIVE LISTINGS (RealScout slot) ============ -->
-<section class="listings">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Current Availability</div>
-      <h2>On the Market Now</h2>
-      <p>Live Carmel Valley condo and townhome listings, updated directly from the MLS.</p>
-    </div>
-    <!-- ===== LISTINGS: inline iframe embed test (carmelvalley.com search results) ===== -->
-    <div class="rs-embed" style="max-width:1100px;margin:0 auto;border:1px solid var(--line);background:var(--white)">
-      <iframe src="https://www.carmelvalley.com/search/results/jlp/" title="Carmel Valley Condos & Townhomes Listings" style="width:100%;height:900px;border:0;display:block"></iframe>
-    </div>
-    <!-- ===== END LISTINGS SLOT ===== -->
   </div>
 </section>
 
