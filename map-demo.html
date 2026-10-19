@@ -208,7 +208,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
-  var map = L.map('map', { scrollWheelZoom: false }).setView([32.937, -117.205], 13);
+  var map = L.map('map', { scrollWheelZoom: true }).setView([32.937, -117.205], 13);
 
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri',
@@ -429,7 +429,8 @@
     poly.bindPopup('<strong>' + c.name + '</strong>View condos &amp; current listings<br><br><a href="' + c.url + '">View ' + c.name + ' &rarr;</a>');
 
     poly.on('mouseover', function(){
-      poly.setStyle({ fillOpacity: 0.55, weight: 3 });
+      poly.setStyle({ fillOpacity: 0.8, weight: 4 });
+      poly.bringToFront();
       poly.openPopup();
     });
     poly.on('mouseout', function(){
@@ -441,9 +442,9 @@
       var currentCenter = map.getCenter();
       var currentZoom = map.getZoom();
 
-      var newZoom = currentZoom + (targetZoom - currentZoom) * 0.5;
-      var newLat = currentCenter.lat + (targetCenter.lat - currentCenter.lat) * 0.5;
-      var newLng = currentCenter.lng + (targetCenter.lng - currentCenter.lng) * 0.5;
+      var newZoom = currentZoom + (targetZoom - currentZoom) * 0.75;
+      var newLat = currentCenter.lat + (targetCenter.lat - currentCenter.lat) * 0.75;
+      var newLng = currentCenter.lng + (targetCenter.lng - currentCenter.lng) * 0.75;
 
       map.flyTo([newLat, newLng], newZoom, { duration: 0.6 });
       poly.openPopup();
