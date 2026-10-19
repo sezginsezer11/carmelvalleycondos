@@ -77,7 +77,7 @@
   /* ============ LISTINGS MAP (top, right under hero) ============ */
   .listings-map{background:var(--white);padding:60px 0 86px}
   .listings-map .sec-head{margin-bottom:36px}
-  .rs-embed{max-width:1140px;margin:0 auto;border:1px solid var(--line);background:var(--white);box-shadow:0 20px 50px rgba(38,56,68,.12);position:relative}
+  .rs-embed{width:100%;background:var(--white);position:relative}
   .rs-embed iframe{width:100%;height:760px;border:0;display:block}
   @media(min-width:901px){
     .rs-embed:not(.is-fullscreen) iframe{height:88vh}
@@ -212,8 +212,7 @@
 </nav>
 
 <!-- ============ LIVE LISTINGS MAP (first thing on the page) ============ -->
-<section class="listings-map" style="padding-top:40px">
-  <div class="wrap">
+<section class="listings-map" style="padding-top:0">
     <div class="rs-embed" id="condoMapEmbed">
       <div class="fs-bar">
         <a href="https://sezsezer.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0yODk0Ng==" target="_blank" rel="noopener">
@@ -229,7 +228,6 @@
       </div>
       <iframe src="https://sezsezer.realscout.com/homesearch/shared-searches/U2hhcmVhYmxlU2VhcmNoTGluay0yODk0Ng==" title="Carmel Valley Condos for Sale — Live Listings"></iframe>
     </div>
-  </div>
 </section>
 
 <script>
