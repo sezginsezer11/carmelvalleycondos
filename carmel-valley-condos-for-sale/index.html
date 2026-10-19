@@ -77,8 +77,22 @@
   /* ============ LISTINGS MAP (top, right under hero) ============ */
   .listings-map{background:var(--white);padding:60px 0 86px}
   .listings-map .sec-head{margin-bottom:36px}
-  .rs-embed{max-width:1140px;margin:0 auto;border:1px solid var(--line);background:var(--white);box-shadow:0 20px 50px rgba(38,56,68,.12)}
+  .rs-embed{max-width:1140px;margin:0 auto;border:1px solid var(--line);background:var(--white);box-shadow:0 20px 50px rgba(38,56,68,.12);position:relative}
   .rs-embed iframe{width:100%;height:760px;border:0;display:block}
+  .map-expand-hint{position:absolute;top:16px;right:16px;z-index:3;background:rgba(26,31,36,.78);color:var(--white);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:9px 16px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .2s ease}
+  .map-expand-hint:hover{background:var(--lake-dark)}
+  .map-expand-hint svg{width:13px;height:13px}
+  .map-click-catch{position:absolute;inset:0;z-index:2;cursor:pointer;background:transparent}
+
+  .rs-embed.is-fullscreen{position:fixed;inset:0;z-index:9999;max-width:none;margin:0;border:0;box-shadow:none;display:flex;flex-direction:column}
+  .rs-embed.is-fullscreen iframe{height:100%;flex:1 1 auto}
+  .fs-bar{display:none;align-items:center;justify-content:space-between;background:var(--lake-dark);color:var(--white);padding:12px 20px;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;flex:0 0 auto}
+  .rs-embed.is-fullscreen .fs-bar{display:flex}
+  .fs-bar a{color:var(--white);font-weight:600;display:flex;align-items:center;gap:8px}
+  .fs-bar a:hover{color:var(--gold)}
+  .fs-bar button{background:none;border:none;color:var(--white);font-size:22px;line-height:1;cursor:pointer;padding:0 4px}
+  .fs-bar button:hover{color:var(--gold)}
+  body.map-fs-lock{overflow:hidden}
 
   /* intro */
   .intro{background:var(--paper)}
@@ -197,11 +211,52 @@
 <!-- ============ LIVE LISTINGS MAP (first thing on the page) ============ -->
 <section class="listings-map" style="padding-top:40px">
   <div class="wrap">
-    <div class="rs-embed">
+    <div class="rs-embed" id="condoMapEmbed">
+      <div class="fs-bar">
+        <a href="https://www.carmelvalley.com/map_search/results/jw7/#/?zip=92130&amp;search_status=ACTIVE&amp;type=con&amp;list_price_min=300000&amp;sort_latest=True&amp;page=1&amp;per_page=20&amp;latitude_min=32.88016&amp;longitude_min=-117.277031&amp;latitude_max=32.963878&amp;longitude_max=-117.146226" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          Open in New Tab
+        </a>
+        <button type="button" id="condoMapClose" aria-label="Close fullscreen map">&times;</button>
+      </div>
+      <div class="map-click-catch" id="condoMapCatch"></div>
+      <div class="map-expand-hint" id="condoMapHint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+        Expand
+      </div>
       <iframe src="https://www.carmelvalley.com/map_search/results/jw7/#/?zip=92130&amp;search_status=ACTIVE&amp;type=con&amp;list_price_min=300000&amp;sort_latest=True&amp;page=1&amp;per_page=20&amp;latitude_min=32.88016&amp;longitude_min=-117.277031&amp;latitude_max=32.963878&amp;longitude_max=-117.146226" title="Carmel Valley Condos for Sale — Live Map Search"></iframe>
     </div>
   </div>
 </section>
+
+<script>
+(function(){
+  var embed = document.getElementById('condoMapEmbed');
+  var catcher = document.getElementById('condoMapCatch');
+  var hint = document.getElementById('condoMapHint');
+  var closeBtn = document.getElementById('condoMapClose');
+
+  function openFullscreen(){
+    embed.classList.add('is-fullscreen');
+    document.body.classList.add('map-fs-lock');
+    catcher.style.display = 'none';
+    hint.style.display = 'none';
+  }
+  function closeFullscreen(){
+    embed.classList.remove('is-fullscreen');
+    document.body.classList.remove('map-fs-lock');
+    catcher.style.display = '';
+    hint.style.display = '';
+  }
+
+  catcher.addEventListener('click', openFullscreen);
+  hint.addEventListener('click', openFullscreen);
+  closeBtn.addEventListener('click', closeFullscreen);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeFullscreen();
+  });
+})();
+</script>
 
 <!-- ============ PAGE TITLE ============ -->
 <section class="page-hero" style="padding:0;min-height:0;background:var(--lake)">
