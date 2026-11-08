@@ -163,20 +163,28 @@
 
   /* market snapshot (stat boxes + by-year table) */
   .snapshot{background:var(--white)}
-  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px}
-  .stat-box{background:var(--white);padding:28px 22px;text-align:center}
-  .stat-box .num{font-family:var(--mono);font-size:clamp(22px,2.8vw,28px);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-  .stat-box .lbl{font-size:12px;letter-spacing:.02em;color:var(--label);margin-top:6px;font-weight:600}
-  .stat-box .sub{font-size:12.5px;color:#8a92a0;margin-top:4px}
-  @media(max-width:760px){.stat-grid{grid-template-columns:1fr}}
-  .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line);border-radius:14px}
-  table.hist{width:100%;border-collapse:collapse;min-width:560px}
-  table.hist th,table.hist td{padding:14px 18px;text-align:left;font-size:14px;border-bottom:1px solid var(--line)}
-  table.hist th{background:var(--paper);color:var(--label);font-weight:700;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase}
+  .stat-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:28px}
+  .stat-box{background:var(--white);padding:22px 20px;text-align:left;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat-box:nth-child(2n){border-right:none}
+  .stat-box:nth-last-child(-n+2){border-bottom:none}
+  .stat-box .num{font-family:var(--mono);font-size:clamp(20px,2.6vw,26px);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .stat-box .delta{font-family:var(--mono);font-size:11.5px;margin-top:3px;color:var(--label)}
+  .stat-box .delta.up{color:var(--up)}
+  .stat-box .lbl{font-size:12.5px;color:var(--label);margin-top:8px;font-weight:500}
+  @media(max-width:760px){.stat-grid{grid-template-columns:1fr}.stat-box{border-right:none!important}.stat-box:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.stat-box:last-child{border-bottom:none!important}}
+  .snap-caption{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--label);font-weight:700;margin:0 0 14px}
+  .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line);border-radius:10px}
+  table.hist{width:100%;border-collapse:collapse;min-width:520px}
+  table.hist th,table.hist td{padding:12px 16px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--mist)}
+  table.hist th{color:var(--label);font-weight:600;font-size:11px;letter-spacing:.03em;text-transform:uppercase}
   table.hist td{color:#333a42}
   table.hist tr:last-child td{border-bottom:none}
-  table.hist tr.ytd td{background:#eaf0fe;font-weight:500}
-  table.hist td.num{font-family:var(--mono);font-weight:600;color:var(--ink);font-size:14.5px;font-variant-numeric:tabular-nums}
+  table.hist tr.ytd td{background:#f5f8ff}
+  table.hist td.num{font-family:var(--mono);font-weight:600;color:var(--ink);font-size:14px;font-variant-numeric:tabular-nums}
+  table.hist td.yr{font-family:var(--mono);color:var(--label)}
+  table.hist .bar-cell{display:flex;align-items:center;gap:10px}
+  table.hist .bar-wrap{position:relative;height:6px;background:var(--mist);border-radius:3px;flex:1;min-width:48px}
+  table.hist .bar-fill{position:absolute;inset:0;background:var(--lake);border-radius:3px}
   .snap-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .snap-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
 
@@ -893,30 +901,60 @@
       var headDom = headRows.filter(function(r){ return r.days_on_market != null; })
         .map(function(r){ return r.days_on_market; });
 
+      var prevYear = years[1];
+      var prevRows = prevYear ? byYear[prevYear] : null;
+      var prevMedian = prevRows ? median(prevRows.map(function(r){ return r.close_price; })) : null;
+      var prevPsfRows = prevRows ? prevRows.filter(function(r){ return r.living_area; }) : [];
+      var prevPsf = prevPsfRows.length ? avg(prevPsfRows.map(function(r){ return r.close_price / r.living_area; })) : null;
+
+      function pctDelta(curr, prev){
+        if (prev == null || !prev) return null;
+        return ((curr - prev) / prev) * 100;
+      }
+      function deltaHtml(curr, prev, yearLabel){
+        var pct = pctDelta(curr, prev);
+        if (pct == null) return '<div class="delta">' + yearLabel + '</div>';
+        var arrow = pct >= 0 ? '&#9650; ' : '&#9660; ';
+        var cls = pct >= 0 ? ' up' : '';
+        return '<div class="delta' + cls + '">' + arrow + Math.abs(pct).toFixed(1) + '% vs ' + prevYear + '</div>';
+      }
+
+      var headMedian = median(headPrices);
+      var headPsfAvg = headPsf.length ? avg(headPsf) : null;
+
       var statsHtml = '<div class="stat-grid">' +
-        '<div class="stat-box"><div class="num">$' + Math.round(median(headPrices)).toLocaleString('en-US') + '</div>' +
-        '<div class="lbl">Median Sale Price</div><div class="sub">' + headRows.length + ' sales &middot; ' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div></div>' +
-        '<div class="stat-box"><div class="num">$' + (headPsf.length ? Math.round(avg(headPsf)) : '&mdash;') + '</div>' +
-        '<div class="lbl">Price / Sq Ft</div><div class="sub">Average, ' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div></div>' +
+        '<div class="stat-box"><div class="num">$' + Math.round(headMedian).toLocaleString('en-US') + '</div>' +
+        deltaHtml(headMedian, prevMedian, headYear + (headYear === currentYear ? ' YTD' : '')) +
+        '<div class="lbl">Median Sale Price</div></div>' +
+        '<div class="stat-box"><div class="num">$' + (headPsfAvg != null ? Math.round(headPsfAvg) : '&mdash;') + '</div>' +
+        deltaHtml(headPsfAvg, prevPsf, headYear + (headYear === currentYear ? ' YTD' : '')) +
+        '<div class="lbl">Price / Sq Ft</div></div>' +
         '<div class="stat-box"><div class="num">' + (headDom.length ? Math.round(avg(headDom)) : '&mdash;') + ' days</div>' +
-        '<div class="lbl">Days on Market</div><div class="sub">Average, ' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div></div>' +
+        '<div class="delta">Average</div><div class="lbl">Days on Market</div></div>' +
+        '<div class="stat-box"><div class="num">' + headRows.length + '</div>' +
+        '<div class="delta">' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div><div class="lbl">Homes Sold</div></div>' +
         '</div>';
 
-      var tableHtml = '<div class="hist-table-wrap"><table class="hist"><thead><tr>' +
-        '<th>Year</th><th>Homes Sold</th><th>Median Sale Price</th><th>Avg. Price / Sq Ft</th><th>Avg. Days on Market</th>' +
+      var maxYrMedian = Math.max.apply(null, years.map(function(yr){ return median(byYear[yr].map(function(r){ return r.close_price; })); }));
+
+      var tableHtml = '<p class="snap-caption">Price by Year, ' + years[years.length - 1] + '&ndash;' + currentYear + '</p>' +
+        '<div class="hist-table-wrap"><table class="hist"><thead><tr>' +
+        '<th>Year</th><th>Median</th><th>Sales</th><th>$/Sq Ft</th><th>Avg. DOM</th>' +
         '</tr></thead><tbody>';
-      years.forEach(function(yr){
+      years.slice().reverse().forEach(function(yr){
         var yrRows = byYear[yr];
         var yrPrices = yrRows.map(function(r){ return r.close_price; });
+        var yrMedian = median(yrPrices);
         var yrPsf = yrRows.filter(function(r){ return r.living_area; }).map(function(r){ return r.close_price / r.living_area; });
         var yrDom = yrRows.filter(function(r){ return r.days_on_market != null; }).map(function(r){ return r.days_on_market; });
-        var label = yr === currentYear ? yr + ' (YTD)' : yr;
+        var label = yr === currentYear ? yr + ' YTD' : yr;
+        var barPct = Math.max(8, Math.round((yrMedian / maxYrMedian) * 100));
         tableHtml += '<tr' + (yr === currentYear ? ' class="ytd"' : '') + '>' +
-          '<td>' + label + '</td>' +
-          '<td>' + yrRows.length + '</td>' +
-          '<td class="num">$' + Math.round(median(yrPrices)).toLocaleString('en-US') + '</td>' +
-          '<td>' + (yrPsf.length ? '$' + Math.round(avg(yrPsf)) : '&mdash;') + '</td>' +
-          '<td>' + (yrDom.length ? Math.round(avg(yrDom)) : '&mdash;') + '</td>' +
+          '<td class="yr">' + label + '</td>' +
+          '<td class="num">$' + Math.round(yrMedian).toLocaleString('en-US') + '</td>' +
+          '<td><div class="bar-cell"><span class="num">' + yrRows.length + '</span><span class="bar-wrap"><span class="bar-fill" style="width:' + barPct + '%"></span></span></div></td>' +
+          '<td class="num">' + (yrPsf.length ? '$' + Math.round(avg(yrPsf)) : '&mdash;') + '</td>' +
+          '<td class="num">' + (yrDom.length ? Math.round(avg(yrDom)) : '&mdash;') + '</td>' +
           '</tr>';
       });
       tableHtml += '</tbody></table></div>';
