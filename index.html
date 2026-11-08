@@ -145,7 +145,8 @@
   .rs-embed.is-fullscreen .fs-bar{display:flex}
   .fs-bar a{color:var(--white);font-weight:600;display:flex;align-items:center;gap:8px}
   .fs-bar a:hover{color:var(--gold)}
-  .fs-bar button{background:none;border:none;color:var(--white);font-size:22px;line-height:1;cursor:pointer;padding:0 4px}
+  .fs-bar button{background:none;border:none;color:var(--white);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;line-height:1;cursor:pointer;padding:0;display:flex;align-items:center;gap:8px}
+  .fs-bar button span{font-size:19px;line-height:1}
   .fs-bar button:hover{color:var(--gold)}
   body.map-fs-lock{overflow:hidden}
 
@@ -305,7 +306,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
           Open in New Tab
         </a>
-        <button type="button" id="homeMapClose" aria-label="Close fullscreen map">&times;</button>
+        <button type="button" id="homeMapClose" aria-label="Exit fullscreen map">Exit <span aria-hidden="true">&times;</span></button>
       </div>
       <div class="map-click-catch" id="homeMapCatch"></div>
       <div class="map-expand-hint" id="homeMapHint">

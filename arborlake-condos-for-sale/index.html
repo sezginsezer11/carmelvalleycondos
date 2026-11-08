@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://carmelvalleycondos.com/arborlake-condos-for-sale/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#101418;
@@ -20,8 +20,10 @@
     --mist:#eef0f3;
     --line:#e1e4e9;
     --white:#ffffff;
+    --up:#15803d;
     --serif:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
     --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -81,7 +83,7 @@
   .fact{padding:26px 16px;text-align:center;border-left:1px solid var(--line)}
   .fact:nth-child(4n+1){border-left:none}
   .fact svg{width:20px;height:20px;color:var(--lake);margin:0 auto 10px;display:block}
-  .fact .num{font-size:clamp(18px,2.2vw,24px);font-weight:800;color:var(--ink);line-height:1.1;font-variant-numeric:tabular-nums}
+  .fact .num{font-family:var(--mono);font-size:clamp(17px,2.1vw,22px);font-weight:600;color:var(--ink);line-height:1.1;font-variant-numeric:tabular-nums}
   .fact .lbl{font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;margin-top:6px;color:var(--label);font-weight:600}
   @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(4n+1){border-left:1px solid var(--line)}.fact:nth-child(2n+1){border-left:none}}
 
@@ -149,7 +151,7 @@
   .snapshot{background:var(--white)}
   .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px}
   .stat-box{background:var(--white);padding:28px 22px;text-align:center}
-  .stat-box .num{font-size:clamp(24px,3vw,30px);font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .stat-box .num{font-family:var(--mono);font-size:clamp(22px,2.8vw,28px);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
   .stat-box .lbl{font-size:12px;letter-spacing:.02em;color:var(--label);margin-top:6px;font-weight:600}
   .stat-box .sub{font-size:12.5px;color:#8a92a0;margin-top:4px}
   @media(max-width:760px){.stat-grid{grid-template-columns:1fr}}
@@ -160,7 +162,7 @@
   table.hist td{color:#333a42}
   table.hist tr:last-child td{border-bottom:none}
   table.hist tr.ytd td{background:#eaf0fe;font-weight:500}
-  table.hist td.num{font-weight:700;color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums}
+  table.hist td.num{font-family:var(--mono);font-weight:600;color:var(--ink);font-size:14.5px;font-variant-numeric:tabular-nums}
   .snap-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .snap-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
 
@@ -170,9 +172,9 @@
   .sold-table th{text-align:left;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:700;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--paper)}
   .sold-table td{padding:16px 18px;border-bottom:1px solid var(--line);color:#333a42}
   .sold-table tr:last-child td{border-bottom:none}
-  .sold-table td.price{font-weight:800;font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sold-table td.price{font-family:var(--mono);font-weight:600;font-size:15.5px;color:var(--ink);font-variant-numeric:tabular-nums}
   .sold-table td.addr{color:var(--ink);font-weight:500}
-  .sold-table .num{font-variant-numeric:tabular-nums;color:var(--label)}
+  .sold-table .num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--label)}
   .sold-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .sold-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--white);border:1px solid var(--line);border-radius:14px}
   .sold-table-wrap{overflow-x:auto;border-radius:14px}
