@@ -163,7 +163,45 @@
     .bottom-nav a.active{color:var(--lake)}
     .bottom-nav a.active svg{stroke-width:2.1}
   }
+  /* ============ MOBILE SPACING TIGHTENING ============ */
+  @media(max-width:760px){
+    .wrap{padding:0 20px}
+    .masthead .wrap{padding:14px 20px}
+    .brand .b-name{font-size:21px}
+    .brand .b-sub{font-size:9px;margin-top:4px}
+    .breadcrumb .wrap{padding:10px 20px}
+    .hero{min-height:58vh}
+    .hero-inner{padding:0 20px}
+    .hero p{margin-top:16px}
+    .rs-embed:not(.is-fullscreen) iframe{height:380px}
+    .page-hero{min-height:auto!important}
+    .page-hero-inner{padding:40px 20px!important}
+    .page-hero h1{font-size:clamp(26px,7vw,34px)}
+    .page-hero p{margin-top:14px}
+    .page-hero .updated{margin-top:16px}
+    section{padding:44px 0}
+    .sec-head{margin:0 auto 26px}
+    .sec-head .eyebrow{margin-bottom:10px}
+    .sec-head h2{font-size:clamp(24px,7vw,32px)}
+    .sec-head p{margin-top:10px;font-size:15px}
+    .stat-box{padding:22px 18px}
+    .interp-card{padding:22px 20px}
+    .hist-table-wrap{margin:0 -20px;width:calc(100% + 40px);border-left:0;border-right:0}
+    table.hist th,table.hist td{padding:12px 14px;font-size:13.5px}
+    summary{padding:16px 30px 16px 0;font-size:17px}
+    summary::after{right:0;font-size:22px}
+    details p{padding:0 30px 18px 0;font-size:14.5px}
+    .contact-grid{gap:26px}
+    .contact h2{font-size:clamp(24px,7vw,30px)}
+    .contact .c-lead{margin-bottom:22px}
+    .contact-cta{padding:26px 22px}
+    .footer{padding:40px 0 0}
+    .footer-top{padding-bottom:28px;gap:26px}
+    .footer-bottom{padding:16px 0}
+    .disclaimer{padding:14px 0 22px}
+  }
 </style>
+
 
 </head>
 <body>
