@@ -8,306 +8,303 @@
 <link rel="canonical" href="https://carmelvalleycondos.com/arborlake-condos-for-sale/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1a1f24;
-    --lake:#344a57;
-    --lake-dark:#263844;
-    --gold:#c9a96e;
-    --label:#6b7a85;
-    --paper:#faf8f4;
-    --mist:#eef0ee;
-    --line:#dcdcd4;
+    --ink:#101418;
+    --lake:#1456e8;
+    --lake-dark:#0d3eac;
+    --gold:#1456e8;
+    --label:#5b6470;
+    --paper:#f5f6f8;
+    --mist:#eef0f3;
+    --line:#e1e4e9;
     --white:#ffffff;
-    --serif:'Cormorant Garamond',Georgia,serif;
+    --serif:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
     --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
-  a{color:var(--lake);text-decoration:none;transition:color .2s ease}
+  body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+  a{color:var(--lake);text-decoration:none;transition:color .15s ease}
   a:hover{color:var(--lake-dark)}
   img{max-width:100%;height:auto;display:block}
   .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
 
   /* ============ PRIMARY NAV ============ */
   .masthead{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
-  .masthead .wrap{display:flex;justify-content:space-between;align-items:center;padding:20px 28px}
+  .masthead .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 28px}
   .brand{display:flex;flex-direction:column;line-height:1}
-  .brand .b-name{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--ink);letter-spacing:.01em}
-  .brand .b-sub{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:6px;font-weight:500}
-  .primary-nav{display:flex;gap:24px;align-items:center}
-  .primary-nav a{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);font-weight:400;position:relative;padding:4px 0}
-  .primary-nav a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--gold);transition:width .25s ease}
-  .primary-nav a:hover::after{width:100%}
-  .nav-cta{background:var(--lake);color:var(--white)!important;padding:11px 20px;font-size:12px!important;letter-spacing:.08em;text-transform:uppercase}
-  .nav-cta:hover{background:var(--lake-dark)}
-  .nav-cta::after{display:none}
+  .brand .b-name{font-size:19px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+  .brand .b-sub{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--label);margin-top:4px;font-weight:500}
+  .primary-nav{display:flex;gap:4px;align-items:center}
+  .primary-nav a{font-size:14px;color:#37404a;font-weight:500;position:relative;padding:9px 12px;border-radius:7px}
+  .primary-nav a:hover{background:var(--paper);color:var(--ink)}
+  .nav-cta{background:var(--lake);color:var(--white)!important;padding:10px 18px!important;font-weight:600;border-radius:7px;margin-left:6px}
+  .nav-cta:hover{background:var(--lake-dark)!important}
   .menu-toggle{display:none;background:none;border:none;cursor:pointer;font-size:24px;color:var(--ink)}
   @media(max-width:1080px){
-    .primary-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.08)}
+    .primary-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--line);box-shadow:0 16px 32px rgba(16,20,24,.1)}
     .primary-nav.open{display:flex}
-    .primary-nav a{width:100%;padding:16px 28px;border-bottom:1px solid var(--mist)}
-    .nav-cta{margin:16px 28px;text-align:center}
+    .primary-nav a{width:100%;padding:16px 28px;border-bottom:1px solid var(--mist);border-radius:0}
+    .nav-cta{margin:16px 28px;text-align:center;border-radius:7px}
     .menu-toggle{display:block}
   }
 
   /* ============ BREADCRUMB ============ */
-  .breadcrumb{background:var(--white);border-bottom:1px solid var(--line);font-size:12.5px}
-  .breadcrumb .wrap{display:flex;align-items:center;gap:8px;padding:14px 28px;color:#7a8389}
-  .breadcrumb a{color:#7a8389}
+  .breadcrumb{background:var(--white);border-bottom:1px solid var(--line);font-size:13px}
+  .breadcrumb .wrap{display:flex;align-items:center;gap:8px;padding:12px 28px;color:var(--label)}
+  .breadcrumb a{color:var(--label)}
   .breadcrumb a:hover{color:var(--lake)}
-  .breadcrumb .sep{color:#c7cbc6}
+  .breadcrumb .sep{color:#c3c8cf}
   .breadcrumb .current{color:var(--ink);font-weight:500}
 
   /* ============ PAGE HERO (interior) ============ */
-  .page-hero{position:relative;min-height:42vh;display:flex;align-items:center;background:linear-gradient(rgba(26,31,36,.58),rgba(38,56,68,.76)),url('/images/arborlake-condos-carmel-valley.jpg') center/cover no-repeat;color:var(--white)}
-  .page-hero-inner{max-width:820px;padding:60px 28px;margin:0 auto;text-align:center}
-  .page-hero .eyebrow{font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.78);margin-bottom:22px;font-weight:500}
-  .page-hero h1{font-family:var(--serif);font-size:clamp(34px,4.8vw,58px);font-weight:600;line-height:1.08;letter-spacing:.01em}
-  .page-hero p{font-size:clamp(15px,1.6vw,18px);font-weight:300;margin:22px auto 0;max-width:620px;color:rgba(255,255,255,.9)}
-  .hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:34px}
-  .hero-ctas .btn{padding:16px 34px}
+  .page-hero{position:relative;min-height:38vh;display:flex;align-items:center;background:linear-gradient(rgba(16,20,24,.42),rgba(16,20,24,.64)),url('/images/arborlake-condos-carmel-valley.jpg') center/cover no-repeat;color:var(--white)}
+  .page-hero-inner{max-width:820px;padding:56px 28px;margin:0 auto;text-align:center}
+  .page-hero .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.02em;color:var(--white);background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 14px;border-radius:100px;margin-bottom:20px;font-weight:600}
+  .page-hero h1{font-size:clamp(30px,4.6vw,48px);font-weight:800;line-height:1.1;letter-spacing:-.02em}
+  .page-hero p{font-size:clamp(15px,1.6vw,17px);font-weight:400;margin:18px auto 0;max-width:600px;color:rgba(255,255,255,.92)}
+  .hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .hero-ctas .btn{padding:14px 28px}
 
   /* ============ SECTION SCAFFOLD ============ */
-  section{padding:80px 0}
-  .sec-head{text-align:center;max-width:680px;margin:0 auto 48px}
-  .sec-head .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--label);font-weight:600;margin-bottom:18px}
-  .sec-head h2{font-family:var(--serif);font-size:clamp(32px,4.5vw,48px);font-weight:600;line-height:1.1;color:var(--ink)}
-  .sec-head p{margin-top:20px;font-size:17px;color:#55606a;font-weight:300}
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+  .sec-head .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.02em;color:var(--lake);background:#eaf0fe;padding:5px 14px;border-radius:100px;font-weight:700;margin-bottom:14px}
+  .sec-head h2{font-size:clamp(26px,3.6vw,36px);font-weight:800;line-height:1.18;color:var(--ink);letter-spacing:-.02em}
+  .sec-head p{margin-top:14px;font-size:16px;color:var(--label);font-weight:400}
 
   /* quick facts (moved under hero, before listings) */
-  .facts{background:var(--lake);color:var(--white);padding:50px 0}
-  .facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 24px;text-align:center}
-  .fact svg{width:22px;height:22px;color:rgba(255,255,255,.85);margin:0 auto 10px;display:block;opacity:.9}
-  .fact .num{font-family:var(--serif);font-size:clamp(22px,2.8vw,32px);font-weight:600;color:var(--white);line-height:1.1}
-  .fact .lbl{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-top:10px;color:rgba(255,255,255,.8)}
-  @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr);gap:32px 20px}}
+  .facts{background:var(--paper);padding:0;border-bottom:1px solid var(--line)}
+  .facts-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .fact{padding:26px 16px;text-align:center;border-left:1px solid var(--line)}
+  .fact:nth-child(4n+1){border-left:none}
+  .fact svg{width:20px;height:20px;color:var(--lake);margin:0 auto 10px;display:block}
+  .fact .num{font-size:clamp(18px,2.2vw,24px);font-weight:800;color:var(--ink);line-height:1.1;font-variant-numeric:tabular-nums}
+  .fact .lbl{font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;margin-top:6px;color:var(--label);font-weight:600}
+  @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(4n+1){border-left:1px solid var(--line)}.fact:nth-child(2n+1){border-left:none}}
 
   /* realscout listings CTA / map */
   .listings{background:var(--white)}
-  .rs-embed{width:100%;background:var(--white);position:relative;border:1px solid var(--line);box-shadow:0 20px 50px rgba(38,56,68,.12)}
+  .rs-embed{width:100%;background:var(--white);position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden}
   .rs-embed iframe{width:100%;height:760px;border:0;display:block}
 
-  .btn{display:inline-block;padding:15px 34px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;border:1.5px solid transparent;cursor:pointer;transition:all .25s ease}
+  .btn{display:inline-block;padding:13px 26px;font-size:14.5px;font-weight:600;border:1.5px solid transparent;cursor:pointer;transition:all .15s ease;border-radius:8px}
   .btn-solid{background:var(--white);color:var(--ink)!important}
-  .btn-solid:hover{background:var(--gold);color:var(--white)!important}
-  .btn-outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.6)}
+  .btn-solid:hover{background:var(--mist)}
+  .btn-outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.55)}
   .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
 
   /* sticky jump nav */
-  .jump-nav{position:sticky;top:76px;z-index:40;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 4px 10px rgba(38,56,68,.05)}
-  section[id]{scroll-margin-top:132px}
+  .jump-nav{position:sticky;top:65px;z-index:40;background:var(--white);border-bottom:1px solid var(--line)}
+  section[id]{scroll-margin-top:118px}
   .jump-nav .wrap{padding:0 28px}
   .jump-nav ul{list-style:none;display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
   .jump-nav ul::-webkit-scrollbar{display:none}
   .jump-nav li{flex:none}
-  .jump-nav a{display:block;padding:14px 16px;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:#55606a;white-space:nowrap;border-bottom:2px solid transparent}
-  .jump-nav a:hover{color:var(--lake-dark)}
-  .jump-nav a.active{color:var(--lake-dark);border-bottom-color:var(--gold)}
+  .jump-nav a{display:block;padding:14px 14px;font-size:13.5px;font-weight:600;color:var(--label);white-space:nowrap;border-bottom:2px solid transparent}
+  .jump-nav a:hover{color:var(--ink)}
+  .jump-nav a.active{color:var(--lake);border-bottom-color:var(--lake)}
 
   /* collapsible secondary sections */
   .collapsible{text-align:center}
-  .collapsible summary{display:inline-flex;align-items:center;gap:8px;list-style:none;cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--lake-dark);margin-bottom:36px;padding:12px 22px;border:1.5px solid var(--lake);border-radius:2px;white-space:nowrap}
+  .collapsible summary{display:inline-flex;align-items:center;gap:8px;list-style:none;cursor:pointer;font-size:14px;font-weight:600;color:var(--lake);margin-bottom:32px;padding:11px 20px;border:1.5px solid var(--line);border-radius:8px;white-space:nowrap;background:var(--white)}
+  .collapsible summary:hover{border-color:var(--lake);background:#eaf0fe}
   .collapsible summary::-webkit-details-marker{display:none}
-  .collapsible summary .cl-icon{font-size:16px;font-weight:300}
+  .collapsible summary .cl-icon{font-size:16px;font-weight:400}
   .collapsible summary .cl-open{display:none}
   .collapsible[open] summary .cl-closed{display:none}
   .collapsible[open] summary .cl-open{display:inline}
   .collapsible>:not(summary){text-align:left}
 
   /* intro */
-  .intro{background:var(--paper)}
-  .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-  .intro-grid h2{font-family:var(--serif);font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.12;margin-bottom:24px}
-  .intro-grid .lead{font-size:18px;color:#444d56;margin-bottom:18px}
-  .intro-grid p{color:#55606a;margin-bottom:16px}
-  .intro-img img{box-shadow:0 30px 60px rgba(38,56,68,.18)}
-  @media(max-width:860px){.intro-grid{grid-template-columns:1fr;gap:36px}}
+  .intro{background:var(--white)}
+  .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .intro-grid h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;line-height:1.18;margin-bottom:20px;letter-spacing:-.02em}
+  .intro-grid .lead{font-size:17px;color:#333a42;margin-bottom:16px;font-weight:500}
+  .intro-grid p{color:var(--label);margin-bottom:16px}
+  .intro-img img{border-radius:14px;border:1px solid var(--line)}
+  @media(max-width:860px){.intro-grid{grid-template-columns:1fr;gap:32px}}
 
   /* HOA cost breakdown */
-  .hoa{background:var(--white)}
-  .hoa-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+  .hoa{background:var(--paper)}
+  .hoa-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
   .hoa-covers{list-style:none}
-  .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#444d56;font-size:15.5px;border-bottom:1px solid var(--mist)}
-  .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--lake);font-weight:600}
-  .hoa-compare{background:var(--paper);border:1px solid var(--line);padding:30px 32px}
-  .hoa-compare h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:22px}
+  .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#333a42;font-size:15px;border-bottom:1px solid var(--line)}
+  .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--lake);font-weight:700}
+  .hoa-compare{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px}
+  .hoa-compare h3{font-size:17px;font-weight:700;margin-bottom:20px}
   .hoa-bar-row{margin-bottom:16px}
   .hoa-bar-row:last-of-type{margin-bottom:0}
-  .hoa-bar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:#444d56;margin-bottom:6px}
-  .hoa-bar-label .amt{font-variant-numeric:tabular-nums;font-weight:600}
-  .hoa-bar-track{background:var(--mist);height:10px;border-radius:5px;overflow:hidden}
-  .hoa-bar-fill{height:100%;border-radius:5px;background:var(--line)}
+  .hoa-bar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:#333a42;margin-bottom:6px}
+  .hoa-bar-label .amt{font-variant-numeric:tabular-nums;font-weight:700}
+  .hoa-bar-track{background:var(--mist);height:8px;border-radius:4px;overflow:hidden}
+  .hoa-bar-fill{height:100%;border-radius:4px;background:var(--line)}
   .hoa-bar-row.this-community .hoa-bar-label{font-weight:700;color:var(--ink)}
-  .hoa-bar-row.this-community .hoa-bar-fill{background:var(--gold)}
-  @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:36px}}
+  .hoa-bar-row.this-community .hoa-bar-fill{background:var(--lake)}
+  @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:28px}}
 
   /* market snapshot (stat boxes + by-year table) */
   .snapshot{background:var(--white)}
-  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:48px}
-  .stat-box{background:var(--paper);padding:34px 26px;text-align:center}
-  .stat-box .num{font-family:var(--serif);font-size:clamp(26px,3.2vw,34px);font-weight:600;color:var(--lake-dark)}
-  .stat-box .lbl{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#7a8389;margin-top:8px;font-weight:500}
-  .stat-box .sub{font-size:12.5px;color:#9aa1a6;margin-top:4px}
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px}
+  .stat-box{background:var(--white);padding:28px 22px;text-align:center}
+  .stat-box .num{font-size:clamp(24px,3vw,30px);font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .stat-box .lbl{font-size:12px;letter-spacing:.02em;color:var(--label);margin-top:6px;font-weight:600}
+  .stat-box .sub{font-size:12.5px;color:#8a92a0;margin-top:4px}
   @media(max-width:760px){.stat-grid{grid-template-columns:1fr}}
-  .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line)}
+  .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line);border-radius:14px}
   table.hist{width:100%;border-collapse:collapse;min-width:560px}
-  table.hist th,table.hist td{padding:16px 18px;text-align:left;font-size:14.5px;border-bottom:1px solid var(--line)}
-  table.hist th{background:var(--lake-dark);color:var(--white);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-  table.hist td{color:#3a4249}
+  table.hist th,table.hist td{padding:14px 18px;text-align:left;font-size:14px;border-bottom:1px solid var(--line)}
+  table.hist th{background:var(--paper);color:var(--label);font-weight:700;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase}
+  table.hist td{color:#333a42}
   table.hist tr:last-child td{border-bottom:none}
-  table.hist tr.ytd td{background:rgba(201,169,110,.08);font-weight:500}
-  table.hist td.num{font-family:var(--serif);font-weight:600;color:var(--lake-dark);font-size:16px}
-  .snap-note{text-align:center;font-size:13px;color:#7a8389;margin-top:16px}
-  .snap-state{text-align:center;padding:40px;color:#7a8389;font-size:15px;background:var(--paper);border:1px solid var(--line)}
+  table.hist tr.ytd td{background:#eaf0fe;font-weight:500}
+  table.hist td.num{font-weight:700;color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums}
+  .snap-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
+  .snap-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
 
   /* recently sold */
   .sold{background:var(--paper)}
-  .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);font-size:14.5px}
-  .sold-table th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7a8389;font-weight:600;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--paper)}
-  .sold-table td{padding:16px 18px;border-bottom:1px solid var(--mist);color:#444d56}
+  .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:14px;font-size:14px}
+  .sold-table th{text-align:left;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:700;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--paper)}
+  .sold-table td{padding:16px 18px;border-bottom:1px solid var(--line);color:#333a42}
   .sold-table tr:last-child td{border-bottom:none}
-  .sold-table td.price{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink)}
-  .sold-table td.addr{color:var(--ink)}
-  .sold-table .num{font-variant-numeric:tabular-nums;color:#7a8389}
-  .sold-note{text-align:center;font-size:13px;color:#7a8389;margin-top:16px}
-  .sold-state{text-align:center;padding:40px;color:#7a8389;font-size:15px;background:var(--white);border:1px solid var(--line)}
-  .sold-table-wrap{overflow-x:auto}
+  .sold-table td.price{font-weight:800;font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sold-table td.addr{color:var(--ink);font-weight:500}
+  .sold-table .num{font-variant-numeric:tabular-nums;color:var(--label)}
+  .sold-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
+  .sold-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--white);border:1px solid var(--line);border-radius:14px}
+  .sold-table-wrap{overflow-x:auto;border-radius:14px}
   @media(max-width:700px){.sold-table th:nth-child(4),.sold-table td:nth-child(4){display:none}}
 
   /* price trend chart */
   .trend{background:var(--white)}
-  .trend-card{background:var(--paper);border:1px solid var(--line);padding:32px}
+  .trend-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px}
   .trend-chart{width:100%;height:auto;display:block}
   .trend-chart .gridline{stroke:var(--line);stroke-width:1}
-  .trend-chart .axis-label{font-family:var(--sans);font-size:11px;fill:#7a8389}
-  .trend-chart .pt-1bed{fill:var(--gold);stroke:var(--white);stroke-width:1.5}
-  .trend-chart .pt-2bed{fill:var(--lake);stroke:var(--white);stroke-width:1.5}
-  .trend-legend{display:flex;gap:28px;justify-content:center;margin-top:20px;flex-wrap:wrap}
-  .trend-legend span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#444d56}
-  .trend-legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
-  .trend-legend i.b1{background:var(--gold)}
-  .trend-legend i.b2{background:var(--lake)}
-  .trend-note{text-align:center;font-size:13px;color:#7a8389;margin-top:18px}
-  .trend-state{text-align:center;padding:40px;color:#7a8389;font-size:15px}
+  .trend-chart .axis-label{font-family:var(--sans);font-size:11px;fill:var(--label)}
+  .trend-chart .pt-1bed{stroke:var(--white);stroke-width:1.5}
+  .trend-chart .pt-2bed{stroke:var(--white);stroke-width:1.5}
+  .trend-legend{display:flex;gap:24px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+  .trend-legend span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#333a42}
+  .trend-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .trend-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
+  .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
 
   /* who it's for */
   .fit{background:var(--paper)}
-  .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-  .fit-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--lake);padding:32px 28px;transition:transform .25s ease,box-shadow .25s ease}
-  .fit-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(38,56,68,.1)}
-  .fit-card svg{width:30px;height:30px;color:var(--lake);margin-bottom:18px}
-  .fit-card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:12px;color:var(--ink)}
-  .fit-card p{font-size:15px;color:#55606a}
+  .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .fit-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+  .fit-card svg{width:26px;height:26px;color:var(--lake);margin-bottom:16px}
+  .fit-card h3{font-size:17px;font-weight:700;margin-bottom:10px;color:var(--ink)}
+  .fit-card p{font-size:14.5px;color:var(--label)}
   @media(max-width:860px){.fit-grid{grid-template-columns:1fr}}
 
   /* what to know before buying */
-  .know{background:var(--paper)}
-  .know-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-  .know-item{display:flex;gap:16px;align-items:flex-start}
-  .know-item svg{flex:none;width:22px;height:22px;color:var(--lake);margin-top:3px}
-  .know-item h3{font-size:15.5px;font-weight:650;margin-bottom:4px;color:var(--ink)}
-  .know-item p{font-size:14.5px;color:#55606a;margin:0}
+  .know{background:var(--white)}
+  .know-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .know-item{display:flex;gap:14px;align-items:flex-start}
+  .know-item svg{flex:none;width:20px;height:20px;color:var(--lake);margin-top:2px}
+  .know-item h3{font-size:15px;font-weight:700;margin-bottom:4px;color:var(--ink)}
+  .know-item p{font-size:14px;color:var(--label);margin:0}
   @media(max-width:760px){.know-grid{grid-template-columns:1fr}}
 
   /* photo walkthrough */
-  .walkthrough{background:var(--white)}
-  .walk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .walk-tile{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper)}
+  .walkthrough{background:var(--paper)}
+  .walk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .walk-tile{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--white);border-radius:12px;border:1px solid var(--line)}
   .walk-tile img{width:100%;height:100%;object-fit:cover}
-  .walk-tile .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(26,31,36,.72));color:var(--white);font-size:12.5px}
+  .walk-tile .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(16,20,24,.72));color:var(--white);font-size:12.5px}
   .walk-tile.placeholder{border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--label);font-size:13px;padding:16px}
   @media(max-width:760px){.walk-grid{grid-template-columns:1fr 1fr}}
   @media(max-width:480px){.walk-grid{grid-template-columns:1fr}.walk-tile{aspect-ratio:16/10}}
 
   /* touring checklist */
-  .tour{background:var(--paper)}
+  .tour{background:var(--white)}
   .tour-list{list-style:none;max-width:720px;margin:0 auto}
-  .tour-list li{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .tour-list li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
   .tour-list li:last-child{border-bottom:none}
-  .tour-num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--lake);color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:15px}
-  .tour-item h3{font-size:15.5px;font-weight:650;margin-bottom:4px;color:var(--ink)}
-  .tour-item p{margin:0;font-size:14.5px;color:#55606a}
+  .tour-num{flex:none;width:30px;height:30px;border-radius:8px;background:#eaf0fe;color:var(--lake);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+  .tour-item h3{font-size:15px;font-weight:700;margin-bottom:4px;color:var(--ink)}
+  .tour-item p{margin:0;font-size:14px;color:var(--label)}
 
   /* location & schools */
-  .location{background:var(--white)}
-  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  .location{background:var(--paper)}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
   .loc-list{list-style:none}
-  .loc-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--mist);font-size:15px;color:#444d56}
-  .loc-list li span:last-child{color:var(--gold);font-weight:600;white-space:nowrap;padding-left:16px}
+  .loc-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:#333a42}
+  .loc-list li span:last-child{color:var(--lake);font-weight:700;white-space:nowrap;padding-left:16px;font-variant-numeric:tabular-nums}
   .school-list{list-style:none}
-  .school-list li{padding:14px 0;border-bottom:1px solid var(--mist)}
-  .school-list .s-level{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--label);font-weight:600;margin-bottom:4px}
-  .school-list .s-name{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink)}
-  .school-list .s-district{font-size:13.5px;color:#7a8389;margin-top:2px}
-  @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:36px}}
+  .school-list li{padding:14px 0;border-bottom:1px solid var(--line)}
+  .school-list .s-level{font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:700;margin-bottom:4px}
+  .school-list .s-name{font-size:16px;font-weight:700;color:var(--ink)}
+  .school-list .s-district{font-size:13.5px;color:var(--label);margin-top:2px}
+  @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:28px}}
 
   /* market snapshot */
-  .market{background:var(--paper)}
-  .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-  .market-copy p{color:#55606a;margin-bottom:16px}
-  .market-stats{background:var(--white);border:1px solid var(--line)}
-  .market-stats .ms-row{display:flex;justify-content:space-between;align-items:center;padding:18px 26px;border-bottom:1px solid var(--line)}
+  .market{background:var(--white)}
+  .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .market-copy p{color:var(--label);margin-bottom:16px}
+  .market-stats{background:var(--paper);border:1px solid var(--line);border-radius:14px}
+  .market-stats .ms-row{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line)}
   .market-stats .ms-row:last-child{border-bottom:none}
-  .market-stats .ms-label{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#7a8389}
-  .market-stats .ms-value{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--ink)}
-  @media(max-width:860px){.market-grid{grid-template-columns:1fr;gap:36px}}
+  .market-stats .ms-label{font-size:13px;color:var(--label);font-weight:500}
+  .market-stats .ms-value{font-size:18px;font-weight:800;color:var(--ink)}
+  @media(max-width:860px){.market-grid{grid-template-columns:1fr;gap:28px}}
 
   /* compare communities */
-  .compare{background:var(--white)}
-  .cmp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-  .cmp-card{border:1px solid var(--line);border-top:3px solid var(--lake);padding:28px;background:var(--paper);transition:transform .25s ease,box-shadow .25s ease}
-  .cmp-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(38,56,68,.1)}
-  .cmp-card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:10px}
-  .cmp-card p{font-size:14.5px;color:#55606a;margin-bottom:16px}
-  .cmp-card a{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  .compare{background:var(--paper)}
+  .cmp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .cmp-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--white)}
+  .cmp-card h3{font-size:17px;font-weight:700;margin-bottom:8px}
+  .cmp-card p{font-size:14px;color:var(--label);margin-bottom:14px}
+  .cmp-card a{font-size:13px;font-weight:700}
   @media(max-width:860px){.cmp-grid{grid-template-columns:1fr}}
 
   /* FAQ */
-  .faq{background:var(--paper)}
+  .faq{background:var(--white)}
   .faq-list{max-width:820px;margin:0 auto}
   .faq-list details{border-bottom:1px solid var(--line);padding:4px 0}
-  .faq-list summary{font-family:var(--serif);font-size:21px;font-weight:600;padding:24px 44px 24px 0;cursor:pointer;list-style:none;position:relative;color:var(--ink)}
+  .faq-list summary{font-size:16.5px;font-weight:700;padding:20px 40px 20px 0;cursor:pointer;list-style:none;position:relative;color:var(--ink)}
   .faq-list summary::-webkit-details-marker{display:none}
-  .faq-list summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:300;color:var(--gold);transition:transform .25s ease}
+  .faq-list summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--lake);transition:transform .2s ease}
   .faq-list details[open] summary::after{content:"\2013"}
-  .faq-list details p{padding:0 44px 26px 0;color:#55606a;font-size:16px}
+  .faq-list details p{padding:0 40px 22px 0;color:var(--label);font-size:15px}
 
-  /* contact block — WHITE CTA text on LAKE bg (locked rule) */
+  /* contact block — white CTA text on accent bg */
   .contact{background:var(--lake);color:var(--white)}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-  .contact h2{font-family:var(--serif);font-size:clamp(32px,4.5vw,46px);font-weight:600;line-height:1.1;margin-bottom:20px}
-  .contact .c-lead{font-size:17px;color:rgba(255,255,255,.88);margin-bottom:30px;font-weight:300}
-  .contact .c-detail{font-size:15px;color:rgba(255,255,255,.82);margin-bottom:10px}
-  .contact .c-detail strong{color:var(--white);font-weight:500}
-  .contact-cta{text-align:center;background:var(--lake-dark);padding:44px 36px;border:1px solid rgba(255,255,255,.12)}
-  .contact-cta .agent-name{font-family:var(--serif);font-size:28px;font-weight:600;color:var(--white);margin-bottom:6px}
-  .contact-cta .agent-role{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.68);margin-bottom:28px}
-  .contact-btn{display:block;width:100%;background:var(--white);color:var(--lake-dark)!important;padding:16px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:14px;transition:background .2s ease}
-  .contact-btn:hover{background:var(--gold);color:var(--white)!important}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .contact h2{font-size:clamp(26px,3.8vw,38px);font-weight:800;line-height:1.15;margin-bottom:18px;letter-spacing:-.02em}
+  .contact .c-lead{font-size:16.5px;color:rgba(255,255,255,.9);margin-bottom:26px;font-weight:400}
+  .contact .c-detail{font-size:14.5px;color:rgba(255,255,255,.85);margin-bottom:9px}
+  .contact .c-detail strong{color:var(--white);font-weight:600}
+  .contact-cta{text-align:center;background:rgba(0,0,0,.18);padding:36px 32px;border:1px solid rgba(255,255,255,.18);border-radius:16px}
+  .contact-cta .agent-name{font-size:23px;font-weight:800;color:var(--white);margin-bottom:4px}
+  .contact-cta .agent-role{font-size:12.5px;letter-spacing:.03em;color:rgba(255,255,255,.72);margin-bottom:24px;font-weight:500}
+  .contact-btn{display:block;width:100%;background:var(--white);color:var(--lake-dark)!important;padding:14px;font-size:14.5px;font-weight:700;margin-bottom:12px;transition:background .15s ease;border-radius:8px}
+  .contact-btn:hover{background:#eef2ff}
   .contact-btn.outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.5)}
   .contact-btn.outline:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
-  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:40px}}
+  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:36px}}
 
   /* ============ FOOTER ============ */
-  .footer{background:var(--ink);color:rgba(255,255,255,.72);padding:70px 0 0;font-size:14.5px}
-  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px;border-bottom:1px solid rgba(255,255,255,.1)}
-  .footer h4{font-family:var(--serif);font-size:19px;color:var(--white);font-weight:600;margin-bottom:20px}
-  .footer .f-brand .b-name{font-family:var(--serif);font-size:24px;color:var(--white);font-weight:600}
-  .footer .f-brand .b-sub{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin:8px 0 18px}
-  .footer .f-brand p{font-size:14px;color:rgba(255,255,255,.6);max-width:300px}
+  .footer{background:var(--ink);color:rgba(255,255,255,.68);padding:60px 0 0;font-size:14.5px}
+  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .footer h4{font-size:15px;color:var(--white);font-weight:700;margin-bottom:18px}
+  .footer .f-brand .b-name{font-size:19px;color:var(--white);font-weight:800}
+  .footer .f-brand .b-sub{font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:6px 0 16px}
+  .footer .f-brand p{font-size:14px;color:rgba(255,255,255,.55);max-width:300px}
   .footer-nav{list-style:none}
-  .footer-nav li{margin-bottom:12px}
-  .footer-nav a{color:rgba(255,255,255,.72);font-size:14px}
-  .footer-nav a:hover{color:var(--gold)}
-  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding:26px 0;font-size:12.5px;color:rgba(255,255,255,.5)}
+  .footer-nav li{margin-bottom:11px}
+  .footer-nav a{color:rgba(255,255,255,.68);font-size:14px}
+  .footer-nav a:hover{color:var(--white)}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding:22px 0;font-size:12.5px;color:rgba(255,255,255,.45)}
   .footer-bottom .secondary-nav{display:flex;gap:22px;flex-wrap:wrap}
-  .footer-bottom .secondary-nav a{color:rgba(255,255,255,.5)}
-  .footer-bottom .secondary-nav a:hover{color:var(--gold)}
-  .disclaimer{padding:22px 0 40px;font-size:11.5px;line-height:1.7;color:rgba(255,255,255,.4);border-top:1px solid rgba(255,255,255,.07)}
-  @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:36px}}
+  .footer-bottom .secondary-nav a{color:rgba(255,255,255,.45)}
+  .footer-bottom .secondary-nav a:hover{color:var(--white)}
+  .disclaimer{padding:20px 0 36px;font-size:11.5px;line-height:1.7;color:rgba(255,255,255,.35);border-top:1px solid rgba(255,255,255,.07)}
+  @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
   @media(max-width:520px){.footer-top{grid-template-columns:1fr}}
 </style>
 </head>
@@ -577,7 +574,7 @@
   var state = document.getElementById('trendState');
   var legendEl = document.getElementById('trendLegend');
   var note = document.getElementById('trendNote');
-  var palette = ['#c9a96e', '#344a57', '#a35d4f', '#5a8f7b', '#8a6fae'];
+  var palette = ['#1456e8', '#0ea5a0', '#f59e0b', '#8b5cf6', '#e2497a'];
 
   function fail(){
     state.textContent = '5-year price history isn’t available right now — call or email for current market data.';
