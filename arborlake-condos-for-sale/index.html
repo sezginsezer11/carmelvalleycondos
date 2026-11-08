@@ -361,6 +361,108 @@
   .disclaimer{padding:20px 0 36px;font-size:11.5px;line-height:1.7;color:rgba(255,255,255,.35);border-top:1px solid rgba(255,255,255,.07)}
   @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
   @media(max-width:520px){.footer-top{grid-template-columns:1fr}}
+
+  /* ============ MOBILE SPACING TIGHTENING ============ */
+  @media(max-width:760px){
+    .wrap{padding:0 18px}
+    .masthead .wrap{padding:12px 18px}
+    .breadcrumb .wrap{padding:9px 18px}
+    section{padding:34px 0}
+    .sec-head{margin:0 auto 18px}
+    .sec-head .eyebrow{margin-bottom:10px}
+    .sec-head h2{font-size:clamp(22px,6.5vw,28px)}
+    .sec-head p{margin-top:8px;font-size:14.5px}
+
+    .page-hero{min-height:auto}
+    .page-hero-inner{padding:26px 18px}
+    .page-hero .eyebrow{margin-bottom:12px}
+    .page-hero h1{font-size:clamp(23px,7vw,30px)}
+    .page-hero p{margin-top:10px;font-size:14px}
+    .hero-ctas{margin-top:16px;gap:10px}
+    .hero-ctas .btn{padding:12px 20px}
+
+    .glance-lede{margin-bottom:16px;font-size:14px}
+    .glance-card{padding:18px 18px 14px}
+    .glance-card .gc-head{margin-bottom:12px}
+
+    .listings-head{margin-bottom:10px}
+    .listings-title{font-size:16px}
+    .rs-embed iframe{height:460px}
+
+    .jump-nav a{padding:11px 11px;font-size:13px}
+
+    .collapsible summary{margin-bottom:18px;padding:9px 16px}
+
+    .intro-grid{gap:20px}
+    .intro-grid h2{margin-bottom:12px}
+    .intro-grid .lead{margin-bottom:10px;font-size:15.5px}
+    .intro-grid p{margin-bottom:10px}
+
+    .hoa-grid{gap:18px}
+    .hoa-covers li{padding:8px 0 8px 24px;font-size:14px}
+    .hoa-compare{padding:18px}
+    .hoa-bar-row{margin-bottom:11px}
+
+    .stat-grid{margin-bottom:18px}
+    .stat-box{padding:16px 16px}
+    .stat-box .lbl{margin-top:5px}
+    .snap-caption{margin:0 0 8px}
+    table.hist th,table.hist td{padding:9px 12px;font-size:12.5px}
+
+    .sold-table-wrap{overflow-x:visible}
+    table.sold-table{min-width:0;table-layout:fixed;font-size:12px}
+    .sold-table th,.sold-table td{padding:9px 8px}
+    .sold-table td.addr{font-size:12px;line-height:1.35}
+    .sold-table th:nth-child(1),.sold-table td:nth-child(1){width:38%}
+    .sold-table th:nth-child(2),.sold-table td:nth-child(2){width:20%}
+    .sold-table th:nth-child(3),.sold-table td:nth-child(3){width:18%}
+    .sold-table th:nth-child(5),.sold-table td:nth-child(5){width:24%}
+    .sold-table th:nth-child(6),.sold-table td:nth-child(6){display:none}
+
+    .trend-card{padding:16px}
+    .trend-legend{margin-top:12px;gap:14px}
+
+    .analysis-body h3{margin:24px 0 8px;font-size:17px}
+    .analysis-body p{font-size:14.5px;margin-bottom:11px}
+    .analysis-callout{gap:10px;margin:16px 0}
+    .analysis-chip{padding:13px 15px}
+    .analysis-pull{font-size:15.5px;margin:18px 0}
+
+    .fit-grid{gap:12px}
+    .fit-card{padding:18px 16px}
+
+    .know-grid{gap:16px}
+
+    .walk-grid{gap:8px}
+
+    .tour-list li{padding:14px 0;gap:12px}
+
+    .loc-map{margin-bottom:20px}
+    .loc-map iframe{height:240px}
+    .loc-grid{gap:18px}
+    .loc-list li{padding:9px 0;font-size:13.5px}
+    .school-list li{padding:11px 0}
+
+    .market-grid{gap:18px}
+    .market-stats .ms-row{padding:12px 16px}
+
+    .cmp-grid{gap:12px}
+    .cmp-card{padding:18px}
+
+    .faq-list summary{padding:15px 28px 15px 0;font-size:15.5px}
+    .faq-list details p{padding:0 28px 16px 0;font-size:14px}
+
+    .contact-grid{gap:22px}
+    .contact h2{font-size:clamp(22px,7vw,26px);margin-bottom:12px}
+    .contact .c-lead{margin-bottom:18px}
+    .contact-cta{padding:22px 18px}
+
+    .footer{padding:34px 0 0}
+    .footer-top{padding-bottom:24px;gap:22px}
+    .footer-bottom{padding:14px 0}
+    .disclaimer{padding:12px 0 20px}
+  }
+
   /* ============ MOBILE BOTTOM NAV ============ */
   .bottom-nav{display:none}
   @media(max-width:760px){
@@ -815,6 +917,10 @@
     var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     return months[parseInt(parts[1],10)-1] + ' ' + parts[2] + ', ' + parts[0];
   }
+  function shortAddr(a){
+    if (!a) return a;
+    return a.replace(/\bRoad\b/g, 'Rd').replace(/\bStreet\b/g, 'St').replace(/\bAvenue\b/g, 'Ave');
+  }
 
   fetch(API)
     .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
@@ -838,7 +944,7 @@
         '</tr></thead><tbody>';
       rows.forEach(function(r){
         html += '<tr>' +
-          '<td class="addr">' + (r.address || '&mdash;') + '</td>' +
+          '<td class="addr">' + (shortAddr(r.address) || '&mdash;') + '</td>' +
           '<td class="num">' + (r.beds_total != null ? r.beds_total : '&mdash;') + ' / ' + (r.baths_total != null ? r.baths_total : '&mdash;') + '</td>' +
           '<td class="num">' + (r.living_area != null ? r.living_area.toLocaleString('en-US') : '&mdash;') + '</td>' +
           '<td class="num">' + (r.year_built || '&mdash;') + '</td>' +
