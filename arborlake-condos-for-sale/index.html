@@ -15,6 +15,7 @@
     --lake:#344a57;
     --lake-dark:#263844;
     --gold:#c9a96e;
+    --label:#6b7a85;
     --paper:#faf8f4;
     --mist:#eef0ee;
     --line:#dcdcd4;
@@ -63,22 +64,24 @@
   /* ============ PAGE HERO (interior) ============ */
   .page-hero{position:relative;min-height:42vh;display:flex;align-items:center;background:linear-gradient(rgba(26,31,36,.58),rgba(38,56,68,.76)),url('/images/arborlake-condos-carmel-valley.jpg') center/cover no-repeat;color:var(--white)}
   .page-hero-inner{max-width:820px;padding:60px 28px;margin:0 auto;text-align:center}
-  .page-hero .eyebrow{font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;font-weight:500}
+  .page-hero .eyebrow{font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.78);margin-bottom:22px;font-weight:500}
   .page-hero h1{font-family:var(--serif);font-size:clamp(34px,4.8vw,58px);font-weight:600;line-height:1.08;letter-spacing:.01em}
   .page-hero p{font-size:clamp(15px,1.6vw,18px);font-weight:300;margin:22px auto 0;max-width:620px;color:rgba(255,255,255,.9)}
+  .hero-ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .hero-ctas .btn{padding:16px 34px}
 
   /* ============ SECTION SCAFFOLD ============ */
   section{padding:80px 0}
   .sec-head{text-align:center;max-width:680px;margin:0 auto 48px}
-  .sec-head .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:18px}
+  .sec-head .eyebrow{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--label);font-weight:600;margin-bottom:18px}
   .sec-head h2{font-family:var(--serif);font-size:clamp(32px,4.5vw,48px);font-weight:600;line-height:1.1;color:var(--ink)}
   .sec-head p{margin-top:20px;font-size:17px;color:#55606a;font-weight:300}
 
   /* quick facts (moved under hero, before listings) */
   .facts{background:var(--lake);color:var(--white);padding:50px 0}
   .facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 24px;text-align:center}
-  .fact svg{width:22px;height:22px;color:var(--gold);margin:0 auto 10px;display:block;opacity:.85}
-  .fact .num{font-family:var(--serif);font-size:clamp(22px,2.8vw,32px);font-weight:600;color:var(--gold);line-height:1.1}
+  .fact svg{width:22px;height:22px;color:rgba(255,255,255,.85);margin:0 auto 10px;display:block;opacity:.9}
+  .fact .num{font-family:var(--serif);font-size:clamp(22px,2.8vw,32px);font-weight:600;color:var(--white);line-height:1.1}
   .fact .lbl{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-top:10px;color:rgba(255,255,255,.8)}
   @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr);gap:32px 20px}}
 
@@ -90,6 +93,8 @@
   .btn{display:inline-block;padding:15px 34px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;border:1.5px solid transparent;cursor:pointer;transition:all .25s ease}
   .btn-solid{background:var(--white);color:var(--ink)!important}
   .btn-solid:hover{background:var(--gold);color:var(--white)!important}
+  .btn-outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.6)}
+  .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
 
   /* intro */
   .intro{background:var(--paper)}
@@ -105,7 +110,7 @@
   .hoa-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
   .hoa-covers{list-style:none}
   .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#444d56;font-size:15.5px;border-bottom:1px solid var(--mist)}
-  .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--gold);font-weight:600}
+  .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--lake);font-weight:600}
   .hoa-compare{background:var(--paper);border:1px solid var(--line);padding:30px 32px}
   .hoa-compare h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:22px}
   .hoa-bar-row{margin-bottom:16px}
@@ -170,9 +175,9 @@
   /* who it's for */
   .fit{background:var(--paper)}
   .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-  .fit-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--gold);padding:32px 28px;transition:transform .25s ease,box-shadow .25s ease}
+  .fit-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--lake);padding:32px 28px;transition:transform .25s ease,box-shadow .25s ease}
   .fit-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(38,56,68,.1)}
-  .fit-card svg{width:30px;height:30px;color:var(--gold);margin-bottom:18px}
+  .fit-card svg{width:30px;height:30px;color:var(--lake);margin-bottom:18px}
   .fit-card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:12px;color:var(--ink)}
   .fit-card p{font-size:15px;color:#55606a}
   @media(max-width:860px){.fit-grid{grid-template-columns:1fr}}
@@ -185,7 +190,7 @@
   .loc-list li span:last-child{color:var(--gold);font-weight:600;white-space:nowrap;padding-left:16px}
   .school-list{list-style:none}
   .school-list li{padding:14px 0;border-bottom:1px solid var(--mist)}
-  .school-list .s-level{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:4px}
+  .school-list .s-level{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--label);font-weight:600;margin-bottom:4px}
   .school-list .s-name{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink)}
   .school-list .s-district{font-size:13.5px;color:#7a8389;margin-top:2px}
   @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:36px}}
@@ -230,7 +235,7 @@
   .contact .c-detail strong{color:var(--white);font-weight:500}
   .contact-cta{text-align:center;background:var(--lake-dark);padding:44px 36px;border:1px solid rgba(255,255,255,.12)}
   .contact-cta .agent-name{font-family:var(--serif);font-size:28px;font-weight:600;color:var(--white);margin-bottom:6px}
-  .contact-cta .agent-role{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+  .contact-cta .agent-role{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.68);margin-bottom:28px}
   .contact-btn{display:block;width:100%;background:var(--white);color:var(--lake-dark)!important;padding:16px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:14px;transition:background .2s ease}
   .contact-btn:hover{background:var(--gold);color:var(--white)!important}
   .contact-btn.outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.5)}
@@ -297,6 +302,10 @@
     <div class="eyebrow">Carmel Valley &middot; 92130</div>
     <h1>Arborlake Condos for Sale</h1>
     <p>A 190-unit lake-and-waterfall condo community in southwest Carmel Valley &mdash; guided by an agent who has specialized in this community for more than 11 years.</p>
+    <div class="hero-ctas">
+      <a href="#listings" class="btn btn-solid">View Listings</a>
+      <a href="tel:+18584366585" class="btn btn-outline">Talk to Sez</a>
+    </div>
   </div>
 </section>
 
@@ -315,7 +324,7 @@
 </section>
 
 <!-- ============ LIVE LISTINGS (inline embed) ============ -->
-<section class="listings" style="background:var(--paper)">
+<section class="listings" id="listings" style="background:var(--paper)">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Current Availability</div>
