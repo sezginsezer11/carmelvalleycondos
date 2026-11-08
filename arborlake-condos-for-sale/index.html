@@ -96,6 +96,27 @@
   .btn-outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.6)}
   .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
 
+  /* sticky jump nav */
+  .jump-nav{position:sticky;top:76px;z-index:40;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 4px 10px rgba(38,56,68,.05)}
+  section[id]{scroll-margin-top:132px}
+  .jump-nav .wrap{padding:0 28px}
+  .jump-nav ul{list-style:none;display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .jump-nav ul::-webkit-scrollbar{display:none}
+  .jump-nav li{flex:none}
+  .jump-nav a{display:block;padding:14px 16px;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;color:#55606a;white-space:nowrap;border-bottom:2px solid transparent}
+  .jump-nav a:hover{color:var(--lake-dark)}
+  .jump-nav a.active{color:var(--lake-dark);border-bottom-color:var(--gold)}
+
+  /* collapsible secondary sections */
+  .collapsible{text-align:center}
+  .collapsible summary{display:inline-flex;align-items:center;gap:8px;list-style:none;cursor:pointer;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--lake-dark);margin-bottom:36px;padding:12px 22px;border:1.5px solid var(--lake);border-radius:2px;white-space:nowrap}
+  .collapsible summary::-webkit-details-marker{display:none}
+  .collapsible summary .cl-icon{font-size:16px;font-weight:300}
+  .collapsible summary .cl-open{display:none}
+  .collapsible[open] summary .cl-closed{display:none}
+  .collapsible[open] summary .cl-open{display:inline}
+  .collapsible>:not(summary){text-align:left}
+
   /* intro */
   .intro{background:var(--paper)}
   .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
@@ -247,12 +268,12 @@
   /* FAQ */
   .faq{background:var(--paper)}
   .faq-list{max-width:820px;margin:0 auto}
-  details{border-bottom:1px solid var(--line);padding:4px 0}
-  summary{font-family:var(--serif);font-size:21px;font-weight:600;padding:24px 44px 24px 0;cursor:pointer;list-style:none;position:relative;color:var(--ink)}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:300;color:var(--gold);transition:transform .25s ease}
-  details[open] summary::after{content:"\2013"}
-  details p{padding:0 44px 26px 0;color:#55606a;font-size:16px}
+  .faq-list details{border-bottom:1px solid var(--line);padding:4px 0}
+  .faq-list summary{font-family:var(--serif);font-size:21px;font-weight:600;padding:24px 44px 24px 0;cursor:pointer;list-style:none;position:relative;color:var(--ink)}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:300;color:var(--gold);transition:transform .25s ease}
+  .faq-list details[open] summary::after{content:"\2013"}
+  .faq-list details p{padding:0 44px 26px 0;color:#55606a;font-size:16px}
 
   /* contact block — WHITE CTA text on LAKE bg (locked rule) */
   .contact{background:var(--lake);color:var(--white)}
@@ -351,6 +372,19 @@
   </div>
 </section>
 
+<!-- ============ JUMP NAV ============ -->
+<nav class="jump-nav" aria-label="Section navigation">
+  <div class="wrap">
+    <ul>
+      <li><a href="#listings">Listings</a></li>
+      <li><a href="#cost">Cost</a></li>
+      <li><a href="#sold-data">Sold Data</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+
 <!-- ============ LIVE LISTINGS (inline embed) ============ -->
 <section class="listings" id="listings" style="background:var(--paper)">
   <div class="wrap">
@@ -418,6 +452,8 @@
       <h2>What to Know Before Buying at Arborlake</h2>
       <p>The honest tradeoffs, not just the highlights &mdash; so there are no surprises at inspection.</p>
     </div>
+    <details class="collapsible">
+    <summary><span class="cl-closed">Show Details <span class="cl-icon">+</span></span><span class="cl-open">Hide Details <span class="cl-icon">–</span></span></summary>
     <div class="know-grid">
       <div class="know-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
@@ -436,11 +472,12 @@
         <div><h3>No private yard</h3><p>Like any condo community, outdoor space is a patio or balcony, not a yard. If private outdoor space is a priority, compare unit size and patio orientation carefully &mdash; lake-facing units are the most sought after.</p></div>
       </div>
     </div>
+    </details>
   </div>
 </section>
 
 <!-- ============ HOA & COST BREAKDOWN ============ -->
-<section class="hoa">
+<section class="hoa" id="cost">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Cost of Ownership</div>
@@ -486,7 +523,7 @@
 </section>
 
 <!-- ============ PRICE HISTORY BY YEAR ============ -->
-<section class="snapshot">
+<section class="snapshot" id="sold-data">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Sold Data &middot; Last 5 Years</div>
@@ -847,7 +884,7 @@
 </section>
 
 <!-- ============ LOCATION & SCHOOLS ============ -->
-<section class="location">
+<section class="location" id="location">
   <div class="wrap loc-grid">
     <div>
       <div class="sec-head" style="text-align:left;margin:0 0 32px">
@@ -904,6 +941,8 @@
       <h2>What to Check When You Tour Arborlake</h2>
       <p>Five things worth inspecting or asking about on a showing &mdash; bring this list.</p>
     </div>
+    <details class="collapsible">
+    <summary><span class="cl-closed">Show Details <span class="cl-icon">+</span></span><span class="cl-open">Hide Details <span class="cl-icon">–</span></span></summary>
     <ul class="tour-list">
       <li>
         <div class="tour-num">1</div>
@@ -926,26 +965,32 @@
         <div class="tour-item"><h3>Assigned carport and storage</h3><p>Confirm which carport space and storage unit convey with the home, and how close they are to the actual front door &mdash; this varies by building.</p></div>
       </li>
     </ul>
+    </details>
   </div>
 </section>
 
 <!-- ============ MARKET SNAPSHOT ============ -->
 <section class="market">
-  <div class="wrap market-grid">
-    <div class="market-copy">
-      <div class="sec-head" style="text-align:left;margin:0 0 24px">
-        <div class="eyebrow">Market Intelligence</div>
-        <h2 style="font-size:clamp(26px,3.5vw,34px)">Arborlake's Market, Right Now</h2>
+  <div class="wrap">
+    <div class="sec-head" style="text-align:left;margin:0 0 24px">
+      <div class="eyebrow">Market Intelligence</div>
+      <h2 style="font-size:clamp(26px,3.5vw,34px)">Arborlake's Market, Right Now</h2>
+    </div>
+    <details class="collapsible">
+    <summary><span class="cl-closed">Show Details <span class="cl-icon">+</span></span><span class="cl-open">Hide Details <span class="cl-icon">–</span></span></summary>
+    <div class="market-grid">
+      <div class="market-copy">
+        <p>Arborlake condos currently trade between $650,000 and $875,000, roughly $680&ndash;$820 per square foot depending on interior condition and position within the community &mdash; lake-facing, updated units command a clear premium over original-condition units near the parking areas.</p>
+        <p>Well-priced, updated listings here typically go under contract within 2&ndash;3 weeks. That pace reflects a buyer pool that's often already decided on Arborlake specifically, rather than comparison-shopping broadly across Carmel Valley's condo inventory.</p>
       </div>
-      <p>Arborlake condos currently trade between $650,000 and $875,000, roughly $680&ndash;$820 per square foot depending on interior condition and position within the community &mdash; lake-facing, updated units command a clear premium over original-condition units near the parking areas.</p>
-      <p>Well-priced, updated listings here typically go under contract within 2&ndash;3 weeks. That pace reflects a buyer pool that's often already decided on Arborlake specifically, rather than comparison-shopping broadly across Carmel Valley's condo inventory.</p>
+      <div class="market-stats">
+        <div class="ms-row"><div class="ms-label">Price Range</div><div class="ms-value">$650K&ndash;$875K</div></div>
+        <div class="ms-row"><div class="ms-label">Est. Price / Sq Ft</div><div class="ms-value">~$680&ndash;$820</div></div>
+        <div class="ms-row"><div class="ms-label">Typical Days on Market</div><div class="ms-value">14&ndash;21 days</div></div>
+        <div class="ms-row"><div class="ms-label">Mello-Roos</div><div class="ms-value">None</div></div>
+      </div>
     </div>
-    <div class="market-stats">
-      <div class="ms-row"><div class="ms-label">Price Range</div><div class="ms-value">$650K&ndash;$875K</div></div>
-      <div class="ms-row"><div class="ms-label">Est. Price / Sq Ft</div><div class="ms-value">~$680&ndash;$820</div></div>
-      <div class="ms-row"><div class="ms-label">Typical Days on Market</div><div class="ms-value">14&ndash;21 days</div></div>
-      <div class="ms-row"><div class="ms-label">Mello-Roos</div><div class="ms-value">None</div></div>
-    </div>
+    </details>
   </div>
 </section>
 
@@ -978,7 +1023,7 @@
 </section>
 
 <!-- ============ FAQ (accordion) ============ -->
-<section class="faq">
+<section class="faq" id="faq">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Good to Know</div>
