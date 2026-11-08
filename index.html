@@ -304,6 +304,15 @@
   document.addEventListener('keydown', function(e){
     if (e.key === 'Escape') closeFullscreen();
   });
+
+  function maybeExpandFromHash(){
+    if (window.location.hash === '#expand-map') {
+      openFullscreen();
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+  maybeExpandFromHash();
+  window.addEventListener('hashchange', maybeExpandFromHash);
 })();
 </script>
 
@@ -559,7 +568,7 @@
           <li><a href="/carmel-valley-condos-for-sale/">Condos for Sale</a></li>
           <li><a href="/carmel-valley-townhomes-for-sale/">Townhomes for Sale</a></li>
           <li><a href="/carmel-valley-condo-market-report/">Market Report</a></li>
-          <li><a href="/home-value/">Home Value</a></li>
+          <li><a href="/home-value/#valuation-form">Home Value</a></li>
           <li><a href="/buyer-guide/">Buyer Guide</a></li>
           <li><a href="/seller-guide/">Seller Guide</a></li>
           <li><a href="/about/">About Sez</a></li>
@@ -671,10 +680,10 @@
 
 <!-- ============ MOBILE BOTTOM NAV ============ -->
 <nav class="bottom-nav" aria-label="Mobile primary navigation">
-  <a href="/" class="active"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Find Homes</a>
+  <a href="/#expand-map" class="active"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Find Homes</a>
   <a href="/carmel-valley-condo-market-report/"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="6" y="11" width="3" height="7"/><rect x="11" y="7" width="3" height="11"/><rect x="16" y="3" width="3" height="15"/></svg>Market Report</a>
   <a href="/#communities"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>Communities</a>
-  <a href="/home-value/"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1.4 1.2-2 2.5-2s2.5.7 2.5 1.8c0 2.4-5 1.6-5 4 0 1.1 1.1 1.8 2.5 1.8s2.5-.6 2.5-2"/></svg>Home Value</a>
+  <a href="/home-value/#valuation-form"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1.4 1.2-2 2.5-2s2.5.7 2.5 1.8c0 2.4-5 1.6-5 4 0 1.1 1.1 1.8 2.5 1.8s2.5-.6 2.5-2"/></svg>Home Value</a>
 </nav>
 </body>
 </html>
