@@ -113,6 +113,20 @@
   .hoa-compare td:last-child{text-align:right;font-variant-numeric:tabular-nums}
   @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:36px}}
 
+  /* recently sold */
+  .sold{background:var(--paper)}
+  .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);font-size:14.5px}
+  .sold-table th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7a8389;font-weight:600;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--paper)}
+  .sold-table td{padding:16px 18px;border-bottom:1px solid var(--mist);color:#444d56}
+  .sold-table tr:last-child td{border-bottom:none}
+  .sold-table td.price{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink)}
+  .sold-table td.addr{color:var(--ink)}
+  .sold-table .num{font-variant-numeric:tabular-nums;color:#7a8389}
+  .sold-note{text-align:center;font-size:13px;color:#7a8389;margin-top:16px}
+  .sold-state{text-align:center;padding:40px;color:#7a8389;font-size:15px;background:var(--white);border:1px solid var(--line)}
+  .sold-table-wrap{overflow-x:auto}
+  @media(max-width:700px){.sold-table th:nth-child(4),.sold-table td:nth-child(4){display:none}}
+
   /* who it's for */
   .fit{background:var(--paper)}
   .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
@@ -317,6 +331,80 @@
     </div>
   </div>
 </section>
+
+<!-- ============ RECENTLY SOLD ============ -->
+<section class="sold">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Sold Data</div>
+      <h2>Recently Sold at Arborlake</h2>
+      <p>Actual closed sales, pulled live from MLS sold records.</p>
+    </div>
+    <div id="soldWrap">
+      <div class="sold-state" id="soldState">Loading recent sales&hellip;</div>
+    </div>
+    <p class="sold-note" id="soldNote" style="display:none"></p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community=Arborlake&zip=92130&limit=50';
+  var wrap = document.getElementById('soldWrap');
+  var state = document.getElementById('soldState');
+  var note = document.getElementById('soldNote');
+
+  function money(n){
+    if (n == null) return '&mdash;';
+    return '$' + Number(n).toLocaleString('en-US');
+  }
+  function dateStr(d){
+    if (!d) return '&mdash;';
+    var parts = d.split('-');
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(parts[1],10)-1] + ' ' + parts[2] + ', ' + parts[0];
+  }
+
+  fetch(API)
+    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function(data){
+      if (!data || !data.ok || !Array.isArray(data.rows) || data.rows.length === 0){
+        state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
+        return;
+      }
+      var seen = {};
+      var rows = [];
+      data.rows.forEach(function(r){
+        if (seen[r.group_key]) return;
+        seen[r.group_key] = true;
+        rows.push(r);
+      });
+      rows.sort(function(a,b){ return new Date(b.close_date) - new Date(a.close_date); });
+      rows = rows.slice(0, 8);
+
+      var html = '<div class="sold-table-wrap"><table class="sold-table"><thead><tr>' +
+        '<th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th>' +
+        '</tr></thead><tbody>';
+      rows.forEach(function(r){
+        html += '<tr>' +
+          '<td class="addr">' + (r.address || '&mdash;') + '</td>' +
+          '<td class="num">' + (r.beds_total != null ? r.beds_total : '&mdash;') + ' / ' + (r.baths_total != null ? r.baths_total : '&mdash;') + '</td>' +
+          '<td class="num">' + (r.living_area != null ? r.living_area.toLocaleString('en-US') : '&mdash;') + '</td>' +
+          '<td class="num">' + (r.year_built || '&mdash;') + '</td>' +
+          '<td class="price">' + money(r.close_price) + '</td>' +
+          '<td class="num">' + dateStr(r.close_date) + '</td>' +
+          '</tr>';
+      });
+      html += '</tbody></table></div>';
+      wrap.innerHTML = html;
+      note.style.display = 'block';
+      note.textContent = 'Based on ' + rows.length + ' most recent closed sales at Arborlake. Information deemed reliable but not guaranteed.';
+    })
+    .catch(function(){
+      state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
+    });
+})();
+</script>
 
 <!-- ============ WHO IT'S FOR ============ -->
 <section class="fit">
