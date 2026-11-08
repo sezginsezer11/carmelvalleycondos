@@ -118,6 +118,25 @@
   .hoa-bar-row.this-community .hoa-bar-fill{background:var(--gold)}
   @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:36px}}
 
+  /* market snapshot (stat boxes + by-year table) */
+  .snapshot{background:var(--white)}
+  .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:48px}
+  .stat-box{background:var(--paper);padding:34px 26px;text-align:center}
+  .stat-box .num{font-family:var(--serif);font-size:clamp(26px,3.2vw,34px);font-weight:600;color:var(--lake-dark)}
+  .stat-box .lbl{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#7a8389;margin-top:8px;font-weight:500}
+  .stat-box .sub{font-size:12.5px;color:#9aa1a6;margin-top:4px}
+  @media(max-width:760px){.stat-grid{grid-template-columns:1fr}}
+  .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line)}
+  table.hist{width:100%;border-collapse:collapse;min-width:560px}
+  table.hist th,table.hist td{padding:16px 18px;text-align:left;font-size:14.5px;border-bottom:1px solid var(--line)}
+  table.hist th{background:var(--lake-dark);color:var(--white);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+  table.hist td{color:#3a4249}
+  table.hist tr:last-child td{border-bottom:none}
+  table.hist tr.ytd td{background:rgba(201,169,110,.08);font-weight:500}
+  table.hist td.num{font-family:var(--serif);font-weight:600;color:var(--lake-dark);font-size:16px}
+  .snap-note{text-align:center;font-size:13px;color:#7a8389;margin-top:16px}
+  .snap-state{text-align:center;padding:40px;color:#7a8389;font-size:15px;background:var(--paper);border:1px solid var(--line)}
+
   /* recently sold */
   .sold{background:var(--paper)}
   .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);font-size:14.5px}
@@ -370,6 +389,21 @@
   </div>
 </section>
 
+<!-- ============ PRICE HISTORY BY YEAR ============ -->
+<section class="snapshot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Sold Data &middot; Last 5 Years</div>
+      <h2>Arborlake Price History by Year</h2>
+      <p>Closed Arborlake sales, pulled live from MLS sold records and grouped by year.</p>
+    </div>
+    <div id="snapWrap">
+      <div class="snap-state" id="snapState">Loading sales history&hellip;</div>
+    </div>
+    <p class="snap-note" id="snapNote" style="display:none"></p>
+  </div>
+</section>
+
 <!-- ============ RECENTLY SOLD ============ -->
 <section class="sold">
   <div class="wrap">
@@ -576,6 +610,97 @@
     .catch(function(){
       state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
     });
+})();
+</script>
+
+<script>
+(function(){
+  var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community=Arborlake&zip=92130&limit=200';
+  var wrap = document.getElementById('snapWrap');
+  var state = document.getElementById('snapState');
+  var note = document.getElementById('snapNote');
+
+  function fail(){
+    state.textContent = 'Price history isn’t available right now — call or email for current market data.';
+  }
+  function median(arr){
+    var s = arr.slice().sort(function(a,b){ return a-b; });
+    var mid = Math.floor(s.length / 2);
+    return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
+  }
+  function avg(arr){
+    return arr.reduce(function(a,b){ return a+b; }, 0) / arr.length;
+  }
+
+  fetch(API)
+    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function(data){
+      if (!data || !data.ok || !Array.isArray(data.rows) || data.rows.length === 0){ fail(); return; }
+
+      var seen = {};
+      var rows = [];
+      data.rows.forEach(function(r){
+        if (seen[r.group_key]) return;
+        seen[r.group_key] = true;
+        if (r.close_price == null || !r.close_date) return;
+        rows.push(r);
+      });
+
+      var now = new Date();
+      var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
+      rows = rows.filter(function(r){ return new Date(r.close_date) >= start; });
+      if (rows.length === 0){ fail(); return; }
+
+      var byYear = {};
+      rows.forEach(function(r){
+        var yr = new Date(r.close_date).getFullYear();
+        (byYear[yr] = byYear[yr] || []).push(r);
+      });
+      var years = Object.keys(byYear).map(Number).sort(function(a,b){ return b-a; });
+      var currentYear = now.getFullYear();
+
+      // headline stats from the most recent year with data
+      var headYear = years[0];
+      var headRows = byYear[headYear];
+      var headPrices = headRows.map(function(r){ return r.close_price; });
+      var headPsf = headRows.filter(function(r){ return r.living_area; })
+        .map(function(r){ return r.close_price / r.living_area; });
+      var headDom = headRows.filter(function(r){ return r.days_on_market != null; })
+        .map(function(r){ return r.days_on_market; });
+
+      var statsHtml = '<div class="stat-grid">' +
+        '<div class="stat-box"><div class="num">$' + Math.round(median(headPrices)).toLocaleString('en-US') + '</div>' +
+        '<div class="lbl">Median Sale Price</div><div class="sub">' + headRows.length + ' sales &middot; ' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div></div>' +
+        '<div class="stat-box"><div class="num">$' + (headPsf.length ? Math.round(avg(headPsf)) : '&mdash;') + '</div>' +
+        '<div class="lbl">Price / Sq Ft</div><div class="sub">Average, ' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div></div>' +
+        '<div class="stat-box"><div class="num">' + (headDom.length ? Math.round(avg(headDom)) : '&mdash;') + ' days</div>' +
+        '<div class="lbl">Days on Market</div><div class="sub">Average, ' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div></div>' +
+        '</div>';
+
+      var tableHtml = '<div class="hist-table-wrap"><table class="hist"><thead><tr>' +
+        '<th>Year</th><th>Homes Sold</th><th>Median Sale Price</th><th>Avg. Price / Sq Ft</th><th>Avg. Days on Market</th>' +
+        '</tr></thead><tbody>';
+      years.forEach(function(yr){
+        var yrRows = byYear[yr];
+        var yrPrices = yrRows.map(function(r){ return r.close_price; });
+        var yrPsf = yrRows.filter(function(r){ return r.living_area; }).map(function(r){ return r.close_price / r.living_area; });
+        var yrDom = yrRows.filter(function(r){ return r.days_on_market != null; }).map(function(r){ return r.days_on_market; });
+        var label = yr === currentYear ? yr + ' (YTD)' : yr;
+        tableHtml += '<tr' + (yr === currentYear ? ' class="ytd"' : '') + '>' +
+          '<td>' + label + '</td>' +
+          '<td>' + yrRows.length + '</td>' +
+          '<td class="num">$' + Math.round(median(yrPrices)).toLocaleString('en-US') + '</td>' +
+          '<td>' + (yrPsf.length ? '$' + Math.round(avg(yrPsf)) : '&mdash;') + '</td>' +
+          '<td>' + (yrDom.length ? Math.round(avg(yrDom)) : '&mdash;') + '</td>' +
+          '</tr>';
+      });
+      tableHtml += '</tbody></table></div>';
+
+      wrap.innerHTML = statsHtml + tableHtml;
+      note.style.display = 'block';
+      note.textContent = 'Based on ' + rows.length + ' closed sales at Arborlake over the last 5 years. Information deemed reliable but not guaranteed.';
+    })
+    .catch(fail);
 })();
 </script>
 
