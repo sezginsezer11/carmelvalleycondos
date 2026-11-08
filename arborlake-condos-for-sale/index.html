@@ -207,12 +207,10 @@
 
   /* price trend chart */
   .trend{background:var(--white)}
-  .trend-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px}
+  .trend-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px}
   .trend-chart{width:100%;height:auto;display:block}
   .trend-chart .gridline{stroke:var(--line);stroke-width:1}
-  .trend-chart .axis-label{font-family:var(--sans);font-size:11px;fill:var(--label)}
-  .trend-chart .pt-1bed{stroke:var(--white);stroke-width:1.5}
-  .trend-chart .pt-2bed{stroke:var(--white);stroke-width:1.5}
+  .trend-chart .axis-label{font-family:var(--mono);font-size:10.5px;fill:var(--label)}
   .trend-legend{display:flex;gap:24px;justify-content:center;margin-top:18px;flex-wrap:wrap}
   .trend-legend span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#333a42}
   .trend-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
@@ -753,6 +751,13 @@
         return { x0: x0, x1: x1, y0: slope*x0+intercept, y1: slope*x1+intercept };
       }
 
+      // bold connecting line through every sale in chronological order
+      var chrono = rows.slice().sort(function(a,b){ return new Date(a.close_date) - new Date(b.close_date); });
+      var linePts = chrono.map(function(r){
+        return xScale(new Date(r.close_date)).toFixed(1) + ',' + yScale(r.close_price).toFixed(1);
+      });
+      svg += '<polyline points="' + linePts.join(' ') + '" fill="none" stroke="#101418" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
+
       beds.forEach(function(b){
         var pts = rows.filter(function(r){ return r.beds_total === b; })
           .map(function(r){ return { x: new Date(r.close_date).getTime(), y: r.close_price }; });
@@ -760,7 +765,7 @@
         if (!fit) return;
         svg += '<line x1="' + xScale(fit.x0).toFixed(1) + '" y1="' + yScale(fit.y0).toFixed(1) +
           '" x2="' + xScale(fit.x1).toFixed(1) + '" y2="' + yScale(fit.y1).toFixed(1) +
-          '" stroke="' + colorOf[b] + '" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>';
+          '" stroke="' + colorOf[b] + '" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.4"/>';
       });
 
       rows.forEach(function(r){
@@ -768,7 +773,7 @@
         var cy = yScale(r.close_price);
         var cls = r.beds_total === 1 ? 'pt-1bed' : (r.beds_total === 2 ? 'pt-2bed' : '');
         var fill = colorOf[r.beds_total];
-        svg += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="6" style="fill:' + fill + ';stroke:#fff;stroke-width:1.5" ' + (cls ? 'class="' + cls + '"' : '') + '>' +
+        svg += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="5" style="fill:' + fill + ';fill-opacity:.8" ' + (cls ? 'class="' + cls + '"' : '') + '>' +
           '<title>' + (r.address || '') + ' — ' + r.beds_total + ' bed — $' + Number(r.close_price).toLocaleString('en-US') + ' — ' + r.close_date + '</title>' +
           '</circle>';
       });
