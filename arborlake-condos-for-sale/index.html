@@ -77,6 +77,7 @@
   /* quick facts (moved under hero, before listings) */
   .facts{background:var(--lake);color:var(--white);padding:50px 0}
   .facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px 24px;text-align:center}
+  .fact svg{width:22px;height:22px;color:var(--gold);margin:0 auto 10px;display:block;opacity:.85}
   .fact .num{font-family:var(--serif);font-size:clamp(22px,2.8vw,32px);font-weight:600;color:var(--gold);line-height:1.1}
   .fact .lbl{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;margin-top:10px;color:rgba(255,255,255,.8)}
   @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr);gap:32px 20px}}
@@ -106,11 +107,15 @@
   .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#444d56;font-size:15.5px;border-bottom:1px solid var(--mist)}
   .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--gold);font-weight:600}
   .hoa-compare{background:var(--paper);border:1px solid var(--line);padding:30px 32px}
-  .hoa-compare h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:18px}
-  .hoa-compare table{width:100%;border-collapse:collapse;font-size:14.5px}
-  .hoa-compare td{padding:9px 0;border-bottom:1px solid var(--line);color:#444d56}
-  .hoa-compare tr.this-community td{font-weight:600;color:var(--ink)}
-  .hoa-compare td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .hoa-compare h3{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:22px}
+  .hoa-bar-row{margin-bottom:16px}
+  .hoa-bar-row:last-of-type{margin-bottom:0}
+  .hoa-bar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:#444d56;margin-bottom:6px}
+  .hoa-bar-label .amt{font-variant-numeric:tabular-nums;font-weight:600}
+  .hoa-bar-track{background:var(--mist);height:10px;border-radius:5px;overflow:hidden}
+  .hoa-bar-fill{height:100%;border-radius:5px;background:var(--line)}
+  .hoa-bar-row.this-community .hoa-bar-label{font-weight:700;color:var(--ink)}
+  .hoa-bar-row.this-community .hoa-bar-fill{background:var(--gold)}
   @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:36px}}
 
   /* recently sold */
@@ -130,7 +135,9 @@
   /* who it's for */
   .fit{background:var(--paper)}
   .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-  .fit-card{background:var(--white);border:1px solid var(--line);padding:32px 28px}
+  .fit-card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--gold);padding:32px 28px;transition:transform .25s ease,box-shadow .25s ease}
+  .fit-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(38,56,68,.1)}
+  .fit-card svg{width:30px;height:30px;color:var(--gold);margin-bottom:18px}
   .fit-card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:12px;color:var(--ink)}
   .fit-card p{font-size:15px;color:#55606a}
   @media(max-width:860px){.fit-grid{grid-template-columns:1fr}}
@@ -162,7 +169,8 @@
   /* compare communities */
   .compare{background:var(--white)}
   .cmp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-  .cmp-card{border:1px solid var(--line);padding:28px}
+  .cmp-card{border:1px solid var(--line);border-top:3px solid var(--lake);padding:28px;background:var(--paper);transition:transform .25s ease,box-shadow .25s ease}
+  .cmp-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(38,56,68,.1)}
   .cmp-card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:10px}
   .cmp-card p{font-size:14.5px;color:#55606a;margin-bottom:16px}
   .cmp-card a{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
@@ -259,14 +267,14 @@
 <!-- ============ QUICK FACTS ============ -->
 <section class="facts">
   <div class="wrap facts-grid">
-    <div class="fact"><div class="num">$650K&ndash;$875K</div><div class="lbl">Price Range</div></div>
-    <div class="fact"><div class="num">~$408/mo</div><div class="lbl">HOA Fee</div></div>
-    <div class="fact"><div class="num">742&ndash;1,145</div><div class="lbl">Square Feet</div></div>
-    <div class="fact"><div class="num">190</div><div class="lbl">Total Units</div></div>
-    <div class="fact"><div class="num">1986&ndash;1989</div><div class="lbl">Built</div></div>
-    <div class="fact"><div class="num">None</div><div class="lbl">Mello-Roos</div></div>
-    <div class="fact"><div class="num">~1.07%</div><div class="lbl">Tax Rate</div></div>
-    <div class="fact"><div class="num">14&ndash;21 Days</div><div class="lbl">Typical Time to Sell</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div class="num">$650K&ndash;$875K</div><div class="lbl">Price Range</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg><div class="num">~$408/mo</div><div class="lbl">HOA Fee</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h7v7H3zM14 14h7v7h-7z"/><path d="M10 3 21 14"/></svg><div class="num">742&ndash;1,145</div><div class="lbl">Square Feet</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l6-4 6 4v12"/><path d="M15 21V11l6 2v8z"/></svg><div class="num">190</div><div class="lbl">Total Units</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="1"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><div class="num">1986&ndash;1989</div><div class="lbl">Built</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 8l8 8"/></svg><div class="num">None</div><div class="lbl">Mello-Roos</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M18 6 6 18"/></svg><div class="num">~1.07%</div><div class="lbl">Tax Rate</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg><div class="num">14&ndash;21 Days</div><div class="lbl">Typical Time to Sell</div></div>
   </div>
 </section>
 
@@ -319,14 +327,27 @@
       </ul>
       <div class="hoa-compare">
         <h3>How Arborlake's HOA Compares</h3>
-        <table>
-          <tr class="this-community"><td>Arborlake</td><td>~$408/mo</td></tr>
-          <tr><td>The Lakes</td><td>~$397/mo</td></tr>
-          <tr><td>Carmel Pointe</td><td>~$350/mo</td></tr>
-          <tr><td>Del Mar Villas</td><td>~$340/mo</td></tr>
-          <tr><td>Martinique</td><td>~$335/mo</td></tr>
-        </table>
-        <p style="margin-top:16px;font-size:13.5px;color:#7a8389">Arborlake also carries no Mello-Roos, with a property tax rate around 1.07% &mdash; the HOA gap mostly reflects the lake and fountain system the other communities don't have.</p>
+        <div class="hoa-bar-row this-community">
+          <div class="hoa-bar-label"><span>Arborlake</span><span class="amt">~$408/mo</span></div>
+          <div class="hoa-bar-track"><div class="hoa-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="hoa-bar-row">
+          <div class="hoa-bar-label"><span>The Lakes</span><span class="amt">~$397/mo</span></div>
+          <div class="hoa-bar-track"><div class="hoa-bar-fill" style="width:97%"></div></div>
+        </div>
+        <div class="hoa-bar-row">
+          <div class="hoa-bar-label"><span>Carmel Pointe</span><span class="amt">~$350/mo</span></div>
+          <div class="hoa-bar-track"><div class="hoa-bar-fill" style="width:86%"></div></div>
+        </div>
+        <div class="hoa-bar-row">
+          <div class="hoa-bar-label"><span>Del Mar Villas</span><span class="amt">~$340/mo</span></div>
+          <div class="hoa-bar-track"><div class="hoa-bar-fill" style="width:83%"></div></div>
+        </div>
+        <div class="hoa-bar-row">
+          <div class="hoa-bar-label"><span>Martinique</span><span class="amt">~$335/mo</span></div>
+          <div class="hoa-bar-track"><div class="hoa-bar-fill" style="width:82%"></div></div>
+        </div>
+        <p style="margin-top:20px;font-size:13.5px;color:#7a8389">Arborlake also carries no Mello-Roos, with a property tax rate around 1.07% &mdash; the HOA gap mostly reflects the lake and fountain system the other communities don't have.</p>
       </div>
     </div>
   </div>
@@ -415,14 +436,17 @@
     </div>
     <div class="fit-grid">
       <div class="fit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c4 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 2-7 6-11z"/></svg>
         <h3>Setting-Driven Buyers</h3>
         <p>If what you see outside your window and hear on a morning walk matters to your decision, Arborlake's lake and mature landscaping aren't matched by comparable 92130 condo communities at this price point.</p>
       </div>
       <div class="fit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-8h6v8"/></svg>
         <h3>Downsizers</h3>
         <p>A pool, spa, and sauna a short walk away, zero personal yard maintenance, and grounds that are at their most established right now &mdash; four decades in.</p>
       </div>
       <div class="fit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
         <h3>Investors</h3>
         <p>Rental demand here is tied to the community's character, and the no-Mello-Roos structure keeps carrying costs predictable for long-term holds.</p>
       </div>
