@@ -751,12 +751,16 @@
         return { x0: x0, x1: x1, y0: slope*x0+intercept, y1: slope*x1+intercept };
       }
 
-      // bold connecting line through every sale in chronological order
-      var chrono = rows.slice().sort(function(a,b){ return new Date(a.close_date) - new Date(b.close_date); });
-      var linePts = chrono.map(function(r){
-        return xScale(new Date(r.close_date)).toFixed(1) + ',' + yScale(r.close_price).toFixed(1);
+      // a separate connecting line per bedroom count, each in its own color
+      beds.forEach(function(b){
+        var chrono = rows.filter(function(r){ return r.beds_total === b; })
+          .sort(function(a,b2){ return new Date(a.close_date) - new Date(b2.close_date); });
+        if (chrono.length < 2) return;
+        var linePts = chrono.map(function(r){
+          return xScale(new Date(r.close_date)).toFixed(1) + ',' + yScale(r.close_price).toFixed(1);
+        });
+        svg += '<polyline points="' + linePts.join(' ') + '" fill="none" stroke="' + colorOf[b] + '" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"/>';
       });
-      svg += '<polyline points="' + linePts.join(' ') + '" fill="none" stroke="#101418" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>';
 
       beds.forEach(function(b){
         var pts = rows.filter(function(r){ return r.beds_total === b; })
