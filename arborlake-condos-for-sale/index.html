@@ -231,6 +231,8 @@
 
   /* location & schools */
   .location{background:var(--paper)}
+  .loc-map{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px}
+  .loc-map iframe{width:100%;height:380px;border:0;display:block}
   .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
   .loc-list{list-style:none}
   .loc-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:#333a42}
@@ -882,6 +884,16 @@
 
 <!-- ============ LOCATION & SCHOOLS ============ -->
 <section class="location" id="location">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Location</div>
+      <h2>Where Arborlake Sits in Carmel Valley</h2>
+      <p>Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.</p>
+    </div>
+    <div class="loc-map">
+      <iframe src="https://www.google.com/maps?q=32.9446313,-117.233088&z=15&output=embed" title="Map showing the Arborlake community location in Carmel Valley, San Diego" loading="lazy"></iframe>
+    </div>
+  </div>
   <div class="wrap loc-grid">
     <div>
       <div class="sec-head" style="text-align:left;margin:0 0 32px">
