@@ -152,14 +152,14 @@
   .hoa-covers{list-style:none}
   .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#333a42;font-size:15px;border-bottom:1px solid var(--line)}
   .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--lake);font-weight:700}
-  .hoa-compare{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px}
-  .hoa-compare h3{font-size:17px;font-weight:700;margin-bottom:20px}
-  .hoa-bar-row{margin-bottom:16px}
+  .hoa-compare{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px}
+  .hoa-compare h3{font-size:13px;letter-spacing:.03em;text-transform:uppercase;font-weight:700;color:var(--label);margin-bottom:18px}
+  .hoa-bar-row{margin-bottom:14px}
   .hoa-bar-row:last-of-type{margin-bottom:0}
-  .hoa-bar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:#333a42;margin-bottom:6px}
-  .hoa-bar-label .amt{font-variant-numeric:tabular-nums;font-weight:700}
-  .hoa-bar-track{background:var(--mist);height:8px;border-radius:4px;overflow:hidden}
-  .hoa-bar-fill{height:100%;border-radius:4px;background:var(--line)}
+  .hoa-bar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;color:#333a42;margin-bottom:6px}
+  .hoa-bar-label .amt{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:600}
+  .hoa-bar-track{background:var(--mist);height:6px;border-radius:3px;overflow:hidden}
+  .hoa-bar-fill{height:100%;border-radius:3px;background:var(--line)}
   .hoa-bar-row.this-community .hoa-bar-label{font-weight:700;color:var(--ink)}
   .hoa-bar-row.this-community .hoa-bar-fill{background:var(--lake)}
   @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:28px}}
@@ -193,16 +193,16 @@
 
   /* recently sold */
   .sold{background:var(--paper)}
-  .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:14px;font-size:14px}
-  .sold-table th{text-align:left;font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:700;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--paper)}
-  .sold-table td{padding:16px 18px;border-bottom:1px solid var(--line);color:#333a42}
+  .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:10px;font-size:13.5px}
+  .sold-table th{text-align:left;font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:600;padding:12px 16px;border-bottom:1px solid var(--line)}
+  .sold-table td{padding:13px 16px;border-bottom:1px solid var(--mist);color:#333a42}
   .sold-table tr:last-child td{border-bottom:none}
-  .sold-table td.price{font-family:var(--mono);font-weight:600;font-size:15.5px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sold-table td.price{font-family:var(--mono);font-weight:600;font-size:14.5px;color:var(--ink);font-variant-numeric:tabular-nums}
   .sold-table td.addr{color:var(--ink);font-weight:500}
   .sold-table .num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--label)}
   .sold-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .sold-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--white);border:1px solid var(--line);border-radius:14px}
-  .sold-table-wrap{overflow-x:auto;border-radius:14px}
+  .sold-table-wrap{overflow-x:auto;border-radius:10px}
   @media(max-width:700px){.sold-table th:nth-child(4),.sold-table td:nth-child(4){display:none}}
 
   /* price trend chart */
@@ -977,8 +977,6 @@
       <h2>Five Years of Arborlake Home Sales: What the Data Actually Shows</h2>
       <p>Arborlake is a small community &mdash; 190 units, a handful of closings a year &mdash; which means its sales data rewards a closer read than a headline number ever could.</p>
     </div>
-    <details class="collapsible">
-    <summary><span class="cl-closed">Read the Full Analysis <span class="cl-icon">+</span></span><span class="cl-open">Hide the Full Analysis <span class="cl-icon">&ndash;</span></span></summary>
     <div class="analysis-body">
 
       <h3>The Big Picture: 22 Sales, Six Years</h3>
@@ -1046,7 +1044,6 @@
       <p><strong>If you're selling:</strong> the data says pricing discipline matters more now than it did in the slower 2023&ndash;2024 stretch. The fastest, highest sales in this dataset &mdash; several under 10 days on market in 2025 &mdash; went to units priced right and presented well from day one, not to units that started high and chased the market down.</p>
 
     </div>
-    </details>
   </div>
 </section>
 
