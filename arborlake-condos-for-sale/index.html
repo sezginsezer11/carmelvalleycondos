@@ -132,6 +132,22 @@
   .sold-table-wrap{overflow-x:auto}
   @media(max-width:700px){.sold-table th:nth-child(4),.sold-table td:nth-child(4){display:none}}
 
+  /* price trend chart */
+  .trend{background:var(--white)}
+  .trend-card{background:var(--paper);border:1px solid var(--line);padding:32px}
+  .trend-chart{width:100%;height:auto;display:block}
+  .trend-chart .gridline{stroke:var(--line);stroke-width:1}
+  .trend-chart .axis-label{font-family:var(--sans);font-size:11px;fill:#7a8389}
+  .trend-chart .pt-1bed{fill:var(--gold);stroke:var(--white);stroke-width:1.5}
+  .trend-chart .pt-2bed{fill:var(--lake);stroke:var(--white);stroke-width:1.5}
+  .trend-legend{display:flex;gap:28px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+  .trend-legend span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#444d56}
+  .trend-legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
+  .trend-legend i.b1{background:var(--gold)}
+  .trend-legend i.b2{background:var(--lake)}
+  .trend-note{text-align:center;font-size:13px;color:#7a8389;margin-top:18px}
+  .trend-state{text-align:center;padding:40px;color:#7a8389;font-size:15px}
+
   /* who it's for */
   .fit{background:var(--paper)}
   .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
@@ -367,6 +383,116 @@
     <p class="sold-note" id="soldNote" style="display:none"></p>
   </div>
 </section>
+
+<!-- ============ PRICE TRENDS BY BEDROOM COUNT ============ -->
+<section class="trend">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">5-Year Market History</div>
+      <h2>Arborlake Price Trends by Bedroom Count</h2>
+      <p>Every individual closed sale at Arborlake over the last 5 years, plotted by close date and price &mdash; pulled live from MLS sold records.</p>
+    </div>
+    <div class="trend-card">
+      <div id="trendWrap">
+        <div class="trend-state" id="trendState">Loading 5-year sales history&hellip;</div>
+      </div>
+      <div class="trend-legend" id="trendLegend"></div>
+    </div>
+    <p class="trend-note" id="trendNote" style="display:none"></p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community=Arborlake&zip=92130&limit=200';
+  var wrap = document.getElementById('trendWrap');
+  var state = document.getElementById('trendState');
+  var legendEl = document.getElementById('trendLegend');
+  var note = document.getElementById('trendNote');
+  var palette = ['#c9a96e', '#344a57', '#a35d4f', '#5a8f7b', '#8a6fae'];
+
+  function fail(){
+    state.textContent = '5-year price history isn’t available right now — call or email for current market data.';
+  }
+
+  fetch(API)
+    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function(data){
+      if (!data || !data.ok || !Array.isArray(data.rows) || data.rows.length === 0){ fail(); return; }
+
+      var seen = {};
+      var rows = [];
+      data.rows.forEach(function(r){
+        if (seen[r.group_key]) return;
+        seen[r.group_key] = true;
+        if (r.close_price == null || !r.close_date || r.beds_total == null) return;
+        rows.push(r);
+      });
+
+      var now = new Date();
+      var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
+      rows = rows.filter(function(r){ return new Date(r.close_date) >= start; });
+
+      if (rows.length === 0){ fail(); return; }
+
+      var beds = [];
+      rows.forEach(function(r){ if (beds.indexOf(r.beds_total) === -1) beds.push(r.beds_total); });
+      beds.sort(function(a,b){ return a-b; });
+      var colorOf = {};
+      beds.forEach(function(b, i){ colorOf[b] = palette[i % palette.length]; });
+
+      var prices = rows.map(function(r){ return r.close_price; });
+      var minP = Math.min.apply(null, prices), maxP = Math.max.apply(null, prices);
+      var padP = (maxP - minP) * 0.12 || maxP * 0.1;
+      minP = Math.max(0, minP - padP);
+      maxP = maxP + padP;
+
+      var W = 800, H = 400, left = 78, right = 780, top = 24, bottom = 356;
+      function xScale(d){ return left + (d - start) / (now - start) * (right - left); }
+      function yScale(p){ return bottom - (p - minP) / (maxP - minP) * (bottom - top); }
+
+      var svg = '<svg class="trend-chart" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">';
+
+      var steps = 4;
+      for (var i = 0; i <= steps; i++){
+        var p = minP + (maxP - minP) * (i / steps);
+        var y = yScale(p);
+        svg += '<line class="gridline" x1="' + left + '" y1="' + y + '" x2="' + right + '" y2="' + y + '"/>';
+        svg += '<text class="axis-label" x="' + (left - 10) + '" y="' + (y + 4) + '" text-anchor="end">$' + Math.round(p/1000) + 'K</text>';
+      }
+
+      for (var yr = start.getFullYear(); yr <= now.getFullYear(); yr++){
+        var yd = new Date(yr, 0, 1);
+        if (yd < start || yd > now) continue;
+        var x = xScale(yd);
+        svg += '<text class="axis-label" x="' + x + '" y="' + (bottom + 22) + '" text-anchor="middle">' + yr + '</text>';
+      }
+
+      rows.forEach(function(r){
+        var cx = xScale(new Date(r.close_date));
+        var cy = yScale(r.close_price);
+        var cls = r.beds_total === 1 ? 'pt-1bed' : (r.beds_total === 2 ? 'pt-2bed' : '');
+        var fill = colorOf[r.beds_total];
+        svg += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="6" style="fill:' + fill + ';stroke:#fff;stroke-width:1.5" ' + (cls ? 'class="' + cls + '"' : '') + '>' +
+          '<title>' + (r.address || '') + ' — ' + r.beds_total + ' bed — $' + Number(r.close_price).toLocaleString('en-US') + ' — ' + r.close_date + '</title>' +
+          '</circle>';
+      });
+
+      svg += '</svg>';
+      wrap.innerHTML = svg;
+
+      var legendHtml = '';
+      beds.forEach(function(b){
+        legendHtml += '<span><i style="background:' + colorOf[b] + '"></i>' + b + ' Bed</span>';
+      });
+      legendEl.innerHTML = legendHtml;
+
+      note.style.display = 'block';
+      note.textContent = 'Based on ' + rows.length + ' closed sales at Arborlake over the last 5 years. Information deemed reliable but not guaranteed.';
+    })
+    .catch(fail);
+})();
+</script>
 
 <script>
 (function(){
