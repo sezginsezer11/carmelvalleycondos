@@ -468,6 +468,31 @@
         svg += '<text class="axis-label" x="' + x + '" y="' + (bottom + 22) + '" text-anchor="middle">' + yr + '</text>';
       }
 
+      function linreg(points){
+        // least-squares fit; x = ms timestamp, y = price
+        var n = points.length;
+        if (n < 2) return null;
+        var sumX=0, sumY=0, sumXY=0, sumXX=0;
+        points.forEach(function(p){ sumX+=p.x; sumY+=p.y; sumXY+=p.x*p.y; sumXX+=p.x*p.x; });
+        var denom = n*sumXX - sumX*sumX;
+        if (denom === 0) return null;
+        var slope = (n*sumXY - sumX*sumY) / denom;
+        var intercept = (sumY - slope*sumX) / n;
+        var xs = points.map(function(p){ return p.x; });
+        var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs);
+        return { x0: x0, x1: x1, y0: slope*x0+intercept, y1: slope*x1+intercept };
+      }
+
+      beds.forEach(function(b){
+        var pts = rows.filter(function(r){ return r.beds_total === b; })
+          .map(function(r){ return { x: new Date(r.close_date).getTime(), y: r.close_price }; });
+        var fit = linreg(pts);
+        if (!fit) return;
+        svg += '<line x1="' + xScale(fit.x0).toFixed(1) + '" y1="' + yScale(fit.y0).toFixed(1) +
+          '" x2="' + xScale(fit.x1).toFixed(1) + '" y2="' + yScale(fit.y1).toFixed(1) +
+          '" stroke="' + colorOf[b] + '" stroke-width="2" stroke-dasharray="5,4" opacity="0.75"/>';
+      });
+
       rows.forEach(function(r){
         var cx = xScale(new Date(r.close_date));
         var cy = yScale(r.close_price);
