@@ -87,6 +87,20 @@
   .fact .lbl{font-size:11.5px;letter-spacing:.03em;text-transform:uppercase;margin-top:6px;color:var(--label);font-weight:600}
   @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(4n+1){border-left:1px solid var(--line)}.fact:nth-child(2n+1){border-left:none}}
 
+  /* price & size at a glance (dashboard panel) */
+  .glance{background:var(--white)}
+  .glance-lede{max-width:680px;margin:0 auto 32px;font-size:15.5px;color:#333a42;text-align:center}
+  .glance-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  @media(max-width:700px){.glance-grid{grid-template-columns:1fr}}
+  .glance-card{background:var(--white);padding:26px 26px 22px}
+  .glance-card .gc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
+  .glance-card .gc-head h3{font-size:16px;font-weight:800;color:var(--ink)}
+  .glance-card .gc-head .gc-count{font-family:var(--mono);font-size:12px;color:var(--label)}
+  .glance-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-top:1px solid var(--mist)}
+  .glance-row:first-of-type{border-top:none}
+  .glance-row .gr-lbl{font-size:13px;color:var(--label)}
+  .glance-row .gr-val{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+
   /* realscout listings CTA / map */
   .listings{background:var(--white)}
   .rs-embed{width:100%;background:var(--white);position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -394,6 +408,23 @@
   </div>
 </nav>
 
+<!-- ============ LIVE LISTINGS (inline embed) — first thing on the page ============ -->
+<section class="listings" id="listings">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Current Availability</div>
+      <h2>Arborlake Homes for Sale</h2>
+      <p>Live Arborlake listings, updated directly from the MLS.</p>
+    </div>
+    <div class="rs-embed" style="max-width:1100px;margin:0 auto">
+      <iframe src="https://www.carmelvalley.com/map_search/results/jls/#/?sort_latest=True&amp;type=res&amp;type=con&amp;type=twn&amp;polygon=32.94542%2C-117.23438%3B32.94554%2C-117.23425%3B32.94553%2C-117.23166%3B32.94511%2C-117.23162%3B32.94426%2C-117.23181%3B32.94386%2C-117.2321%3B32.94339%2C-117.23296%3B32.94391%2C-117.23368%3B32.94404%2C-117.23426%3B32.94457%2C-117.2344%3B32.94542%2C-117.23438&amp;search_status=ACTIVE&amp;search_status=PENDING&amp;page=1&amp;per_page=20" title="Arborlake Homes for Sale Listings"></iframe>
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://www.carmelvalley.com/map_search/results/jls/#/?sort_latest=True&amp;type=res&amp;type=con&amp;type=twn&amp;polygon=32.94542%2C-117.23438%3B32.94554%2C-117.23425%3B32.94553%2C-117.23166%3B32.94511%2C-117.23162%3B32.94426%2C-117.23181%3B32.94386%2C-117.2321%3B32.94339%2C-117.23296%3B32.94391%2C-117.23368%3B32.94404%2C-117.23426%3B32.94457%2C-117.2344%3B32.94542%2C-117.23438&amp;search_status=ACTIVE&amp;search_status=PENDING&amp;page=1&amp;per_page=20" class="btn" style="background:var(--lake);color:var(--white)!important;border-color:var(--lake)" target="_blank" rel="noopener">View All Available Homes &rarr;</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero" style="padding:0">
   <div class="page-hero-inner">
@@ -401,7 +432,7 @@
     <h1>Arborlake Condos for Sale</h1>
     <p>A 190-unit lake-and-waterfall condo community in southwest Carmel Valley &mdash; guided by an agent who has specialized in this community for more than 11 years.</p>
     <div class="hero-ctas">
-      <a href="#listings" class="btn btn-solid">View Listings</a>
+      <a href="#glance" class="btn btn-solid">See Prices by Size</a>
       <a href="tel:+18584366585" class="btn btn-outline">Talk to Sez</a>
     </div>
   </div>
@@ -421,10 +452,37 @@
   </div>
 </section>
 
+<!-- ============ PRICE & SIZE AT A GLANCE ============ -->
+<section class="glance" id="glance">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The First Question</div>
+      <h2>What a 1-Bed vs. a 2-Bed Actually Costs</h2>
+    </div>
+    <p class="glance-lede">Arborlake only comes in two sizes &mdash; there's no 3-bedroom floor plan in this community. Here's what each has sold for over the last 5 years, straight from closed MLS sales.</p>
+    <div class="glance-grid">
+      <div class="glance-card">
+        <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count">6 sales &middot; 5 yrs</div></div>
+        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val">742&ndash;896 sq ft</span></div>
+        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val">$631,750</span></div>
+        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val">$578K&ndash;$815K</span></div>
+      </div>
+      <div class="glance-card">
+        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count">16 sales &middot; 5 yrs</div></div>
+        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val">964&ndash;1,145 sq ft</span></div>
+        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val">$800,000</span></div>
+        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val">$675K&ndash;$900K</span></div>
+      </div>
+    </div>
+    <p class="glance-lede" style="margin-top:22px;margin-bottom:0">Two-bedrooms have sold nearly three times as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the <a href="#analysis">full 5-year breakdown</a> below for how that gap has moved year to year.</p>
+  </div>
+</section>
+
 <!-- ============ JUMP NAV ============ -->
 <nav class="jump-nav" aria-label="Section navigation">
   <div class="wrap">
     <ul>
+      <li><a href="#glance">By Size</a></li>
       <li><a href="#listings">Listings</a></li>
       <li><a href="#cost">Cost</a></li>
       <li><a href="#sold-data">Sold Data</a></li>
@@ -434,23 +492,6 @@
     </ul>
   </div>
 </nav>
-
-<!-- ============ LIVE LISTINGS (inline embed) ============ -->
-<section class="listings" id="listings" style="background:var(--paper)">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Current Availability</div>
-      <h2>Arborlake Homes for Sale</h2>
-      <p>Live Arborlake listings, updated directly from the MLS.</p>
-    </div>
-    <div class="rs-embed" style="max-width:1100px;margin:0 auto">
-      <iframe src="https://www.carmelvalley.com/map_search/results/jls/#/?sort_latest=True&amp;type=res&amp;type=con&amp;type=twn&amp;polygon=32.94542%2C-117.23438%3B32.94554%2C-117.23425%3B32.94553%2C-117.23166%3B32.94511%2C-117.23162%3B32.94426%2C-117.23181%3B32.94386%2C-117.2321%3B32.94339%2C-117.23296%3B32.94391%2C-117.23368%3B32.94404%2C-117.23426%3B32.94457%2C-117.2344%3B32.94542%2C-117.23438&amp;search_status=ACTIVE&amp;search_status=PENDING&amp;page=1&amp;per_page=20" title="Arborlake Homes for Sale Listings"></iframe>
-    </div>
-    <div style="text-align:center;margin-top:32px">
-      <a href="https://www.carmelvalley.com/map_search/results/jls/#/?sort_latest=True&amp;type=res&amp;type=con&amp;type=twn&amp;polygon=32.94542%2C-117.23438%3B32.94554%2C-117.23425%3B32.94553%2C-117.23166%3B32.94511%2C-117.23162%3B32.94426%2C-117.23181%3B32.94386%2C-117.2321%3B32.94339%2C-117.23296%3B32.94391%2C-117.23368%3B32.94404%2C-117.23426%3B32.94457%2C-117.2344%3B32.94542%2C-117.23438&amp;search_status=ACTIVE&amp;search_status=PENDING&amp;page=1&amp;per_page=20" class="btn" style="background:var(--lake);color:var(--white)!important;border-color:var(--lake)" target="_blank" rel="noopener">View All Available Homes &rarr;</a>
-    </div>
-  </div>
-</section>
 
 <!-- ============ INTRO ============ -->
 <section class="intro">
