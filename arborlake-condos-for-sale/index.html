@@ -292,17 +292,6 @@
   .school-list .s-district{font-size:13.5px;color:var(--label);margin-top:2px}
   @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:28px}}
 
-  /* market snapshot */
-  .market{background:var(--white)}
-  .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .market-copy p{color:var(--label);margin-bottom:16px}
-  .market-stats{background:var(--paper);border:1px solid var(--line);border-radius:14px}
-  .market-stats .ms-row{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid var(--line)}
-  .market-stats .ms-row:last-child{border-bottom:none}
-  .market-stats .ms-label{font-size:13px;color:var(--label);font-weight:500}
-  .market-stats .ms-value{font-size:18px;font-weight:800;color:var(--ink)}
-  @media(max-width:860px){.market-grid{grid-template-columns:1fr;gap:28px}}
-
   /* compare communities */
   .compare{background:var(--paper)}
   .cmp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -452,8 +441,6 @@
     .loc-list li{padding:9px 0;font-size:13.5px}
     .school-list li{padding:11px 0}
 
-    .market-grid{gap:12px}
-    .market-stats .ms-row{padding:12px 16px}
 
     .cmp-grid{gap:9px}
     .cmp-card{padding:18px}
@@ -824,6 +811,39 @@
 <script>
 (function(){
   var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community=Arborlake&zip=92130&limit=200';
+
+  function median(arr){
+    var s = arr.slice().sort(function(a,b){ return a-b; });
+    var mid = Math.floor(s.length / 2);
+    return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
+  }
+  function avg(arr){
+    return arr.reduce(function(a,b){ return a+b; }, 0) / arr.length;
+  }
+
+  fetch(API)
+    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function(data){
+      var allRows = [];
+      if (data && data.ok && Array.isArray(data.rows)){
+        var seen = {};
+        data.rows.forEach(function(r){
+          if (seen[r.group_key]) return;
+          seen[r.group_key] = true;
+          allRows.push(r);
+        });
+      }
+      renderSnapshot(allRows);
+      renderSoldTable(allRows);
+      renderTrendChart(allRows);
+    })
+    .catch(function(){
+      renderSnapshot([]);
+      renderSoldTable([]);
+      renderTrendChart([]);
+    });
+
+  function renderTrendChart(allRows){
   var wrap = document.getElementById('trendWrap');
   var state = document.getElementById('trendState');
   var legendEl = document.getElementById('trendLegend');
@@ -834,19 +854,9 @@
     state.textContent = '5-year price history isn’t available right now — call or email for current market data.';
   }
 
-  fetch(API)
-    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
-    .then(function(data){
-      if (!data || !data.ok || !Array.isArray(data.rows) || data.rows.length === 0){ fail(); return; }
-
-      var seen = {};
-      var rows = [];
-      data.rows.forEach(function(r){
-        if (seen[r.group_key]) return;
-        seen[r.group_key] = true;
-        if (r.close_price == null || !r.close_date || r.beds_total == null) return;
-        rows.push(r);
-      });
+  (function(){
+      var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date && r.beds_total != null; });
+      if (rows.length === 0){ fail(); return; }
 
       var now = new Date();
       var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
@@ -944,14 +954,10 @@
 
       note.style.display = 'block';
       note.textContent = 'Based on ' + rows.length + ' closed sales at Arborlake over the last 5 years. Information deemed reliable but not guaranteed.';
-    })
-    .catch(fail);
-})();
-</script>
+  })();
+  }
 
-<script>
-(function(){
-  var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community=Arborlake&zip=92130&limit=50';
+  function renderSoldTable(allRows){
   var wrap = document.getElementById('soldWrap');
   var state = document.getElementById('soldState');
   var note = document.getElementById('soldNote');
@@ -971,21 +977,12 @@
     return a.replace(/\bRoad\b/g, 'Rd').replace(/\bStreet\b/g, 'St').replace(/\bAvenue\b/g, 'Ave');
   }
 
-  fetch(API)
-    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
-    .then(function(data){
-      if (!data || !data.ok || !Array.isArray(data.rows) || data.rows.length === 0){
+  (function(){
+      if (allRows.length === 0){
         state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
         return;
       }
-      var seen = {};
-      var rows = [];
-      data.rows.forEach(function(r){
-        if (seen[r.group_key]) return;
-        seen[r.group_key] = true;
-        rows.push(r);
-      });
-      rows.sort(function(a,b){ return new Date(b.close_date) - new Date(a.close_date); });
+      var rows = allRows.slice().sort(function(a,b){ return new Date(b.close_date) - new Date(a.close_date); });
 
       function tableFor(groupRows){
         var html = '<div class="sold-table-wrap"><table class="sold-table"><thead><tr>' +
@@ -1027,16 +1024,10 @@
       note.style.display = 'block';
       var shown = oneBed.length + twoBed.length + other.length;
       note.textContent = 'Based on the ' + shown + ' most recent closed sales at Arborlake, grouped by bedroom count. Information deemed reliable but not guaranteed.';
-    })
-    .catch(function(){
-      state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
-    });
-})();
-</script>
+  })();
+  }
 
-<script>
-(function(){
-  var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community=Arborlake&zip=92130&limit=200';
+  function renderSnapshot(allRows){
   var wrap = document.getElementById('snapWrap');
   var state = document.getElementById('snapState');
   var note = document.getElementById('snapNote');
@@ -1044,28 +1035,10 @@
   function fail(){
     state.textContent = 'Price history isn’t available right now — call or email for current market data.';
   }
-  function median(arr){
-    var s = arr.slice().sort(function(a,b){ return a-b; });
-    var mid = Math.floor(s.length / 2);
-    return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
-  }
-  function avg(arr){
-    return arr.reduce(function(a,b){ return a+b; }, 0) / arr.length;
-  }
 
-  fetch(API)
-    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
-    .then(function(data){
-      if (!data || !data.ok || !Array.isArray(data.rows) || data.rows.length === 0){ fail(); return; }
-
-      var seen = {};
-      var rows = [];
-      data.rows.forEach(function(r){
-        if (seen[r.group_key]) return;
-        seen[r.group_key] = true;
-        if (r.close_price == null || !r.close_date) return;
-        rows.push(r);
-      });
+  (function(){
+      var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date; });
+      if (rows.length === 0){ fail(); return; }
 
       var now = new Date();
       var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
@@ -1157,8 +1130,8 @@
       wrap.innerHTML = statsHtml + tableHtml;
       note.style.display = 'block';
       note.textContent = 'Based on ' + rows.length + ' closed sales at Arborlake over the last 5 years. Information deemed reliable but not guaranteed.';
-    })
-    .catch(fail);
+  })();
+  }
 })();
 </script>
 
@@ -1344,30 +1317,6 @@
 </section>
 
 <!-- ============ MARKET SNAPSHOT ============ -->
-<section class="market">
-  <div class="wrap">
-    <div class="sec-head" style="text-align:left;margin:0 0 24px">
-      <div class="eyebrow">Market Intelligence</div>
-      <h2 style="font-size:clamp(26px,3.5vw,34px)">Arborlake's Market, Right Now</h2>
-    </div>
-    <details class="collapsible">
-    <summary><span class="cl-closed">Show Details <span class="cl-icon">+</span></span><span class="cl-open">Hide Details <span class="cl-icon">–</span></span></summary>
-    <div class="market-grid">
-      <div class="market-copy">
-        <p>Arborlake condos currently trade between $650,000 and $875,000, roughly $680&ndash;$820 per square foot depending on interior condition and position within the community &mdash; lake-facing, updated units command a clear premium over original-condition units near the parking areas.</p>
-        <p>Well-priced, updated listings here typically go under contract within 2&ndash;3 weeks. That pace reflects a buyer pool that's often already decided on Arborlake specifically, rather than comparison-shopping broadly across Carmel Valley's condo inventory.</p>
-      </div>
-      <div class="market-stats">
-        <div class="ms-row"><div class="ms-label">Price Range</div><div class="ms-value">$650K&ndash;$875K</div></div>
-        <div class="ms-row"><div class="ms-label">Est. Price / Sq Ft</div><div class="ms-value">~$680&ndash;$820</div></div>
-        <div class="ms-row"><div class="ms-label">Typical Days on Market</div><div class="ms-value">14&ndash;21 days</div></div>
-        <div class="ms-row"><div class="ms-label">Mello-Roos</div><div class="ms-value">None</div></div>
-      </div>
-    </div>
-    </details>
-  </div>
-</section>
-
 <!-- ============ COMPARE TO OTHER COMMUNITIES ============ -->
 <section class="compare" id="similar">
   <div class="wrap">
