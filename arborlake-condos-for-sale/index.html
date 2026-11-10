@@ -203,6 +203,11 @@
   .sold-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .sold-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--white);border:1px solid var(--line);border-radius:14px}
   .sold-table-wrap{overflow-x:auto;border-radius:10px}
+  .sold-group{margin-bottom:28px}
+  .sold-group:last-of-type{margin-bottom:0}
+  .sold-group-head{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+  .sold-group-head h3{font-size:16px;font-weight:800;color:var(--ink)}
+  .sold-group-head .cnt{font-family:var(--mono);font-size:12px;color:var(--label)}
   @media(max-width:700px){.sold-table th:nth-child(4),.sold-table td:nth-child(4){display:none}}
 
   /* price trend chart */
@@ -952,25 +957,47 @@
         rows.push(r);
       });
       rows.sort(function(a,b){ return new Date(b.close_date) - new Date(a.close_date); });
-      rows = rows.slice(0, 8);
 
-      var html = '<div class="sold-table-wrap"><table class="sold-table"><thead><tr>' +
-        '<th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th>' +
-        '</tr></thead><tbody>';
-      rows.forEach(function(r){
-        html += '<tr>' +
-          '<td class="addr">' + (shortAddr(r.address) || '&mdash;') + '</td>' +
-          '<td class="num">' + (r.beds_total != null ? r.beds_total : '&mdash;') + ' / ' + (r.baths_total != null ? r.baths_total : '&mdash;') + '</td>' +
-          '<td class="num">' + (r.living_area != null ? r.living_area.toLocaleString('en-US') : '&mdash;') + '</td>' +
-          '<td class="num">' + (r.year_built || '&mdash;') + '</td>' +
-          '<td class="price">' + money(r.close_price) + '</td>' +
-          '<td class="num">' + dateStr(r.close_date) + '</td>' +
-          '</tr>';
-      });
-      html += '</tbody></table></div>';
+      function tableFor(groupRows){
+        var html = '<div class="sold-table-wrap"><table class="sold-table"><thead><tr>' +
+          '<th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th>' +
+          '</tr></thead><tbody>';
+        groupRows.forEach(function(r){
+          html += '<tr>' +
+            '<td class="addr">' + (shortAddr(r.address) || '&mdash;') + '</td>' +
+            '<td class="num">' + (r.beds_total != null ? r.beds_total : '&mdash;') + ' / ' + (r.baths_total != null ? r.baths_total : '&mdash;') + '</td>' +
+            '<td class="num">' + (r.living_area != null ? r.living_area.toLocaleString('en-US') : '&mdash;') + '</td>' +
+            '<td class="num">' + (r.year_built || '&mdash;') + '</td>' +
+            '<td class="price">' + money(r.close_price) + '</td>' +
+            '<td class="num">' + dateStr(r.close_date) + '</td>' +
+            '</tr>';
+        });
+        html += '</tbody></table></div>';
+        return html;
+      }
+
+      var oneBed = rows.filter(function(r){ return r.beds_total === 1; }).slice(0, 8);
+      var twoBed = rows.filter(function(r){ return r.beds_total === 2; }).slice(0, 8);
+      var other = rows.filter(function(r){ return r.beds_total !== 1 && r.beds_total !== 2; }).slice(0, 4);
+
+      var html = '';
+      if (oneBed.length){
+        html += '<div class="sold-group"><div class="sold-group-head"><h3>1 Bedroom</h3><span class="cnt">' + oneBed.length + ' most recent</span></div>' + tableFor(oneBed) + '</div>';
+      }
+      if (twoBed.length){
+        html += '<div class="sold-group"><div class="sold-group-head"><h3>2 Bedroom</h3><span class="cnt">' + twoBed.length + ' most recent</span></div>' + tableFor(twoBed) + '</div>';
+      }
+      if (other.length){
+        html += '<div class="sold-group"><div class="sold-group-head"><h3>Other</h3><span class="cnt">' + other.length + ' most recent</span></div>' + tableFor(other) + '</div>';
+      }
+      if (!html){
+        state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
+        return;
+      }
       wrap.innerHTML = html;
       note.style.display = 'block';
-      note.textContent = 'Based on ' + rows.length + ' most recent closed sales at Arborlake. Information deemed reliable but not guaranteed.';
+      var shown = oneBed.length + twoBed.length + other.length;
+      note.textContent = 'Based on the ' + shown + ' most recent closed sales at Arborlake, grouped by bedroom count. Information deemed reliable but not guaranteed.';
     })
     .catch(function(){
       state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
