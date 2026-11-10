@@ -778,7 +778,7 @@
     <div class="sec-head">
       <div class="eyebrow">Sold Data &middot; Last 5 Years</div>
       <h2>Arborlake Price History by Year</h2>
-      <p>Closed Arborlake sales, pulled live from MLS sold records and grouped by year.</p>
+      <p>Closed Arborlake sales, pulled live from MLS sold records. The stats below reflect the trailing 12 months; the table breaks the same data out by calendar year.</p>
     </div>
     <div id="snapWrap">
       <div class="snap-state" id="snapState">Loading sales history&hellip;</div>
@@ -1080,47 +1080,54 @@
       var years = Object.keys(byYear).map(Number).sort(function(a,b){ return b-a; });
       var currentYear = now.getFullYear();
 
-      // headline stats from the most recent year with data
-      var headYear = years[0];
-      var headRows = byYear[headYear];
+      // headline stats: a true trailing-12-months window, not partial-year YTD
+      var t12Start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      t12Start.setFullYear(t12Start.getFullYear() - 1);
+      var prev12Start = new Date(t12Start);
+      prev12Start.setFullYear(prev12Start.getFullYear() - 1);
+
+      var headRows = rows.filter(function(r){ return new Date(r.close_date) >= t12Start; });
+      var prevRows = rows.filter(function(r){
+        var d = new Date(r.close_date);
+        return d >= prev12Start && d < t12Start;
+      });
+
       var headPrices = headRows.map(function(r){ return r.close_price; });
       var headPsf = headRows.filter(function(r){ return r.living_area; })
         .map(function(r){ return r.close_price / r.living_area; });
       var headDom = headRows.filter(function(r){ return r.days_on_market != null; })
         .map(function(r){ return r.days_on_market; });
 
-      var prevYear = years[1];
-      var prevRows = prevYear ? byYear[prevYear] : null;
-      var prevMedian = prevRows ? median(prevRows.map(function(r){ return r.close_price; })) : null;
-      var prevPsfRows = prevRows ? prevRows.filter(function(r){ return r.living_area; }) : [];
+      var prevMedian = prevRows.length ? median(prevRows.map(function(r){ return r.close_price; })) : null;
+      var prevPsfRows = prevRows.filter(function(r){ return r.living_area; });
       var prevPsf = prevPsfRows.length ? avg(prevPsfRows.map(function(r){ return r.close_price / r.living_area; })) : null;
 
       function pctDelta(curr, prev){
         if (prev == null || !prev) return null;
         return ((curr - prev) / prev) * 100;
       }
-      function deltaHtml(curr, prev, yearLabel){
+      function deltaHtml(curr, prev){
         var pct = pctDelta(curr, prev);
-        if (pct == null) return '<div class="delta">' + yearLabel + '</div>';
+        if (pct == null) return '<div class="delta">Trailing 12 months</div>';
         var arrow = pct >= 0 ? '&#9650; ' : '&#9660; ';
         var cls = pct >= 0 ? ' up' : '';
-        return '<div class="delta' + cls + '">' + arrow + Math.abs(pct).toFixed(1) + '% vs ' + prevYear + '</div>';
+        return '<div class="delta' + cls + '">' + arrow + Math.abs(pct).toFixed(1) + '% vs prior 12 mo</div>';
       }
 
-      var headMedian = median(headPrices);
+      var headMedian = headPrices.length ? median(headPrices) : null;
       var headPsfAvg = headPsf.length ? avg(headPsf) : null;
 
       var statsHtml = '<div class="stat-grid">' +
-        '<div class="stat-box"><div class="num">$' + Math.round(headMedian).toLocaleString('en-US') + '</div>' +
-        deltaHtml(headMedian, prevMedian, headYear + (headYear === currentYear ? ' YTD' : '')) +
+        '<div class="stat-box"><div class="num">' + (headMedian != null ? '$' + Math.round(headMedian).toLocaleString('en-US') : '&mdash;') + '</div>' +
+        deltaHtml(headMedian, prevMedian) +
         '<div class="lbl">Median Sale Price</div></div>' +
         '<div class="stat-box"><div class="num">$' + (headPsfAvg != null ? Math.round(headPsfAvg) : '&mdash;') + '</div>' +
-        deltaHtml(headPsfAvg, prevPsf, headYear + (headYear === currentYear ? ' YTD' : '')) +
+        deltaHtml(headPsfAvg, prevPsf) +
         '<div class="lbl">Price / Sq Ft</div></div>' +
         '<div class="stat-box"><div class="num">' + (headDom.length ? Math.round(avg(headDom)) : '&mdash;') + ' days</div>' +
-        '<div class="delta">Average</div><div class="lbl">Days on Market</div></div>' +
+        '<div class="delta">Trailing 12 months</div><div class="lbl">Days on Market</div></div>' +
         '<div class="stat-box"><div class="num">' + headRows.length + '</div>' +
-        '<div class="delta">' + headYear + (headYear === currentYear ? ' YTD' : '') + '</div><div class="lbl">Homes Sold</div></div>' +
+        '<div class="delta">Trailing 12 months</div><div class="lbl">Homes Sold</div></div>' +
         '</div>';
 
       var maxYrMedian = Math.max.apply(null, years.map(function(yr){ return median(byYear[yr].map(function(r){ return r.close_price; })); }));
