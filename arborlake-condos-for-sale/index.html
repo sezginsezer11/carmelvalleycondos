@@ -1585,9 +1585,11 @@
   var lastY = window.scrollY;
   var ticking = false;
   var hidden = false;
+  var upAccum = 0;
   function setHidden(h){
     if (h === hidden) return;
     hidden = h;
+    upAccum = 0;
     var mh = masthead.getBoundingClientRect().height;
     masthead.style.transform = h ? 'translateY(-' + mh + 'px)' : '';
     if (jumpNav) {
@@ -1599,7 +1601,13 @@
     var y = Math.max(0, window.scrollY);
     var delta = y - lastY;
     if (Math.abs(delta) > 6) {
-      setHidden(delta > 0 && y > 60);
+      if (delta > 0) {
+        upAccum = 0;
+        if (y > 60) setHidden(true);
+      } else if (hidden) {
+        upAccum += -delta;
+        if (upAccum >= window.innerHeight * 0.25) setHidden(false);
+      }
       lastY = y;
     }
     ticking = false;
