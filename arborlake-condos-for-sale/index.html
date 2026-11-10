@@ -365,7 +365,11 @@
   /* ============ MOBILE SPACING TIGHTENING ============ */
   @media(max-width:760px){
     .wrap{padding:0 18px}
-    .masthead .wrap{padding:12px 18px}
+    .masthead{transition:transform .25s ease}
+    .masthead .wrap{padding:8px 18px}
+    .brand .b-name{font-size:13px}
+    .brand .b-sub{font-size:8px;margin-top:2px}
+    .menu-toggle{font-size:17px}
     .breadcrumb .wrap{padding:9px 18px}
     section{padding:22px 0}
     .sec-head{margin:0 auto 12px}
@@ -396,7 +400,9 @@
     .listings-title{font-size:16px}
     .rs-embed iframe{height:460px}
 
-    .jump-nav a{padding:11px 11px;font-size:13px}
+    .jump-nav{top:42px;transition:transform .25s ease}
+    .jump-nav a{padding:8px 8px;font-size:9.5px}
+    section[id]{scroll-margin-top:85px}
 
     .collapsible summary{margin-bottom:12px;padding:8px 14px}
 
@@ -1544,5 +1550,38 @@
   <a href="/#communities" class="active"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>Communities</a>
   <a href="/home-value/#valuation-form"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1.4 1.2-2 2.5-2s2.5.7 2.5 1.8c0 2.4-5 1.6-5 4 0 1.1 1.1 1.8 2.5 1.8s2.5-.6 2.5-2"/></svg>Home Value</a>
 </nav>
+
+<script>
+(function(){
+  if (window.innerWidth > 760) return;
+  var masthead = document.querySelector('.masthead');
+  var jumpNav = document.querySelector('.jump-nav');
+  var lastY = window.scrollY;
+  var ticking = false;
+  var hidden = false;
+  function setHidden(h){
+    if (h === hidden) return;
+    hidden = h;
+    var mh = masthead.getBoundingClientRect().height;
+    masthead.style.transform = h ? 'translateY(-' + mh + 'px)' : '';
+    if (jumpNav) {
+      var jh = jumpNav.getBoundingClientRect().height;
+      jumpNav.style.transform = h ? 'translateY(-' + (mh + jh) + 'px)' : '';
+    }
+  }
+  function onScroll(){
+    var y = Math.max(0, window.scrollY);
+    var delta = y - lastY;
+    if (Math.abs(delta) > 6) {
+      setHidden(delta > 0 && y > 60);
+      lastY = y;
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!ticking) { requestAnimationFrame(onScroll); ticking = true; }
+  }, {passive:true});
+})();
+</script>
 </body>
 </html>
