@@ -45,12 +45,17 @@
   .nav-cta{background:var(--lake);color:var(--white)!important;padding:10px 18px!important;font-weight:600;border-radius:7px;margin-left:6px}
   .nav-cta:hover{background:var(--lake-dark)!important}
   .menu-toggle{display:none;background:none;border:none;cursor:pointer;font-size:24px;color:var(--ink)}
+  .nav-group{display:none}
   @media(max-width:1080px){
-    .primary-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--line);box-shadow:0 16px 32px rgba(16,20,24,.1)}
+    .primary-nav{display:none;position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 65px);overflow-y:auto;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--line);box-shadow:0 16px 32px rgba(16,20,24,.1)}
     .primary-nav.open{display:flex}
     .primary-nav a{width:100%;padding:16px 28px;border-bottom:1px solid var(--mist);border-radius:0}
     .nav-cta{margin:16px 28px;text-align:center;border-radius:7px}
     .menu-toggle{display:block}
+    .nav-group{display:block;width:100%}
+    .nav-group-label{padding:16px 28px 6px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--label);font-weight:700;background:var(--paper)}
+    .nav-item{display:flex!important;align-items:center;gap:14px}
+    .nav-item svg{width:19px;height:19px;color:var(--lake);flex:none;stroke:currentColor;fill:none;stroke-width:1.6}
   }
 
   /* ============ BREADCRUMB ============ */
@@ -524,6 +529,18 @@
       <a href="/seller-guide/">Sellers</a>
       <a href="/about/">About</a>
       <a href="/contact/" class="nav-cta">Contact</a>
+      <div class="nav-group">
+        <div class="nav-group-label">Finances</div>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h2M8 15h2M12 15h2M16 15h2"/></svg>Discover your buying power</a>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 14l6 6M15 14l-6 6"/></svg>Compare mortgage rates</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Prepare to Move with Sez Sezer</div>
+        <a href="/home-value/" class="nav-item"><svg viewBox="0 0 24 24"><path d="M20.59 13.41 11 3.83a2 2 0 0 0-2.83 0L3.83 8.17a2 2 0 0 0 0 2.83L13.41 20.6a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.83z"/><circle cx="8.5" cy="8.5" r="1.2"/></svg>Sell my home</a>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Why sell with Sez Sezer</a>
+        <a href="tel:+18584366585" class="nav-item"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.6 2.7-6.5 6-6.5s6 2.9 6 6.5"/><path d="M16.5 9.5 19 7l2.5 2.5M19 7v7"/></svg>Connect with a Carmel Valley real estate agent</a>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V11l4-3 4 3v9M13 20v-6l6-3v9"/></svg>Real estate news</a>
+      </div>
     </nav>
   </div>
 </header>
