@@ -1004,7 +1004,6 @@
 
       var oneBed = rows.filter(function(r){ return r.beds_total === 1; }).slice(0, 8);
       var twoBed = rows.filter(function(r){ return r.beds_total === 2; }).slice(0, 8);
-      var other = rows.filter(function(r){ return r.beds_total !== 1 && r.beds_total !== 2; }).slice(0, 4);
 
       var html = '';
       if (oneBed.length){
@@ -1013,16 +1012,13 @@
       if (twoBed.length){
         html += '<div class="sold-group"><div class="sold-group-head"><h3>2 Bedroom</h3><span class="cnt">' + twoBed.length + ' most recent</span></div>' + tableFor(twoBed) + '</div>';
       }
-      if (other.length){
-        html += '<div class="sold-group"><div class="sold-group-head"><h3>Other</h3><span class="cnt">' + other.length + ' most recent</span></div>' + tableFor(other) + '</div>';
-      }
       if (!html){
         state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
         return;
       }
       wrap.innerHTML = html;
       note.style.display = 'block';
-      var shown = oneBed.length + twoBed.length + other.length;
+      var shown = oneBed.length + twoBed.length;
       note.textContent = 'Based on the ' + shown + ' most recent closed sales at Arborlake, grouped by bedroom count. Information deemed reliable but not guaranteed.';
   })();
   }
