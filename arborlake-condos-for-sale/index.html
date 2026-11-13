@@ -153,7 +153,7 @@
   @media(max-width:860px){.intro-grid{grid-template-columns:1fr;gap:32px}}
 
   /* HOA cost breakdown */
-  .hoa{background:var(--paper)}
+  .hoa{background:var(--white)}
   .hoa-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
   .hoa-covers{list-style:none}
   .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#333a42;font-size:15px;border-bottom:1px solid var(--line)}
@@ -229,7 +229,7 @@
   .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
 
   /* prices & sales tabs */
-  .prices{background:var(--white)}
+  .prices{background:var(--paper)}
   .data-stamp{font-size:12.5px;color:var(--label);margin-top:8px}
   .glance .data-stamp{text-align:center;margin-top:10px}
   .px-tabs{display:flex;gap:4px;max-width:760px;margin:0 auto 22px;padding:4px;background:var(--mist);border-radius:12px;overflow-x:auto;scrollbar-width:none}
@@ -264,7 +264,26 @@
   .analysis-pull{border-left:3px solid var(--lake);padding:4px 0 4px 20px;margin:22px 0;font-size:17px;font-weight:600;color:var(--ink);line-height:1.4}
 
   /* who it's for */
-  .fit{background:var(--paper)}
+  .fit{background:var(--white)}
+  .fit-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .fit-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .fit-col-h{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:800;color:var(--ink);margin-bottom:6px}
+  .fit-col-h::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--up) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat}
+  .fit-col.weigh .fit-col-h::before{background:#b7791f url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M12 6v8M12 18v.5'/%3E%3C/svg%3E") center/14px no-repeat}
+  .fit-list{list-style:none;margin:0;padding:0}
+  .fit-list li{padding:12px 0;border-top:1px solid var(--line)}
+  .fit-list li:first-child{border-top:0}
+  .fit-list h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:3px}
+  .fit-list p{font-size:14px;color:var(--label);margin:0;line-height:1.55}
+  @media(max-width:860px){.fit-cols{grid-template-columns:1fr;gap:12px}}
+  .life-sub{text-align:center;font-size:clamp(19px,2.4vw,24px);font-weight:800;letter-spacing:-.01em;margin:56px 0 22px}
+  .cost-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px}
+  .cost-tile{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .cost-tile .ct-val{font-family:var(--mono);font-size:24px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+  .cost-tile .ct-val span{font-size:14px;color:var(--label);font-weight:500}
+  .cost-tile .ct-lbl{font-size:13px;font-weight:700;color:var(--ink);margin-top:4px}
+  .cost-tile .ct-note{font-size:12.5px;color:var(--label);margin-top:2px}
+  .hoa-h{font-size:13px;letter-spacing:.03em;text-transform:uppercase;font-weight:700;color:var(--label);margin-bottom:8px}
   .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .fit-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
   .fit-card svg{width:26px;height:26px;color:var(--lake);margin-bottom:16px}
@@ -484,6 +503,17 @@
 
     .loc-map{margin-bottom:20px}
     .loc-map-canvas{height:280px}
+    .life-sub{margin:28px 0 12px}
+    .cost-tiles{grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:18px}
+    .cost-tile{padding:11px 10px}
+    .cost-tile .ct-val{font-size:17px}
+    .cost-tile .ct-val span{font-size:11px}
+    .cost-tile .ct-lbl{font-size:11.5px}
+    .cost-tile .ct-note{display:none}
+    .fit-col{padding:14px 16px}
+    .fit-list li{padding:9px 0}
+    .fit-list h4{font-size:14px}
+    .fit-list p{font-size:13px}
     .px-tabs{margin-bottom:16px;gap:2px;padding:3px}
     .px-tabs button{flex:1 1 0;padding:8px 4px;font-size:13px}
     .px-intro{font-size:13px;margin-bottom:14px}
@@ -684,22 +714,24 @@
 <nav class="jump-nav" aria-label="Section navigation">
   <div class="wrap">
     <ul>
-      <li><a href="#glance">By Size</a></li>
       <li><a href="#listings">Listings</a></li>
+      <li><a href="#glance">By Size</a></li>
+      <li><a href="#life">Lifestyle</a></li>
+      <li><a href="#location">Location</a></li>
       <li><a href="#cost">Cost</a></li>
       <li><a href="#sold-data">Sold Data</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#analysis">Analysis</a></li>
+      <li><a href="#fit">Fit</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ============ INTRO ============ -->
-<section class="intro">
-  <div class="wrap intro-grid">
+<!-- ============ LIFE AT ARBORLAKE (about + what stands out) ============ -->
+<section class="intro" id="life">
+  <div class="wrap">
+    <div class="intro-grid">
     <div class="intro-copy">
-      <h2>About the Arborlake Community</h2>
+      <h2>Life at Arborlake</h2>
       <p class="lead">Arborlake is a 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes between 1986 and 1989. What sets it apart from newer 92130 developments is its water-feature setting: a central lake, multiple fountains and waterfalls, and paved walking paths winding through greenbelts that have had nearly four decades to mature.</p>
       <p>Units range from 742-square-foot one-bedrooms to 1,145-square-foot two-bedroom layouts, with most patios and balconies oriented toward the lake and landscaping rather than the parking areas. The community sits just north of Carmel View Road and Camino Mira Del Mar &mdash; one of the earliest-developed pockets of Carmel Valley, so the surrounding sidewalks, parks, and street trees are as established as the grounds themselves.</p>
       <p>As a Keller Williams Realty agent who has worked this community for 11+ years, I can walk you through current HOA details, recent comparable sales, and what to look for in a specific building or floor plan. You can also browse the full <a href="https://www.carmelvalley.com/condos-for-sale/arborlake/">Arborlake community profile</a> on my Carmel Valley Homes search site.</p>
@@ -707,16 +739,8 @@
     <div class="intro-img">
       <img src="/images/arborlake-condos-carmel-valley.jpg" alt="Arborlake condominium community in Carmel Valley, San Diego">
     </div>
-  </div>
-</section>
-
-<!-- ============ WHAT STANDS OUT ============ -->
-<section class="standout" style="background:var(--white)">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">What Stands Out</div>
-      <h2>Three Reasons Buyers Choose Arborlake</h2>
     </div>
+    <h3 class="life-sub">Three Reasons Buyers Choose Arborlake</h3>
     <div class="fit-grid">
       <div class="fit-card">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 20c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M12 11V3M9 6l3-3 3 3"/></svg>
@@ -737,47 +761,139 @@
   </div>
 </section>
 
-<!-- ============ WHAT TO KNOW BEFORE BUYING ============ -->
-<section class="know">
+<!-- ============ LOCATION & SCHOOLS ============ -->
+<section class="location" id="location">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Before You Buy</div>
-      <h2>What to Know Before Buying at Arborlake</h2>
-      <p>The honest tradeoffs, not just the highlights &mdash; so there are no surprises at inspection.</p>
+      <div class="eyebrow">Location</div>
+      <h2>Where Arborlake Sits in Carmel Valley</h2>
+      <p>Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.</p>
     </div>
-    <details class="collapsible">
-    <summary><span class="cl-closed">Show Details <span class="cl-icon">+</span></span><span class="cl-open">Hide Details <span class="cl-icon">–</span></span></summary>
-    <div class="know-grid">
-      <div class="know-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-        <div><h3>Carport parking, not a garage</h3><p>Covered carport parking with storage is included, but it's not an enclosed garage &mdash; worth factoring in if that matters for your lifestyle or a second vehicle.</p></div>
+    <div class="loc-map" id="locMap">
+      <div class="loc-map-canvas" id="locMapCanvas" role="img" aria-label="Map with the Arborlake community boundary outlined in southwest Carmel Valley"></div>
+      <div class="loc-map-tools" role="group" aria-label="Map style">
+        <button type="button" data-base="sat" aria-pressed="true">Satellite</button>
+        <button type="button" data-base="map" aria-pressed="false">Map</button>
       </div>
-      <div class="know-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-        <div><h3>Floor plans vary by building</h3><p>Some units are ground-floor walk-ups, others are upper-level with stairs &mdash; confirm the specific floor, elevator access, and layout before falling in love with a listing photo.</p></div>
-      </div>
-      <div class="know-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
-        <div><h3>HOA covers the exterior, not the interior</h3><p>The ~$408/mo HOA handles building exteriors, the lake, landscaping, and amenities. Interior updates &mdash; kitchens, baths, flooring &mdash; are the owner's responsibility, so ask about a specific unit's renovation history.</p></div>
-      </div>
-      <div class="know-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        <div><h3>No private yard</h3><p>Like any condo community, outdoor space is a patio or balcony, not a yard. If private outdoor space is a priority, compare unit size and patio orientation carefully &mdash; lake-facing units are the most sought after.</p></div>
-      </div>
+      <a class="loc-map-open" href="https://www.google.com/maps/search/?api=1&amp;query=32.9446313%2C-117.233088" target="_blank" rel="noopener">Open in Google Maps &#8599;</a>
     </div>
-    </details>
+    <script>
+    (function(){
+      var BOUNDARY = [[32.9453704, -117.2343306], [32.944144, -117.2343758], [32.9439239, -117.2336391], [32.9434805, -117.2329296], [32.9437718, -117.2324688], [32.9440314, -117.2319898], [32.9454542, -117.2317132], [32.9453704, -117.2343306]];
+      var el = document.getElementById('locMap');
+      if (!el) return;
+      var started = false;
+      function load(src, css){
+        return new Promise(function(res, rej){
+          var n = document.createElement(css ? 'link' : 'script');
+          if (css){ n.rel = 'stylesheet'; n.href = src; } else { n.src = src; }
+          n.onload = res; n.onerror = rej; document.head.appendChild(n);
+        });
+      }
+      function draw(){
+        var mobile = window.matchMedia('(max-width:760px)').matches;
+        var map = L.map('locMapCanvas', {scrollWheelZoom:false, dragging:!mobile, tap:false, zoomControl:true, attributionControl:true});
+        map.zoomControl.setPosition('bottomright');
+        var ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
+        var sat = L.layerGroup([
+          L.tileLayer(ESRI + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),
+          L.tileLayer(ESRI + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom:19}),
+          L.tileLayer(ESRI + 'Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Labels &copy; Esri'})
+        ]);
+        var street = L.tileLayer(ESRI + 'World_Street_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Map &copy; Esri, HERE, Garmin, OpenStreetMap contributors'});
+        sat.addTo(map);
+        var poly = L.polygon(BOUNDARY, {color:'#ffffff', weight:3, fillColor:'#1456e8', fillOpacity:.35}).addTo(map);
+        poly.bindTooltip('Arborlake', {permanent:true, direction:'center', className:'loc-lbl'});
+        map.fitBounds(poly.getBounds(), {padding: mobile ? [40,40] : [90,90], maxZoom:17});
+        map.setZoom(Math.min(map.getZoom(), 16));
+        el.querySelectorAll('[data-base]').forEach(function(b){
+          b.addEventListener('click', function(){
+            var useSat = b.dataset.base === 'sat';
+            if (useSat){ map.removeLayer(street); sat.addTo(map); poly.setStyle({color:'#ffffff'}); }
+            else { map.removeLayer(sat); street.addTo(map); poly.setStyle({color:'#1456e8'}); }
+            el.classList.toggle('is-street', !useSat);
+            el.querySelectorAll('[data-base]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          });
+        });
+      }
+      function start(){
+        if (started) return; started = true;
+        Promise.all([
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true),
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js')
+        ]).then(draw).catch(function(){ el.classList.add('is-fallback'); });
+      }
+      if ('IntersectionObserver' in window){
+        var io = new IntersectionObserver(function(es){ if (es[0].isIntersecting){ io.disconnect(); start(); } }, {rootMargin:'600px 0px'});
+        io.observe(el);
+      } else { start(); }
+    })();
+    </script>
+  </div>
+  <div class="wrap loc-grid">
+    <div>
+      <div class="sec-head" style="text-align:left;margin:0 0 32px">
+        <div class="eyebrow">Getting Around</div>
+        <h2 style="font-size:clamp(26px,3.5vw,34px)">What's Nearby</h2>
+      </div>
+      <ul class="loc-list">
+        <li><span>Carmel Valley Recreation Center</span><span>~5 min walk</span></li>
+        <li><span>Piazza Carmel (Vons, dining)</span><span>~8 min walk</span></li>
+        <li><span>One Paseo</span><span>~12 min walk</span></li>
+        <li><span>Del Mar Highlands Town Center</span><span>~15 min walk</span></li>
+        <li><span>SR-56</span><span>~0.6 miles</span></li>
+        <li><span>Interstate 5</span><span>~2.5 miles</span></li>
+        <li><span>Del Mar beaches</span><span>~3.5 miles</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="sec-head" style="text-align:left;margin:0 0 32px">
+        <div class="eyebrow">Schools</div>
+        <h2 style="font-size:clamp(26px,3.5vw,34px)">Assigned Schools</h2>
+      </div>
+      <ul class="school-list">
+        <li>
+          <div class="s-level">Elementary</div>
+          <div class="s-name">Carmel Del Mar Elementary</div>
+          <div class="s-district">Del Mar Union Elementary School District</div>
+        </li>
+        <li>
+          <div class="s-level">Middle School</div>
+          <div class="s-name">Carmel Valley Middle School</div>
+          <div class="s-district">San Dieguito Union High School District</div>
+        </li>
+        <li>
+          <div class="s-level">High School</div>
+          <div class="s-name">Torrey Pines High School</div>
+          <div class="s-district">San Dieguito Union &middot; among California's top-ranked public high schools</div>
+        </li>
+        <li>
+          <div class="s-level">High School (Alt.)</div>
+          <div class="s-name">Canyon Crest Academy</div>
+          <div class="s-district">San Dieguito Union &middot; arts &amp; academics magnet</div>
+        </li>
+      </ul>
+      <p style="font-size:13px;color:var(--label);margin-top:18px">School assignments can change. Verify current boundaries directly with <a href="https://www.dmusd.org/Page/191" target="_blank" rel="noopener">Del Mar Union SD</a> and <a href="https://www.sduhsd.net/about/boundary-maps" target="_blank" rel="noopener">San Dieguito Union HSD</a> before relying on them for a purchase decision.</p>
+    </div>
   </div>
 </section>
 
-<!-- ============ HOA & COST BREAKDOWN ============ -->
+<!-- ============ COST OF OWNERSHIP ============ -->
 <section class="hoa" id="cost">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Cost of Ownership</div>
-      <h2>What the Arborlake HOA Covers</h2>
-      <p>At roughly $408 per month, Arborlake's HOA runs higher than most comparable southwest Carmel Valley condo communities &mdash; here's exactly what that funds.</p>
+      <h2>What It Costs to Own at Arborlake</h2>
+      <p>The monthly costs beyond your mortgage, and what the HOA pays for.</p>
+    </div>
+    <div class="cost-tiles">
+      <div class="cost-tile"><div class="ct-val">~$408<span>/mo</span></div><div class="ct-lbl">HOA dues</div><div class="ct-note">Higher than nearby condo HOAs; funds the lake</div></div>
+      <div class="cost-tile"><div class="ct-val">None</div><div class="ct-lbl">Mello-Roos</div><div class="ct-note">No special assessment district tax</div></div>
+      <div class="cost-tile"><div class="ct-val">~1.07%</div><div class="ct-lbl">Property tax rate</div><div class="ct-note">Of assessed value, per year</div></div>
     </div>
     <div class="hoa-grid">
+      <div>
+      <h3 class="hoa-h">What the HOA Covers</h3>
       <ul class="hoa-covers">
         <li>Central lake, fountain &amp; waterfall maintenance</li>
         <li>Two lighted tennis courts</li>
@@ -787,6 +903,7 @@
         <li>Exterior building maintenance</li>
         <li>Covered carport parking with storage</li>
       </ul>
+      </div>
       <div class="hoa-compare">
         <h3>How Arborlake's HOA Compares</h3>
         <div class="hoa-bar-row this-community">
@@ -809,7 +926,7 @@
           <div class="hoa-bar-label"><span>Martinique</span><span class="amt">~$335/mo</span></div>
           <div class="hoa-bar-track"><div class="hoa-bar-fill" style="width:82%"></div></div>
         </div>
-        <p style="margin-top:20px;font-size:13.5px;color:#7a8389">Arborlake also carries no Mello-Roos, with a property tax rate around 1.07% &mdash; the HOA gap mostly reflects the lake and fountain system the other communities don't have.</p>
+        <p style="margin-top:20px;font-size:13.5px;color:#7a8389">The HOA gap mostly reflects the lake and fountain system the other communities don't have.</p>
       </div>
     </div>
   </div>
@@ -1265,34 +1382,38 @@
 })();
 </script>
 
-
-
-<!-- ============ WHO IT'S FOR ============ -->
-<section class="fit">
+<!-- ============ IS ARBORLAKE RIGHT FOR YOU (who it suits + tradeoffs) ============ -->
+<section class="fit" id="fit">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Find Your Fit</div>
       <h2>Is Arborlake the Right Community for You?</h2>
+      <p>Who it suits best, and the honest tradeoffs to weigh before you buy.</p>
     </div>
-    <div class="fit-grid">
-      <div class="fit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c4 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 2-7 6-11z"/></svg>
-        <h3>Setting-Driven Buyers</h3>
-        <p>If what you see outside your window and hear on a morning walk matters to your decision, Arborlake's lake and mature landscaping aren't matched by comparable 92130 condo communities at this price point.</p>
+    <div class="fit-cols">
+      <div class="fit-col good">
+        <h3 class="fit-col-h">A great fit for</h3>
+        <ul class="fit-list">
+          <li><h4>Setting-Driven Buyers</h4><p>If what you see outside your window and hear on a morning walk matters to your decision, Arborlake's lake and mature landscaping aren't matched by comparable 92130 condo communities at this price point.</p></li>
+          <li><h4>Downsizers</h4><p>A pool, spa, and sauna a short walk away, zero personal yard maintenance, and grounds that are at their most established right now &mdash; four decades in.</p></li>
+          <li><h4>Investors</h4><p>Rental demand here is tied to the community's character, and the no-Mello-Roos structure keeps carrying costs predictable for long-term holds.</p></li>
+        </ul>
       </div>
-      <div class="fit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-8h6v8"/></svg>
-        <h3>Downsizers</h3>
-        <p>A pool, spa, and sauna a short walk away, zero personal yard maintenance, and grounds that are at their most established right now &mdash; four decades in.</p>
-      </div>
-      <div class="fit-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
-        <h3>Investors</h3>
-        <p>Rental demand here is tied to the community's character, and the no-Mello-Roos structure keeps carrying costs predictable for long-term holds.</p>
+      <div class="fit-col weigh">
+        <h3 class="fit-col-h">Tradeoffs to weigh</h3>
+        <ul class="fit-list">
+          <li><h4>Carport parking, not a garage</h4><p>Covered carport parking with storage is included, but it's not an enclosed garage &mdash; worth factoring in if that matters for your lifestyle or a second vehicle.</p></li>
+          <li><h4>Floor plans vary by building</h4><p>Some units are ground-floor walk-ups, others are upper-level with stairs &mdash; confirm the specific floor, elevator access, and layout before falling in love with a listing photo.</p></li>
+          <li><h4>HOA covers the exterior, not the interior</h4><p>The ~$408/mo HOA handles building exteriors, the lake, landscaping, and amenities. Interior updates &mdash; kitchens, baths, flooring &mdash; are the owner's responsibility, so ask about a specific unit's renovation history.</p></li>
+          <li><h4>No private yard</h4><p>Like any condo community, outdoor space is a patio or balcony, not a yard. If private outdoor space is a priority, compare unit size and patio orientation carefully &mdash; lake-facing units are the most sought after.</p></li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
+
+
+
 
 <!-- ============ PHOTO WALKTHROUGH ============ -->
 <section class="walkthrough">
@@ -1309,123 +1430,6 @@
       </div>
       <div class="walk-tile placeholder">More photos coming soon &mdash; sidewalks, patios, the pool &amp; tennis courts</div>
       <div class="walk-tile placeholder">More photos coming soon &mdash; a building exterior &amp; the lake</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LOCATION & SCHOOLS ============ -->
-<section class="location" id="location">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Location</div>
-      <h2>Where Arborlake Sits in Carmel Valley</h2>
-      <p>Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.</p>
-    </div>
-    <div class="loc-map" id="locMap">
-      <div class="loc-map-canvas" id="locMapCanvas" role="img" aria-label="Map with the Arborlake community boundary outlined in southwest Carmel Valley"></div>
-      <div class="loc-map-tools" role="group" aria-label="Map style">
-        <button type="button" data-base="sat" aria-pressed="true">Satellite</button>
-        <button type="button" data-base="map" aria-pressed="false">Map</button>
-      </div>
-      <a class="loc-map-open" href="https://www.google.com/maps/search/?api=1&amp;query=32.9446313%2C-117.233088" target="_blank" rel="noopener">Open in Google Maps &#8599;</a>
-    </div>
-    <script>
-    (function(){
-      var BOUNDARY = [[32.9453704, -117.2343306], [32.944144, -117.2343758], [32.9439239, -117.2336391], [32.9434805, -117.2329296], [32.9437718, -117.2324688], [32.9440314, -117.2319898], [32.9454542, -117.2317132], [32.9453704, -117.2343306]];
-      var el = document.getElementById('locMap');
-      if (!el) return;
-      var started = false;
-      function load(src, css){
-        return new Promise(function(res, rej){
-          var n = document.createElement(css ? 'link' : 'script');
-          if (css){ n.rel = 'stylesheet'; n.href = src; } else { n.src = src; }
-          n.onload = res; n.onerror = rej; document.head.appendChild(n);
-        });
-      }
-      function draw(){
-        var mobile = window.matchMedia('(max-width:760px)').matches;
-        var map = L.map('locMapCanvas', {scrollWheelZoom:false, dragging:!mobile, tap:false, zoomControl:true, attributionControl:true});
-        map.zoomControl.setPosition('bottomright');
-        var ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
-        var sat = L.layerGroup([
-          L.tileLayer(ESRI + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),
-          L.tileLayer(ESRI + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom:19}),
-          L.tileLayer(ESRI + 'Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Labels &copy; Esri'})
-        ]);
-        var street = L.tileLayer(ESRI + 'World_Street_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Map &copy; Esri, HERE, Garmin, OpenStreetMap contributors'});
-        sat.addTo(map);
-        var poly = L.polygon(BOUNDARY, {color:'#ffffff', weight:3, fillColor:'#1456e8', fillOpacity:.35}).addTo(map);
-        poly.bindTooltip('Arborlake', {permanent:true, direction:'center', className:'loc-lbl'});
-        map.fitBounds(poly.getBounds(), {padding: mobile ? [40,40] : [90,90], maxZoom:17});
-        map.setZoom(Math.min(map.getZoom(), 16));
-        el.querySelectorAll('[data-base]').forEach(function(b){
-          b.addEventListener('click', function(){
-            var useSat = b.dataset.base === 'sat';
-            if (useSat){ map.removeLayer(street); sat.addTo(map); poly.setStyle({color:'#ffffff'}); }
-            else { map.removeLayer(sat); street.addTo(map); poly.setStyle({color:'#1456e8'}); }
-            el.classList.toggle('is-street', !useSat);
-            el.querySelectorAll('[data-base]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-          });
-        });
-      }
-      function start(){
-        if (started) return; started = true;
-        Promise.all([
-          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true),
-          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js')
-        ]).then(draw).catch(function(){ el.classList.add('is-fallback'); });
-      }
-      if ('IntersectionObserver' in window){
-        var io = new IntersectionObserver(function(es){ if (es[0].isIntersecting){ io.disconnect(); start(); } }, {rootMargin:'600px 0px'});
-        io.observe(el);
-      } else { start(); }
-    })();
-    </script>
-  </div>
-  <div class="wrap loc-grid">
-    <div>
-      <div class="sec-head" style="text-align:left;margin:0 0 32px">
-        <div class="eyebrow">Getting Around</div>
-        <h2 style="font-size:clamp(26px,3.5vw,34px)">What's Nearby</h2>
-      </div>
-      <ul class="loc-list">
-        <li><span>Carmel Valley Recreation Center</span><span>~5 min walk</span></li>
-        <li><span>Piazza Carmel (Vons, dining)</span><span>~8 min walk</span></li>
-        <li><span>One Paseo</span><span>~12 min walk</span></li>
-        <li><span>Del Mar Highlands Town Center</span><span>~15 min walk</span></li>
-        <li><span>SR-56</span><span>~0.6 miles</span></li>
-        <li><span>Interstate 5</span><span>~2.5 miles</span></li>
-        <li><span>Del Mar beaches</span><span>~3.5 miles</span></li>
-      </ul>
-    </div>
-    <div>
-      <div class="sec-head" style="text-align:left;margin:0 0 32px">
-        <div class="eyebrow">Schools</div>
-        <h2 style="font-size:clamp(26px,3.5vw,34px)">Assigned Schools</h2>
-      </div>
-      <ul class="school-list">
-        <li>
-          <div class="s-level">Elementary</div>
-          <div class="s-name">Carmel Del Mar Elementary</div>
-          <div class="s-district">Del Mar Union Elementary School District</div>
-        </li>
-        <li>
-          <div class="s-level">Middle School</div>
-          <div class="s-name">Carmel Valley Middle School</div>
-          <div class="s-district">San Dieguito Union High School District</div>
-        </li>
-        <li>
-          <div class="s-level">High School</div>
-          <div class="s-name">Torrey Pines High School</div>
-          <div class="s-district">San Dieguito Union &middot; among California's top-ranked public high schools</div>
-        </li>
-        <li>
-          <div class="s-level">High School (Alt.)</div>
-          <div class="s-name">Canyon Crest Academy</div>
-          <div class="s-district">San Dieguito Union &middot; arts &amp; academics magnet</div>
-        </li>
-      </ul>
-      <p style="font-size:13px;color:var(--label);margin-top:18px">School assignments can change. Verify current boundaries directly with <a href="https://www.dmusd.org/Page/191" target="_blank" rel="noopener">Del Mar Union SD</a> and <a href="https://www.sduhsd.net/about/boundary-maps" target="_blank" rel="noopener">San Dieguito Union HSD</a> before relying on them for a purchase decision.</p>
     </div>
   </div>
 </section>

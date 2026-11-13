@@ -51,7 +51,7 @@ Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrowe
 
 Closed MLS sales, last 5 years.
 
-## About the Arborlake Community
+## Life at Arborlake
 
 Arborlake is a 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes between 1986 and 1989. What sets it apart from newer 92130 developments is its water-feature setting: a central lake, multiple fountains and waterfalls, and paved walking paths winding through greenbelts that have had nearly four decades to mature.
 
@@ -61,9 +61,7 @@ As a Keller Williams Realty agent who has worked this community for 11+ years, I
 
 ![Arborlake condominium community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
 
-*What Stands Out*
-
-## Three Reasons Buyers Choose Arborlake
+### Three Reasons Buyers Choose Arborlake
 
 ### The Lake & Water Features
 
@@ -77,33 +75,62 @@ Two lighted tennis courts, a heated pool, two spas, a dry sauna, and a fitness c
 
 Built out between 1986 and 1989, Arborlake's greenbelts and paved walking paths have had nearly four decades to mature — a level of tree canopy and established landscaping that a newly built community simply can't offer yet.
 
-*Before You Buy*
+*Location*
 
-## What to Know Before Buying at Arborlake
+## Where Arborlake Sits in Carmel Valley
 
-The honest tradeoffs, not just the highlights — so there are no surprises at inspection.
+Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.
 
-### Carport parking, not a garage
+[Open in Google Maps ↗](https://www.google.com/maps/search/?api=1&query=32.9446313%2C-117.233088)
 
-Covered carport parking with storage is included, but it's not an enclosed garage — worth factoring in if that matters for your lifestyle or a second vehicle.
+*Getting Around*
 
-### Floor plans vary by building
+## What's Nearby
 
-Some units are ground-floor walk-ups, others are upper-level with stairs — confirm the specific floor, elevator access, and layout before falling in love with a listing photo.
+- Carmel Valley Recreation Center — ~5 min walk
+- Piazza Carmel (Vons, dining) — ~8 min walk
+- One Paseo — ~12 min walk
+- Del Mar Highlands Town Center — ~15 min walk
+- SR-56 — ~0.6 miles
+- Interstate 5 — ~2.5 miles
+- Del Mar beaches — ~3.5 miles
 
-### HOA covers the exterior, not the interior
+*Schools*
 
-The ~$408/mo HOA handles building exteriors, the lake, landscaping, and amenities. Interior updates — kitchens, baths, flooring — are the owner's responsibility, so ask about a specific unit's renovation history.
+## Assigned Schools
 
-### No private yard
+- Elementary — Carmel Del Mar Elementary — Del Mar Union Elementary School District
+- Middle School — Carmel Valley Middle School — San Dieguito Union High School District
+- High School — Torrey Pines High School — San Dieguito Union · among California's top-ranked public high schools
+- High School (Alt.) — Canyon Crest Academy — San Dieguito Union · arts & academics magnet
 
-Like any condo community, outdoor space is a patio or balcony, not a yard. If private outdoor space is a priority, compare unit size and patio orientation carefully — lake-facing units are the most sought after.
+School assignments can change. Verify current boundaries directly with [Del Mar Union SD](https://www.dmusd.org/Page/191) and [San Dieguito Union HSD](https://www.sduhsd.net/about/boundary-maps) before relying on them for a purchase decision.
 
 *Cost of Ownership*
 
-## What the Arborlake HOA Covers
+## What It Costs to Own at Arborlake
 
-At roughly $408 per month, Arborlake's HOA runs higher than most comparable southwest Carmel Valley condo communities — here's exactly what that funds.
+The monthly costs beyond your mortgage, and what the HOA pays for.
+
+~$408/mo
+
+HOA dues
+
+Higher than nearby condo HOAs; funds the lake
+
+None
+
+Mello-Roos
+
+No special assessment district tax
+
+~1.07%
+
+Property tax rate
+
+Of assessed value, per year
+
+### What the HOA Covers
 
 - Central lake, fountain & waterfall maintenance
 - Two lighted tennis courts
@@ -121,7 +148,7 @@ At roughly $408 per month, Arborlake's HOA runs higher than most comparable sout
 - **Del Mar Villas:** ~$340/mo
 - **Martinique:** ~$335/mo
 
-Arborlake also carries no Mello-Roos, with a property tax rate around 1.07% — the HOA gap mostly reflects the lake and fountain system the other communities don't have.
+The HOA gap mostly reflects the lake and fountain system the other communities don't have.
 
 *Sold Data · Last 5 Years*
 
@@ -186,17 +213,20 @@ None of this happens in a vacuum. Arborlake's HOA runs around $408/month — the
 
 ## Is Arborlake the Right Community for You?
 
-### Setting-Driven Buyers
+Who it suits best, and the honest tradeoffs to weigh before you buy.
 
-If what you see outside your window and hear on a morning walk matters to your decision, Arborlake's lake and mature landscaping aren't matched by comparable 92130 condo communities at this price point.
+### A great fit for
 
-### Downsizers
+- **Setting-Driven Buyers** — If what you see outside your window and hear on a morning walk matters to your decision, Arborlake's lake and mature landscaping aren't matched by comparable 92130 condo communities at this price point.
+- **Downsizers** — A pool, spa, and sauna a short walk away, zero personal yard maintenance, and grounds that are at their most established right now — four decades in.
+- **Investors** — Rental demand here is tied to the community's character, and the no-Mello-Roos structure keeps carrying costs predictable for long-term holds.
 
-A pool, spa, and sauna a short walk away, zero personal yard maintenance, and grounds that are at their most established right now — four decades in.
+### Tradeoffs to weigh
 
-### Investors
-
-Rental demand here is tied to the community's character, and the no-Mello-Roos structure keeps carrying costs predictable for long-term holds.
+- **Carport parking, not a garage** — Covered carport parking with storage is included, but it's not an enclosed garage — worth factoring in if that matters for your lifestyle or a second vehicle.
+- **Floor plans vary by building** — Some units are ground-floor walk-ups, others are upper-level with stairs — confirm the specific floor, elevator access, and layout before falling in love with a listing photo.
+- **HOA covers the exterior, not the interior** — The ~$408/mo HOA handles building exteriors, the lake, landscaping, and amenities. Interior updates — kitchens, baths, flooring — are the owner's responsibility, so ask about a specific unit's renovation history.
+- **No private yard** — Like any condo community, outdoor space is a patio or balcony, not a yard. If private outdoor space is a priority, compare unit size and patio orientation carefully — lake-facing units are the most sought after.
 
 *See It For Yourself*
 
@@ -211,37 +241,6 @@ Community entrance off Carmel View Road
 More photos coming soon — sidewalks, patios, the pool & tennis courts
 
 More photos coming soon — a building exterior & the lake
-
-*Location*
-
-## Where Arborlake Sits in Carmel Valley
-
-Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.
-
-[Open in Google Maps ↗](https://www.google.com/maps/search/?api=1&query=32.9446313%2C-117.233088)
-
-*Getting Around*
-
-## What's Nearby
-
-- Carmel Valley Recreation Center — ~5 min walk
-- Piazza Carmel (Vons, dining) — ~8 min walk
-- One Paseo — ~12 min walk
-- Del Mar Highlands Town Center — ~15 min walk
-- SR-56 — ~0.6 miles
-- Interstate 5 — ~2.5 miles
-- Del Mar beaches — ~3.5 miles
-
-*Schools*
-
-## Assigned Schools
-
-- Elementary — Carmel Del Mar Elementary — Del Mar Union Elementary School District
-- Middle School — Carmel Valley Middle School — San Dieguito Union High School District
-- High School — Torrey Pines High School — San Dieguito Union · among California's top-ranked public high schools
-- High School (Alt.) — Canyon Crest Academy — San Dieguito Union · arts & academics magnet
-
-School assignments can change. Verify current boundaries directly with [Del Mar Union SD](https://www.dmusd.org/Page/191) and [San Dieguito Union HSD](https://www.sduhsd.net/about/boundary-maps) before relying on them for a purchase decision.
 
 *Visiting in Person*
 
