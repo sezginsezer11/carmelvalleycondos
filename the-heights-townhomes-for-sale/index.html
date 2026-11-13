@@ -221,6 +221,8 @@
 </style>
 
 
+<link rel="stylesheet" href="/assets/rs-embed.css">
+<script src="/assets/rs-embed.js" defer></script>
 </head>
 <body>
 
@@ -314,51 +316,11 @@
       <p>Live Carmel Valley townhome listings in the 92130 zip, updated directly from the MLS &mdash; click any pin or draw your own search area to find homes specifically in The Heights.</p>
     </div>
     <div class="rs-embed" id="heightsMapEmbed">
-      <div class="fs-bar">
-        <a href="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-          Open in New Tab
-        </a>
-        <button type="button" id="heightsMapClose" aria-label="Close fullscreen map">&times;</button>
-      </div>
-      <div class="map-click-catch" id="heightsMapCatch"></div>
-      <div class="map-expand-hint" id="heightsMapHint">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
-        Expand
-      </div>
       <iframe src="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" title="The Heights Townhomes for Sale — Live Listings"></iframe>
     </div>
   </div>
 </section>
 
-<script>
-(function(){
-  var embed = document.getElementById('heightsMapEmbed');
-  var catcher = document.getElementById('heightsMapCatch');
-  var hint = document.getElementById('heightsMapHint');
-  var closeBtn = document.getElementById('heightsMapClose');
-
-  function openFullscreen(){
-    embed.classList.add('is-fullscreen');
-    document.body.classList.add('map-fs-lock');
-    catcher.style.display = 'none';
-    hint.style.display = 'none';
-  }
-  function closeFullscreen(){
-    embed.classList.remove('is-fullscreen');
-    document.body.classList.remove('map-fs-lock');
-    catcher.style.display = '';
-    hint.style.display = '';
-  }
-
-  catcher.addEventListener('click', openFullscreen);
-  hint.addEventListener('click', openFullscreen);
-  closeBtn.addEventListener('click', closeFullscreen);
-  document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape') closeFullscreen();
-  });
-})();
-</script>
 
 <!-- ============ FAQ (accordion) ============ -->
 <section class="faq">

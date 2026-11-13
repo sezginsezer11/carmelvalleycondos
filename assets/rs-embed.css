@@ -1,0 +1,29 @@
+/* Shared RealScout listings embed: inline preview + tap-to-open full screen.
+   Used by every page with <div class="rs-embed"><iframe src="...realscout..."></iframe></div>.
+   Behaviour lives in /assets/rs-embed.js. */
+.rsx{position:relative;display:flex;flex-direction:column;background:#fff;overflow:hidden}
+.rsx iframe{display:block;width:100%;border:0;height:min(78vh,760px)!important;flex:1 1 auto}
+.rsx-catch{position:absolute;left:0;right:0;top:0;bottom:52px;z-index:2;cursor:pointer;background:transparent}
+.rsx-open{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:9px;height:52px;width:100%;border:0;margin:0;background:#1456e8;color:#fff;font:600 15px/1 'Inter',-apple-system,BlinkMacSystemFont,sans-serif;cursor:pointer;letter-spacing:.01em}
+.rsx-open:hover{background:#0d3eac}
+.rsx-open svg,.rsx-bar svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.rsx-bar{display:none}
+
+/* full screen */
+.rsx.is-open{position:fixed!important;inset:0!important;z-index:10000!important;width:100%!important;max-width:none!important;margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;height:100%}
+.rsx.is-open iframe{height:auto!important;flex:1 1 auto;min-height:0}
+.rsx.is-open .rsx-catch,.rsx.is-open .rsx-open{display:none}
+.rsx.is-open .rsx-bar{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:10px;background:#0d3eac;color:#fff;padding:calc(10px + env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) 10px max(14px,env(safe-area-inset-left,0px));font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+.rsx-bar button,.rsx-bar a{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 14px;border-radius:10px;font-size:14.5px;font-weight:700;line-height:1;cursor:pointer;text-decoration:none!important}
+.rsx-bar button{background:#fff;color:#0d3eac;border:0}
+.rsx-bar a{color:#fff!important;border:1.5px solid rgba(255,255,255,.6);background:transparent}
+.rsx-bar a:hover{background:rgba(255,255,255,.12)}
+html.rsx-lock,html.rsx-lock body{overflow:hidden!important}
+
+@media(max-width:760px){
+  .rsx iframe{height:68vh!important;height:68svh!important;min-height:440px}
+  .rsx.is-open iframe{min-height:0}
+  .rsx-open{height:50px;font-size:14.5px}
+  .rsx-catch{bottom:50px}
+  .rsx-bar button,.rsx-bar a{height:38px;padding:0 12px;font-size:14px}
+}
