@@ -124,15 +124,7 @@
   .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
 
   /* sticky jump nav */
-  .jump-nav{position:sticky;top:65px;z-index:40;background:var(--white);border-bottom:1px solid var(--line)}
   section[id]{scroll-margin-top:118px}
-  .jump-nav .wrap{padding:0 28px}
-  .jump-nav ul{list-style:none;display:flex;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .jump-nav ul::-webkit-scrollbar{display:none}
-  .jump-nav li{flex:none}
-  .jump-nav a{display:block;padding:14px 14px;font-size:13.5px;font-weight:600;color:var(--label);white-space:nowrap;border-bottom:2px solid transparent}
-  .jump-nav a:hover{color:var(--ink)}
-  .jump-nav a.active{color:var(--lake);border-bottom-color:var(--lake)}
 
   /* collapsible secondary sections */
   .collapsible{text-align:center}
@@ -485,8 +477,6 @@
     .listings-title{font-size:16px}
     .rs-embed iframe{height:460px}
 
-    .jump-nav{top:42px;transition:transform .25s ease}
-    .jump-nav a{padding:8px 8px;font-size:9.5px}
     section[id]{scroll-margin-top:85px}
 
     .collapsible summary{margin-bottom:12px;padding:8px 14px}
@@ -888,23 +878,6 @@
     <p class="data-stamp" id="g-stamp">Closed MLS sales, last 5 years.</p>
   </div>
 </section>
-
-<!-- ============ JUMP NAV ============ -->
-<nav class="jump-nav" aria-label="Section navigation">
-  <div class="wrap">
-    <ul>
-      <li><a href="#listings">Listings</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#glance">By Size</a></li>
-      <li><a href="#life">Lifestyle</a></li>
-      <li><a href="#cost">HOA</a></li>
-      <li><a href="#similar">Similar</a></li>
-      <li><a href="#sold-data">Sold Data</a></li>
-      <li><a href="#fit">Fit</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
-  </div>
-</nav>
 
 <!-- ============ LIFE AT ARBORLAKE (about + what stands out) ============ -->
 <section class="intro" id="life">
