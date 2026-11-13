@@ -25,56 +25,6 @@ A 190-unit lake-and-waterfall condo community in southwest Carmel Valley — gui
 - **Tax Rate:** ~1.07%
 - **Time to Sell:** 14–21 days
 
-*The First Question*
-
-## What a 1-Bed vs. a 2-Bed Actually Costs
-
-Arborlake only comes in two sizes — there's no 3-bedroom floor plan in this community. Here's what each has sold for over the last 5 years, straight from closed MLS sales.
-
-### 1 Bedroom
-
-6 sales · 5 yrs
-
-- **Size:** 742–896 sq ft
-- **Median sale price:** $631,750
-- **Price range:** $578K–$815K
-
-### 2 Bedroom
-
-16 sales · 5 yrs
-
-- **Size:** 964–1,145 sq ft
-- **Median sale price:** $800,000
-- **Price range:** $675K–$900K
-
-Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full 5-year breakdown](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis) below for how that gap has moved year to year.
-
-Closed MLS sales, last 5 years.
-
-## Life at Arborlake
-
-Arborlake is a 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes between 1986 and 1989. What sets it apart from newer 92130 developments is its water-feature setting: a central lake, multiple fountains and waterfalls, and paved walking paths winding through greenbelts that have had nearly four decades to mature.
-
-Units range from 742-square-foot one-bedrooms to 1,145-square-foot two-bedroom layouts, with most patios and balconies oriented toward the lake and landscaping rather than the parking areas. The community sits just north of Carmel View Road and Camino Mira Del Mar — one of the earliest-developed pockets of Carmel Valley, so the surrounding sidewalks, parks, and street trees are as established as the grounds themselves.
-
-As a Keller Williams Realty agent who has worked this community for 11+ years, I can walk you through current HOA details, recent comparable sales, and what to look for in a specific building or floor plan. You can also browse the full [Arborlake community profile](https://www.carmelvalley.com/condos-for-sale/arborlake/) on my Carmel Valley Homes search site.
-
-![Arborlake condominium community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
-
-### Three Reasons Buyers Choose Arborlake
-
-### The Lake & Water Features
-
-A central lake with multiple fountains and waterfalls runs through the community — a setting no newer, denser 92130 development has room to replicate. Most patios and balconies face the water and landscaping rather than parking.
-
-### Resort-Style Amenities
-
-Two lighted tennis courts, a heated pool, two spas, a dry sauna, and a fitness center — all HOA-maintained. Few condo communities this age in Carmel Valley still offer this full a recreation package.
-
-### Mature, Walkable Grounds
-
-Built out between 1986 and 1989, Arborlake's greenbelts and paved walking paths have had nearly four decades to mature — a level of tree canopy and established landscaping that a newly built community simply can't offer yet.
-
 *Location*
 
 ## Where Arborlake Sits in Carmel Valley
@@ -105,6 +55,42 @@ Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.
 - High School (Alt.) — Canyon Crest Academy — San Dieguito Union · arts & academics magnet
 
 School assignments can change. Verify current boundaries directly with [Del Mar Union SD](https://www.dmusd.org/Page/191) and [San Dieguito Union HSD](https://www.sduhsd.net/about/boundary-maps) before relying on them for a purchase decision.
+
+*The First Question*
+
+## What a 1-Bed vs. a 2-Bed Actually Costs
+
+Arborlake only comes in two sizes — there's no 3-bedroom floor plan in this community. Here's what each has sold for over the last 5 years, straight from closed MLS sales.
+
+### 1 Bedroom
+
+6 sales · 5 yrs
+
+- **Size:** 742–896 sq ft
+- **Median sale price:** $631,750
+- **Price range:** $578K–$815K
+
+### 2 Bedroom
+
+16 sales · 5 yrs
+
+- **Size:** 964–1,145 sq ft
+- **Median sale price:** $800,000
+- **Price range:** $675K–$900K
+
+Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full 5-year breakdown](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis) below for how that gap has moved year to year.
+
+Closed MLS sales, last 5 years.
+
+## Life at Arborlake
+
+A 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes in 1986–1989 around a central lake, fountains, waterfalls and greenbelt walking paths. Most patios and balconies face the water and landscaping, not the parking. See the full [Arborlake community profile](https://www.carmelvalley.com/condos-for-sale/arborlake/).
+
+### Why buyers choose Arborlake
+
+- **The lake & water features.** A central lake with fountains and waterfalls that no newer 92130 community has room for.
+- **Resort-style amenities.** Two lighted tennis courts, a heated pool, two spas, a sauna and a fitness center, all HOA-maintained.
+- **Mature, walkable grounds.** Nearly 40 years of tree canopy, greenbelts and paved walking paths.
 
 *Cost of Ownership*
 
@@ -217,30 +203,16 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 ### A great fit for
 
-- **Setting-Driven Buyers** — If what you see outside your window and hear on a morning walk matters to your decision, Arborlake's lake and mature landscaping aren't matched by comparable 92130 condo communities at this price point.
-- **Downsizers** — A pool, spa, and sauna a short walk away, zero personal yard maintenance, and grounds that are at their most established right now — four decades in.
-- **Investors** — Rental demand here is tied to the community's character, and the no-Mello-Roos structure keeps carrying costs predictable for long-term holds.
+- **Setting-Driven Buyers** — Lake views and mature landscaping no comparable 92130 condo offers at this price.
+- **Downsizers** — Pool, spa and sauna a short walk away, and no yard to maintain.
+- **Investors** — No Mello-Roos keeps carrying costs predictable for long-term holds.
 
 ### Tradeoffs to weigh
 
-- **Carport parking, not a garage** — Covered carport parking with storage is included, but it's not an enclosed garage — worth factoring in if that matters for your lifestyle or a second vehicle.
-- **Floor plans vary by building** — Some units are ground-floor walk-ups, others are upper-level with stairs — confirm the specific floor, elevator access, and layout before falling in love with a listing photo.
-- **HOA covers the exterior, not the interior** — The ~$408/mo HOA handles building exteriors, the lake, landscaping, and amenities. Interior updates — kitchens, baths, flooring — are the owner's responsibility, so ask about a specific unit's renovation history.
-- **No private yard** — Like any condo community, outdoor space is a patio or balcony, not a yard. If private outdoor space is a priority, compare unit size and patio orientation carefully — lake-facing units are the most sought after.
-
-*See It For Yourself*
-
-## A Walk Through Arborlake
-
-Original photos, not MLS listing shots — more going up as they're taken.
-
-![Arborlake community entrance sign, Carmel Valley](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
-
-Community entrance off Carmel View Road
-
-More photos coming soon — sidewalks, patios, the pool & tennis courts
-
-More photos coming soon — a building exterior & the lake
+- **Carport parking, not a garage** — Covered carport with storage, but no enclosed garage.
+- **Floor plans vary by building** — Some units have stairs. Confirm the floor level and elevator access.
+- **HOA covers the exterior, not the interior** — Kitchens, baths and flooring are the owner's job. Ask about a unit's updates.
+- **No private yard** — Outdoor space is a patio or balcony. Lake-facing units are the most sought after.
 
 *Visiting in Person*
 
