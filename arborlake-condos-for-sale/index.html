@@ -60,7 +60,7 @@
   }
 
   /* ============ BREADCRUMB ============ */
-  .breadcrumb{background:var(--white);border-bottom:1px solid var(--line);font-size:13px}
+  .breadcrumb{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px}
   .breadcrumb .wrap{display:flex;align-items:center;gap:8px;padding:12px 28px;color:var(--label)}
   .breadcrumb a{color:var(--label)}
   .breadcrumb a:hover{color:var(--lake)}
@@ -686,17 +686,6 @@
   </div>
 </header>
 
-<!-- ============ BREADCRUMB ============ -->
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="wrap">
-    <a href="/">Home</a>
-    <span class="sep">/</span>
-    <a href="/carmel-valley-condos-for-sale/">Condos</a>
-    <span class="sep">/</span>
-    <span class="current">Arborlake</span>
-  </div>
-</nav>
-
 <!-- ============ LIVE LISTINGS (inline embed) — first thing on the page ============ -->
 <section class="listings" id="listings" style="padding-top:20px">
   <div class="wrap">
@@ -712,6 +701,17 @@
     </div>
   </div>
 </section>
+
+<!-- ============ BREADCRUMB ============ -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="wrap">
+    <a href="/">Home</a>
+    <span class="sep">/</span>
+    <a href="/carmel-valley-condos-for-sale/">Condos</a>
+    <span class="sep">/</span>
+    <span class="current">Arborlake</span>
+  </div>
+</nav>
 
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero" style="padding:0">
