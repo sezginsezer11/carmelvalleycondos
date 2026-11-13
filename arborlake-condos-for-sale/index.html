@@ -231,7 +231,7 @@
   .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
 
   /* prices & sales tabs */
-  .prices{background:var(--paper)}
+  .prices{background:var(--white)}
   .data-stamp{font-size:12.5px;color:var(--label);margin-top:8px}
   .glance .data-stamp{text-align:center;margin-top:10px}
   .px-tabs{display:flex;gap:4px;max-width:760px;margin:0 auto 22px;padding:4px;background:var(--mist);border-radius:12px;overflow-x:auto;scrollbar-width:none}
@@ -266,9 +266,9 @@
   .analysis-pull{border-left:3px solid var(--lake);padding:4px 0 4px 20px;margin:22px 0;font-size:17px;font-weight:600;color:var(--ink);line-height:1.4}
 
   /* who it's for */
-  .fit{background:var(--white)}
+  .fit{background:var(--paper)}
   .fit-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
-  .fit-col{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .fit-col{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
   .fit-col-h{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:800;color:var(--ink);margin-bottom:6px}
   .fit-col-h::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--up) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat}
   .fit-col.weigh .fit-col-h::before{background:#b7791f url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M12 6v8M12 18v.5'/%3E%3C/svg%3E") center/14px no-repeat}
@@ -293,6 +293,16 @@
   .cost-tile .ct-val span{font-size:14px;color:var(--label);font-weight:500}
   .cost-tile .ct-lbl{font-size:13px;font-weight:700;color:var(--ink);margin-top:4px}
   .cost-tile .ct-note{font-size:12.5px;color:var(--label);margin-top:2px}
+  .hoa-fee{display:flex;align-items:center;gap:18px;background:var(--lake-soft,#eaf0fe);border:1px solid #d6e2fc;border-radius:14px;padding:18px 22px;margin-bottom:28px;max-width:760px}
+  .hoa-fee .hf-amt{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--lake-dark);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .hoa-fee .hf-amt span{font-size:15px;font-weight:500;color:var(--label)}
+  .hoa-fee .hf-text{font-size:14.5px;color:#333a42;line-height:1.5}
+  .hoa-fee .hf-text strong{display:block;color:var(--ink);font-size:15px}
+  .amen-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .amen-grid li{display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.3}
+  .amen-grid svg{flex:none;width:24px;height:24px;fill:none;stroke:var(--lake);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .hoa-also{font-size:13.5px;color:var(--label);margin:12px 0 0}
+  .hoa-also strong{color:var(--ink)}
   .hoa-h{font-size:13px;letter-spacing:.03em;text-transform:uppercase;font-weight:700;color:var(--label);margin-bottom:8px}
   .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .fit-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
@@ -347,7 +357,11 @@
   .school-list .s-name{font-size:16px;font-weight:700;color:var(--ink)}
   .school-list .s-district{font-size:13.5px;color:var(--label);margin-top:2px}
   @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:28px}}
-  .loc-tabs{max-width:420px;margin:0 auto 14px}
+  .loc-tabs{max-width:440px}
+  .btn-tabs{margin:0 auto 16px;padding:0;gap:8px;background:none;border-radius:0}
+  .btn-tabs button{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 10px;font-size:15px;font-weight:700;color:var(--lake);background:var(--white);border:1.5px solid var(--lake);border-radius:12px;box-shadow:none}
+  .btn-tabs button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .btn-tabs button[aria-selected="true"]{background:var(--lake);color:#fff;box-shadow:0 4px 12px rgba(20,86,232,.25)}
   .location .loc-panel .sec-head{display:none}
   @media(min-width:861px){
     .loc-tabs{display:none}
@@ -474,6 +488,15 @@
     .intro-grid p{margin-bottom:10px}
 
     .hoa-grid{gap:12px}
+    .hoa-fee{gap:12px;padding:12px 14px;margin-bottom:16px}
+    .hoa-fee .hf-amt{font-size:24px}
+    .hoa-fee .hf-amt span{font-size:12px}
+    .hoa-fee .hf-text{font-size:13px}
+    .hoa-fee .hf-text strong{font-size:14px}
+    .amen-grid{gap:6px}
+    .amen-grid li{padding:9px 10px;font-size:13px;gap:8px}
+    .amen-grid svg{width:20px;height:20px}
+    .hoa-also{font-size:12.5px;margin-top:8px}
     .hoa-covers{gap:6px}
     .hoa-covers li{padding:5px 10px;font-size:12.5px}
     .hoa-compare{padding:18px}
@@ -535,11 +558,14 @@
     .fit-list p{font-size:13px}
     .px-tabs{margin-bottom:16px;gap:2px;padding:3px}
     .px-tabs button{flex:1 1 0;padding:8px 4px;font-size:13px}
-    .px-intro{font-size:13px;margin-bottom:14px}
+    .btn-tabs button{padding:10px 6px;font-size:14.5px}
+    #sold-data .btn-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .px-intro{font-size:12.5px;margin-bottom:12px}
     .px-h{font-size:18px}
     .takeaways li{font-size:14px;padding:12px 14px}
     .loc-grid{gap:12px}
-    .loc-list li{padding:9px 0;font-size:13.5px}
+    .loc-list li{display:block;padding:8px 0;font-size:14px}
+    .loc-list li span:last-child{display:block;padding-left:0;font-size:13px;margin-top:1px}
     .school-list li{padding:11px 0}
 
 
@@ -782,28 +808,13 @@
     </script>
   </div>
   <div class="wrap">
-  <div class="px-tabs loc-tabs" role="tablist" aria-label="Nearby places and schools">
-    <button type="button" role="tab" id="tab-nearby" aria-controls="loc-nearby" aria-selected="true">What's Nearby</button>
-    <button type="button" role="tab" id="tab-schools" aria-controls="loc-schools" aria-selected="false" tabindex="-1">Schools</button>
+  <div class="px-tabs loc-tabs btn-tabs" role="tablist" aria-label="Nearby places and schools">
+    <button type="button" role="tab" id="tab-schools" aria-controls="loc-schools" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg>Schools</button>
+    <button type="button" role="tab" id="tab-nearby" aria-controls="loc-nearby" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>What's Nearby</button>
   </div>
   </div>
   <div class="wrap loc-grid">
-    <div class="loc-panel" role="tabpanel" id="loc-nearby" aria-labelledby="tab-nearby">
-      <div class="sec-head" style="text-align:left;margin:0 0 32px">
-        <div class="eyebrow">Getting Around</div>
-        <h2 style="font-size:clamp(26px,3.5vw,34px)">What's Nearby</h2>
-      </div>
-      <ul class="loc-list">
-        <li><span>Carmel Valley Recreation Center</span><span>~5 min walk</span></li>
-        <li><span>Piazza Carmel (Vons, dining)</span><span>~8 min walk</span></li>
-        <li><span>One Paseo</span><span>~12 min walk</span></li>
-        <li><span>Del Mar Highlands Town Center</span><span>~15 min walk</span></li>
-        <li><span>SR-56</span><span>~0.6 miles</span></li>
-        <li><span>Interstate 5</span><span>~2.5 miles</span></li>
-        <li><span>Del Mar beaches</span><span>~3.5 miles</span></li>
-      </ul>
-    </div>
-    <div class="loc-panel" role="tabpanel" id="loc-schools" aria-labelledby="tab-schools" hidden>
+    <div class="loc-panel" role="tabpanel" id="loc-schools" aria-labelledby="tab-schools">
       <div class="sec-head" style="text-align:left;margin:0 0 32px">
         <div class="eyebrow">Schools</div>
         <h2 style="font-size:clamp(26px,3.5vw,34px)">Assigned Schools</h2>
@@ -832,6 +843,22 @@
       </ul>
       <p style="font-size:13px;color:var(--label);margin-top:18px">School assignments can change. Verify current boundaries directly with <a href="https://www.dmusd.org/Page/191" target="_blank" rel="noopener">Del Mar Union SD</a> and <a href="https://www.sduhsd.net/about/boundary-maps" target="_blank" rel="noopener">San Dieguito Union HSD</a> before relying on them for a purchase decision.</p>
     </div>
+    <div class="loc-panel" role="tabpanel" id="loc-nearby" aria-labelledby="tab-nearby" hidden>
+      <div class="sec-head" style="text-align:left;margin:0 0 32px">
+        <div class="eyebrow">Getting Around</div>
+        <h2 style="font-size:clamp(26px,3.5vw,34px)">What's Nearby</h2>
+      </div>
+      <ul class="loc-list">
+        <li><span>Carmel Valley Recreation Center</span><span>~5 min walk</span></li>
+        <li><span>Piazza Carmel (Vons, dining)</span><span>~8 min walk</span></li>
+        <li><span>One Paseo</span><span>~12 min walk</span></li>
+        <li><span>Del Mar Highlands Town Center</span><span>~15 min walk</span></li>
+        <li><span>SR-56</span><span>~0.6 miles</span></li>
+        <li><span>Interstate 5</span><span>~2.5 miles</span></li>
+        <li><span>Del Mar beaches</span><span>~3.5 miles</span></li>
+      </ul>
+    </div>
+
   </div>
 </section>
 <script>
@@ -890,7 +917,8 @@
       <li><a href="#location">Location</a></li>
       <li><a href="#glance">By Size</a></li>
       <li><a href="#life">Lifestyle</a></li>
-      <li><a href="#cost">Cost</a></li>
+      <li><a href="#cost">HOA</a></li>
+      <li><a href="#similar">Similar</a></li>
       <li><a href="#sold-data">Sold Data</a></li>
       <li><a href="#fit">Fit</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -912,31 +940,30 @@
   </div>
 </section>
 
-<!-- ============ COST OF OWNERSHIP ============ -->
+<!-- ============ HOA: FEE & AMENITIES ============ -->
 <section class="hoa" id="cost">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Cost of Ownership</div>
-      <h2>What It Costs to Own at Arborlake</h2>
-      <p>The monthly costs beyond your mortgage, and what the HOA pays for.</p>
+      <div class="eyebrow">HOA</div>
+      <h2>Arborlake HOA: Fee &amp; Amenities</h2>
+      <p>One monthly fee covers the lake, the amenities and the outside of every building.</p>
     </div>
-    <div class="cost-tiles">
-      <div class="cost-tile"><div class="ct-val">~$408<span>/mo</span></div><div class="ct-lbl">HOA dues</div><div class="ct-note">Higher than nearby condo HOAs; funds the lake</div></div>
-      <div class="cost-tile"><div class="ct-val">None</div><div class="ct-lbl">Mello-Roos</div><div class="ct-note">No special assessment district tax</div></div>
-      <div class="cost-tile"><div class="ct-val">~1.07%</div><div class="ct-lbl">Property tax rate</div><div class="ct-note">Of assessed value, per year</div></div>
+    <div class="hoa-fee">
+      <div class="hf-amt">~$408<span>/month</span></div>
+      <div class="hf-text"><strong>HOA fee</strong> Higher than nearby condo HOAs, mostly because it maintains the lake, fountains and waterfalls.</div>
     </div>
     <div class="hoa-grid">
       <div>
-      <h3 class="hoa-h">What the HOA Covers</h3>
-      <ul class="hoa-covers">
-        <li>Central lake, fountain &amp; waterfall maintenance</li>
-        <li>Two lighted tennis courts</li>
-        <li>Heated pool and two spas</li>
-        <li>Dry sauna and fitness center</li>
-        <li>All greenbelt landscaping</li>
-        <li>Exterior building maintenance</li>
-        <li>Covered carport parking with storage</li>
-      </ul>
+        <h3 class="hoa-h">Amenities included</h3>
+        <ul class="amen-grid">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 13c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M12 9V3M9.5 5.5 12 3l2.5 2.5"/></svg><span>Lake, fountains &amp; waterfalls</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M8 15V5a2 2 0 0 1 4 0M16 15V5a2 2 0 0 0-4 0M8 9h8"/></svg><span>Heated pool &amp; two spas</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7v10M18 7v10M3 9v6M21 9v6M6 12h12"/></svg><span>Sauna &amp; fitness center</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6c3.5 3.5 3.5 9.3 0 12.8M18.4 5.6c-3.5 3.5-3.5 9.3 0 12.8"/></svg><span>Two lighted tennis courts</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V12"/><path d="M7 12a5 5 0 1 1 10 0z"/><path d="M4 22h16"/></svg><span>Greenbelts &amp; walking paths</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10 12 4l9 6"/><path d="M5 10v10M19 10v10M3 20h18"/><rect x="8" y="13" width="8" height="4" rx="1"/></svg><span>Covered carports &amp; storage</span></li>
+        </ul>
+        <p class="hoa-also"><strong>Also covered:</strong> exterior building maintenance and all greenbelt landscaping.</p>
       </div>
       <div class="hoa-compare">
         <h3>How Arborlake's HOA Compares</h3>
@@ -966,20 +993,92 @@
   </div>
 </section>
 
+<!-- ============ COMPARE TO OTHER COMMUNITIES ============ -->
+<section class="compare" id="similar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Explore More</div>
+      <h2>Other Carmel Valley Condo Communities</h2>
+      <p>Worth comparing if you're still deciding whether Arborlake's setting is the right fit.</p>
+    </div>
+    <div class="cmp-carousel">
+      <button type="button" class="cmp-arrow prev" aria-label="Previous communities" disabled>&#8249;</button>
+      <div class="cmp-track" tabindex="0" aria-label="Other Carmel Valley condo communities">
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/the-lakes/">
+          <div class="cmp-img"><img src="/images/the-lakes-condos-carmel-valley.jpg" alt="The Lakes condo community in Carmel Valley, San Diego" loading="lazy"></div>
+          <div class="cmp-body">
+            <h3>The Lakes</h3>
+            <div class="cmp-meta">HOA ~$397/mo &middot; Southwest CV</div>
+            <p>Also a water-feature community &mdash; koi ponds and lagoons rather than a central lake &mdash; at a slightly lower HOA.</p>
+            <span class="cmp-go">The Lakes condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/carmel-pointe/">
+          <div class="cmp-img"><img src="/images/carmel-pointe-condos-carmel-valley.jpg" alt="Carmel Pointe condo community in Carmel Valley, San Diego" loading="lazy"></div>
+          <div class="cmp-body">
+            <h3>Carmel Pointe</h3>
+            <div class="cmp-meta">HOA ~$350/mo &middot; Built 2001&ndash;2002</div>
+            <p>Newer construction with underground garage parking &mdash; the better comparison if you'd trade mature landscaping for a newer building.</p>
+            <span class="cmp-go">Carmel Pointe condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/del-mar-villas/">
+          <div class="cmp-img ph" aria-hidden="true">Del Mar Villas</div>
+          <div class="cmp-body">
+            <h3>Del Mar Villas</h3>
+            <div class="cmp-meta">HOA ~$340/mo &middot; 216 units</div>
+            <p>A larger central Carmel Valley community with a broader amenity package &mdash; sauna, pickleball, a billiards room.</p>
+            <span class="cmp-go">Del Mar Villas condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="/camino-villas-condos-for-sale/">
+          <div class="cmp-img"><img src="/images/camino-villas-condos-carmel-valley.webp" alt="Camino Villas condo community in Carmel Valley, San Diego" loading="lazy"></div>
+          <div class="cmp-body">
+            <h3>Camino Villas</h3>
+            <div class="cmp-meta">Community pool &middot; Central CV</div>
+            <p>An established central Carmel Valley condo community known for mature, resort-style landscaping and a shared pool.</p>
+            <span class="cmp-go">Camino Villas condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/martinique/">
+          <div class="cmp-img ph" aria-hidden="true">Martinique</div>
+          <div class="cmp-body">
+            <h3>Martinique</h3>
+            <div class="cmp-meta">HOA ~$335/mo &middot; Carmel Valley</div>
+            <p>One of the lower-HOA condo options among nearby comparable communities &mdash; worth a look if monthly cost is a priority.</p>
+            <span class="cmp-go">Martinique condos for sale &rarr;</span>
+          </div>
+        </a>
+      </div>
+      <button type="button" class="cmp-arrow next" aria-label="More communities">&#8250;</button>
+    </div>
+    <script>
+    (function(){
+      var c=document.querySelector('.cmp-carousel'); if(!c) return;
+      var t=c.querySelector('.cmp-track'), p=c.querySelector('.prev'), n=c.querySelector('.next');
+      function step(){ var card=t.querySelector('.cmp-card'); return card ? card.offsetWidth + parseFloat(getComputedStyle(t).columnGap||16) : 300; }
+      function upd(){ p.disabled = t.scrollLeft < 4; n.disabled = t.scrollLeft + t.clientWidth >= t.scrollWidth - 4; }
+      p.addEventListener('click', function(){ t.scrollBy({left:-step(),behavior:'smooth'}); });
+      n.addEventListener('click', function(){ t.scrollBy({left:step(),behavior:'smooth'}); });
+      t.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); upd();
+    })();
+    </script>
+  </div>
+</section>
+
 <!-- ============ PRICES & SALES (tabbed: overview, recent sales, trend, analysis) ============ -->
 <section class="prices" id="sold-data">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Sold Data &middot; Last 5 Years</div>
       <h2>Arborlake Prices &amp; Sales</h2>
-      <p>Closed Arborlake sales, pulled live from MLS sold records.</p>
       <p class="data-stamp" id="px-stamp"></p>
     </div>
-    <div class="px-tabs" role="tablist" aria-label="Arborlake price and sales views">
-      <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true">Overview</button>
-      <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1">Recent Sales</button>
-      <button type="button" role="tab" id="tab-trend" aria-controls="px-trend" aria-selected="false" tabindex="-1">Trend</button>
-      <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1">Analysis</button>
+    <div class="px-tabs btn-tabs" role="tablist" aria-label="Arborlake price and sales views">
+      <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
+      <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
+      <button type="button" role="tab" id="tab-trend" aria-controls="px-trend" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Trend</button>
+      <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>Analysis</button>
     </div>
 
     <div class="px-panel" role="tabpanel" id="px-overview" aria-labelledby="tab-overview">
@@ -1448,80 +1547,6 @@
 
 
 
-
-<!-- ============ MARKET SNAPSHOT ============ -->
-<!-- ============ COMPARE TO OTHER COMMUNITIES ============ -->
-<section class="compare" id="similar">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Explore More</div>
-      <h2>Other Carmel Valley Condo Communities</h2>
-      <p>Worth comparing if you're still deciding whether Arborlake's setting is the right fit.</p>
-    </div>
-    <div class="cmp-carousel">
-      <button type="button" class="cmp-arrow prev" aria-label="Previous communities" disabled>&#8249;</button>
-      <div class="cmp-track" tabindex="0" aria-label="Other Carmel Valley condo communities">
-        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/the-lakes/">
-          <div class="cmp-img"><img src="/images/the-lakes-condos-carmel-valley.jpg" alt="The Lakes condo community in Carmel Valley, San Diego" loading="lazy"></div>
-          <div class="cmp-body">
-            <h3>The Lakes</h3>
-            <div class="cmp-meta">HOA ~$397/mo &middot; Southwest CV</div>
-            <p>Also a water-feature community &mdash; koi ponds and lagoons rather than a central lake &mdash; at a slightly lower HOA.</p>
-            <span class="cmp-go">The Lakes condos for sale &rarr;</span>
-          </div>
-        </a>
-        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/carmel-pointe/">
-          <div class="cmp-img"><img src="/images/carmel-pointe-condos-carmel-valley.jpg" alt="Carmel Pointe condo community in Carmel Valley, San Diego" loading="lazy"></div>
-          <div class="cmp-body">
-            <h3>Carmel Pointe</h3>
-            <div class="cmp-meta">HOA ~$350/mo &middot; Built 2001&ndash;2002</div>
-            <p>Newer construction with underground garage parking &mdash; the better comparison if you'd trade mature landscaping for a newer building.</p>
-            <span class="cmp-go">Carmel Pointe condos for sale &rarr;</span>
-          </div>
-        </a>
-        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/del-mar-villas/">
-          <div class="cmp-img ph" aria-hidden="true">Del Mar Villas</div>
-          <div class="cmp-body">
-            <h3>Del Mar Villas</h3>
-            <div class="cmp-meta">HOA ~$340/mo &middot; 216 units</div>
-            <p>A larger central Carmel Valley community with a broader amenity package &mdash; sauna, pickleball, a billiards room.</p>
-            <span class="cmp-go">Del Mar Villas condos for sale &rarr;</span>
-          </div>
-        </a>
-        <a class="cmp-card" href="/camino-villas-condos-for-sale/">
-          <div class="cmp-img"><img src="/images/camino-villas-condos-carmel-valley.webp" alt="Camino Villas condo community in Carmel Valley, San Diego" loading="lazy"></div>
-          <div class="cmp-body">
-            <h3>Camino Villas</h3>
-            <div class="cmp-meta">Community pool &middot; Central CV</div>
-            <p>An established central Carmel Valley condo community known for mature, resort-style landscaping and a shared pool.</p>
-            <span class="cmp-go">Camino Villas condos for sale &rarr;</span>
-          </div>
-        </a>
-        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/martinique/">
-          <div class="cmp-img ph" aria-hidden="true">Martinique</div>
-          <div class="cmp-body">
-            <h3>Martinique</h3>
-            <div class="cmp-meta">HOA ~$335/mo &middot; Carmel Valley</div>
-            <p>One of the lower-HOA condo options among nearby comparable communities &mdash; worth a look if monthly cost is a priority.</p>
-            <span class="cmp-go">Martinique condos for sale &rarr;</span>
-          </div>
-        </a>
-      </div>
-      <button type="button" class="cmp-arrow next" aria-label="More communities">&#8250;</button>
-    </div>
-    <script>
-    (function(){
-      var c=document.querySelector('.cmp-carousel'); if(!c) return;
-      var t=c.querySelector('.cmp-track'), p=c.querySelector('.prev'), n=c.querySelector('.next');
-      function step(){ var card=t.querySelector('.cmp-card'); return card ? card.offsetWidth + parseFloat(getComputedStyle(t).columnGap||16) : 300; }
-      function upd(){ p.disabled = t.scrollLeft < 4; n.disabled = t.scrollLeft + t.clientWidth >= t.scrollWidth - 4; }
-      p.addEventListener('click', function(){ t.scrollBy({left:-step(),behavior:'smooth'}); });
-      n.addEventListener('click', function(){ t.scrollBy({left:step(),behavior:'smooth'}); });
-      t.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); upd();
-    })();
-    </script>
-  </div>
-</section>
 
 <!-- ============ FAQ (accordion) ============ -->
 <section class="faq" id="faq">
