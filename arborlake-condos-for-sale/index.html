@@ -99,7 +99,7 @@
   .glance{background:var(--white)}
   .glance-lede{max-width:680px;margin:0 auto 32px;font-size:15.5px;color:#333a42;text-align:center}
   .glance-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  @media(max-width:700px){.glance-grid{grid-template-columns:1fr}}
+
   .glance-card{background:var(--white);padding:26px 26px 22px}
   .glance-card .gc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
   .glance-card .gc-head h3{font-size:16px;font-weight:800;color:var(--ink)}
@@ -157,9 +157,9 @@
   /* HOA cost breakdown */
   .hoa{background:var(--white)}
   .hoa-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-  .hoa-covers{list-style:none}
-  .hoa-covers li{padding:10px 0 10px 28px;position:relative;color:#333a42;font-size:15px;border-bottom:1px solid var(--line)}
-  .hoa-covers li::before{content:"\2713";position:absolute;left:0;color:var(--lake);font-weight:700}
+  .hoa-covers{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+  .hoa-covers li{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;background:var(--paper);border:1px solid var(--line);border-radius:999px;color:#333a42;font-size:14px;line-height:1.3}
+  .hoa-covers li::before{content:"\2713";color:var(--lake);font-weight:800}
   .hoa-compare{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px}
   .hoa-compare h3{font-size:13px;letter-spacing:.03em;text-transform:uppercase;font-weight:700;color:var(--label);margin-bottom:18px}
   .hoa-bar-row{margin-bottom:14px}
@@ -321,13 +321,6 @@
   @media(max-width:480px){.walk-grid{grid-template-columns:1fr}.walk-tile{aspect-ratio:16/10}}
 
   /* touring checklist */
-  .tour{background:var(--white)}
-  .tour-list{list-style:none;max-width:720px;margin:0 auto}
-  .tour-list li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
-  .tour-list li:last-child{border-bottom:none}
-  .tour-num{flex:none;width:30px;height:30px;border-radius:8px;background:#eaf0fe;color:var(--lake);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
-  .tour-item h3{font-size:15px;font-weight:700;margin-bottom:4px;color:var(--ink)}
-  .tour-item p{margin:0;font-size:14px;color:var(--label)}
 
   /* location & schools */
   .location{background:var(--paper)}
@@ -385,6 +378,8 @@
   @media(max-width:860px){.cmp-card{flex-basis:calc((100% - 16px)/2)}}
 
   /* FAQ */
+  .faq-ol{margin:0 30px 18px 20px;padding:0;color:var(--label);font-size:14.5px;display:grid;gap:6px}
+  .faq-ol strong{color:var(--ink)}
   .faq{background:var(--white)}
   .faq-list{max-width:820px;margin:0 auto}
   .faq-list details{border-bottom:1px solid var(--line);padding:4px 0}
@@ -456,9 +451,12 @@
     .fact .num{font-size:13.5px}
 
     .glance-lede{margin-bottom:12px;font-size:14px}
-    .glance-card{padding:14px 16px 10px}
-    .glance-card .gc-head{margin-bottom:8px}
-    .glance-row{padding:7px 0}
+    .glance-card{padding:12px 12px 8px}
+    .glance-card .gc-head{display:block;margin-bottom:4px}
+    .glance-card .gc-head .gc-count{font-size:11px}
+    .glance-row{display:block;padding:6px 0}
+    .glance-row .gr-lbl{display:block;font-size:11.5px}
+    .glance-row .gr-val{display:block;text-align:left;font-size:14px}
 
     .listings-head{margin-bottom:10px}
     .listings-title{font-size:16px}
@@ -476,9 +474,12 @@
     .intro-grid p{margin-bottom:10px}
 
     .hoa-grid{gap:12px}
-    .hoa-covers li{padding:8px 0 8px 24px;font-size:14px}
+    .hoa-covers{gap:6px}
+    .hoa-covers li{padding:5px 10px;font-size:12.5px}
     .hoa-compare{padding:18px}
-    .hoa-bar-row{margin-bottom:11px}
+    .hoa-bar-row{margin-bottom:8px}
+    .hoa-bar-label{font-size:12.5px;margin-bottom:4px}
+    .hoa-compare h3{margin-bottom:10px}
 
     .stat-grid{margin-bottom:18px}
     .stat-box{padding:16px 16px}
@@ -515,7 +516,6 @@
 
     .walk-grid{gap:8px}
 
-    .tour-list li{padding:14px 0;gap:12px}
 
     .loc-map{margin-bottom:20px}
     .loc-map-canvas{height:280px}
@@ -557,11 +557,21 @@
     .contact-grid{gap:16px}
     .contact h2{font-size:clamp(22px,7vw,26px);margin-bottom:12px}
     .contact .c-lead{margin-bottom:18px}
-    .contact-cta{padding:22px 18px}
+    .contact .c-lead{font-size:14.5px}
+    .contact-cta{padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .contact-cta .agent-name,.contact-cta .agent-role{display:none}
+    .contact-cta .contact-btn{margin:0;padding:12px 8px}
+    .contact-cta .contact-btn.outline{grid-column:1/-1}
 
-    .footer{padding:34px 0 0}
-    .footer-top{padding-bottom:18px;gap:16px}
-    .footer-bottom{padding:14px 0}
+    .footer{padding:24px 0 0}
+    .footer-top{grid-template-columns:1fr 1fr;padding-bottom:14px;gap:14px 16px}
+    .footer .f-brand{grid-column:1/-1}
+    .footer .f-brand p,.footer .f-explore{display:none}
+    .footer .f-brand .b-sub{margin:4px 0 0}
+    .footer h4{margin-bottom:8px;font-size:14px}
+    .footer-nav li{margin-bottom:6px;font-size:13px}
+    .footer-nav a{font-size:13px}
+    .footer-bottom{padding:12px 0;gap:6px}
     .disclaimer{padding:12px 0 20px}
   }
 
@@ -852,7 +862,7 @@
       <div class="eyebrow">The First Question</div>
       <h2>What a 1-Bed vs. a 2-Bed Actually Costs</h2>
     </div>
-    <p class="glance-lede">Arborlake only comes in two sizes &mdash; there's no 3-bedroom floor plan in this community. Here's what each has sold for over the last 5 years, straight from closed MLS sales.</p>
+    <p class="glance-lede">Arborlake has only 1- and 2-bedroom floor plans. Here's what each sold for over the last 5 years.</p>
     <div class="glance-grid">
       <div class="glance-card">
         <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count" id="g1-count">6 sales &middot; 5 yrs</div></div>
@@ -867,7 +877,7 @@
         <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g2-range">$675K&ndash;$900K</span></div>
       </div>
     </div>
-    <p class="glance-lede" style="margin-top:14px;margin-bottom:0"><span id="g-ratio">Two-bedrooms have sold nearly three times as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after.</span> See the <a href="#analysis">full 5-year breakdown</a> below for how that gap has moved year to year.</p>
+    <p class="glance-lede" style="margin-top:14px;margin-bottom:0"><span id="g-ratio">Two-bedrooms have sold nearly three times as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after.</span> See the <a href="#analysis">full breakdown</a>.</p>
     <p class="data-stamp" id="g-stamp">Closed MLS sales, last 5 years.</p>
   </div>
 </section>
@@ -1439,42 +1449,6 @@
 
 
 
-<!-- ============ TOURING CHECKLIST ============ -->
-<section class="tour">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Visiting in Person</div>
-      <h2>What to Check When You Tour Arborlake</h2>
-      <p>Five things worth inspecting or asking about on a showing &mdash; bring this list.</p>
-    </div>
-    <details class="collapsible">
-    <summary><span class="cl-closed">Show Details <span class="cl-icon">+</span></span><span class="cl-open">Hide Details <span class="cl-icon">–</span></span></summary>
-    <ul class="tour-list">
-      <li>
-        <div class="tour-num">1</div>
-        <div class="tour-item"><h3>Which way the unit faces</h3><p>Ask whether the patio or balcony faces the lake and landscaping, or the parking and carports &mdash; it's the single biggest value driver within the community.</p></div>
-      </li>
-      <li>
-        <div class="tour-num">2</div>
-        <div class="tour-item"><h3>Floor level and stairs</h3><p>Confirm whether it's a ground-floor walk-up or an upper unit with stairs, and ask about elevator access for that specific building &mdash; it matters for daily life and resale.</p></div>
-      </li>
-      <li>
-        <div class="tour-num">3</div>
-        <div class="tour-item"><h3>Noise from the amenities</h3><p>Units near the tennis courts or pool can pick up activity noise on weekends &mdash; worth a visit at a busy time if that matters to you.</p></div>
-      </li>
-      <li>
-        <div class="tour-num">4</div>
-        <div class="tour-item"><h3>Age of interior systems</h3><p>The buildings date to 1986&ndash;1989. Ask the seller's agent for the age of the water heater, HVAC, and any plumbing updates specific to that unit.</p></div>
-      </li>
-      <li>
-        <div class="tour-num">5</div>
-        <div class="tour-item"><h3>Assigned carport and storage</h3><p>Confirm which carport space and storage unit convey with the home, and how close they are to the actual front door &mdash; this varies by building.</p></div>
-      </li>
-    </ul>
-    </details>
-  </div>
-</section>
-
 <!-- ============ MARKET SNAPSHOT ============ -->
 <!-- ============ COMPARE TO OTHER COMMUNITIES ============ -->
 <section class="compare" id="similar">
@@ -1581,6 +1555,10 @@
         <summary>How quickly do Arborlake condos sell?</summary>
         <p>Well-priced, updated listings typically go under contract within 2&ndash;3 weeks, reflecting a buyer pool that often targets this specific community rather than comparison-shopping broadly.</p>
       </details>
+      <details>
+        <summary>What should I check when I tour an Arborlake condo?</summary>
+        <ol class="faq-ol"><li><strong>Which way it faces:</strong> patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.</li><li><strong>Floor level and stairs:</strong> ground-floor walk-up or upstairs, and elevator access for that building.</li><li><strong>Amenity noise:</strong> units near the tennis courts or pool hear weekend activity.</li><li><strong>Age of systems:</strong> water heater, HVAC and plumbing updates. The buildings date to 1986&ndash;1989.</li><li><strong>Carport and storage:</strong> which space and storage unit convey, and how far they are from the door.</li></ol>
+      </details>
     </div>
   </div>
 </section>
@@ -1591,10 +1569,7 @@
     <div class="contact-copy">
       <h2>Thinking About Arborlake?</h2>
       <p class="c-lead">Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure &mdash; just straight answers from someone who knows this community.</p>
-      <p class="c-detail"><strong>Sez Sezer</strong> &middot; Keller Williams Realty</p>
-      <p class="c-detail">DRE #01988197</p>
-      <p class="c-detail">12750 High Bluff Drive, San Diego, CA 92130</p>
-      <p class="c-detail"><strong>Phone:</strong> (858) 436-6585</p>
+      <p class="c-detail"><strong>Sez Sezer</strong> &middot; Keller Williams Realty &middot; <a href="tel:+18584366585" style="color:inherit;white-space:nowrap">(858) 436-6585</a></p>
     </div>
     <div class="contact-cta">
       <div class="agent-name">Sez Sezer</div>
@@ -1615,7 +1590,7 @@
         <div class="b-sub">Sez Sezer &middot; Keller Williams</div>
         <p>Your trusted source for Carmel Valley condos and townhomes in San Diego &mdash; expert guidance for buyers and sellers with 11+ years of local market experience.</p>
       </div>
-      <div>
+      <div class="f-explore">
         <h4>Explore</h4>
         <ul class="footer-nav">
           <li><a href="/">Home</a></li>
@@ -1707,6 +1682,7 @@
     {"@type":"Question","name":"Does Arborlake have Mello-Roos?","acceptedAnswer":{"@type":"Answer","text":"No — Arborlake carries no Mello-Roos assessment, with a property tax rate of approximately 1.07% of assessed value."}},
     {"@type":"Question","name":"How big are the units at Arborlake?","acceptedAnswer":{"@type":"Answer","text":"Arborlake units range from 742-square-foot one-bedrooms to 1,145-square-foot two-bedroom layouts."}},
     {"@type":"Question","name":"How does Arborlake compare to other Carmel Valley condo communities?","acceptedAnswer":{"@type":"Answer","text":"Arborlake's HOA runs higher than comparable communities like The Lakes (~$397/mo), Carmel Pointe (~$350/mo), and Del Mar Villas (~$340/mo) — the difference mostly funds the central lake, fountains, and waterfalls that those communities don't have."}},
+    {"@type":"Question","name":"What should I check when I tour an Arborlake condo?","acceptedAnswer":{"@type":"Answer","text":"Which way it faces: patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.; Floor level and stairs: ground-floor walk-up or upstairs, and elevator access for that building.; Amenity noise: units near the tennis courts or pool hear weekend activity.; Age of systems: water heater, HVAC and plumbing updates. The buildings date to 1986–1989.; Carport and storage: which space and storage unit convey, and how far they are from the door."}},
     {"@type":"Question","name":"How quickly do Arborlake condos sell?","acceptedAnswer":{"@type":"Answer","text":"Well-priced, updated listings typically go under contract within 2-3 weeks, reflecting a buyer pool that often targets this specific community rather than comparison-shopping broadly."}}
   ]
 }

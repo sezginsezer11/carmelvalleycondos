@@ -60,7 +60,7 @@ School assignments can change. Verify current boundaries directly with [Del Mar 
 
 ## What a 1-Bed vs. a 2-Bed Actually Costs
 
-Arborlake only comes in two sizes — there's no 3-bedroom floor plan in this community. Here's what each has sold for over the last 5 years, straight from closed MLS sales.
+Arborlake has only 1- and 2-bedroom floor plans. Here's what each sold for over the last 5 years.
 
 ### 1 Bedroom
 
@@ -78,7 +78,7 @@ Arborlake only comes in two sizes — there's no 3-bedroom floor plan in this co
 - **Median sale price:** $800,000
 - **Price range:** $675K–$900K
 
-Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full 5-year breakdown](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis) below for how that gap has moved year to year.
+Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full breakdown](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis).
 
 Closed MLS sales, last 5 years.
 
@@ -214,18 +214,6 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 - **HOA covers the exterior, not the interior** — Kitchens, baths and flooring are the owner's job. Ask about a unit's updates.
 - **No private yard** — Outdoor space is a patio or balcony. Lake-facing units are the most sought after.
 
-*Visiting in Person*
-
-## What to Check When You Tour Arborlake
-
-Five things worth inspecting or asking about on a showing — bring this list.
-
-- **Which way the unit faces** — Ask whether the patio or balcony faces the lake and landscaping, or the parking and carports — it's the single biggest value driver within the community.
-- **Floor level and stairs** — Confirm whether it's a ground-floor walk-up or an upper unit with stairs, and ask about elevator access for that specific building — it matters for daily life and resale.
-- **Noise from the amenities** — Units near the tennis courts or pool can pick up activity noise on weekends — worth a visit at a busy time if that matters to you.
-- **Age of interior systems** — The buildings date to 1986–1989. Ask the seller's agent for the age of the water heater, HVAC, and any plumbing updates specific to that unit.
-- **Assigned carport and storage** — Confirm which carport space and storage unit convey with the home, and how close they are to the actual front door — this varies by building.
-
 *Explore More*
 
 ## Other Carmel Valley Condo Communities
@@ -306,17 +294,19 @@ Arborlake's HOA runs higher than comparable communities like The Lakes (~$397/mo
 
 Well-priced, updated listings typically go under contract within 2–3 weeks, reflecting a buyer pool that often targets this specific community rather than comparison-shopping broadly.
 
+### What should I check when I tour an Arborlake condo?
+
+1. **Which way it faces:** patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.
+2. **Floor level and stairs:** ground-floor walk-up or upstairs, and elevator access for that building.
+3. **Amenity noise:** units near the tennis courts or pool hear weekend activity.
+4. **Age of systems:** water heater, HVAC and plumbing updates. The buildings date to 1986–1989.
+5. **Carport and storage:** which space and storage unit convey, and how far they are from the door.
+
 ## Thinking About Arborlake?
 
 Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure — just straight answers from someone who knows this community.
 
-**Sez Sezer** · Keller Williams Realty
-
-DRE #01988197
-
-12750 High Bluff Drive, San Diego, CA 92130
-
-**Phone:** (858) 436-6585
+**Sez Sezer** · Keller Williams Realty · [(858) 436-6585](tel:+18584366585)
 
 Sez Sezer
 
