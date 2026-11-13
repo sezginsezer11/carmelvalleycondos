@@ -287,11 +287,13 @@ Well-priced, updated listings typically go under contract within 2–3 weeks, re
 
 Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure — just straight answers from someone who knows this community.
 
-**Sez Sezer** · Keller Williams Realty · [(858) 436-6585](tel:+18584366585)
+![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
 
 Sez Sezer
 
-Luxury Real Estate Advisor
+Keller Williams Realty · DRE #01988197
+
+[(858) 436-6585](tel:+18584366585)
 
 [Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://carmelvalley.com)
 
