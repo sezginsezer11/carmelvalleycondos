@@ -32,19 +32,19 @@ Townhomes
 
 ### Palmilla
 
-[View Listings →](https://carmelvalleycondos.com/palmilla-townhomes-for-sale/)
+[View Listings →](https://www.carmelvalley.com/townhomes-for-sale/palmilla/)
 
 Townhomes
 
 ### Andalucia
 
-[View Listings →](https://carmelvalleycondos.com/andalucia-townhomes-for-sale/)
+[View Listings →](https://www.carmelvalley.com/townhomes-for-sale/andalucia/)
 
 Townhomes
 
 ### Pacifica
 
-[View Listings →](https://carmelvalleycondos.com/pacifica-townhomes-for-sale/)
+[View Listings →](https://www.carmelvalley.com/townhomes-for-sale/pacifica/)
 
 Townhomes
 

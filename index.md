@@ -67,31 +67,31 @@ Condos
 
 ### Carmel Pointe
 
-[View Listings →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
+[View Listings →](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/)
 
 Condos
 
 ### The Lakes
 
-[View Listings →](https://carmelvalleycondos.com/the-lakes-condos-for-sale/)
+[View Listings →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
 
 Townhomes
 
 ### Palmilla
 
-[View Listings →](https://carmelvalleycondos.com/palmilla-townhomes-for-sale/)
+[View Listings →](https://www.carmelvalley.com/townhomes-for-sale/palmilla/)
 
 Townhomes
 
 ### Andalucia
 
-[View Listings →](https://carmelvalleycondos.com/andalucia-townhomes-for-sale/)
+[View Listings →](https://www.carmelvalley.com/townhomes-for-sale/andalucia/)
 
 Townhomes
 
 ### Pacifica
 
-[View Listings →](https://carmelvalleycondos.com/pacifica-townhomes-for-sale/)
+[View Listings →](https://www.carmelvalley.com/townhomes-for-sale/pacifica/)
 
 [View All Condos](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/) [View All Townhomes](https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
 

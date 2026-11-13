@@ -38,13 +38,13 @@ Condos
 
 ### Carmel Pointe
 
-[View Listings →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
+[View Listings →](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/)
 
 Condos
 
 ### The Lakes
 
-[View Listings →](https://carmelvalleycondos.com/the-lakes-condos-for-sale/)
+[View Listings →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
 
 Condos
 
