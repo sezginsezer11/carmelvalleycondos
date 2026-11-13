@@ -265,23 +265,51 @@ Five things worth inspecting or asking about on a showing — bring this list.
 
 Worth comparing if you're still deciding whether Arborlake's setting is the right fit.
 
+![The Lakes condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
+
 ### The Lakes
 
-Also a water-feature community in southwest Carmel Valley — koi ponds and lagoons rather than a central lake — at a slightly lower HOA (~$397/mo).
+HOA ~$397/mo · Southwest CV
 
-[The Lakes Condos for Sale →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
+Also a water-feature community — koi ponds and lagoons rather than a central lake — at a slightly lower HOA.
+
+[The Lakes condos for sale →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
+
+![Carmel Pointe condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 ### Carmel Pointe
 
-Newer construction (2001–2002) with underground garage parking — the better comparison if you'd trade Arborlake's mature landscaping for a newer building.
+HOA ~$350/mo · Built 2001–2002
 
-[Carmel Pointe Condos for Sale →](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/)
+Newer construction with underground garage parking — the better comparison if you'd trade mature landscaping for a newer building.
+
+[Carmel Pointe condos for sale →](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/)
 
 ### Del Mar Villas
 
-A larger community (216 units) in central Carmel Valley with a broader amenity package — sauna, pickleball, a billiards room — for buyers who prioritize variety over a nature-driven setting.
+HOA ~$340/mo · 216 units
 
-[Del Mar Villas Condos for Sale →](https://www.carmelvalley.com/condos-for-sale/del-mar-villas/)
+A larger central Carmel Valley community with a broader amenity package — sauna, pickleball, a billiards room.
+
+[Del Mar Villas condos for sale →](https://www.carmelvalley.com/condos-for-sale/del-mar-villas/)
+
+![Camino Villas condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
+
+### Camino Villas
+
+Community pool · Central CV
+
+An established central Carmel Valley condo community known for mature, resort-style landscaping and a shared pool.
+
+[Camino Villas condos for sale →](https://carmelvalleycondos.com/camino-villas-condos-for-sale/)
+
+### Martinique
+
+HOA ~$335/mo · Carmel Valley
+
+One of the lower-HOA condo options among nearby comparable communities — worth a look if monthly cost is a priority.
+
+[Martinique condos for sale →](https://www.carmelvalley.com/condos-for-sale/martinique/)
 
 *Good to Know*
 

@@ -295,12 +295,25 @@
 
   /* compare communities */
   .compare{background:var(--paper)}
-  .cmp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .cmp-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--white)}
-  .cmp-card h3{font-size:17px;font-weight:700;margin-bottom:8px}
-  .cmp-card p{font-size:14px;color:var(--label);margin-bottom:14px}
-  .cmp-card a{font-size:13px;font-weight:700}
-  @media(max-width:860px){.cmp-grid{grid-template-columns:1fr}}
+  .cmp-carousel{position:relative}
+  .cmp-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 2px 6px;margin:0;list-style:none}
+  .cmp-track::-webkit-scrollbar{display:none}
+  .cmp-card{flex:0 0 calc((100% - 48px)/4);scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;background:var(--white);overflow:hidden;color:inherit;text-decoration:none!important;transition:box-shadow .2s,transform .2s}
+  .cmp-card:hover{box-shadow:0 6px 18px rgba(16,20,24,.08);transform:translateY(-2px)}
+  .cmp-img{aspect-ratio:16/10;background:var(--mist);overflow:hidden}
+  .cmp-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .cmp-img.ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef3fe,#dfe8fb);font-family:var(--serif);font-size:26px;font-weight:600;color:var(--lake-dark);text-align:center;padding:12px}
+  .cmp-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+  .cmp-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--lake)}
+  .cmp-meta{font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:6px}
+  .cmp-card p{font-size:13.5px;line-height:1.5;color:var(--label);margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .cmp-go{margin-top:auto;font-size:13px;font-weight:700;color:var(--lake)}
+  .cmp-arrow{position:absolute;top:calc(50% - 22px);width:40px;height:44px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.95);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,20,24,.08);z-index:2;transition:opacity .2s}
+  .cmp-arrow.prev{left:-20px}
+  .cmp-arrow.next{right:-20px}
+  .cmp-arrow[disabled]{opacity:0;pointer-events:none}
+  @media(max-width:1100px){.cmp-card{flex-basis:calc((100% - 32px)/3)}}
+  @media(max-width:860px){.cmp-card{flex-basis:calc((100% - 16px)/2)}}
 
   /* FAQ */
   .faq{background:var(--white)}
@@ -443,8 +456,13 @@
     .school-list li{padding:11px 0}
 
 
-    .cmp-grid{gap:9px}
-    .cmp-card{padding:18px}
+    .cmp-track{gap:10px;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px}
+    .cmp-card{flex-basis:62%}
+    .cmp-body{padding:10px 12px 12px}
+    .cmp-card h3{font-size:15px}
+    .cmp-meta{font-size:12px}
+    .cmp-card p{font-size:13px;margin-bottom:8px}
+    .cmp-arrow{display:none}
 
     .faq-list summary{padding:15px 28px 15px 0;font-size:15.5px}
     .faq-list details p{padding:0 28px 16px 0;font-size:14px}
@@ -1322,23 +1340,68 @@
       <h2>Other Carmel Valley Condo Communities</h2>
       <p>Worth comparing if you're still deciding whether Arborlake's setting is the right fit.</p>
     </div>
-    <div class="cmp-grid">
-      <div class="cmp-card">
-        <h3>The Lakes</h3>
-        <p>Also a water-feature community in southwest Carmel Valley &mdash; koi ponds and lagoons rather than a central lake &mdash; at a slightly lower HOA (~$397/mo).</p>
-        <a href="https://www.carmelvalley.com/condos-for-sale/the-lakes/">The Lakes Condos for Sale &rarr;</a>
+    <div class="cmp-carousel">
+      <button type="button" class="cmp-arrow prev" aria-label="Previous communities" disabled>&#8249;</button>
+      <div class="cmp-track" tabindex="0" aria-label="Other Carmel Valley condo communities">
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/the-lakes/">
+          <div class="cmp-img"><img src="/images/the-lakes-condos-carmel-valley.jpg" alt="The Lakes condo community in Carmel Valley, San Diego" loading="lazy"></div>
+          <div class="cmp-body">
+            <h3>The Lakes</h3>
+            <div class="cmp-meta">HOA ~$397/mo &middot; Southwest CV</div>
+            <p>Also a water-feature community &mdash; koi ponds and lagoons rather than a central lake &mdash; at a slightly lower HOA.</p>
+            <span class="cmp-go">The Lakes condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/carmel-pointe/">
+          <div class="cmp-img"><img src="/images/carmel-pointe-condos-carmel-valley.jpg" alt="Carmel Pointe condo community in Carmel Valley, San Diego" loading="lazy"></div>
+          <div class="cmp-body">
+            <h3>Carmel Pointe</h3>
+            <div class="cmp-meta">HOA ~$350/mo &middot; Built 2001&ndash;2002</div>
+            <p>Newer construction with underground garage parking &mdash; the better comparison if you'd trade mature landscaping for a newer building.</p>
+            <span class="cmp-go">Carmel Pointe condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/del-mar-villas/">
+          <div class="cmp-img ph" aria-hidden="true">Del Mar Villas</div>
+          <div class="cmp-body">
+            <h3>Del Mar Villas</h3>
+            <div class="cmp-meta">HOA ~$340/mo &middot; 216 units</div>
+            <p>A larger central Carmel Valley community with a broader amenity package &mdash; sauna, pickleball, a billiards room.</p>
+            <span class="cmp-go">Del Mar Villas condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="/camino-villas-condos-for-sale/">
+          <div class="cmp-img"><img src="/images/camino-villas-condos-carmel-valley.webp" alt="Camino Villas condo community in Carmel Valley, San Diego" loading="lazy"></div>
+          <div class="cmp-body">
+            <h3>Camino Villas</h3>
+            <div class="cmp-meta">Community pool &middot; Central CV</div>
+            <p>An established central Carmel Valley condo community known for mature, resort-style landscaping and a shared pool.</p>
+            <span class="cmp-go">Camino Villas condos for sale &rarr;</span>
+          </div>
+        </a>
+        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/martinique/">
+          <div class="cmp-img ph" aria-hidden="true">Martinique</div>
+          <div class="cmp-body">
+            <h3>Martinique</h3>
+            <div class="cmp-meta">HOA ~$335/mo &middot; Carmel Valley</div>
+            <p>One of the lower-HOA condo options among nearby comparable communities &mdash; worth a look if monthly cost is a priority.</p>
+            <span class="cmp-go">Martinique condos for sale &rarr;</span>
+          </div>
+        </a>
       </div>
-      <div class="cmp-card">
-        <h3>Carmel Pointe</h3>
-        <p>Newer construction (2001&ndash;2002) with underground garage parking &mdash; the better comparison if you'd trade Arborlake's mature landscaping for a newer building.</p>
-        <a href="https://www.carmelvalley.com/condos-for-sale/carmel-pointe/">Carmel Pointe Condos for Sale &rarr;</a>
-      </div>
-      <div class="cmp-card">
-        <h3>Del Mar Villas</h3>
-        <p>A larger community (216 units) in central Carmel Valley with a broader amenity package &mdash; sauna, pickleball, a billiards room &mdash; for buyers who prioritize variety over a nature-driven setting.</p>
-        <a href="https://www.carmelvalley.com/condos-for-sale/del-mar-villas/">Del Mar Villas Condos for Sale &rarr;</a>
-      </div>
+      <button type="button" class="cmp-arrow next" aria-label="More communities">&#8250;</button>
     </div>
+    <script>
+    (function(){
+      var c=document.querySelector('.cmp-carousel'); if(!c) return;
+      var t=c.querySelector('.cmp-track'), p=c.querySelector('.prev'), n=c.querySelector('.next');
+      function step(){ var card=t.querySelector('.cmp-card'); return card ? card.offsetWidth + parseFloat(getComputedStyle(t).columnGap||16) : 300; }
+      function upd(){ p.disabled = t.scrollLeft < 4; n.disabled = t.scrollLeft + t.clientWidth >= t.scrollWidth - 4; }
+      p.addEventListener('click', function(){ t.scrollBy({left:-step(),behavior:'smooth'}); });
+      n.addEventListener('click', function(){ t.scrollBy({left:step(),behavior:'smooth'}); });
+      t.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); upd();
+    })();
+    </script>
   </div>
 </section>
 

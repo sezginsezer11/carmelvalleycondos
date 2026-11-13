@@ -179,9 +179,10 @@ class MdRenderer:
 
     def has_block_child(self, node):
         for c in node.children:
-            if isinstance(c, Node) and (c.tag in BLOCK) and not (
+            if isinstance(c, Node) and not (
                     c.tag in SKIP_TAGS or c.classes & SKIP_CLASSES or is_hidden(c)):
-                return True
+                if c.tag in BLOCK or self.has_block_child(c):
+                    return True
         return False
 
     def flush(self):
@@ -289,6 +290,18 @@ class MdRenderer:
         if tag == "blockquote":
             t = norm(self.inline(node))
             self.emit("> " + t if t else "")
+            return
+        if tag == "a" and self.has_block_child(node):
+            # Card-style link wrapping blocks: render the blocks, then turn the
+            # card's last line (its call to action) into the link.
+            self.flush()
+            start = len(self.blocks)
+            for c in node.children:
+                self.block(c)
+            self.flush()
+            href = absurl(node.attrs.get("href", ""), self.page)
+            if len(self.blocks) > start and href:
+                self.blocks[-1] = f"[{self.blocks[-1]}]({href})"
             return
         inline_tag = tag not in BLOCK
         if inline_tag and not self.has_block_child(node):
