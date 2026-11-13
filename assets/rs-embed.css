@@ -9,6 +9,22 @@
 .rsx-open svg,.rsx-bar svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .rsx-bar{display:none}
 
+/* placeholder shown until the RealScout iframe has loaded */
+.rsx-ph{position:absolute;left:0;right:0;top:0;bottom:52px;z-index:1;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef3fe 0%,#f5f6f8 55%,#e8effd 100%);background-size:200% 200%}
+.rsx.is-loaded .rsx-ph{display:none}
+.rsx-ph-in{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:#1456e8;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+.rsx-ph-in svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rsx-ph-in strong{font-size:18px;color:#101418}
+.rsx-ph-in span{font-size:14px;color:#5b6470}
+.rsx-ph-wait{display:none}
+.rsx.is-loading .rsx-ph-wait{display:inline}
+.rsx.is-loading .rsx-ph-tap{display:none}
+.rsx.is-loading .rsx-ph{animation:rsxPulse 1.6s ease-in-out infinite}
+@keyframes rsxPulse{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media (prefers-reduced-motion:reduce){.rsx.is-loading .rsx-ph{animation:none}}
+.rsx.is-open .rsx-ph{top:calc(60px + env(safe-area-inset-top,0px));bottom:0}
+@media(max-width:760px){.rsx-ph{bottom:50px}}
+
 /* full screen */
 .rsx.is-open{position:fixed!important;inset:0!important;z-index:10000!important;width:100%!important;max-width:none!important;margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;height:100%}
 .rsx.is-open iframe{height:auto!important;flex:1 1 auto;min-height:0}

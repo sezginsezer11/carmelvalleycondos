@@ -11,11 +11,34 @@
   var ICON_NEW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>';
   var open = null;
 
+  // RealScout is heavy (≈1.4 MB of its own code + trackers), so the iframe
+  // ships with data-src and only loads on the visitor's first interaction
+  // (scroll, tap, key, mouse wheel) or when they open it.
+  function load(embed){
+    var iframe = embed.querySelector('iframe');
+    if (!iframe || iframe.getAttribute('src')) return;
+    embed.classList.add('is-loading');
+    iframe.addEventListener('load', function(){ embed.classList.remove('is-loading'); embed.classList.add('is-loaded'); }, {once: true});
+    iframe.setAttribute('src', iframe.getAttribute('data-src'));
+  }
+  function loadAll(){
+    var e = document.querySelectorAll('.rsx');
+    for (var i = 0; i < e.length; i++) load(e[i]);
+  }
+
   function setup(embed){
-    var iframe = embed.querySelector('iframe[src*="realscout.com"]');
+    var iframe = embed.querySelector('iframe[src*="realscout.com"], iframe[data-src*="realscout.com"]');
     if (!iframe || embed.classList.contains('rsx')) return;
-    var url = iframe.getAttribute('src');
+    var url = iframe.getAttribute('src') || iframe.getAttribute('data-src');
     embed.classList.add('rsx');
+    if (iframe.getAttribute('src')) embed.classList.add('is-loaded');
+
+    var ph = document.createElement('div');
+    ph.className = 'rsx-ph';
+    ph.setAttribute('aria-hidden', 'true');
+    ph.innerHTML = '<div class="rsx-ph-in"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>' +
+      '<strong>Live MLS listings</strong><span class="rsx-ph-wait">Loading homes for sale&hellip;</span><span class="rsx-ph-tap">Tap to see homes for sale</span></div>';
+    embed.insertBefore(ph, iframe);
 
     var bar = document.createElement('div');
     bar.className = 'rsx-bar';
@@ -42,6 +65,7 @@
 
   function openEmbed(embed){
     if (open) return;
+    load(embed);
     open = embed;
     embed.classList.add('is-open');
     document.documentElement.classList.add('rsx-lock');
@@ -61,6 +85,12 @@
   function init(){
     var embeds = document.querySelectorAll('.rs-embed');
     for (var i = 0; i < embeds.length; i++) setup(embeds[i]);
+    var evs = ['scroll', 'wheel', 'touchstart', 'pointerdown', 'keydown'];
+    function first(){
+      evs.forEach(function(ev){ window.removeEventListener(ev, first, true); });
+      loadAll();
+    }
+    evs.forEach(function(ev){ window.addEventListener(ev, first, {capture: true, passive: true}); });
     function fromHash(){
       if (location.hash === '#expand-map' && embeds[0]){
         try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
