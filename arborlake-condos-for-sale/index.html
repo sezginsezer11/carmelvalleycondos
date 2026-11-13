@@ -870,7 +870,7 @@
         <summary><span class="cl-closed">Read the full analysis <span class="cl-icon">+</span></span><span class="cl-open">Hide the full analysis <span class="cl-icon">&ndash;</span></span></summary>
         <div class="analysis-body">
 
-      <h3>The Big Picture: 22 Sales, Six Years</h3>
+      <h3>The Big Picture: 22 Sales in Five Years</h3>
       <p>Between late 2021 and today, 22 Arborlake condos have closed escrow. That's not a large sample &mdash; some years saw as few as one or two sales, so 2021 and 2024 in particular are single data points, not statistically reliable averages &mdash; so the year-by-year numbers in the Overview tab are best read as a trend, not a guarantee. Still, the trend is legible: after a dip through 2022&ndash;2023, median prices have climbed in each of the last two full years.</p>
 
       <h3>Price Per Square Foot Is the Steadier Signal</h3>
@@ -1235,7 +1235,7 @@
 
       var maxYrMedian = Math.max.apply(null, years.map(function(yr){ return median(byYear[yr].map(function(r){ return r.close_price; })); }));
 
-      var tableHtml = '<p class="snap-caption">Price by Year, ' + years[years.length - 1] + '&ndash;' + currentYear + '</p>' +
+      var tableHtml = '<p class="snap-caption">Price by Year, last 5 years (' + years[years.length - 1] + ' and ' + currentYear + ' are partial years)</p>' +
         '<div class="hist-table-wrap"><table class="hist"><thead><tr>' +
         '<th>Year</th><th>Median</th><th>Sales</th><th>$/Sq Ft</th><th>Avg. DOM</th>' +
         '</tr></thead><tbody>';
