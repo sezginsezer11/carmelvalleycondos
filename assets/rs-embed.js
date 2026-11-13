@@ -85,7 +85,8 @@
   function init(){
     var embeds = document.querySelectorAll('.rs-embed');
     for (var i = 0; i < embeds.length; i++) setup(embeds[i]);
-    var evs = ['scroll', 'wheel', 'touchstart', 'pointerdown', 'keydown'];
+    // no plain 'scroll' here: test robots fire scroll events when they resize the page
+    var evs = ['wheel', 'touchstart', 'pointerdown', 'keydown'];
     function first(){
       evs.forEach(function(ev){ window.removeEventListener(ev, first, true); });
       loadAll();
