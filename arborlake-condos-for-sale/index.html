@@ -32,7 +32,7 @@
   a{color:var(--lake);text-decoration:none;transition:color .15s ease}
   a:hover{color:var(--lake-dark)}
   img{max-width:100%;height:auto;display:block}
-  .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+  .wrap{max-width:1156px;margin:0 auto;padding:0 28px}
 
   /* ============ PRIMARY NAV ============ */
   .masthead{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
@@ -233,12 +233,13 @@
   .px-tabs button:focus-visible{outline:2px solid var(--lake);outline-offset:2px}
   .px-panel{scroll-margin-top:130px}
   .px-intro{text-align:center;font-size:14px;color:var(--label);margin:0 auto 18px;max-width:620px}
-  .px-h{font-size:21px;font-weight:800;letter-spacing:-.01em;max-width:760px;margin:0 auto}
-  #analysis .data-stamp{max-width:760px;margin:6px auto 18px}
-  .takeaways{max-width:760px;margin:0 auto 18px;padding:0;list-style:none;display:grid;gap:10px}
+  .px-h{font-size:21px;font-weight:800;letter-spacing:-.01em;margin:0 auto}
+  #analysis .data-stamp{margin:6px auto 18px}
+  .takeaways{margin:0 auto 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:860px){.takeaways{grid-template-columns:1fr;gap:10px}}
   .takeaways li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px;color:#2b323a;line-height:1.5}
   .takeaways strong{color:var(--ink);display:block;margin-bottom:2px}
-  .px-more{max-width:760px;margin:0 auto}
+  .px-more{margin:0 auto}
   .px-more > summary{list-style:none;cursor:pointer;text-align:center;font-weight:700;color:var(--lake);padding:10px 0 18px}
   .px-more > summary::-webkit-details-marker{display:none}
   .px-more .cl-open{display:none}
@@ -270,7 +271,13 @@
   .fit-list h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:3px}
   .fit-list p{font-size:14px;color:var(--label);margin:0;line-height:1.55}
   @media(max-width:860px){.fit-cols{grid-template-columns:1fr;gap:12px}}
-  .life-wrap{max-width:760px}
+  @media(min-width:861px){
+    .life-wrap{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;grid-template-areas:"h sub" "lead list";align-items:start}
+    .life-wrap h2{grid-area:h}
+    .life-wrap .lead{grid-area:lead}
+    .life-wrap .life-sub{grid-area:sub;margin-top:10px!important}
+    .life-wrap .reasons{grid-area:list}
+  }
   .life-wrap h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;line-height:1.18;margin-bottom:14px;letter-spacing:-.02em}
   .life-wrap .lead{font-size:16.5px;color:#333a42;line-height:1.6}
   .life-sub{font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:800;color:var(--label);margin:26px 0 8px}
@@ -285,7 +292,7 @@
   .cost-tile .ct-val span{font-size:14px;color:var(--label);font-weight:500}
   .cost-tile .ct-lbl{font-size:13px;font-weight:700;color:var(--ink);margin-top:4px}
   .cost-tile .ct-note{font-size:12.5px;color:var(--label);margin-top:2px}
-  .hoa-fee{display:flex;align-items:center;gap:18px;background:var(--lake-soft,#eaf0fe);border:1px solid #d6e2fc;border-radius:14px;padding:18px 22px;margin-bottom:28px;max-width:760px}
+  .hoa-fee{display:flex;align-items:center;gap:18px;background:var(--lake-soft,#eaf0fe);border:1px solid #d6e2fc;border-radius:14px;padding:18px 22px;margin-bottom:28px}
   .hoa-fee .hf-amt{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--lake-dark);white-space:nowrap;font-variant-numeric:tabular-nums}
   .hoa-fee .hf-amt span{font-size:15px;font-weight:500;color:var(--label)}
   .hoa-fee .hf-text{font-size:14.5px;color:#333a42;line-height:1.5}
@@ -350,6 +357,7 @@
   .school-list .s-district{font-size:13.5px;color:var(--label);margin-top:2px}
   @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:28px}}
   .loc-tabs{max-width:440px}
+  .px-wide{max-width:none}
   .btn-tabs{margin:0 auto 16px;padding:0;gap:8px;background:none;border-radius:0}
   .btn-tabs button{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 10px;font-size:15px;font-weight:700;color:var(--lake);background:var(--white);border:1.5px solid var(--lake);border-radius:12px;box-shadow:none}
   .btn-tabs button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
@@ -387,7 +395,7 @@
   .faq-ol{margin:0 30px 18px 20px;padding:0;color:var(--label);font-size:14.5px;display:grid;gap:6px}
   .faq-ol strong{color:var(--ink)}
   .faq{background:var(--white)}
-  .faq-list{max-width:820px;margin:0 auto}
+  .faq-list{margin:0 auto}
   .faq-list details{border-bottom:1px solid var(--line);padding:4px 0}
   .faq-list summary{font-size:16.5px;font-weight:700;padding:20px 40px 20px 0;cursor:pointer;list-style:none;position:relative;color:var(--ink)}
   .faq-list summary::-webkit-details-marker{display:none}
@@ -1027,7 +1035,7 @@
       <h2>Arborlake Prices &amp; Sales</h2>
       <p class="data-stamp" id="px-stamp"></p>
     </div>
-    <div class="px-tabs btn-tabs" role="tablist" aria-label="Arborlake price and sales views">
+    <div class="px-tabs btn-tabs px-wide" role="tablist" aria-label="Arborlake price and sales views">
       <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
       <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
       <button type="button" role="tab" id="tab-trend" aria-controls="px-trend" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Trend</button>
