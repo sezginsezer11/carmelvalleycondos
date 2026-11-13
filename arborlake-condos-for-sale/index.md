@@ -6,8 +6,6 @@ Source page: https://carmelvalleycondos.com/arborlake-condos-for-sale/
 
 [Arborlake Homes for Sale Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
 
-[View All Available Homes →](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
-
 *Carmel Valley · 92130*
 
 ## Arborlake Condos for Sale

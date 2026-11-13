@@ -404,37 +404,39 @@
   .faq-list details p{padding:0 40px 22px 0;color:var(--label);font-size:15px}
 
   /* contact block — white CTA text on accent bg */
-  .contact{background:var(--lake);color:var(--white)}
+  .contact{background:#eef3fe;color:var(--ink);border-top:1px solid #dbe5fb}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-  .contact h2{font-size:clamp(26px,3.8vw,38px);font-weight:800;line-height:1.15;margin-bottom:18px;letter-spacing:-.02em}
-  .contact .c-lead{font-size:16.5px;color:rgba(255,255,255,.9);margin-bottom:26px;font-weight:400}
-  .contact .c-detail{font-size:14.5px;color:rgba(255,255,255,.85);margin-bottom:9px}
-  .contact .c-detail strong{color:var(--white);font-weight:600}
-  .contact-cta{text-align:center;background:rgba(0,0,0,.18);padding:36px 32px;border:1px solid rgba(255,255,255,.18);border-radius:16px}
-  .contact-cta .agent-name{font-size:23px;font-weight:800;color:var(--white);margin-bottom:4px}
-  .contact-cta .agent-role{font-size:12.5px;letter-spacing:.03em;color:rgba(255,255,255,.72);margin-bottom:24px;font-weight:500}
-  .contact-btn{display:block;width:100%;background:var(--white);color:var(--lake-dark)!important;padding:14px;font-size:14.5px;font-weight:700;margin-bottom:12px;transition:background .15s ease;border-radius:8px}
-  .contact-btn:hover{background:#eef2ff}
-  .contact-btn.outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.5)}
-  .contact-btn.outline:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+  .contact h2{font-size:clamp(26px,3.8vw,38px);font-weight:800;line-height:1.15;margin-bottom:18px;letter-spacing:-.02em;color:var(--ink)}
+  .contact .c-lead{font-size:16.5px;color:#333a42;margin-bottom:26px;font-weight:400}
+  .contact .c-detail{font-size:14.5px;color:var(--label);margin-bottom:9px}
+  .contact .c-detail strong{color:var(--ink);font-weight:700}
+  .contact-cta{text-align:center;background:var(--white);padding:32px 28px;border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 20px rgba(16,20,24,.06)}
+  .contact-cta .agent-name{font-size:23px;font-weight:800;color:var(--ink);margin-bottom:4px}
+  .contact-cta .agent-role{font-size:12.5px;letter-spacing:.03em;color:var(--label);margin-bottom:22px;font-weight:500}
+  .contact-btn{display:block;width:100%;background:var(--lake);color:var(--white)!important;padding:14px;font-size:14.5px;font-weight:700;margin-bottom:12px;transition:background .15s ease;border-radius:10px;border:1.5px solid var(--lake)}
+  .contact-btn:hover{background:var(--lake-dark)}
+  .contact-btn.outline{background:var(--white);color:var(--lake)!important;border:1.5px solid var(--lake)}
+  .contact-btn.outline:hover{background:#eef3fe}
   @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:36px}}
 
-  /* ============ FOOTER ============ */
-  .footer{background:var(--ink);color:rgba(255,255,255,.68);padding:60px 0 0;font-size:14.5px}
-  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
-  .footer h4{font-size:15px;color:var(--white);font-weight:700;margin-bottom:18px}
-  .footer .f-brand .b-name{font-size:19px;color:var(--white);font-weight:800}
-  .footer .f-brand .b-sub{font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:6px 0 16px}
-  .footer .f-brand p{font-size:14px;color:rgba(255,255,255,.55);max-width:300px}
+  /* ============ FOOTER (light) ============ */
+  .footer{background:var(--paper);color:var(--label);padding:52px 0 0;font-size:14.5px;border-top:1px solid var(--line)}
+  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line)}
+  .footer h4{font-size:14px;color:var(--ink);font-weight:700;margin-bottom:14px}
+  .footer .f-brand .b-name{font-family:var(--serif);font-size:24px;color:var(--ink);font-weight:600;line-height:1.1}
+  .footer .f-brand .b-sub{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#c9a96e;margin:6px 0 14px;font-weight:600}
+  .footer .f-brand p{font-size:14px;color:var(--label);max-width:300px}
   .footer-nav{list-style:none}
-  .footer-nav li{margin-bottom:11px}
-  .footer-nav a{color:rgba(255,255,255,.68);font-size:14px}
-  .footer-nav a:hover{color:var(--white)}
-  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding:22px 0;font-size:12.5px;color:rgba(255,255,255,.45)}
+  .footer-nav li{margin-bottom:10px}
+  .footer-nav a{color:#333a42;font-size:14px}
+  .footer-nav a:hover{color:var(--lake)}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding:20px 0;font-size:12.5px;color:var(--label)}
   .footer-bottom .secondary-nav{display:flex;gap:22px;flex-wrap:wrap}
-  .footer-bottom .secondary-nav a{color:rgba(255,255,255,.45)}
-  .footer-bottom .secondary-nav a:hover{color:var(--white)}
-  .disclaimer{padding:20px 0 36px;font-size:11.5px;line-height:1.7;color:rgba(255,255,255,.35);border-top:1px solid rgba(255,255,255,.07)}
+  .footer-bottom .secondary-nav a{color:var(--label)}
+  .footer-bottom .secondary-nav a:hover{color:var(--lake)}
+  .disclaimer{padding:18px 0 32px;font-size:11.5px;line-height:1.7;color:#7a8389;border-top:1px solid var(--line)}
+  @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
+  @media(max-width:520px){.footer-top{grid-template-columns:1fr}}
   @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
   @media(max-width:520px){.footer-top{grid-template-columns:1fr}}
 
@@ -584,7 +586,8 @@
     .contact h2{font-size:clamp(22px,7vw,26px);margin-bottom:12px}
     .contact .c-lead{margin-bottom:18px}
     .contact .c-lead{font-size:14.5px}
-    .contact-cta{padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .contact-cta{padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .footer .f-brand .b-name{font-size:21px}
     .contact-cta .agent-name,.contact-cta .agent-role{display:none}
     .contact-cta .contact-btn{margin:0;padding:12px 8px}
     .contact-cta .contact-btn.outline{grid-column:1/-1}
@@ -662,7 +665,6 @@
       <span class="b-name">Carmel Valley Condos</span>
       <span class="b-sub">Sez Sezer &middot; Keller Williams</span>
     </a>
-    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('pnav').classList.toggle('open')">&#9776;</button>
     <nav class="primary-nav" id="pnav">
       <a href="/">Home</a>
       <a href="/carmel-valley-condos-for-sale/">Condos</a>
@@ -687,13 +689,10 @@
 </header>
 
 <!-- ============ LIVE LISTINGS (inline embed) — first thing on the page ============ -->
-<section class="listings" id="listings" style="padding-top:12px">
+<section class="listings" id="listings" style="padding-top:12px;padding-bottom:16px">
   <div class="wrap">
     <div class="rs-embed" style="max-width:1100px;margin:0 auto">
       <iframe src="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" title="Arborlake Homes for Sale Listings"></iframe>
-    </div>
-    <div style="text-align:center;margin-top:32px">
-      <a href="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" class="btn" style="background:var(--lake);color:var(--white)!important;border-color:var(--lake)" target="_blank" rel="noopener">View All Available Homes &rarr;</a>
     </div>
   </div>
 </section>
@@ -1586,7 +1585,7 @@
   </div>
 </section>
 
-<!-- ============ CONTACT BLOCK (white CTA text on Lake bg — locked) ============ -->
+<!-- ============ CONTACT BLOCK ============ -->
 <section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-copy">
@@ -1598,7 +1597,7 @@
       <div class="agent-name">Sez Sezer</div>
       <div class="agent-role">Luxury Real Estate Advisor</div>
       <a href="tel:+18584366585" class="contact-btn">Call Now</a>
-      <a href="mailto:sez@carmelvalley.com" class="contact-btn">Email Sez</a>
+      <a href="mailto:sez@carmelvalley.com" class="contact-btn outline">Email Sez</a>
       <a href="https://carmelvalley.com" class="contact-btn outline">Search All Listings</a>
     </div>
   </div>
