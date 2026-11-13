@@ -20,10 +20,10 @@ A 190-unit lake-and-waterfall condo community in southwest Carmel Valley — gui
 - **HOA Fee:** ~$408/mo
 - **Square Feet:** 742–1,145
 - **Total Units:** 190
-- **Built:** 1986–1989
+- **Year Built:** 1986–1989
 - **Mello-Roos:** None
 - **Tax Rate:** ~1.07%
-- **Typical Time to Sell:** 14–21 Days
+- **Typical Time to Sell:** 14–21 days
 
 *The First Question*
 
