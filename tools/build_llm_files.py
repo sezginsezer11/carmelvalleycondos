@@ -50,7 +50,7 @@ SKIP_TAGS = {"script", "style", "svg", "noscript", "button", "template",
              "nav", "select", "textarea", "input", "label", "canvas"}
 SKIP_CLASSES = {"fs-bar", "map-click-catch", "map-expand-hint", "quick-rail",
                 "bottom-nav", "hero-ctas", "listings-tag", "cl-open",
-                "cl-closed", "cl-icon", "trend-legend", "am-num", "tour-num", "vp-num", "masthead"}
+                "cl-closed", "cl-icon", "trend-legend", "loc-map-tools", "am-num", "tour-num", "vp-num", "masthead"}
 # Placeholders that JavaScript replaces with live MLS data on the HTML page.
 LIVE_CLASSES = {"snap-state", "sold-state", "trend-state"}
 # Two-part "value + label" widgets rendered as one "Label: value" line.
@@ -140,8 +140,10 @@ def absurl(href, page_path):
 
 def is_hidden(node):
     style = (node.attrs.get("style") or "").replace(" ", "").lower()
+    # Tab panels are hidden only until a visitor clicks their tab, so they count as visible content.
+    hidden_attr = "hidden" in node.attrs and node.attrs.get("role") != "tabpanel"
     return ("display:none" in style or node.attrs.get("aria-hidden") == "true"
-            or "hidden" in node.attrs)
+            or hidden_attr)
 
 
 class MdRenderer:
@@ -254,7 +256,7 @@ class MdRenderer:
         if tag == "details":
             summ = find(node, lambda n: n.tag == "summary")
             q = norm(self.inline(summ)) if summ else ""
-            if q:  # FAQ-style accordion: question becomes a heading
+            if q and "px-more" not in node.classes:  # FAQ-style accordion: question becomes a heading
                 self.emit("### " + q)
             for c in node.children:
                 if c is not summ:

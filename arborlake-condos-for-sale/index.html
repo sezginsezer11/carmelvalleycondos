@@ -180,7 +180,7 @@
   .stat-box .delta{font-family:var(--mono);font-size:11.5px;margin-top:3px;color:var(--label)}
   .stat-box .delta.up{color:var(--up)}
   .stat-box .lbl{font-size:12.5px;color:var(--label);margin-top:8px;font-weight:500}
-  @media(max-width:760px){.stat-grid{grid-template-columns:1fr}.stat-box{border-right:none!important}.stat-box:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.stat-box:last-child{border-bottom:none!important}}
+  @media(max-width:760px){.stat-grid{margin-bottom:18px}.stat-box{padding:14px 12px}.stat-box .num{font-size:18px}.stat-box .delta{font-size:10.5px}.stat-box .lbl{margin-top:4px;font-size:12px}}
   .snap-caption{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--label);font-weight:700;margin:0 0 14px}
   .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line);border-radius:10px}
   table.hist{width:100%;border-collapse:collapse;min-width:520px}
@@ -228,8 +228,30 @@
   .trend-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
 
+  /* prices & sales tabs */
+  .prices{background:var(--white)}
+  .data-stamp{font-size:12.5px;color:var(--label);margin-top:8px}
+  .glance .data-stamp{text-align:center;margin-top:10px}
+  .px-tabs{display:flex;gap:4px;max-width:760px;margin:0 auto 22px;padding:4px;background:var(--mist);border-radius:12px;overflow-x:auto;scrollbar-width:none}
+  .px-tabs::-webkit-scrollbar{display:none}
+  .px-tabs button{flex:1 0 auto;border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--label);padding:9px 14px;border-radius:9px;cursor:pointer;white-space:nowrap}
+  .px-tabs button[aria-selected="true"]{background:var(--white);color:var(--lake);box-shadow:0 1px 4px rgba(16,20,24,.1)}
+  .px-tabs button:focus-visible{outline:2px solid var(--lake);outline-offset:2px}
+  .px-panel{scroll-margin-top:130px}
+  .px-intro{text-align:center;font-size:14px;color:var(--label);margin:0 auto 18px;max-width:620px}
+  .px-h{font-size:21px;font-weight:800;letter-spacing:-.01em;max-width:760px;margin:0 auto}
+  #analysis .data-stamp{max-width:760px;margin:6px auto 18px}
+  .takeaways{max-width:760px;margin:0 auto 18px;padding:0;list-style:none;display:grid;gap:10px}
+  .takeaways li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px;color:#2b323a;line-height:1.5}
+  .takeaways strong{color:var(--ink);display:block;margin-bottom:2px}
+  .px-more{max-width:760px;margin:0 auto}
+  .px-more > summary{list-style:none;cursor:pointer;text-align:center;font-weight:700;color:var(--lake);padding:10px 0 18px}
+  .px-more > summary::-webkit-details-marker{display:none}
+  .px-more .cl-open{display:none}
+  .px-more[open] .cl-open{display:inline}
+  .px-more[open] .cl-closed{display:none}
+
   /* market analysis (article-style content) */
-  .analysis{background:var(--paper)}
   .analysis-body{max-width:760px;margin:0 auto;text-align:left}
   .analysis-body h3{font-size:19px;font-weight:800;letter-spacing:-.01em;margin:36px 0 12px}
   .analysis-body h3:first-child{margin-top:0}
@@ -280,8 +302,19 @@
 
   /* location & schools */
   .location{background:var(--paper)}
-  .loc-map{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px}
-  .loc-map iframe{width:100%;height:380px;border:0;display:block}
+  .loc-map{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px;background:var(--mist)}
+  .loc-map-canvas{width:100%;height:400px}
+  .loc-map-tools{position:absolute;top:10px;left:10px;z-index:500;display:inline-flex;gap:2px;padding:3px;background:rgba(255,255,255,.96);border-radius:10px;box-shadow:0 2px 8px rgba(16,20,24,.18)}
+  .loc-map-tools button{border:0;background:none;font:inherit;font-size:12.5px;font-weight:600;color:var(--label);padding:5px 11px;border-radius:7px;cursor:pointer}
+  .loc-map-tools button[aria-pressed="true"]{background:var(--lake);color:#fff}
+  .loc-map-open{position:absolute;right:10px;top:10px;z-index:500;background:rgba(255,255,255,.96);border-radius:10px;padding:6px 11px;font-size:12.5px;font-weight:700;box-shadow:0 2px 8px rgba(16,20,24,.18)}
+  .loc-map.is-fallback .loc-map-canvas{display:none}
+  .loc-map.is-fallback .loc-map-tools{display:none}
+  .loc-map.is-fallback .loc-map-open{position:static;display:block;text-align:center;box-shadow:none;padding:28px}
+  .loc-map .leaflet-tooltip.loc-lbl{background:none;border:0;box-shadow:none;padding:0;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-shadow:0 0 4px rgba(0,0,0,.9),0 0 2px rgba(0,0,0,.9)}
+  .loc-map .leaflet-tooltip.loc-lbl::before{display:none}
+  .loc-map.is-street .leaflet-tooltip.loc-lbl{color:#0d3eac;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff}
+  .loc-map .leaflet-control-attribution{font-size:9.5px;line-height:1.3}
   .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
   .loc-list{list-style:none}
   .loc-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:#333a42}
@@ -450,7 +483,12 @@
     .tour-list li{padding:14px 0;gap:12px}
 
     .loc-map{margin-bottom:20px}
-    .loc-map iframe{height:240px}
+    .loc-map-canvas{height:280px}
+    .px-tabs{margin-bottom:16px;gap:2px;padding:3px}
+    .px-tabs button{flex:1 1 0;padding:8px 4px;font-size:13px}
+    .px-intro{font-size:13px;margin-bottom:14px}
+    .px-h{font-size:18px}
+    .takeaways li{font-size:14px;padding:12px 14px}
     .loc-grid{gap:12px}
     .loc-list li{padding:9px 0;font-size:13.5px}
     .school-list li{padding:11px 0}
@@ -543,10 +581,8 @@
       <a href="/carmel-valley-condos-for-sale/">Condos</a>
       <a href="/carmel-valley-townhomes-for-sale/">Townhomes</a>
       <a href="/carmel-valley-condo-market-report/">Market Report</a>
-      <a href="/buyer-guide/">Buyers</a>
-      <a href="/seller-guide/">Sellers</a>
-      <a href="/about/">About</a>
-      <a href="/contact/" class="nav-cta">Contact</a>
+      <a href="/home-value/">Home Value</a>
+      <a href="#contact" class="nav-cta">Contact</a>
       <div class="nav-group">
         <div class="nav-group-label">Finances</div>
         <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h2M8 15h2M12 15h2M16 15h2"/></svg>Discover your buying power</a>
@@ -627,19 +663,20 @@
     <p class="glance-lede">Arborlake only comes in two sizes &mdash; there's no 3-bedroom floor plan in this community. Here's what each has sold for over the last 5 years, straight from closed MLS sales.</p>
     <div class="glance-grid">
       <div class="glance-card">
-        <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count">6 sales &middot; 5 yrs</div></div>
-        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val">742&ndash;896 sq ft</span></div>
-        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val">$631,750</span></div>
-        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val">$578K&ndash;$815K</span></div>
+        <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count" id="g1-count">6 sales &middot; 5 yrs</div></div>
+        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g1-size">742&ndash;896 sq ft</span></div>
+        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g1-median">$631,750</span></div>
+        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g1-range">$578K&ndash;$815K</span></div>
       </div>
       <div class="glance-card">
-        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count">16 sales &middot; 5 yrs</div></div>
-        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val">964&ndash;1,145 sq ft</span></div>
-        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val">$800,000</span></div>
-        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val">$675K&ndash;$900K</span></div>
+        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count" id="g2-count">16 sales &middot; 5 yrs</div></div>
+        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g2-size">964&ndash;1,145 sq ft</span></div>
+        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g2-median">$800,000</span></div>
+        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g2-range">$675K&ndash;$900K</span></div>
       </div>
     </div>
-    <p class="glance-lede" style="margin-top:14px;margin-bottom:0">Two-bedrooms have sold nearly three times as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the <a href="#analysis">full 5-year breakdown</a> below for how that gap has moved year to year.</p>
+    <p class="glance-lede" style="margin-top:14px;margin-bottom:0"><span id="g-ratio">Two-bedrooms have sold nearly three times as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after.</span> See the <a href="#analysis">full 5-year breakdown</a> below for how that gap has moved year to year.</p>
+    <p class="data-stamp" id="g-stamp">Closed MLS sales, last 5 years.</p>
   </div>
 </section>
 
@@ -778,52 +815,88 @@
   </div>
 </section>
 
-<!-- ============ PRICE HISTORY BY YEAR ============ -->
-<section class="snapshot" id="sold-data">
+<!-- ============ PRICES & SALES (tabbed: overview, recent sales, trend, analysis) ============ -->
+<section class="prices" id="sold-data">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Sold Data &middot; Last 5 Years</div>
-      <h2>Arborlake Price History by Year</h2>
-      <p>Closed Arborlake sales, pulled live from MLS sold records. The stats below reflect the trailing 12 months; the table breaks the same data out by calendar year.</p>
+      <h2>Arborlake Prices &amp; Sales</h2>
+      <p>Closed Arborlake sales, pulled live from MLS sold records.</p>
+      <p class="data-stamp" id="px-stamp"></p>
     </div>
-    <div id="snapWrap">
-      <div class="snap-state" id="snapState">Loading sales history&hellip;</div>
+    <div class="px-tabs" role="tablist" aria-label="Arborlake price and sales views">
+      <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true">Overview</button>
+      <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1">Recent Sales</button>
+      <button type="button" role="tab" id="tab-trend" aria-controls="px-trend" aria-selected="false" tabindex="-1">Trend</button>
+      <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1">Analysis</button>
     </div>
-    <p class="snap-note" id="snapNote" style="display:none"></p>
-    <p style="text-align:center;margin-top:24px"><a href="#analysis" style="font-weight:600">Read the full market analysis &rarr;</a></p>
-  </div>
-</section>
 
-<!-- ============ RECENTLY SOLD ============ -->
-<section class="sold">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Sold Data</div>
-      <h2>Recently Sold at Arborlake</h2>
-      <p>Actual closed sales, pulled live from MLS sold records.</p>
-    </div>
-    <div id="soldWrap">
-      <div class="sold-state" id="soldState">Loading recent sales&hellip;</div>
-    </div>
-    <p class="sold-note" id="soldNote" style="display:none"></p>
-  </div>
-</section>
-
-<!-- ============ PRICE TRENDS BY BEDROOM COUNT ============ -->
-<section class="trend">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">5-Year Market History</div>
-      <h2>Arborlake Price Trends by Bedroom Count</h2>
-      <p>Every individual closed sale at Arborlake over the last 5 years, plotted by close date and price &mdash; pulled live from MLS sold records.</p>
-    </div>
-    <div class="trend-card">
-      <div id="trendWrap">
-        <div class="trend-state" id="trendState">Loading 5-year sales history&hellip;</div>
+    <div class="px-panel" role="tabpanel" id="px-overview" aria-labelledby="tab-overview">
+      <p class="px-intro">The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.</p>
+      <div id="snapWrap">
+        <div class="snap-state" id="snapState">Loading sales history&hellip;</div>
       </div>
-      <div class="trend-legend" id="trendLegend"></div>
+      <p class="snap-note" id="snapNote" style="display:none"></p>
     </div>
-    <p class="trend-note" id="trendNote" style="display:none"></p>
+
+    <div class="px-panel" role="tabpanel" id="px-sold" aria-labelledby="tab-sold" hidden>
+      <p class="px-intro">The most recent closed sales, grouped by bedroom count.</p>
+      <div id="soldWrap">
+        <div class="sold-state" id="soldState">Loading recent sales&hellip;</div>
+      </div>
+      <p class="sold-note" id="soldNote" style="display:none"></p>
+    </div>
+
+    <div class="px-panel" role="tabpanel" id="px-trend" aria-labelledby="tab-trend" hidden>
+      <p class="px-intro">Every closed sale over the last 5 years, plotted by close date and price.</p>
+      <div class="trend-card">
+        <div id="trendWrap">
+          <div class="trend-state" id="trendState">Loading 5-year sales history&hellip;</div>
+        </div>
+        <div class="trend-legend" id="trendLegend"></div>
+      </div>
+      <p class="trend-note" id="trendNote" style="display:none"></p>
+    </div>
+
+    <div class="px-panel" role="tabpanel" id="analysis" aria-labelledby="tab-analysis" hidden>
+      <h3 class="px-h">Five Years of Arborlake Sales: What the Data Shows</h3>
+      <p class="data-stamp">Written November 2026 from 22 closed sales (late 2021&ndash;2026). The other tabs update automatically.</p>
+      <ul class="takeaways">
+        <li><strong>Price per square foot is rising.</strong> It climbed two years running, to about $815/sq ft in 2025 and $833/sq ft in 2026, a steadier signal than the median price.</li>
+        <li><strong>2-bedrooms are the main market.</strong> 16 of the 22 sales were 2-bedrooms. 1-bedrooms sell less often, which usually means more room to negotiate.</li>
+        <li><strong>Well-priced units sell fast again.</strong> 2025 sales averaged 6 days on market, down from 62 days in 2024.</li>
+      </ul>
+      <details class="px-more">
+        <summary><span class="cl-closed">Read the full analysis <span class="cl-icon">+</span></span><span class="cl-open">Hide the full analysis <span class="cl-icon">&ndash;</span></span></summary>
+        <div class="analysis-body">
+
+      <h3>The Big Picture: 22 Sales, Six Years</h3>
+      <p>Between late 2021 and today, 22 Arborlake condos have closed escrow. That's not a large sample &mdash; some years saw as few as one or two sales, so 2021 and 2024 in particular are single data points, not statistically reliable averages &mdash; so the year-by-year numbers in the Overview tab are best read as a trend, not a guarantee. Still, the trend is legible: after a dip through 2022&ndash;2023, median prices have climbed in each of the last two full years.</p>
+
+      <h3>Price Per Square Foot Is the Steadier Signal</h3>
+      <p>Median price swings around in a market this small &mdash; a single larger or smaller unit selling in a given year can shift the headline number by tens of thousands of dollars. Price per square foot is a cleaner read, because it adjusts for exactly that. And on that measure, Arborlake's story is less bumpy than the median-price table suggests: a climb from $663/sq ft in 2021 to the $770s through 2022&ndash;2023, a dip in 2024, and then a clear move upward to $815/sq ft in 2025 and $833/sq ft so far in 2026.</p>
+      <p class="analysis-pull">Two consecutive years of rising price per square foot, even while the raw median bounced around, is the more trustworthy signal that Arborlake values are genuinely appreciating &mdash; not just that bigger units happened to sell.</p>
+
+      <h3>A Tale of Two Unit Types</h3>
+      <p>Arborlake's 1-bedroom and 2-bedroom units have moved differently enough over the last five years that lumping them into one number hides more than it reveals.</p>
+      <div class="analysis-callout">
+        <div class="analysis-chip"><div class="cv">$800,000</div><div class="cl">2-bed median &middot; 16 sales &middot; $675K&ndash;$900K range</div></div>
+        <div class="analysis-chip"><div class="cv">$631,750</div><div class="cl">1-bed median &middot; 6 sales &middot; $578K&ndash;$815K range</div></div>
+      </div>
+      <p>Two-bedroom units have been the steadier performer: 16 closings, a tight-ish range, and a trend line that points up across the five-year window. One-bedrooms are a different story &mdash; only six sales, a wider spread relative to their price point, and a flatter-to-slightly-declining trend. Some of that gap is a sample-size artifact (six sales is not much to draw a line through), but some of it likely reflects genuine demand: two-bedroom units suit a broader range of buyers &mdash; downsizers who still want a guest room, small families, investors targeting a wider renter pool &mdash; while one-bedrooms draw a narrower, more price-sensitive buyer. The one outlier worth noting: a 1-bedroom sold for $815,000 in the dataset, well above the 1-bed median, almost certainly reflecting an upgraded or larger-than-typical unit rather than a shift in the baseline 1-bed market.</p>
+
+      <h3>Days on Market Tell Their Own Story</h3>
+      <p>If price is what a home sold for, days on market is how hard the seller had to work for it. Arborlake's pattern here is noisy &mdash; again, small numbers &mdash; but the direction lines up with the price data: 2025's four sales averaged just 6 days on market, among the fastest of the five-year window, while 2024's two sales (one of which sat 79 days) averaged 62. That's consistent with a market that cooled into 2023&ndash;2024 and has since tightened back up, rewarding well-priced, well-presented units with quick sales again.</p>
+
+      <h3>How the HOA Fits Into the Value Picture</h3>
+      <p>None of this happens in a vacuum. Arborlake's HOA runs around $408/month &mdash; the highest of the nearby comparable communities this page tracks &mdash; and that premium buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends in the other tabs suggest the market has been willing to pay for that, not penalize it &mdash; appreciation has continued even as the HOA gap versus nearby communities has stayed roughly constant.</p>
+
+      <h3>What This Means If You're Buying or Selling</h3>
+      <p><strong>If you're buying:</strong> don't anchor too hard to any single closed sale &mdash; with this few transactions a year, one unusually large or small unit can swing the "median" meaningfully. Price per square foot and the direction of days-on-market are more reliable signals than any one closing. And know that 2-bedroom units have a longer, steadier sales history to lean on than 1-bedrooms do.</p>
+      <p><strong>If you're selling:</strong> the data says pricing discipline matters more now than it did in the slower 2023&ndash;2024 stretch. The fastest, highest sales in this dataset &mdash; several under 10 days on market in 2025 &mdash; went to units priced right and presented well from day one, not to units that started high and chased the market down.</p>
+        </div>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -852,6 +925,7 @@
           allRows.push(r);
         });
       }
+      renderGlance(allRows);
       renderSnapshot(allRows);
       renderSoldTable(allRows);
       renderTrendChart(allRows);
@@ -861,6 +935,47 @@
       renderSoldTable([]);
       renderTrendChart([]);
     });
+
+  function fmtDate(d){
+    var p = d.split('-');
+    var m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return m[parseInt(p[1],10)-1] + ' ' + parseInt(p[2],10) + ', ' + p[0];
+  }
+
+  // 1-bed vs 2-bed cards: replace the typed-in fallback numbers with live ones
+  function renderGlance(allRows){
+    var now = new Date();
+    var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
+    var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date && new Date(r.close_date) >= start; });
+    if (!rows.length) return;
+    function set(id, html){ var el = document.getElementById(id); if (el) el.innerHTML = html; }
+    function k(n){ return '$' + Math.round(n / 1000) + 'K'; }
+    var counts = {};
+    [1, 2].forEach(function(b){
+      var g = rows.filter(function(r){ return r.beds_total === b; });
+      counts[b] = g.length;
+      if (!g.length) return;
+      var prices = g.map(function(r){ return r.close_price; });
+      var sizes = g.filter(function(r){ return r.living_area; }).map(function(r){ return r.living_area; });
+      set('g' + b + '-count', g.length + (g.length === 1 ? ' sale' : ' sales') + ' &middot; 5 yrs');
+      if (sizes.length) set('g' + b + '-size', Math.min.apply(null, sizes).toLocaleString('en-US') + '&ndash;' + Math.max.apply(null, sizes).toLocaleString('en-US') + ' sq ft');
+      set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
+      set('g' + b + '-range', k(Math.min.apply(null, prices)) + '&ndash;' + k(Math.max.apply(null, prices)));
+    });
+    if (counts[1] && counts[2]){
+      var ratio = counts[2] / counts[1];
+      if (ratio >= 1.5){
+        var words = ratio >= 3.5 ? Math.round(ratio) + ' times' : ratio >= 2.5 ? 'about three times' : ratio >= 1.75 ? 'about twice' : 'about 1.5 times';
+        set('g-ratio', 'Two-bedrooms have sold ' + words + ' as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after.');
+      } else {
+        set('g-ratio', 'One- and two-bedrooms have sold at a similar pace over the last 5 years.');
+      }
+    }
+    var latest = rows.map(function(r){ return r.close_date; }).sort().pop();
+    var stamp = 'Live from MLS closed sales &middot; most recent Arborlake closing ' + fmtDate(latest);
+    set('g-stamp', stamp);
+    set('px-stamp', stamp);
+  }
 
   function renderTrendChart(allRows){
   var wrap = document.getElementById('trendWrap');
@@ -1150,44 +1265,7 @@
 })();
 </script>
 
-<!-- ============ MARKET ANALYSIS (ARTICLE) ============ -->
-<section class="analysis" id="analysis">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Market Analysis</div>
-      <h2>Five Years of Arborlake Home Sales: What the Data Actually Shows</h2>
-      <p>Arborlake is a small community &mdash; 190 units, a handful of closings a year &mdash; which means its sales data rewards a closer read than a headline number ever could.</p>
-    </div>
-    <div class="analysis-body">
 
-      <h3>The Big Picture: 22 Sales, Six Years</h3>
-      <p>Between late 2021 and today, 22 Arborlake condos have closed escrow. That's not a large sample &mdash; some years saw as few as one or two sales, so 2021 and 2024 in particular are single data points, not statistically reliable averages &mdash; so the year-by-year numbers above are best read as a trend, not a guarantee. Still, the trend is legible: after a dip through 2022&ndash;2023, median prices have climbed in each of the last two full years.</p>
-
-      <h3>Price Per Square Foot Is the Steadier Signal</h3>
-      <p>Median price swings around in a market this small &mdash; a single larger or smaller unit selling in a given year can shift the headline number by tens of thousands of dollars. Price per square foot is a cleaner read, because it adjusts for exactly that. And on that measure, Arborlake's story is less bumpy than the median-price table suggests: a climb from $663/sq ft in 2021 to the $770s through 2022&ndash;2023, a dip in 2024, and then a clear move upward to $815/sq ft in 2025 and $833/sq ft so far in 2026.</p>
-      <p class="analysis-pull">Two consecutive years of rising price per square foot, even while the raw median bounced around, is the more trustworthy signal that Arborlake values are genuinely appreciating &mdash; not just that bigger units happened to sell.</p>
-
-      <h3>A Tale of Two Unit Types</h3>
-      <p>Arborlake's 1-bedroom and 2-bedroom units have moved differently enough over the last five years that lumping them into one number hides more than it reveals.</p>
-      <div class="analysis-callout">
-        <div class="analysis-chip"><div class="cv">$800,000</div><div class="cl">2-bed median &middot; 16 sales &middot; $675K&ndash;$900K range</div></div>
-        <div class="analysis-chip"><div class="cv">$631,750</div><div class="cl">1-bed median &middot; 6 sales &middot; $578K&ndash;$815K range</div></div>
-      </div>
-      <p>Two-bedroom units have been the steadier performer: 16 closings, a tight-ish range, and a trend line that points up across the five-year window. One-bedrooms are a different story &mdash; only six sales, a wider spread relative to their price point, and a flatter-to-slightly-declining trend. Some of that gap is a sample-size artifact (six sales is not much to draw a line through), but some of it likely reflects genuine demand: two-bedroom units suit a broader range of buyers &mdash; downsizers who still want a guest room, small families, investors targeting a wider renter pool &mdash; while one-bedrooms draw a narrower, more price-sensitive buyer. The one outlier worth noting: a 1-bedroom sold for $815,000 in the dataset, well above the 1-bed median, almost certainly reflecting an upgraded or larger-than-typical unit rather than a shift in the baseline 1-bed market.</p>
-
-      <h3>Days on Market Tell Their Own Story</h3>
-      <p>If price is what a home sold for, days on market is how hard the seller had to work for it. Arborlake's pattern here is noisy &mdash; again, small numbers &mdash; but the direction lines up with the price data: 2025's four sales averaged just 6 days on market, among the fastest of the five-year window, while 2024's two sales (one of which sat 79 days) averaged 62. That's consistent with a market that cooled into 2023&ndash;2024 and has since tightened back up, rewarding well-priced, well-presented units with quick sales again.</p>
-
-      <h3>How the HOA Fits Into the Value Picture</h3>
-      <p>None of this happens in a vacuum. Arborlake's HOA runs around $408/month &mdash; the highest of the nearby comparable communities this page tracks &mdash; and that premium buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends above suggest the market has been willing to pay for that, not penalize it &mdash; appreciation has continued even as the HOA gap versus nearby communities has stayed roughly constant.</p>
-
-      <h3>What This Means If You're Buying or Selling</h3>
-      <p><strong>If you're buying:</strong> don't anchor too hard to any single closed sale &mdash; with this few transactions a year, one unusually large or small unit can swing the "median" meaningfully. Price per square foot and the direction of days-on-market are more reliable signals than any one closing. And know that 2-bedroom units have a longer, steadier sales history to lean on than 1-bedrooms do.</p>
-      <p><strong>If you're selling:</strong> the data says pricing discipline matters more now than it did in the slower 2023&ndash;2024 stretch. The fastest, highest sales in this dataset &mdash; several under 10 days on market in 2025 &mdash; went to units priced right and presented well from day one, not to units that started high and chased the market down.</p>
-
-    </div>
-  </div>
-</section>
 
 <!-- ============ WHO IT'S FOR ============ -->
 <section class="fit">
@@ -1243,9 +1321,66 @@
       <h2>Where Arborlake Sits in Carmel Valley</h2>
       <p>Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.</p>
     </div>
-    <div class="loc-map">
-      <iframe src="https://www.google.com/maps?q=32.9446313,-117.233088&z=15&output=embed" title="Map showing the Arborlake community location in Carmel Valley, San Diego" loading="lazy"></iframe>
+    <div class="loc-map" id="locMap">
+      <div class="loc-map-canvas" id="locMapCanvas" role="img" aria-label="Map with the Arborlake community boundary outlined in southwest Carmel Valley"></div>
+      <div class="loc-map-tools" role="group" aria-label="Map style">
+        <button type="button" data-base="sat" aria-pressed="true">Satellite</button>
+        <button type="button" data-base="map" aria-pressed="false">Map</button>
+      </div>
+      <a class="loc-map-open" href="https://www.google.com/maps/search/?api=1&amp;query=32.9446313%2C-117.233088" target="_blank" rel="noopener">Open in Google Maps &#8599;</a>
     </div>
+    <script>
+    (function(){
+      var BOUNDARY = [[32.9453704, -117.2343306], [32.944144, -117.2343758], [32.9439239, -117.2336391], [32.9434805, -117.2329296], [32.9437718, -117.2324688], [32.9440314, -117.2319898], [32.9454542, -117.2317132], [32.9453704, -117.2343306]];
+      var el = document.getElementById('locMap');
+      if (!el) return;
+      var started = false;
+      function load(src, css){
+        return new Promise(function(res, rej){
+          var n = document.createElement(css ? 'link' : 'script');
+          if (css){ n.rel = 'stylesheet'; n.href = src; } else { n.src = src; }
+          n.onload = res; n.onerror = rej; document.head.appendChild(n);
+        });
+      }
+      function draw(){
+        var mobile = window.matchMedia('(max-width:760px)').matches;
+        var map = L.map('locMapCanvas', {scrollWheelZoom:false, dragging:!mobile, tap:false, zoomControl:true, attributionControl:true});
+        map.zoomControl.setPosition('bottomright');
+        var ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
+        var sat = L.layerGroup([
+          L.tileLayer(ESRI + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),
+          L.tileLayer(ESRI + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom:19}),
+          L.tileLayer(ESRI + 'Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Labels &copy; Esri'})
+        ]);
+        var street = L.tileLayer(ESRI + 'World_Street_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Map &copy; Esri, HERE, Garmin, OpenStreetMap contributors'});
+        sat.addTo(map);
+        var poly = L.polygon(BOUNDARY, {color:'#ffffff', weight:3, fillColor:'#1456e8', fillOpacity:.35}).addTo(map);
+        poly.bindTooltip('Arborlake', {permanent:true, direction:'center', className:'loc-lbl'});
+        map.fitBounds(poly.getBounds(), {padding: mobile ? [40,40] : [90,90], maxZoom:17});
+        map.setZoom(Math.min(map.getZoom(), 16));
+        el.querySelectorAll('[data-base]').forEach(function(b){
+          b.addEventListener('click', function(){
+            var useSat = b.dataset.base === 'sat';
+            if (useSat){ map.removeLayer(street); sat.addTo(map); poly.setStyle({color:'#ffffff'}); }
+            else { map.removeLayer(sat); street.addTo(map); poly.setStyle({color:'#1456e8'}); }
+            el.classList.toggle('is-street', !useSat);
+            el.querySelectorAll('[data-base]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          });
+        });
+      }
+      function start(){
+        if (started) return; started = true;
+        Promise.all([
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true),
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js')
+        ]).then(draw).catch(function(){ el.classList.add('is-fallback'); });
+      }
+      if ('IntersectionObserver' in window){
+        var io = new IntersectionObserver(function(es){ if (es[0].isIntersecting){ io.disconnect(); start(); } }, {rootMargin:'600px 0px'});
+        io.observe(el);
+      } else { start(); }
+    })();
+    </script>
   </div>
   <div class="wrap loc-grid">
     <div>
@@ -1442,7 +1577,7 @@
 </section>
 
 <!-- ============ CONTACT BLOCK (white CTA text on Lake bg — locked) ============ -->
-<section class="contact">
+<section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div class="contact-copy">
       <h2>Thinking About Arborlake?</h2>
@@ -1479,10 +1614,7 @@
           <li><a href="/carmel-valley-townhomes-for-sale/">Townhomes for Sale</a></li>
           <li><a href="/carmel-valley-condo-market-report/">Market Report</a></li>
           <li><a href="/home-value/#valuation-form">Home Value</a></li>
-          <li><a href="/buyer-guide/">Buyer Guide</a></li>
-          <li><a href="/seller-guide/">Seller Guide</a></li>
-          <li><a href="/about/">About Sez</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -1507,9 +1639,6 @@
     <div class="footer-bottom">
       <div>&copy; 2026 Carmel Valley Condos &middot; Sez Sezer, Keller Williams Realty</div>
       <nav class="secondary-nav">
-        <a href="/privacy-policy/">Privacy Policy</a>
-        <a href="/terms/">Terms of Use</a>
-        <a href="/accessibility/">Accessibility</a>
         <a href="/sitemap.xml">Sitemap</a>
       </nav>
     </div>
@@ -1592,6 +1721,52 @@
   <a href="/home-value/#valuation-form"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1.4 1.2-2 2.5-2s2.5.7 2.5 1.8c0 2.4-5 1.6-5 4 0 1.1 1.1 1.8 2.5 1.8s2.5-.6 2.5-2"/></svg>Home Value</a>
   <a href="#" onclick="event.preventDefault();window.__showMasthead&&window.__showMasthead();document.getElementById('pnav').classList.toggle('open')"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Menu</a>
 </nav>
+
+<script>
+(function(){
+  // Prices & Sales tabs, plus in-page links that point into a hidden tab
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.px-tabs [role="tab"]'));
+  if (!tabs.length) return;
+  function show(tab, focus){
+    tabs.forEach(function(t){
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ show(t); });
+    t.addEventListener('keydown', function(e){
+      var k = e.key, n = null;
+      if (k === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      else if (k === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (k === 'Home') n = tabs[0];
+      else if (k === 'End') n = tabs[tabs.length - 1];
+      if (n){ e.preventDefault(); show(n, true); }
+    });
+  });
+  function openFor(id){
+    var el = id && document.getElementById(id);
+    var panel = el && el.closest('.px-panel');
+    if (!panel) return false;
+    var tab = document.querySelector('[aria-controls="' + panel.id + '"]');
+    if (tab) show(tab);
+    document.getElementById('sold-data').scrollIntoView({behavior:'smooth', block:'start'});
+    return true;
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if (a && openFor(a.getAttribute('href').slice(1))) e.preventDefault();
+  });
+  if (location.hash) openFor(location.hash.slice(1));
+  // close the menu after picking an in-page link
+  document.querySelectorAll('#pnav a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('pnav').classList.remove('open'); });
+  });
+})();
+</script>
 
 <script>
 (function(){

@@ -468,6 +468,8 @@ Arborlake only comes in two sizes — there's no 3-bedroom floor plan in this co
 
 Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full 5-year breakdown](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis) below for how that gap has moved year to year.
 
+Closed MLS sales, last 5 years.
+
 ### About the Arborlake Community
 
 Arborlake is a 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes between 1986 and 1989. What sets it apart from newer 92130 developments is its water-feature setting: a central lake, multiple fountains and waterfalls, and paved walking paths winding through greenbelts that have had nearly four decades to mature.
@@ -542,39 +544,33 @@ Arborlake also carries no Mello-Roos, with a property tax rate around 1.07% — 
 
 *Sold Data · Last 5 Years*
 
-### Arborlake Price History by Year
+### Arborlake Prices & Sales
 
-Closed Arborlake sales, pulled live from MLS sold records. The stats below reflect the trailing 12 months; the table breaks the same data out by calendar year.
+Closed Arborlake sales, pulled live from MLS sold records.
+
+The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
 *Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
 
-[Read the full market analysis →](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis)
+The most recent closed sales, grouped by bedroom count.
 
-*Sold Data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
 
-### Recently Sold at Arborlake
+Every closed sale over the last 5 years, plotted by close date and price.
 
-Actual closed sales, pulled live from MLS sold records.
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/*
+#### Five Years of Arborlake Sales: What the Data Shows
 
-*5-Year Market History*
+Written November 2026 from 22 closed sales (late 2021–2026). The other tabs update automatically.
 
-### Arborlake Price Trends by Bedroom Count
-
-Every individual closed sale at Arborlake over the last 5 years, plotted by close date and price — pulled live from MLS sold records.
-
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/*
-
-*Market Analysis*
-
-### Five Years of Arborlake Home Sales: What the Data Actually Shows
-
-Arborlake is a small community — 190 units, a handful of closings a year — which means its sales data rewards a closer read than a headline number ever could.
+- **Price per square foot is rising.** It climbed two years running, to about $815/sq ft in 2025 and $833/sq ft in 2026, a steadier signal than the median price.
+- **2-bedrooms are the main market.** 16 of the 22 sales were 2-bedrooms. 1-bedrooms sell less often, which usually means more room to negotiate.
+- **Well-priced units sell fast again.** 2025 sales averaged 6 days on market, down from 62 days in 2024.
 
 #### The Big Picture: 22 Sales, Six Years
 
-Between late 2021 and today, 22 Arborlake condos have closed escrow. That's not a large sample — some years saw as few as one or two sales, so 2021 and 2024 in particular are single data points, not statistically reliable averages — so the year-by-year numbers above are best read as a trend, not a guarantee. Still, the trend is legible: after a dip through 2022–2023, median prices have climbed in each of the last two full years.
+Between late 2021 and today, 22 Arborlake condos have closed escrow. That's not a large sample — some years saw as few as one or two sales, so 2021 and 2024 in particular are single data points, not statistically reliable averages — so the year-by-year numbers in the Overview tab are best read as a trend, not a guarantee. Still, the trend is legible: after a dip through 2022–2023, median prices have climbed in each of the last two full years.
 
 #### Price Per Square Foot Is the Steadier Signal
 
@@ -597,7 +593,7 @@ If price is what a home sold for, days on market is how hard the seller had to w
 
 #### How the HOA Fits Into the Value Picture
 
-None of this happens in a vacuum. Arborlake's HOA runs around $408/month — the highest of the nearby comparable communities this page tracks — and that premium buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends above suggest the market has been willing to pay for that, not penalize it — appreciation has continued even as the HOA gap versus nearby communities has stayed roughly constant.
+None of this happens in a vacuum. Arborlake's HOA runs around $408/month — the highest of the nearby comparable communities this page tracks — and that premium buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends in the other tabs suggest the market has been willing to pay for that, not penalize it — appreciation has continued even as the HOA gap versus nearby communities has stayed roughly constant.
 
 #### What This Means If You're Buying or Selling
 
@@ -641,7 +637,7 @@ More photos coming soon — a building exterior & the lake
 
 Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.
 
-[Map showing the Arborlake community location in Carmel Valley, San Diego](https://www.google.com/maps?q=32.9446313,-117.233088&z=15&output=embed)
+[Open in Google Maps ↗](https://www.google.com/maps/search/?api=1&query=32.9446313%2C-117.233088)
 
 *Getting Around*
 
