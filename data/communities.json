@@ -1,0 +1,515 @@
+{
+  "site": "https://carmelvalleycondos.com",
+  "agent": {
+    "name": "Sez Sezer",
+    "brokerage": "Keller Williams Realty",
+    "dre": "01988197",
+    "phone": "+1-858-436-6585",
+    "email": "sez@carmelvalley.com",
+    "office": "12750 High Bluff Drive, San Diego, CA 92130"
+  },
+  "generated": "2026-11-12",
+  "notes": [
+    "Only facts stated on the site or in the agent's own community-boundary map are given as values (verified: true).",
+    "Fields marked verified: false are unknown or unconfirmed and are left null instead of guessed.",
+    "Prices, HOA dues and school assignments change; confirm current figures with the HOA, the MLS and the school districts before relying on them."
+  ],
+  "communities": [
+    {
+      "name": "Arborlake",
+      "slug": "arborlake",
+      "type": "condo",
+      "url": "https://carmelvalleycondos.com/arborlake-condos-for-sale/",
+      "markdown_url": "https://carmelvalleycondos.com/arborlake-condos-for-sale/index.md",
+      "area": {
+        "value": "Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar, San Diego, CA 92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "street_address": {
+        "value": null,
+        "verified": false,
+        "note": "No single community street address is published on the site."
+      },
+      "zip": {
+        "value": "92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "geo": {
+        "value": {
+          "latitude": 32.9446313,
+          "longitude": -117.233088
+        },
+        "source": "Page map and JSON-LD",
+        "verified": true
+      },
+      "boundary": {
+        "value": [
+          [
+            32.9453704,
+            -117.2343306
+          ],
+          [
+            32.944144,
+            -117.2343758
+          ],
+          [
+            32.9439239,
+            -117.2336391
+          ],
+          [
+            32.9434805,
+            -117.2329296
+          ],
+          [
+            32.9437718,
+            -117.2324688
+          ],
+          [
+            32.9440314,
+            -117.2319898
+          ],
+          [
+            32.9454542,
+            -117.2317132
+          ],
+          [
+            32.9453704,
+            -117.2343306
+          ]
+        ],
+        "source": "Sez Sezer's Google My Maps community boundary (lat, lng pairs)",
+        "verified": true
+      },
+      "year_built": {
+        "value": "1986-1989",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "builder": {
+        "value": "Baldwin Homes",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "units": {
+        "value": 190,
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "bedrooms": {
+        "value": [
+          "1 bedroom",
+          "2 bedroom"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided); no 3-bedroom floor plan",
+        "verified": true
+      },
+      "square_feet": {
+        "value": {
+          "min": 742,
+          "max": 1145,
+          "1_bedroom": "742-896",
+          "2_bedroom": "964-1,145"
+        },
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "parking": {
+        "value": "Covered carport with storage (no enclosed garage)",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "hoa": {
+        "monthly_fee": {
+          "value": "~$408/month",
+          "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+          "verified": true
+        },
+        "covers": {
+          "value": [
+            "Central lake, fountain & waterfall maintenance",
+            "Two lighted tennis courts",
+            "Heated pool and two spas",
+            "Dry sauna and fitness center",
+            "All greenbelt landscaping",
+            "Exterior building maintenance",
+            "Covered carport parking with storage"
+          ],
+          "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+          "verified": true
+        },
+        "hoa_name_and_management": {
+          "value": null,
+          "verified": false,
+          "note": "HOA legal name and management company are not published on the site."
+        }
+      },
+      "mello_roos": {
+        "value": "None",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "property_tax_rate": {
+        "value": "~1.07% of assessed value",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "amenities": {
+        "value": [
+          "Central lake with fountains and waterfalls",
+          "Paved walking paths and greenbelts",
+          "Two lighted tennis courts",
+          "Heated pool",
+          "Two spas",
+          "Dry sauna",
+          "Fitness center"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "schools": {
+        "value": [
+          {
+            "level": "Elementary",
+            "name": "Carmel Del Mar Elementary",
+            "district": "Del Mar Union Elementary School District"
+          },
+          {
+            "level": "Middle",
+            "name": "Carmel Valley Middle School",
+            "district": "San Dieguito Union High School District"
+          },
+          {
+            "level": "High",
+            "name": "Torrey Pines High School",
+            "district": "San Dieguito Union High School District"
+          },
+          {
+            "level": "High (alternative)",
+            "name": "Canyon Crest Academy",
+            "district": "San Dieguito Union High School District"
+          }
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided); the page notes assignments can change and should be verified with the districts",
+        "verified": true
+      },
+      "price_range": {
+        "value": "$650K-$875K typical",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided); live closed-sale data is on the page",
+        "verified": true
+      }
+    },
+    {
+      "name": "Camino Villas",
+      "slug": "camino-villas",
+      "type": "condo",
+      "url": "https://carmelvalleycondos.com/camino-villas-condos-for-sale/",
+      "markdown_url": "https://carmelvalleycondos.com/camino-villas-condos-for-sale/index.md",
+      "area": {
+        "value": "Central Carmel Valley, San Diego, CA 92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "street_address": {
+        "value": null,
+        "verified": false,
+        "note": "No single community street address is published on the site."
+      },
+      "zip": {
+        "value": "92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "geo": {
+        "value": {
+          "latitude": 32.9447173,
+          "longitude": -117.2367933
+        },
+        "source": "Page JSON-LD",
+        "verified": true
+      },
+      "boundary": {
+        "value": [
+          [
+            32.9455523,
+            -117.2344464
+          ],
+          [
+            32.9455778,
+            -117.2344428
+          ],
+          [
+            32.9455866,
+            -117.2360903
+          ],
+          [
+            32.9456201,
+            -117.2365639
+          ],
+          [
+            32.9456073,
+            -117.2370857
+          ],
+          [
+            32.9455966,
+            -117.2377503
+          ],
+          [
+            32.9456222,
+            -117.2378962
+          ],
+          [
+            32.9456895,
+            -117.2382342
+          ],
+          [
+            32.9450356,
+            -117.2386176
+          ],
+          [
+            32.9439693,
+            -117.2392196
+          ],
+          [
+            32.9435078,
+            -117.2381522
+          ],
+          [
+            32.9432269,
+            -117.2375195
+          ],
+          [
+            32.9437745,
+            -117.2369461
+          ],
+          [
+            32.9439718,
+            -117.2364494
+          ],
+          [
+            32.9441381,
+            -117.2359726
+          ],
+          [
+            32.9441539,
+            -117.2353025
+          ],
+          [
+            32.9441786,
+            -117.2349755
+          ],
+          [
+            32.9441513,
+            -117.2344313
+          ],
+          [
+            32.9455523,
+            -117.2344464
+          ]
+        ],
+        "source": "Sez Sezer's Google My Maps community boundary (lat, lng pairs)",
+        "verified": true
+      },
+      "year_built": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "builder": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "units": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "hoa": {
+        "monthly_fee": {
+          "value": null,
+          "verified": false,
+          "note": "Not stated on the site; the page says fees vary by unit size."
+        },
+        "covers": {
+          "value": [
+            "Exterior maintenance",
+            "Common-area landscaping",
+            "Pool upkeep",
+            "Master insurance on shared structures"
+          ],
+          "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+          "verified": false,
+          "note": "The page describes what condo HOAs 'like Camino Villas' typically cover; not confirmed against this HOA's documents."
+        }
+      },
+      "mello_roos": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "amenities": {
+        "value": [
+          "Community pool and sun deck",
+          "Mature, resort-style landscaping"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "schools": {
+        "value": null,
+        "verified": false,
+        "note": "Not listed on the community page; verify with Del Mar Union SD (dmusd.org) and San Dieguito Union HSD (sduhsd.net)."
+      }
+    },
+    {
+      "name": "The Heights",
+      "slug": "the-heights",
+      "type": "townhome",
+      "url": "https://carmelvalleycondos.com/the-heights-townhomes-for-sale/",
+      "markdown_url": "https://carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md",
+      "area": {
+        "value": "Central Carmel Valley, San Diego, CA 92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "street_address": {
+        "value": null,
+        "verified": false,
+        "note": "No single community street address is published on the site."
+      },
+      "zip": {
+        "value": "92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "geo": {
+        "value": {
+          "latitude": 32.9472434,
+          "longitude": -117.22809
+        },
+        "source": "Page JSON-LD",
+        "verified": true
+      },
+      "boundary": {
+        "value": [
+          [
+            32.9489108,
+            -117.2287267
+          ],
+          [
+            32.9491833,
+            -117.2288688
+          ],
+          [
+            32.9491729,
+            -117.2290382
+          ],
+          [
+            32.9467452,
+            -117.2290546
+          ],
+          [
+            32.9464922,
+            -117.2287013
+          ],
+          [
+            32.9461684,
+            -117.2283297
+          ],
+          [
+            32.9461713,
+            -117.2282556
+          ],
+          [
+            32.9471902,
+            -117.2270615
+          ],
+          [
+            32.9474454,
+            -117.2273478
+          ],
+          [
+            32.9479081,
+            -117.2278239
+          ],
+          [
+            32.9482718,
+            -117.22819
+          ],
+          [
+            32.9485326,
+            -117.2284482
+          ],
+          [
+            32.9489108,
+            -117.2287267
+          ]
+        ],
+        "source": "Sez Sezer's Google My Maps community boundary (lat, lng pairs)",
+        "verified": true
+      },
+      "year_built": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "builder": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "units": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "gated": {
+        "value": true,
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "architecture": {
+        "value": "Spanish-Mediterranean: tile roofs, stucco exteriors, mature palm landscaping",
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "hoa": {
+        "monthly_fee": {
+          "value": null,
+          "verified": false,
+          "note": "Not stated on the site; the page says fees vary by unit size."
+        },
+        "covers": {
+          "value": [
+            "Exterior maintenance",
+            "Common-area landscaping",
+            "Gate/security upkeep",
+            "Master insurance on shared structures"
+          ],
+          "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+          "verified": false,
+          "note": "The page describes what gated townhome HOAs 'like The Heights' typically cover; not confirmed against this HOA's documents."
+        }
+      },
+      "mello_roos": {
+        "value": null,
+        "verified": false,
+        "note": "Not stated on the site."
+      },
+      "amenities": {
+        "value": [
+          "Controlled-access gated entrance"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+        "verified": true
+      },
+      "schools": {
+        "value": null,
+        "verified": false,
+        "note": "Not listed on the community page; verify with Del Mar Union SD (dmusd.org) and San Dieguito Union HSD (sduhsd.net)."
+      }
+    }
+  ]
+}

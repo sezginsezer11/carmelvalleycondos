@@ -1,127 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://carmelvalleycondos.com/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://carmelvalleycondos.com/carmel-valley-condos-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://carmelvalleycondos.com/carmel-valley-condo-market-report/</loc>
-    <lastmod>2026-11-07</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://carmelvalleycondos.com/arborlake-condos-for-sale/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carmelvalleycondos.com/camino-villas-condos-for-sale/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carmelvalleycondos.com/the-heights-townhomes-for-sale/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://carmelvalleycondos.com/carmel-valley-condo-market-report/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://carmelvalleycondos.com/home-value/</loc>
     <lastmod>2026-11-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://carmelvalleycondos.com/communities/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://carmelvalleycondos.com/arborlake-condos-for-sale/</loc>
+    <loc>https://carmelvalleycondos.com/index.md</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/the-lakes-condos-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/palmilla-townhomes-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://carmelvalleycondos.com/arborlake-condos-for-sale/index.md</loc>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/andalucia-townhomes-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://carmelvalleycondos.com/camino-villas-condos-for-sale/index.md</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/pacifica-townhomes-for-sale/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <loc>https://carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://carmelvalleycondos.com/buyer-guide/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/seller-guide/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://carmelvalleycondos.com/about/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://carmelvalleycondos.com/carmel-valley-condo-market-report/index.md</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/contact/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://carmelvalleycondos.com/privacy-policy/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://carmelvalleycondos.com/home-value/index.md</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/terms/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://carmelvalleycondos.com/llms.txt</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://carmelvalleycondos.com/accessibility/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://carmelvalleycondos.com/llms-full.txt</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
-
+  <url>
+    <loc>https://carmelvalleycondos.com/data/communities.json</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
