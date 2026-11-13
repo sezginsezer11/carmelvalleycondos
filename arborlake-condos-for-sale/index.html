@@ -84,14 +84,16 @@
   .sec-head p{margin-top:14px;font-size:16px;color:var(--label);font-weight:400}
 
   /* quick facts (moved under hero, before listings) */
-  .facts{background:var(--paper);padding:18px 0 22px;border-bottom:1px solid var(--line)}
-  .facts-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;max-width:900px}
-  .fact{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:12px 2px;border-bottom:1px solid var(--line)}
-  .fact:nth-last-child(-n+2){border-bottom:none}
+  .facts{background:var(--paper);padding:0;border-bottom:1px solid var(--line)}
+  .facts-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .fact{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;column-gap:6px;row-gap:2px;padding:16px 10px;text-align:center;border-left:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .fact:nth-child(4n+1){border-left:none}
+  .fact:nth-last-child(-n+4){border-bottom:none}
   .fact svg{display:none}
-  .fact .lbl{order:-1;font-size:14.5px;color:var(--label);font-weight:500}
-  .fact .num{font-family:var(--mono);font-size:16px;font-weight:600;color:var(--ink);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
-  @media(max-width:760px){.facts-grid{grid-template-columns:1fr}.fact:nth-last-child(2){border-bottom:1px solid var(--line)}}
+  .fact .lbl{order:-1;font-size:14px;color:var(--label);font-weight:500}
+  .fact .lbl::after{content:":"}
+  .fact .num{font-size:15px;font-weight:700;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+  @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(4n+1){border-left:1px solid var(--line)}.fact:nth-child(2n+1){border-left:none}.fact:nth-last-child(-n+4){border-bottom:1px solid var(--line)}.fact:nth-last-child(-n+2){border-bottom:none}}
 
   /* price & size at a glance (dashboard panel) */
   .glance{background:var(--white)}
@@ -434,11 +436,9 @@
     .hero-ctas{margin-top:12px;gap:8px}
     .hero-ctas .btn{padding:9px 16px;font-size:13px}
 
-    .facts{padding:6px 0 8px}
-    .fact{padding:9px 2px}
-    .fact{justify-content:flex-start;gap:0}
-    .fact .lbl{font-size:13.5px;flex:0 0 46%}
-    .fact .num{font-size:14.5px;text-align:left}
+    .fact{padding:10px 4px;column-gap:4px}
+    .fact .lbl{font-size:12.5px}
+    .fact .num{font-size:13.5px}
 
     .glance-lede{margin-bottom:12px;font-size:14px}
     .glance-card{padding:14px 16px 10px}
@@ -673,14 +673,14 @@
 <!-- ============ QUICK FACTS ============ -->
 <section class="facts">
   <div class="wrap facts-grid">
-    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div class="num">$650K&ndash;$875K</div><div class="lbl">Price Range</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div class="num">$650K&ndash;$875K</div><div class="lbl">Price</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg><div class="num">~$408/mo</div><div class="lbl">HOA Fee</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h7v7H3zM14 14h7v7h-7z"/><path d="M10 3 21 14"/></svg><div class="num">742&ndash;1,145</div><div class="lbl">Square Feet</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l6-4 6 4v12"/><path d="M15 21V11l6 2v8z"/></svg><div class="num">190</div><div class="lbl">Total Units</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="1"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><div class="num">1986&ndash;1989</div><div class="lbl">Year Built</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 8l8 8"/></svg><div class="num">None</div><div class="lbl">Mello-Roos</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M18 6 6 18"/></svg><div class="num">~1.07%</div><div class="lbl">Tax Rate</div></div>
-    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg><div class="num">14&ndash;21 days</div><div class="lbl">Typical Time to Sell</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg><div class="num">14&ndash;21 days</div><div class="lbl">Time to Sell</div></div>
   </div>
 </section>
 
