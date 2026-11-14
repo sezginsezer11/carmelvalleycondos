@@ -143,7 +143,7 @@ HOA ~$350/mo · Built 2001–2002
 
 Newer construction with underground garage parking — the better comparison if you'd trade mature landscaping for a newer building.
 
-[Carmel Pointe condos for sale →](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/)
+[Carmel Pointe condos for sale →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
 
 ### Del Mar Villas
 

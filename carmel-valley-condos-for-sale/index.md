@@ -38,7 +38,7 @@ Condos
 
 ### Carmel Pointe
 
-[View Listings →](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/)
+[View Listings →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
 
 Condos
 

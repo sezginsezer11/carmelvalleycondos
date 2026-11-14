@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{seo_title}}</title>
+<meta name="description" content="{{seo_description}}">
+<link rel="canonical" href="https://carmelvalleycondos.com{{path}}">
+<link rel="alternate" type="text/markdown" href="https://carmelvalleycondos.com{{path}}index.md">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap"></noscript>
+<style>
+  :root{
+    --ink:#101418;
+    --lake:#1456e8;
+    --lake-dark:#0d3eac;
+    --gold:#1456e8;
+    --label:#5b6470;
+    --paper:#f5f6f8;
+    --mist:#eef0f3;
+    --line:#e1e4e9;
+    --white:#ffffff;
+    --up:#15803d;
+    --serif:'Cormorant Garamond',Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+  a{color:var(--lake);text-decoration:none;transition:color .15s ease}
+  a:hover{color:var(--lake-dark)}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{max-width:1156px;margin:0 auto;padding:0 28px}
+
+  /* ============ PRIMARY NAV ============ */
+  .masthead{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  .masthead .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 28px}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand .b-name{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--ink);letter-spacing:.01em}
+  .brand .b-sub{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#c9a96e;margin-top:6px;font-weight:500}
+  .primary-nav{display:flex;gap:4px;align-items:center}
+  .primary-nav a{font-size:14px;color:#37404a;font-weight:500;position:relative;padding:9px 12px;border-radius:7px}
+  .primary-nav a:hover{background:var(--paper);color:var(--ink)}
+  .nav-cta{background:var(--lake);color:var(--white)!important;padding:10px 18px!important;font-weight:600;border-radius:7px;margin-left:6px}
+  .nav-cta:hover{background:var(--lake-dark)!important}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;font-size:24px;color:var(--ink)}
+  .nav-group{display:none}
+  @media(max-width:1080px){
+    .primary-nav{display:none;position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 65px);overflow-y:auto;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--line);box-shadow:0 16px 32px rgba(16,20,24,.1)}
+    .primary-nav.open{display:flex}
+    .primary-nav a{width:100%;padding:16px 28px;border-bottom:1px solid var(--mist);border-radius:0}
+    .nav-cta{margin:16px 28px;text-align:center;border-radius:7px}
+    .menu-toggle{display:block}
+    .nav-group{display:block;width:100%}
+    .nav-group-label{padding:16px 28px 6px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--label);font-weight:700;background:var(--paper)}
+    .nav-item{display:flex!important;align-items:center;gap:14px}
+    .nav-item svg{width:19px;height:19px;color:var(--lake);flex:none;stroke:currentColor;fill:none;stroke-width:1.6}
+  }
+
+  /* ============ BREADCRUMB ============ */
+  .breadcrumb{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px}
+  .breadcrumb .wrap{display:flex;align-items:center;gap:8px;padding:12px 28px;color:var(--label)}
+  .breadcrumb a{color:var(--label)}
+  .breadcrumb a:hover{color:var(--lake)}
+  .breadcrumb .sep{color:#c3c8cf}
+  .breadcrumb .current{color:var(--ink);font-weight:500}
+
+  /* ============ PAGE HERO (interior) ============ */
+  .page-hero{position:relative;min-height:38vh;display:flex;align-items:center;background:linear-gradient(rgba(16,20,24,.42),rgba(16,20,24,.64)),url('/images/arborlake-condos-carmel-valley.jpg') center/cover no-repeat;color:var(--white)}
+  .page-hero-inner{max-width:820px;padding:56px 28px;margin:0 auto;text-align:center}
+  .page-hero .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.02em;color:var(--white);background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 14px;border-radius:100px;margin-bottom:20px;font-weight:600}
+  .page-hero h1{font-size:clamp(30px,4.6vw,48px);font-weight:800;line-height:1.1;letter-spacing:-.02em}
+  .page-hero p{font-size:clamp(15px,1.6vw,17px);font-weight:400;margin:18px auto 0;max-width:600px;color:rgba(255,255,255,.92)}
+  .hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .hero-ctas .btn{padding:14px 28px}
+
+  /* ============ SECTION SCAFFOLD ============ */
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+  .sec-head .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.02em;color:var(--lake);background:#eaf0fe;padding:5px 14px;border-radius:100px;font-weight:700;margin-bottom:14px}
+  .sec-head h2{font-size:clamp(26px,3.6vw,36px);font-weight:800;line-height:1.18;color:var(--ink);letter-spacing:-.02em}
+  .sec-head p{margin-top:14px;font-size:16px;color:var(--label);font-weight:400}
+
+  /* quick facts (moved under hero, before listings) */
+  .facts{background:var(--paper);padding:0;border-bottom:1px solid var(--line)}
+  .facts-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .fact{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;column-gap:6px;row-gap:2px;padding:16px 10px;text-align:center;border-left:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .fact:nth-child(4n+1){border-left:none}
+  .fact:nth-last-child(-n+4){border-bottom:none}
+  .fact svg{display:none}
+  .fact .lbl{order:-1;font-size:14px;color:var(--label);font-weight:500}
+  .fact .lbl::after{content:":"}
+  .fact .num{font-size:15px;font-weight:700;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+  @media(max-width:760px){.facts-grid{grid-template-columns:repeat(2,1fr)}.fact:nth-child(4n+1){border-left:1px solid var(--line)}.fact:nth-child(2n+1){border-left:none}.fact:nth-last-child(-n+4){border-bottom:1px solid var(--line)}.fact:nth-last-child(-n+2){border-bottom:none}}
+
+  /* price & size at a glance (dashboard panel) */
+  .glance{background:var(--white)}
+  .glance-lede{max-width:680px;margin:0 auto 32px;font-size:15.5px;color:#333a42;text-align:center}
+  .glance-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .glance-grid.g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:760px){.glance-grid.g3{grid-template-columns:1fr 1fr}.glance-grid.g3 .glance-card:last-child{grid-column:1/-1}}
+
+  .glance-card{background:var(--white);padding:26px 26px 22px}
+  .glance-card .gc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
+  .glance-card .gc-head h3{font-size:16px;font-weight:800;color:var(--ink)}
+  .glance-card .gc-head .gc-count{font-family:var(--mono);font-size:12px;color:var(--label)}
+  .glance-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-top:1px solid var(--mist)}
+  .glance-row:first-of-type{border-top:none}
+  .glance-row .gr-lbl{font-size:13px;color:var(--label)}
+  .glance-row .gr-val{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+
+  /* realscout listings CTA / map */
+  .listings{background:var(--white)}
+  .listings-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .listings-title{font-size:18px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+  .listings-tag{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--lake);background:#eaf0fe;padding:5px 10px;border-radius:100px;font-weight:700;white-space:nowrap}
+  .rs-embed{width:100%;background:var(--white);position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .rs-embed iframe{width:100%;height:760px;border:0;display:block}
+
+  .btn{display:inline-block;padding:13px 26px;font-size:14.5px;font-weight:600;border:1.5px solid transparent;cursor:pointer;transition:all .15s ease;border-radius:8px}
+  .btn-solid{background:var(--white);color:var(--ink)!important}
+  .btn-solid:hover{background:var(--mist)}
+  .btn-outline{background:transparent;color:var(--white)!important;border:1.5px solid rgba(255,255,255,.55)}
+  .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+
+  /* sticky jump nav */
+  section[id]{scroll-margin-top:118px}
+
+  /* collapsible secondary sections */
+  .collapsible{text-align:center}
+  .collapsible summary{display:inline-flex;align-items:center;gap:8px;list-style:none;cursor:pointer;font-size:14px;font-weight:600;color:var(--lake);margin-bottom:32px;padding:11px 20px;border:1.5px solid var(--line);border-radius:8px;white-space:nowrap;background:var(--white)}
+  .collapsible summary:hover{border-color:var(--lake);background:#eaf0fe}
+  .collapsible summary::-webkit-details-marker{display:none}
+  .collapsible summary .cl-icon{font-size:16px;font-weight:400}
+  .collapsible summary .cl-open{display:none}
+  .collapsible[open] summary .cl-closed{display:none}
+  .collapsible[open] summary .cl-open{display:inline}
+  .collapsible>:not(summary){text-align:left}
+
+  /* intro */
+  .intro{background:var(--white)}
+  .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .intro-grid h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;line-height:1.18;margin-bottom:20px;letter-spacing:-.02em}
+  .intro-grid .lead{font-size:17px;color:#333a42;margin-bottom:16px;font-weight:500}
+  .intro-grid p{color:var(--label);margin-bottom:16px}
+  .intro-img img{border-radius:14px;border:1px solid var(--line)}
+  @media(max-width:860px){.intro-grid{grid-template-columns:1fr;gap:32px}}
+
+  /* HOA cost breakdown */
+  .hoa{background:var(--white)}
+  .hoa-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .hoa-covers{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+  .hoa-covers li{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;background:var(--paper);border:1px solid var(--line);border-radius:999px;color:#333a42;font-size:14px;line-height:1.3}
+  .hoa-covers li::before{content:"\2713";color:var(--lake);font-weight:800}
+  .hoa-compare{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:24px}
+  .hoa-compare h3{font-size:13px;letter-spacing:.03em;text-transform:uppercase;font-weight:700;color:var(--label);margin-bottom:18px}
+  .hoa-bar-row{margin-bottom:14px}
+  .hoa-bar-row:last-of-type{margin-bottom:0}
+  .hoa-bar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;color:#333a42;margin-bottom:6px}
+  .hoa-bar-label .amt{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:600}
+  .hoa-bar-track{background:var(--mist);height:6px;border-radius:3px;overflow:hidden}
+  .hoa-bar-fill{height:100%;border-radius:3px;background:var(--line)}
+  .hoa-bar-row.this-community .hoa-bar-label{font-weight:700;color:var(--ink)}
+  .hoa-bar-row.this-community .hoa-bar-fill{background:var(--lake)}
+  @media(max-width:860px){.hoa-grid{grid-template-columns:1fr;gap:28px}}
+
+  /* market snapshot (stat boxes + by-year table) */
+  .snapshot{background:var(--white)}
+  .stat-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:28px}
+  .stat-box{background:var(--white);padding:22px 20px;text-align:left;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat-box:nth-child(2n){border-right:none}
+  .stat-box:nth-last-child(-n+2){border-bottom:none}
+  .stat-box .num{font-family:var(--mono);font-size:clamp(20px,2.6vw,26px);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .stat-box .delta{font-family:var(--mono);font-size:11.5px;margin-top:3px;color:var(--label)}
+  .stat-box .delta.up{color:var(--up)}
+  .stat-box .lbl{font-size:12.5px;color:var(--label);margin-top:8px;font-weight:500}
+  @media(max-width:760px){.stat-grid{margin-bottom:18px}.stat-box{padding:14px 12px}.stat-box .num{font-size:18px}.stat-box .delta{font-size:10.5px}.stat-box .lbl{margin-top:4px;font-size:12px}}
+  .snap-caption{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--label);font-weight:700;margin:0 0 14px}
+  .hist-table-wrap{overflow-x:auto;background:var(--white);border:1px solid var(--line);border-radius:10px}
+  table.hist{width:100%;border-collapse:collapse;min-width:520px}
+  table.hist th,table.hist td{padding:12px 16px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--mist)}
+  table.hist th{color:var(--label);font-weight:600;font-size:11px;letter-spacing:.03em;text-transform:uppercase}
+  table.hist td{color:#333a42}
+  table.hist tr:last-child td{border-bottom:none}
+  table.hist tr.ytd td{background:#f5f8ff}
+  table.hist td.num{font-family:var(--mono);font-weight:600;color:var(--ink);font-size:14px;font-variant-numeric:tabular-nums}
+  table.hist td.yr{font-family:var(--mono);color:var(--label)}
+  table.hist .bar-cell{display:flex;align-items:center;gap:10px}
+  table.hist .bar-wrap{position:relative;height:6px;background:var(--mist);border-radius:3px;flex:1;min-width:48px}
+  table.hist .bar-fill{position:absolute;inset:0;background:var(--lake);border-radius:3px}
+  .snap-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
+  .snap-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+
+  /* recently sold */
+  .sold{background:var(--paper)}
+  .sold-table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:10px;font-size:13.5px}
+  .sold-table th{text-align:left;font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:600;padding:12px 16px;border-bottom:1px solid var(--line)}
+  .sold-table td{padding:13px 16px;border-bottom:1px solid var(--mist);color:#333a42}
+  .sold-table tr:last-child td{border-bottom:none}
+  .sold-table td.price{font-family:var(--mono);font-weight:600;font-size:14.5px;color:var(--ink);font-variant-numeric:tabular-nums}
+  .sold-table td.addr{color:var(--ink);font-weight:500}
+  .sold-table .num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--label)}
+  .sold-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
+  .sold-state{text-align:center;padding:40px;color:var(--label);font-size:15px;background:var(--white);border:1px solid var(--line);border-radius:14px}
+  .sold-table-wrap{overflow-x:auto;border-radius:10px}
+  .sold-group{margin-bottom:28px}
+  .sold-group:last-of-type{margin-bottom:0}
+  .sold-group-head{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+  .sold-group-head h3{font-size:16px;font-weight:800;color:var(--ink)}
+  .sold-group-head .cnt{font-family:var(--mono);font-size:12px;color:var(--label)}
+  @media(max-width:700px){.sold-table th:nth-child(4),.sold-table td:nth-child(4){display:none}}
+
+  /* price trend chart */
+  .trend{background:var(--white)}
+  .trend-card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px}
+  .trend-chart{width:100%;height:auto;display:block}
+  .trend-chart .gridline{stroke:var(--line);stroke-width:1}
+  .trend-chart .axis-label{font-family:var(--mono);font-size:10.5px;fill:var(--label)}
+  .trend-legend{display:flex;gap:24px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+  .trend-legend span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#333a42}
+  .trend-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .trend-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
+  .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
+
+  /* prices & sales tabs */
+  .prices{background:var(--white)}
+  .data-stamp{font-size:12.5px;color:var(--label);margin-top:8px}
+  .glance .data-stamp{text-align:center;margin-top:10px}
+  .px-tabs{display:flex;gap:4px;max-width:760px;margin:0 auto 22px;padding:4px;background:var(--mist);border-radius:12px;overflow-x:auto;scrollbar-width:none}
+  .px-tabs::-webkit-scrollbar{display:none}
+  .px-tabs button{flex:1 0 auto;border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--label);padding:9px 14px;border-radius:9px;cursor:pointer;white-space:nowrap}
+  .px-tabs button[aria-selected="true"]{background:var(--white);color:var(--lake);box-shadow:0 1px 4px rgba(16,20,24,.1)}
+  .px-tabs button:focus-visible{outline:2px solid var(--lake);outline-offset:2px}
+  .px-panel{scroll-margin-top:130px}
+  .px-intro{text-align:center;font-size:14px;color:var(--label);margin:0 auto 18px;max-width:620px}
+  .px-h{font-size:21px;font-weight:800;letter-spacing:-.01em;margin:0 auto}
+  #analysis .data-stamp{margin:6px auto 18px}
+  .takeaways{margin:0 auto 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:860px){.takeaways{grid-template-columns:1fr;gap:10px}}
+  .takeaways li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px;color:#2b323a;line-height:1.5}
+  .takeaways strong{color:var(--ink);display:block;margin-bottom:2px}
+  .px-more{margin:0 auto}
+  .px-more > summary{list-style:none;cursor:pointer;text-align:center;font-weight:700;color:var(--lake);padding:10px 0 18px}
+  .px-more > summary::-webkit-details-marker{display:none}
+  .px-more .cl-open{display:none}
+  .px-more[open] .cl-open{display:inline}
+  .px-more[open] .cl-closed{display:none}
+
+  /* market analysis (article-style content) */
+  .analysis-body{max-width:760px;margin:0 auto;text-align:left}
+  .analysis-body h3{font-size:19px;font-weight:800;letter-spacing:-.01em;margin:36px 0 12px}
+  .analysis-body h3:first-child{margin-top:0}
+  .analysis-body p{font-size:15.5px;color:#2b323a;margin-bottom:14px}
+  .analysis-body strong{color:var(--ink);font-weight:700}
+  .analysis-callout{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0}
+  .analysis-chip{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 20px;flex:1;min-width:140px}
+  .analysis-chip .cv{font-size:21px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
+  .analysis-chip .cl{font-size:12px;color:var(--label);font-weight:600;margin-top:4px}
+  .analysis-pull{border-left:3px solid var(--lake);padding:4px 0 4px 20px;margin:22px 0;font-size:17px;font-weight:600;color:var(--ink);line-height:1.4}
+
+  /* who it's for */
+  .fit{background:var(--paper)}
+  .fit-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+  .fit-col{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .fit-col-h{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:800;color:var(--ink);margin-bottom:6px}
+  .fit-col-h::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--up) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat}
+  .fit-col.weigh .fit-col-h::before{background:#b7791f url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M12 6v8M12 18v.5'/%3E%3C/svg%3E") center/14px no-repeat}
+  .fit-list{list-style:none;margin:0;padding:0}
+  .fit-list li{padding:12px 0;border-top:1px solid var(--line)}
+  .fit-list li:first-child{border-top:0}
+  .fit-list h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:3px}
+  .fit-list p{font-size:14px;color:var(--label);margin:0;line-height:1.55}
+  @media(max-width:860px){.fit-cols{grid-template-columns:1fr;gap:12px}}
+  @media(min-width:861px){
+    .life-wrap{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;grid-template-areas:"h sub" "lead list";align-items:start}
+    .life-wrap h2{grid-area:h}
+    .life-wrap .lead{grid-area:lead}
+    .life-wrap .life-sub{grid-area:sub;margin-top:10px!important}
+    .life-wrap .reasons{grid-area:list}
+  }
+  .life-wrap h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;line-height:1.18;margin-bottom:14px;letter-spacing:-.02em}
+  .life-wrap .lead{font-size:16.5px;color:#333a42;line-height:1.6}
+  .life-sub{font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:800;color:var(--label);margin:26px 0 8px}
+  .reasons{list-style:none;margin:0;padding:0}
+  .reasons li{position:relative;padding:10px 0 10px 28px;border-top:1px solid var(--line);font-size:15px;color:var(--label);line-height:1.5}
+  .reasons li:first-child{border-top:0}
+  .reasons li::before{content:"\2713";position:absolute;left:2px;top:10px;color:var(--lake);font-weight:800}
+  .reasons strong{color:var(--ink)}
+  .cost-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px}
+  .cost-tile{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .cost-tile .ct-val{font-family:var(--mono);font-size:24px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+  .cost-tile .ct-val span{font-size:14px;color:var(--label);font-weight:500}
+  .cost-tile .ct-lbl{font-size:13px;font-weight:700;color:var(--ink);margin-top:4px}
+  .cost-tile .ct-note{font-size:12.5px;color:var(--label);margin-top:2px}
+  .hoa-fee{display:flex;align-items:center;gap:18px;background:var(--lake-soft,#eaf0fe);border:1px solid #d6e2fc;border-radius:14px;padding:18px 22px;margin-bottom:28px}
+  .hoa-fee .hf-amt{font-family:var(--mono);font-size:34px;font-weight:700;color:var(--lake-dark);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .hoa-fee .hf-amt span{font-size:15px;font-weight:500;color:var(--label)}
+  .hoa-fee .hf-text{font-size:14.5px;color:#333a42;line-height:1.5}
+  .hoa-fee .hf-text strong{display:block;color:var(--ink);font-size:15px}
+  .amen-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .amen-grid li{display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.3}
+  .amen-grid svg{flex:none;width:24px;height:24px;fill:none;stroke:var(--lake);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .hoa-also{font-size:13.5px;color:var(--label);margin:12px 0 0}
+  .hoa-also strong{color:var(--ink)}
+  .hoa-h{font-size:13px;letter-spacing:.03em;text-transform:uppercase;font-weight:700;color:var(--label);margin-bottom:8px}
+  .fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .fit-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+  .fit-card svg{width:26px;height:26px;color:var(--lake);margin-bottom:16px}
+  .fit-card h3{font-size:17px;font-weight:700;margin-bottom:10px;color:var(--ink)}
+  .fit-card p{font-size:14.5px;color:var(--label)}
+  @media(max-width:860px){.fit-grid{grid-template-columns:1fr}}
+
+  /* what to know before buying */
+  .know{background:var(--white)}
+  .know-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .know-item{display:flex;gap:14px;align-items:flex-start}
+  .know-item svg{flex:none;width:20px;height:20px;color:var(--lake);margin-top:2px}
+  .know-item h3{font-size:15px;font-weight:700;margin-bottom:4px;color:var(--ink)}
+  .know-item p{font-size:14px;color:var(--label);margin:0}
+  @media(max-width:760px){.know-grid{grid-template-columns:1fr}}
+
+  /* photo walkthrough */
+  .walkthrough{background:var(--paper)}
+  .walk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .walk-tile{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--white);border-radius:12px;border:1px solid var(--line)}
+  .walk-tile img{width:100%;height:100%;object-fit:cover}
+  .walk-tile .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(16,20,24,.72));color:var(--white);font-size:12.5px}
+  .walk-tile.placeholder{border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--label);font-size:13px;padding:16px}
+  @media(max-width:760px){.walk-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:480px){.walk-grid{grid-template-columns:1fr}.walk-tile{aspect-ratio:16/10}}
+
+  /* touring checklist */
+
+  /* location & schools */
+  .location{background:var(--paper)}
+  .loc-map{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:40px;background:var(--mist)}
+  .loc-map-canvas{width:100%;height:400px}
+  .loc-map-tools{position:absolute;top:10px;left:10px;z-index:500;display:inline-flex;gap:2px;padding:3px;background:rgba(255,255,255,.96);border-radius:10px;box-shadow:0 2px 8px rgba(16,20,24,.18)}
+  .loc-map-tools button{border:0;background:none;font:inherit;font-size:12.5px;font-weight:600;color:var(--label);padding:5px 11px;border-radius:7px;cursor:pointer}
+  .loc-map-tools button[aria-pressed="true"]{background:var(--lake);color:#fff}
+  .loc-map-open{position:absolute;right:10px;top:10px;z-index:500;background:rgba(255,255,255,.96);border-radius:10px;padding:6px 11px;font-size:12.5px;font-weight:700;box-shadow:0 2px 8px rgba(16,20,24,.18)}
+  .loc-map.is-fallback .loc-map-canvas{display:none}
+  .loc-map.is-fallback .loc-map-tools{display:none}
+  .loc-map.is-fallback .loc-map-open{position:static;display:block;text-align:center;box-shadow:none;padding:28px}
+  .loc-map .leaflet-tooltip.loc-lbl{background:none;border:0;box-shadow:none;padding:0;color:#fff;font-family:var(--sans);font-weight:800;font-size:15px;text-shadow:0 0 4px rgba(0,0,0,.9),0 0 2px rgba(0,0,0,.9)}
+  .loc-map .leaflet-tooltip.loc-lbl::before{display:none}
+  .loc-map.is-street .leaflet-tooltip.loc-lbl{color:#0d3eac;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff}
+  .loc-map .leaflet-control-attribution{font-size:9.5px;line-height:1.3}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .loc-list{list-style:none}
+  .loc-list li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:#333a42}
+  .loc-list li span:last-child{color:var(--lake);font-weight:700;white-space:nowrap;padding-left:16px;font-variant-numeric:tabular-nums}
+  .school-list{list-style:none}
+  .school-list li{padding:14px 0;border-bottom:1px solid var(--line)}
+  .school-list .s-level{font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--label);font-weight:700;margin-bottom:4px}
+  .school-list .s-name{font-size:16px;font-weight:700;color:var(--ink)}
+  .school-list .s-district{font-size:13.5px;color:var(--label);margin-top:2px}
+  @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:28px}}
+  .loc-tabs{max-width:440px}
+  .px-wide{max-width:none}
+  .btn-tabs{margin:0 auto 16px;padding:0;gap:8px;background:none;border-radius:0}
+  .btn-tabs button{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 10px;font-size:15px;font-weight:700;color:var(--lake);background:var(--white);border:1.5px solid var(--lake);border-radius:12px;box-shadow:none}
+  .btn-tabs button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .btn-tabs button[aria-selected="true"]{background:var(--lake);color:#fff;box-shadow:0 4px 12px rgba(20,86,232,.25)}
+  .location .loc-panel .sec-head{display:none}
+  @media(min-width:861px){
+    .loc-tabs{display:none}
+    .loc-panel[hidden]{display:block}
+    .location .loc-panel .sec-head{display:block}
+  }
+
+  /* compare communities */
+  .compare{background:var(--paper)}
+  .cmp-carousel{position:relative}
+  .cmp-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 2px 6px;margin:0;list-style:none}
+  .cmp-track::-webkit-scrollbar{display:none}
+  .cmp-card{flex:0 0 calc((100% - 48px)/4);scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;background:var(--white);overflow:hidden;color:inherit;text-decoration:none!important;transition:box-shadow .2s,transform .2s}
+  .cmp-card:hover{box-shadow:0 6px 18px rgba(16,20,24,.08);transform:translateY(-2px)}
+  .cmp-img{aspect-ratio:16/10;background:var(--mist);overflow:hidden}
+  .cmp-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .cmp-img.ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eef3fe,#dfe8fb);font-family:var(--serif);font-size:26px;font-weight:600;color:var(--lake-dark);text-align:center;padding:12px}
+  .cmp-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+  .cmp-card h3{font-size:16px;font-weight:700;margin-bottom:4px;color:var(--lake)}
+  .cmp-meta{font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:6px}
+  .cmp-card p{font-size:13.5px;line-height:1.5;color:var(--label);margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .cmp-go{margin-top:auto;font-size:13px;font-weight:700;color:var(--lake)}
+  .cmp-arrow{position:absolute;top:calc(50% - 22px);width:40px;height:44px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.95);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(16,20,24,.08);z-index:2;transition:opacity .2s}
+  .cmp-arrow.prev{left:-20px}
+  .cmp-arrow.next{right:-20px}
+  .cmp-arrow[disabled]{opacity:0;pointer-events:none}
+  @media(max-width:1100px){.cmp-card{flex-basis:calc((100% - 32px)/3)}}
+  @media(max-width:860px){.cmp-card{flex-basis:calc((100% - 16px)/2)}}
+
+  /* FAQ */
+  .faq-ol{margin:0 30px 18px 20px;padding:0;color:var(--label);font-size:14.5px;display:grid;gap:6px}
+  .faq-ol strong{color:var(--ink)}
+  .faq{background:var(--white)}
+  .faq-list{margin:0 auto}
+  .faq-list details{border-bottom:1px solid var(--line);padding:4px 0}
+  .faq-list summary{font-size:16.5px;font-weight:700;padding:20px 40px 20px 0;cursor:pointer;list-style:none;position:relative;color:var(--ink)}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--lake);transition:transform .2s ease}
+  .faq-list details[open] summary::after{content:"\2013"}
+  .faq-list details p{padding:0 40px 22px 0;color:var(--label);font-size:15px}
+
+  /* contact block — white CTA text on accent bg */
+  .contact{background:#eef3fe;color:var(--ink);border-top:1px solid #dbe5fb}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .contact h2{font-size:clamp(26px,3.8vw,38px);font-weight:800;line-height:1.15;margin-bottom:18px;letter-spacing:-.02em;color:var(--ink)}
+  .contact .c-lead{font-size:16.5px;color:#333a42;margin-bottom:26px;font-weight:400}
+  .contact .c-detail{font-size:14.5px;color:var(--label);margin-bottom:9px}
+  .contact .c-detail strong{color:var(--ink);font-weight:700}
+  .contact-cta{background:var(--white);padding:24px;border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 20px rgba(16,20,24,.06)}
+  .agent{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+  .agent-photo{flex:none;width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #eef3fe;box-shadow:0 2px 8px rgba(16,20,24,.12)}
+  .agent-info{min-width:0}
+  .contact-cta .agent-name{font-size:21px;font-weight:800;color:var(--ink);line-height:1.2}
+  .contact-cta .agent-role{font-size:13px;color:var(--label);margin:2px 0 4px;font-weight:500}
+  .agent-phone{font-size:15px;font-weight:700;color:var(--lake);white-space:nowrap}
+  .contact-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .contact-btns .contact-btn{margin:0;text-align:center}
+  .contact-btns .contact-btn.wide{grid-column:1/-1}
+  .contact-btn{display:block;width:100%;background:var(--lake);color:var(--white)!important;padding:14px;font-size:14.5px;font-weight:700;margin-bottom:12px;transition:background .15s ease;border-radius:10px;border:1.5px solid var(--lake)}
+  .contact-btn:hover{background:var(--lake-dark)}
+  .contact-btn.outline{background:var(--white);color:var(--lake)!important;border:1.5px solid var(--lake)}
+  .contact-btn.outline:hover{background:#eef3fe}
+  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* ============ FOOTER (light) ============ */
+  .footer{background:var(--paper);color:var(--label);padding:52px 0 0;font-size:14.5px;border-top:1px solid var(--line)}
+  .footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line)}
+  .footer h4{font-size:14px;color:var(--ink);font-weight:700;margin-bottom:14px}
+  .footer .f-brand .b-name{font-family:var(--serif);font-size:24px;color:var(--ink);font-weight:600;line-height:1.1}
+  .footer .f-brand .b-sub{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#c9a96e;margin:6px 0 14px;font-weight:600}
+  .footer .f-brand p{font-size:14px;color:var(--label);max-width:300px}
+  .footer-nav{list-style:none}
+  .footer-nav li{margin-bottom:10px}
+  .footer-nav a{color:#333a42;font-size:14px}
+  .footer-nav a:hover{color:var(--lake)}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;padding:20px 0;font-size:12.5px;color:var(--label)}
+  .footer-bottom .secondary-nav{display:flex;gap:22px;flex-wrap:wrap}
+  .footer-bottom .secondary-nav a{color:var(--label)}
+  .footer-bottom .secondary-nav a:hover{color:var(--lake)}
+  .disclaimer{padding:18px 0 32px;font-size:11.5px;line-height:1.7;color:#7a8389;border-top:1px solid var(--line)}
+  @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
+  @media(max-width:520px){.footer-top{grid-template-columns:1fr}}
+  @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
+  @media(max-width:520px){.footer-top{grid-template-columns:1fr}}
+
+  /* ============ MOBILE SPACING TIGHTENING ============ */
+  @media(max-width:760px){
+    .wrap{padding:0 18px}
+    .masthead{transition:transform .25s ease}
+    .masthead .wrap{padding:14px 20px}
+    .brand .b-name{font-size:21px}
+    .brand .b-sub{font-size:9px;margin-top:4px}
+    .breadcrumb .wrap{padding:9px 18px}
+    section{padding:22px 0}
+    .sec-head{margin:0 auto 12px}
+    .sec-head .eyebrow{margin-bottom:10px}
+    .sec-head h2{font-size:clamp(22px,6.5vw,28px)}
+    .sec-head p{margin-top:8px;font-size:14.5px}
+
+    .page-hero{min-height:auto}
+    .page-hero-inner{padding:18px 16px}
+    .page-hero .eyebrow{font-size:11px;padding:4px 11px;margin-bottom:8px}
+    .page-hero h1{font-size:clamp(19px,6.2vw,24px);line-height:1.15}
+    .page-hero p{margin-top:7px;font-size:12.5px;line-height:1.45}
+    .hero-ctas{margin-top:12px;gap:8px}
+    .hero-ctas .btn{padding:9px 16px;font-size:13px}
+
+    .fact{padding:10px 4px;column-gap:4px}
+    .fact .lbl{font-size:12.5px}
+    .fact .num{font-size:13.5px}
+
+    .glance-lede{margin-bottom:12px;font-size:14px}
+    .glance-card{padding:12px 12px 8px}
+    .glance-card .gc-head{display:block;margin-bottom:4px}
+    .glance-card .gc-head .gc-count{font-size:11px}
+    .glance-row{display:block;padding:6px 0}
+    .glance-row .gr-lbl{display:block;font-size:11.5px}
+    .glance-row .gr-val{display:block;text-align:left;font-size:14px}
+
+    .listings-head{margin-bottom:10px}
+    .listings-title{font-size:16px}
+    .rs-embed iframe{height:460px}
+
+    section[id]{scroll-margin-top:85px}
+
+    .collapsible summary{margin-bottom:12px;padding:8px 14px}
+
+    .intro-grid{gap:20px}
+    .intro-grid h2{margin-bottom:12px}
+    .intro-grid .lead{margin-bottom:10px;font-size:15.5px}
+    .intro-grid p{margin-bottom:10px}
+
+    .hoa-grid{gap:12px}
+    .hoa-fee{gap:12px;padding:12px 14px;margin-bottom:16px}
+    .hoa-fee .hf-amt{font-size:24px}
+    .hoa-fee .hf-amt span{font-size:12px}
+    .hoa-fee .hf-text{font-size:13px}
+    .hoa-fee .hf-text strong{font-size:14px}
+    .amen-grid{gap:6px}
+    .amen-grid li{padding:9px 10px;font-size:13px;gap:8px}
+    .amen-grid svg{width:20px;height:20px}
+    .hoa-also{font-size:12.5px;margin-top:8px}
+    .hoa-covers{gap:6px}
+    .hoa-covers li{padding:5px 10px;font-size:12.5px}
+    .hoa-compare{padding:18px}
+    .hoa-bar-row{margin-bottom:8px}
+    .hoa-bar-label{font-size:12.5px;margin-bottom:4px}
+    .hoa-compare h3{margin-bottom:10px}
+
+    .stat-grid{margin-bottom:18px}
+    .stat-box{padding:16px 16px}
+    .stat-box .lbl{margin-top:5px}
+    .snap-caption{margin:0 0 8px}
+    table.hist th,table.hist td{padding:9px 12px;font-size:12.5px}
+
+    .sold-table-wrap{overflow-x:visible}
+    table.sold-table{min-width:0;table-layout:fixed;font-size:12px}
+    .sold-table th,.sold-table td{padding:9px 8px}
+    .sold-table td.addr{font-size:12px;line-height:1.35}
+    .sold-table th:nth-child(1),.sold-table td:nth-child(1){width:38%}
+    .sold-table th:nth-child(2),.sold-table td:nth-child(2){width:20%}
+    .sold-table th:nth-child(3),.sold-table td:nth-child(3){width:18%}
+    .sold-table th:nth-child(5),.sold-table td:nth-child(5){width:24%}
+    .sold-table th:nth-child(6),.sold-table td:nth-child(6){display:none}
+
+    .trend-card{padding:16px}
+    .trend-legend{margin-top:12px;gap:14px}
+
+    .analysis-body h3{margin:24px 0 8px;font-size:17px}
+    .analysis-body p{font-size:14.5px;margin-bottom:11px}
+    .analysis-callout{gap:10px;margin:16px 0}
+    .analysis-chip{padding:13px 15px}
+    .analysis-pull{font-size:15.5px;margin:18px 0}
+
+    .fit-grid{gap:7px}
+    .fit-card{padding:16px 16px}
+    .fit-card svg{width:19px;height:19px;margin-bottom:9px}
+    .fit-card h3{font-size:15px;margin-bottom:5px}
+    .fit-card p{font-size:13px;line-height:1.5}
+
+    .know-grid{gap:11px}
+
+    .walk-grid{gap:8px}
+
+
+    .loc-map{margin-bottom:20px}
+    .loc-map-canvas{height:280px}
+    .life-wrap .lead{font-size:15px}
+    .life-sub{margin:18px 0 4px}
+    .reasons li{font-size:14px;padding:9px 0 9px 26px}
+    .reasons li::before{top:9px}
+    .cost-tiles{grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:18px}
+    .cost-tile{padding:11px 10px}
+    .cost-tile .ct-val{font-size:17px}
+    .cost-tile .ct-val span{font-size:11px}
+    .cost-tile .ct-lbl{font-size:11.5px}
+    .cost-tile .ct-note{display:none}
+    .fit-col{padding:14px 16px}
+    .fit-list li{padding:9px 0}
+    .fit-list h4{font-size:14px}
+    .fit-list p{font-size:13px}
+    .px-tabs{margin-bottom:16px;gap:2px;padding:3px}
+    .px-tabs button{flex:1 1 0;padding:8px 4px;font-size:13px}
+    .btn-tabs button{padding:10px 6px;font-size:14.5px}
+    #sold-data .btn-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .px-intro{font-size:12.5px;margin-bottom:12px}
+    .px-h{font-size:18px}
+    .takeaways li{font-size:14px;padding:12px 14px}
+    .loc-grid{gap:12px}
+    .loc-list li{display:block;padding:8px 0;font-size:14px}
+    .loc-list li span:last-child{display:block;padding-left:0;font-size:13px;margin-top:1px}
+    .school-list li{padding:11px 0}
+
+
+    .cmp-track{gap:10px;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px}
+    .cmp-card{flex-basis:62%}
+    .cmp-body{padding:10px 12px 12px}
+    .cmp-card h3{font-size:15px}
+    .cmp-meta{font-size:12px}
+    .cmp-card p{font-size:13px;margin-bottom:8px}
+    .cmp-arrow{display:none}
+
+    .faq-list summary{padding:15px 28px 15px 0;font-size:15.5px}
+    .faq-list details p{padding:0 28px 16px 0;font-size:14px}
+
+    .contact-grid{gap:16px}
+    .contact h2{font-size:clamp(22px,7vw,26px);margin-bottom:12px}
+    .contact .c-lead{margin-bottom:18px}
+    .contact .c-lead{font-size:14.5px}
+    .contact-cta{padding:16px}
+    .agent{gap:14px;margin-bottom:14px}
+    .agent-photo{width:76px;height:76px}
+    .contact-cta .agent-name{font-size:19px}
+    .contact-cta .agent-role{font-size:12.5px}
+    .footer .f-brand .b-name{font-size:21px}
+    .contact-btns{gap:8px}
+    .contact-btns .contact-btn{padding:12px 8px}
+
+    .footer{padding:24px 0 0}
+    .footer-top{grid-template-columns:1fr 1fr;padding-bottom:14px;gap:14px 16px}
+    .footer .f-brand{grid-column:1/-1}
+    .footer .f-brand p,.footer .f-explore{display:none}
+    .footer .f-brand .b-sub{margin:4px 0 0}
+    .footer h4{margin-bottom:8px;font-size:14px}
+    .footer-nav li{margin-bottom:6px;font-size:13px}
+    .footer-nav a{font-size:13px}
+    .footer-bottom{padding:12px 0;gap:6px}
+    .disclaimer{padding:12px 0 20px}
+  }
+
+  /* ============ QUICK-JUMP RAIL ============ */
+  /* ============ MOBILE BOTTOM NAV ============ */
+  .bottom-nav{display:none}
+  @media(max-width:760px){
+    body{padding-bottom:64px}
+    .bottom-nav{
+      display:flex;position:fixed;left:0;right:0;bottom:0;z-index:70;
+      background:var(--white);border-top:1px solid var(--line);
+      padding:6px 2px calc(6px + env(safe-area-inset-bottom));
+      box-shadow:0 -2px 12px rgba(0,0,0,.07);
+    }
+    .bottom-nav a{
+      flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:2px;padding:5px 1px;color:#8b909a;font-size:9.5px;font-weight:600;
+      text-align:center;letter-spacing:0;line-height:1.1;white-space:nowrap;
+    }
+    .bottom-nav a svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.8}
+    .bottom-nav a.active{color:var(--lake)}
+    .bottom-nav a.active svg{stroke-width:2.1}
+  }
+</style>
+
+<link rel="stylesheet" href="/assets/rs-embed.css?v=3">
+<script src="/assets/rs-embed.js?v=3" defer></script>
+</head>
+<body>
+
+<!-- ============ PRIMARY NAVIGATION ============ -->
+<header class="masthead">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <span class="b-name">Carmel Valley Condos</span>
+      <span class="b-sub">Sez Sezer &middot; Keller Williams</span>
+    </a>
+    <nav class="primary-nav" id="pnav">
+      <a href="/">Home</a>
+      <a href="/carmel-valley-condos-for-sale/">Condos</a>
+      <a href="/carmel-valley-townhomes-for-sale/">Townhomes</a>
+      <a href="/carmel-valley-condo-market-report/">Market Report</a>
+      <a href="/home-value/">Home Value</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+      <div class="nav-group">
+        <div class="nav-group-label">Finances</div>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h2M8 15h2M12 15h2M16 15h2"/></svg>Discover your buying power</a>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 14l6 6M15 14l-6 6"/></svg>Compare mortgage rates</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Prepare to Move with Sez Sezer</div>
+        <a href="/home-value/" class="nav-item"><svg viewBox="0 0 24 24"><path d="M20.59 13.41 11 3.83a2 2 0 0 0-2.83 0L3.83 8.17a2 2 0 0 0 0 2.83L13.41 20.6a2 2 0 0 0 2.83 0l4.35-4.35a2 2 0 0 0 0-2.83z"/><circle cx="8.5" cy="8.5" r="1.2"/></svg>Sell my home</a>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg>Why sell with Sez Sezer</a>
+        <a href="tel:+18584366585" class="nav-item"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.6 2.7-6.5 6-6.5s6 2.9 6 6.5"/><path d="M16.5 9.5 19 7l2.5 2.5M19 7v7"/></svg>Connect with a Carmel Valley real estate agent</a>
+        <a href="mailto:sez@carmelvalley.com" class="nav-item"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V11l4-3 4 3v9M13 20v-6l6-3v9"/></svg>Real estate news</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ LIVE LISTINGS (inline embed) — first thing on the page ============ -->
+<section class="listings" id="listings" style="padding-top:12px;padding-bottom:16px">
+  <div class="wrap">
+    <div class="rs-embed" style="max-width:1100px;margin:0 auto">
+      <iframe data-src="https://sezsezer.realscout.com/homesearch/map?ptype=TC&amp;geo_type=zipcode&amp;geo_id=92130&amp;for_sale=1&amp;for_rent=0" title="{{name}} Homes for Sale Listings"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BREADCRUMB ============ -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="wrap">
+    <a href="/">Home</a>
+    <span class="sep">/</span>
+    <a href="{{parent_url}}">{{parent_name}}</a>
+    <span class="sep">/</span>
+    <span class="current">{{name}}</span>
+  </div>
+</nav>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" style="padding:0">
+  <div class="page-hero-inner">
+    <div class="eyebrow">{{hero_eyebrow}}</div>
+    <h1>{{h1}}</h1>
+    <p>{{hero_lead}}</p>
+    <div class="hero-ctas">
+      <a href="#glance" class="btn btn-solid">See Prices by Size</a>
+      <a href="tel:+18584366585" class="btn btn-outline">Talk to Sez</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK FACTS ============ -->
+<section class="facts">
+  <div class="wrap facts-grid">
+{{facts_html}}
+  </div>
+</section>
+
+<!-- ============ LOCATION & SCHOOLS ============ -->
+<section class="location" id="location">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Location</div>
+      <h2>Where {{name}} Sits in Carmel Valley</h2>
+      <p>{{loc_intro}}</p>
+    </div>
+    <div class="loc-map" id="locMap">
+      <div class="loc-map-canvas" id="locMapCanvas" role="img" aria-label="Map with the {{name}} community boundary outlined in Carmel Valley"></div>
+      <div class="loc-map-tools" role="group" aria-label="Map style">
+        <button type="button" data-base="sat" aria-pressed="true">Satellite</button>
+        <button type="button" data-base="map" aria-pressed="false">Map</button>
+      </div>
+      <a class="loc-map-open" href="https://www.google.com/maps/search/?api=1&amp;query={{lat}}%2C{{lng}}" target="_blank" rel="noopener">Open in Google Maps &#8599;</a>
+    </div>
+    <script>
+    (function(){
+      var BOUNDARY = {{boundary_json}};
+      var el = document.getElementById('locMap');
+      if (!el) return;
+      var started = false;
+      function load(src, css){
+        return new Promise(function(res, rej){
+          var n = document.createElement(css ? 'link' : 'script');
+          if (css){ n.rel = 'stylesheet'; n.href = src; } else { n.src = src; }
+          n.onload = res; n.onerror = rej; document.head.appendChild(n);
+        });
+      }
+      function draw(){
+        var mobile = window.matchMedia('(max-width:760px)').matches;
+        var map = L.map('locMapCanvas', {scrollWheelZoom:false, dragging:!mobile, tap:false, zoomControl:true, attributionControl:true});
+        map.zoomControl.setPosition('bottomright');
+        var ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
+        var sat = L.layerGroup([
+          L.tileLayer(ESRI + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),
+          L.tileLayer(ESRI + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom:19}),
+          L.tileLayer(ESRI + 'Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Labels &copy; Esri'})
+        ]);
+        var street = L.tileLayer(ESRI + 'World_Street_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Map &copy; Esri, HERE, Garmin, OpenStreetMap contributors'});
+        sat.addTo(map);
+        var poly = L.polygon(BOUNDARY, {color:'#ffffff', weight:3, fillColor:'#1456e8', fillOpacity:.35}).addTo(map);
+        poly.bindTooltip({{name_json}}, {permanent:true, direction:'center', className:'loc-lbl'});
+        map.fitBounds(poly.getBounds(), {padding: mobile ? [40,40] : [90,90], maxZoom:17});
+        map.setZoom(Math.min(map.getZoom(), 16));
+        el.querySelectorAll('[data-base]').forEach(function(b){
+          b.addEventListener('click', function(){
+            var useSat = b.dataset.base === 'sat';
+            if (useSat){ map.removeLayer(street); sat.addTo(map); poly.setStyle({color:'#ffffff'}); }
+            else { map.removeLayer(sat); street.addTo(map); poly.setStyle({color:'#1456e8'}); }
+            el.classList.toggle('is-street', !useSat);
+            el.querySelectorAll('[data-base]').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          });
+        });
+      }
+      function start(){
+        if (started) return; started = true;
+        Promise.all([
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true),
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js')
+        ]).then(draw).catch(function(){ el.classList.add('is-fallback'); });
+      }
+      if ('IntersectionObserver' in window){
+        var io = new IntersectionObserver(function(es){ if (es[0].isIntersecting){ io.disconnect(); start(); } }, {rootMargin:'600px 0px'});
+        io.observe(el);
+      } else { start(); }
+    })();
+    </script>
+  </div>
+  <div class="wrap">
+  <div class="px-tabs loc-tabs btn-tabs" role="tablist" aria-label="Nearby places and schools">
+    <button type="button" role="tab" id="tab-schools" aria-controls="loc-schools" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></svg>Schools</button>
+    <button type="button" role="tab" id="tab-nearby" aria-controls="loc-nearby" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>What's Nearby</button>
+  </div>
+  </div>
+  <div class="wrap loc-grid">
+    <div class="loc-panel" role="tabpanel" id="loc-schools" aria-labelledby="tab-schools">
+      <div class="sec-head" style="text-align:left;margin:0 0 32px">
+        <div class="eyebrow">Schools</div>
+        <h2 style="font-size:clamp(26px,3.5vw,34px)">Assigned Schools</h2>
+      </div>
+      <ul class="school-list">
+{{schools_html}}
+      </ul>
+      <p style="font-size:13px;color:var(--label);margin-top:18px">School assignments can change. Verify current boundaries directly with <a href="https://www.dmusd.org/Page/191" target="_blank" rel="noopener">Del Mar Union SD</a> and <a href="https://www.sduhsd.net/about/boundary-maps" target="_blank" rel="noopener">San Dieguito Union HSD</a> before relying on them for a purchase decision.</p>
+    </div>
+    <div class="loc-panel" role="tabpanel" id="loc-nearby" aria-labelledby="tab-nearby" hidden>
+      <div class="sec-head" style="text-align:left;margin:0 0 32px">
+        <div class="eyebrow">Getting Around</div>
+        <h2 style="font-size:clamp(26px,3.5vw,34px)">What's Nearby</h2>
+      </div>
+      <ul class="loc-list">
+{{nearby_html}}
+      </ul>
+    </div>
+
+  </div>
+</section>
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.loc-tabs [role="tab"]'));
+  function show(t, focus){
+    tabs.forEach(function(x){
+      var on = x === t;
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      x.tabIndex = on ? 0 : -1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) t.focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ show(t); });
+    t.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft'){ e.preventDefault(); show(tabs[(i + 1) % tabs.length], true); }
+    });
+  });
+})();
+</script>
+
+<!-- ============ PRICE & SIZE AT A GLANCE ============ -->
+<section class="glance" id="glance">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The First Question</div>
+      <h2>{{glance_h2}}</h2>
+    </div>
+    <p class="glance-lede">{{glance_lede}}</p>
+    <div class="glance-grid g{{glance_n}}">
+{{glance_cards_html}}
+    </div>
+    {{glance_after_html}}
+    <p class="data-stamp" id="g-stamp">Closed MLS sales, last 5 years.</p>
+  </div>
+</section>
+
+<!-- ============ LIFE AT THE COMMUNITY (about + what stands out) ============ -->
+<section class="intro" id="life">
+  <div class="wrap life-wrap">
+{{life_html}}
+  </div>
+</section>
+
+<!-- ============ HOA: FEE & AMENITIES ============ -->
+<section class="hoa" id="cost">
+  <div class="wrap">
+{{hoa_html}}
+  </div>
+</section>
+
+<!-- ============ COMPARE TO OTHER COMMUNITIES ============ -->
+<section class="compare" id="similar">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Explore More</div>
+      <h2>{{similar_h2}}</h2>
+      <p>{{similar_intro}}</p>
+    </div>
+    <div class="cmp-carousel">
+      <button type="button" class="cmp-arrow prev" aria-label="Previous communities" disabled>&#8249;</button>
+      <div class="cmp-track" tabindex="0" aria-label="{{similar_aria}}">
+{{similar_cards_html}}
+      </div>
+      <button type="button" class="cmp-arrow next" aria-label="More communities">&#8250;</button>
+    </div>
+    <script>
+    (function(){
+      var c=document.querySelector('.cmp-carousel'); if(!c) return;
+      var t=c.querySelector('.cmp-track'), p=c.querySelector('.prev'), n=c.querySelector('.next');
+      function step(){ var card=t.querySelector('.cmp-card'); return card ? card.offsetWidth + parseFloat(getComputedStyle(t).columnGap||16) : 300; }
+      function upd(){ p.disabled = t.scrollLeft < 4; n.disabled = t.scrollLeft + t.clientWidth >= t.scrollWidth - 4; }
+      p.addEventListener('click', function(){ t.scrollBy({left:-step(),behavior:'smooth'}); });
+      n.addEventListener('click', function(){ t.scrollBy({left:step(),behavior:'smooth'}); });
+      t.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); upd();
+    })();
+    </script>
+  </div>
+</section>
+
+<!-- ============ PRICES & SALES (tabbed: overview, recent sales, trend, analysis) ============ -->
+<section class="prices" id="sold-data">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Sold Data &middot; Last 5 Years</div>
+      <h2>{{name}} Prices &amp; Sales</h2>
+      <p class="data-stamp" id="px-stamp"></p>
+    </div>
+    <div class="px-tabs btn-tabs px-wide" role="tablist" aria-label="{{name}} price and sales views">
+      <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
+      <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
+      <button type="button" role="tab" id="tab-trend" aria-controls="px-trend" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>Trend</button>
+{{analysis_tab_html}}
+    </div>
+
+    <div class="px-panel" role="tabpanel" id="px-overview" aria-labelledby="tab-overview">
+      <p class="px-intro">The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.</p>
+      <div id="snapWrap">
+        <div class="snap-state" id="snapState">Loading sales history&hellip;</div>
+      </div>
+      <p class="snap-note" id="snapNote" style="display:none"></p>
+    </div>
+
+    <div class="px-panel" role="tabpanel" id="px-sold" aria-labelledby="tab-sold" hidden>
+      <p class="px-intro">The most recent closed sales, grouped by bedroom count.</p>
+      <div id="soldWrap">
+        <div class="sold-state" id="soldState">Loading recent sales&hellip;</div>
+      </div>
+      <p class="sold-note" id="soldNote" style="display:none"></p>
+    </div>
+
+    <div class="px-panel" role="tabpanel" id="px-trend" aria-labelledby="tab-trend" hidden>
+      <p class="px-intro">Every closed sale over the last 5 years, plotted by close date and price.</p>
+      <div class="trend-card">
+        <div id="trendWrap">
+          <div class="trend-state" id="trendState">Loading 5-year sales history&hellip;</div>
+        </div>
+        <div class="trend-legend" id="trendLegend"></div>
+      </div>
+      <p class="trend-note" id="trendNote" style="display:none"></p>
+    </div>
+
+{{analysis_panel_html}}
+  </div>
+</section>
+
+<script>
+(function(){
+  var API = 'https://www.sellmyhomesforcash.com/api/public/sold-listings?community={{api_community}}&zip=92130&limit=200';
+
+  function median(arr){
+    var s = arr.slice().sort(function(a,b){ return a-b; });
+    var mid = Math.floor(s.length / 2);
+    return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2;
+  }
+  function avg(arr){
+    return arr.reduce(function(a,b){ return a+b; }, 0) / arr.length;
+  }
+
+  fetch(API)
+    .then(function(r){ if (!r.ok) throw new Error('bad response'); return r.json(); })
+    .then(function(data){
+      var allRows = [];
+      if (data && data.ok && Array.isArray(data.rows)){
+        var seen = {};
+        data.rows.forEach(function(r){
+          if (seen[r.group_key]) return;
+          seen[r.group_key] = true;
+          allRows.push(r);
+        });
+      }
+      renderGlance(allRows);
+      renderSnapshot(allRows);
+      renderSoldTable(allRows);
+      renderTrendChart(allRows);
+    })
+    .catch(function(){
+      renderSnapshot([]);
+      renderSoldTable([]);
+      renderTrendChart([]);
+    });
+
+  function fmtDate(d){
+    var p = d.split('-');
+    var m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return m[parseInt(p[1],10)-1] + ' ' + parseInt(p[2],10) + ', ' + p[0];
+  }
+
+  // bedroom cards: replace the typed-in fallback numbers with live ones
+  function renderGlance(allRows){
+    var now = new Date();
+    var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
+    var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date && new Date(r.close_date) >= start; });
+    if (!rows.length) return;
+    function set(id, html){ var el = document.getElementById(id); if (el) el.innerHTML = html; }
+    function k(n){ return n >= 1e6 ? '$' + (Math.round(n / 1e5) / 10).toString().replace(/\.0$/, '') + 'M' : '$' + Math.round(n / 1000) + 'K'; }
+    var counts = {};
+    Array.prototype.map.call(document.querySelectorAll('[data-beds]'), function(c){ return +c.getAttribute('data-beds'); }).forEach(function(b){
+      var g = rows.filter(function(r){ return r.beds_total === b; });
+      counts[b] = g.length;
+      if (!g.length) return;
+      var prices = g.map(function(r){ return r.close_price; });
+      var sizes = g.filter(function(r){ return r.living_area; }).map(function(r){ return r.living_area; });
+      set('g' + b + '-count', g.length + (g.length === 1 ? ' sale' : ' sales') + ' &middot; 5 yrs');
+      if (sizes.length){ var lo = Math.min.apply(null, sizes), hi = Math.max.apply(null, sizes); set('g' + b + '-size', lo.toLocaleString('en-US') + (hi > lo ? '&ndash;' + hi.toLocaleString('en-US') : '') + ' sq ft'); }
+      set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
+      var pl = Math.min.apply(null, prices), ph = Math.max.apply(null, prices); set('g' + b + '-range', ph > pl ? k(pl) + '&ndash;' + k(ph) : k(pl));
+    });
+    if (counts[1] && counts[2]){
+      var ratio = counts[2] / counts[1];
+      if (ratio >= 1.5){
+        var words = ratio >= 3.5 ? Math.round(ratio) + ' times' : ratio >= 2.5 ? 'about three times' : ratio >= 1.75 ? 'about twice' : 'about 1.5 times';
+        set('g-ratio', 'Two-bedrooms have sold ' + words + ' as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after.');
+      } else {
+        set('g-ratio', 'One- and two-bedrooms have sold at a similar pace over the last 5 years.');
+      }
+    }
+    var latest = rows.map(function(r){ return r.close_date; }).sort().pop();
+    var stamp = 'Live from MLS closed sales &middot; most recent {{name}} closing ' + fmtDate(latest);
+    set('g-stamp', stamp);
+    set('px-stamp', stamp);
+  }
+
+  function renderTrendChart(allRows){
+  var wrap = document.getElementById('trendWrap');
+  var state = document.getElementById('trendState');
+  var legendEl = document.getElementById('trendLegend');
+  var note = document.getElementById('trendNote');
+  var palette = ['#1456e8', '#0ea5a0', '#f59e0b', '#8b5cf6', '#e2497a'];
+
+  function fail(){
+    state.textContent = '5-year price history isn’t available right now — call or email for current market data.';
+  }
+
+  (function(){
+      var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date && r.beds_total != null; });
+      if (rows.length === 0){ fail(); return; }
+
+      var now = new Date();
+      var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
+      rows = rows.filter(function(r){ return new Date(r.close_date) >= start; });
+
+      if (rows.length === 0){ fail(); return; }
+
+      var beds = [];
+      rows.forEach(function(r){ if (beds.indexOf(r.beds_total) === -1) beds.push(r.beds_total); });
+      beds.sort(function(a,b){ return a-b; });
+      var colorOf = {};
+      beds.forEach(function(b, i){ colorOf[b] = palette[i % palette.length]; });
+
+      var prices = rows.map(function(r){ return r.close_price; });
+      var minP = Math.min.apply(null, prices), maxP = Math.max.apply(null, prices);
+      var padP = (maxP - minP) * 0.12 || maxP * 0.1;
+      minP = Math.max(0, minP - padP);
+      maxP = maxP + padP;
+
+      var W = 800, H = 400, left = 78, right = 780, top = 24, bottom = 356;
+      function xScale(d){ return left + (d - start) / (now - start) * (right - left); }
+      function yScale(p){ return bottom - (p - minP) / (maxP - minP) * (bottom - top); }
+
+      var svg = '<svg class="trend-chart" viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg">';
+
+      var steps = 4;
+      for (var i = 0; i <= steps; i++){
+        var p = minP + (maxP - minP) * (i / steps);
+        var y = yScale(p);
+        svg += '<line class="gridline" x1="' + left + '" y1="' + y + '" x2="' + right + '" y2="' + y + '"/>';
+        svg += '<text class="axis-label" x="' + (left - 10) + '" y="' + (y + 4) + '" text-anchor="end">$' + Math.round(p/1000) + 'K</text>';
+      }
+
+      for (var yr = start.getFullYear(); yr <= now.getFullYear(); yr++){
+        var yd = new Date(yr, 0, 1);
+        if (yd < start || yd > now) continue;
+        var x = xScale(yd);
+        svg += '<text class="axis-label" x="' + x + '" y="' + (bottom + 22) + '" text-anchor="middle">' + yr + '</text>';
+      }
+
+      function linreg(points){
+        // least-squares fit; x = ms timestamp, y = price
+        var n = points.length;
+        if (n < 2) return null;
+        var sumX=0, sumY=0, sumXY=0, sumXX=0;
+        points.forEach(function(p){ sumX+=p.x; sumY+=p.y; sumXY+=p.x*p.y; sumXX+=p.x*p.x; });
+        var denom = n*sumXX - sumX*sumX;
+        if (denom === 0) return null;
+        var slope = (n*sumXY - sumX*sumY) / denom;
+        var intercept = (sumY - slope*sumX) / n;
+        var xs = points.map(function(p){ return p.x; });
+        var x0 = Math.min.apply(null, xs), x1 = Math.max.apply(null, xs);
+        return { x0: x0, x1: x1, y0: slope*x0+intercept, y1: slope*x1+intercept };
+      }
+
+      // a separate connecting line per bedroom count, each in its own color
+      beds.forEach(function(b){
+        var chrono = rows.filter(function(r){ return r.beds_total === b; })
+          .sort(function(a,b2){ return new Date(a.close_date) - new Date(b2.close_date); });
+        if (chrono.length < 2) return;
+        var linePts = chrono.map(function(r){
+          return xScale(new Date(r.close_date)).toFixed(1) + ',' + yScale(r.close_price).toFixed(1);
+        });
+        svg += '<polyline points="' + linePts.join(' ') + '" fill="none" stroke="' + colorOf[b] + '" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"/>';
+      });
+
+      beds.forEach(function(b){
+        var pts = rows.filter(function(r){ return r.beds_total === b; })
+          .map(function(r){ return { x: new Date(r.close_date).getTime(), y: r.close_price }; });
+        var fit = linreg(pts);
+        if (!fit) return;
+        svg += '<line x1="' + xScale(fit.x0).toFixed(1) + '" y1="' + yScale(fit.y0).toFixed(1) +
+          '" x2="' + xScale(fit.x1).toFixed(1) + '" y2="' + yScale(fit.y1).toFixed(1) +
+          '" stroke="' + colorOf[b] + '" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.4"/>';
+      });
+
+      rows.forEach(function(r){
+        var cx = xScale(new Date(r.close_date));
+        var cy = yScale(r.close_price);
+        var cls = r.beds_total === 1 ? 'pt-1bed' : (r.beds_total === 2 ? 'pt-2bed' : '');
+        var fill = colorOf[r.beds_total];
+        svg += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="5" style="fill:' + fill + ';fill-opacity:.8" ' + (cls ? 'class="' + cls + '"' : '') + '>' +
+          '<title>' + (r.address || '') + ' — ' + r.beds_total + ' bed — $' + Number(r.close_price).toLocaleString('en-US') + ' — ' + r.close_date + '</title>' +
+          '</circle>';
+      });
+
+      svg += '</svg>';
+      wrap.innerHTML = svg;
+
+      var legendHtml = '';
+      beds.forEach(function(b){
+        legendHtml += '<span><i style="background:' + colorOf[b] + '"></i>' + b + ' Bed</span>';
+      });
+      legendEl.innerHTML = legendHtml;
+
+      note.style.display = 'block';
+      note.textContent = 'Based on ' + rows.length + ' closed sales at {{name}} over the last 5 years. Information deemed reliable but not guaranteed.';
+  })();
+  }
+
+  function renderSoldTable(allRows){
+  var wrap = document.getElementById('soldWrap');
+  var state = document.getElementById('soldState');
+  var note = document.getElementById('soldNote');
+
+  function money(n){
+    if (n == null) return '&mdash;';
+    return '$' + Number(n).toLocaleString('en-US');
+  }
+  function dateStr(d){
+    if (!d) return '&mdash;';
+    var parts = d.split('-');
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[parseInt(parts[1],10)-1] + ' ' + parts[2] + ', ' + parts[0];
+  }
+  function shortAddr(a){
+    if (!a) return a;
+    return a.replace(/\bRoad\b/g, 'Rd').replace(/\bStreet\b/g, 'St').replace(/\bAvenue\b/g, 'Ave');
+  }
+
+  (function(){
+      if (allRows.length === 0){
+        state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
+        return;
+      }
+      var rows = allRows.slice().sort(function(a,b){ return new Date(b.close_date) - new Date(a.close_date); });
+
+      function tableFor(groupRows){
+        var html = '<div class="sold-table-wrap"><table class="sold-table"><thead><tr>' +
+          '<th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th>' +
+          '</tr></thead><tbody>';
+        groupRows.forEach(function(r){
+          html += '<tr>' +
+            '<td class="addr">' + (shortAddr(r.address) || '&mdash;') + '</td>' +
+            '<td class="num">' + (r.beds_total != null ? r.beds_total : '&mdash;') + ' / ' + (r.baths_total != null ? r.baths_total : '&mdash;') + '</td>' +
+            '<td class="num">' + (r.living_area != null ? r.living_area.toLocaleString('en-US') : '&mdash;') + '</td>' +
+            '<td class="num">' + (r.year_built || '&mdash;') + '</td>' +
+            '<td class="price">' + money(r.close_price) + '</td>' +
+            '<td class="num">' + dateStr(r.close_date) + '</td>' +
+            '</tr>';
+        });
+        html += '</tbody></table></div>';
+        return html;
+      }
+
+      // one table per bedroom count present (1, 2, 3...), 8 most recent each
+      var bedCounts = [];
+      rows.forEach(function(r){ if (r.beds_total && bedCounts.indexOf(r.beds_total) === -1) bedCounts.push(r.beds_total); });
+      bedCounts.sort(function(a, b){ return a - b; });
+      var html = '', shown = 0;
+      bedCounts.forEach(function(b){
+        var g = rows.filter(function(r){ return r.beds_total === b; }).slice(0, 8);
+        if (!g.length) return;
+        shown += g.length;
+        html += '<div class="sold-group"><div class="sold-group-head"><h3>' + b + ' Bedroom</h3><span class="cnt">' + g.length + ' most recent</span></div>' + tableFor(g) + '</div>';
+      });
+      if (!html){
+        state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
+        return;
+      }
+      wrap.innerHTML = html;
+      note.style.display = 'block';
+      note.textContent = 'Based on the ' + shown + ' most recent closed sales at {{name}}, grouped by bedroom count. Information deemed reliable but not guaranteed.';
+  })();
+  }
+
+  function renderSnapshot(allRows){
+  var wrap = document.getElementById('snapWrap');
+  var state = document.getElementById('snapState');
+  var note = document.getElementById('snapNote');
+
+  function fail(){
+    state.textContent = 'Price history isn’t available right now — call or email for current market data.';
+  }
+
+  (function(){
+      var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date; });
+      if (rows.length === 0){ fail(); return; }
+
+      var now = new Date();
+      var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
+      rows = rows.filter(function(r){ return new Date(r.close_date) >= start; });
+      if (rows.length === 0){ fail(); return; }
+
+      var byYear = {};
+      rows.forEach(function(r){
+        var yr = new Date(r.close_date).getFullYear();
+        (byYear[yr] = byYear[yr] || []).push(r);
+      });
+      var years = Object.keys(byYear).map(Number).sort(function(a,b){ return b-a; });
+      var currentYear = now.getFullYear();
+
+      // headline stats: a true trailing-12-months window, not partial-year YTD
+      var t12Start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      t12Start.setFullYear(t12Start.getFullYear() - 1);
+      var prev12Start = new Date(t12Start);
+      prev12Start.setFullYear(prev12Start.getFullYear() - 1);
+
+      var headRows = rows.filter(function(r){ return new Date(r.close_date) >= t12Start; });
+      var prevRows = rows.filter(function(r){
+        var d = new Date(r.close_date);
+        return d >= prev12Start && d < t12Start;
+      });
+
+      var headPrices = headRows.map(function(r){ return r.close_price; });
+      var headPsf = headRows.filter(function(r){ return r.living_area; })
+        .map(function(r){ return r.close_price / r.living_area; });
+      var headDom = headRows.filter(function(r){ return r.days_on_market != null; })
+        .map(function(r){ return r.days_on_market; });
+
+      var prevMedian = prevRows.length ? median(prevRows.map(function(r){ return r.close_price; })) : null;
+      var prevPsfRows = prevRows.filter(function(r){ return r.living_area; });
+      var prevPsf = prevPsfRows.length ? avg(prevPsfRows.map(function(r){ return r.close_price / r.living_area; })) : null;
+
+      function pctDelta(curr, prev){
+        if (prev == null || !prev) return null;
+        return ((curr - prev) / prev) * 100;
+      }
+      function deltaHtml(curr, prev){
+        var pct = pctDelta(curr, prev);
+        if (pct == null) return '<div class="delta">Trailing 12 months</div>';
+        var arrow = pct >= 0 ? '&#9650; ' : '&#9660; ';
+        var cls = pct >= 0 ? ' up' : '';
+        return '<div class="delta' + cls + '">' + arrow + Math.abs(pct).toFixed(1) + '% vs prior 12 mo</div>';
+      }
+
+      var headMedian = headPrices.length ? median(headPrices) : null;
+      var headPsfAvg = headPsf.length ? avg(headPsf) : null;
+
+      var statsHtml = '<div class="stat-grid">' +
+        '<div class="stat-box"><div class="num">' + (headMedian != null ? '$' + Math.round(headMedian).toLocaleString('en-US') : '&mdash;') + '</div>' +
+        deltaHtml(headMedian, prevMedian) +
+        '<div class="lbl">Median Sale Price</div></div>' +
+        '<div class="stat-box"><div class="num">$' + (headPsfAvg != null ? Math.round(headPsfAvg) : '&mdash;') + '</div>' +
+        deltaHtml(headPsfAvg, prevPsf) +
+        '<div class="lbl">Price / Sq Ft</div></div>' +
+        '<div class="stat-box"><div class="num">' + (headDom.length ? Math.round(avg(headDom)) : '&mdash;') + ' days</div>' +
+        '<div class="delta">Trailing 12 months</div><div class="lbl">Days on Market</div></div>' +
+        '<div class="stat-box"><div class="num">' + headRows.length + '</div>' +
+        '<div class="delta">Trailing 12 months</div><div class="lbl">Homes Sold</div></div>' +
+        '</div>';
+
+      var maxYrMedian = Math.max.apply(null, years.map(function(yr){ return median(byYear[yr].map(function(r){ return r.close_price; })); }));
+
+      var tableHtml = '<p class="snap-caption">Price by Year, last 5 years (' + years[years.length - 1] + ' and ' + currentYear + ' are partial years)</p>' +
+        '<div class="hist-table-wrap"><table class="hist"><thead><tr>' +
+        '<th>Year</th><th>Median</th><th>Sales</th><th>$/Sq Ft</th><th>Avg. DOM</th>' +
+        '</tr></thead><tbody>';
+      years.slice().reverse().forEach(function(yr){
+        var yrRows = byYear[yr];
+        var yrPrices = yrRows.map(function(r){ return r.close_price; });
+        var yrMedian = median(yrPrices);
+        var yrPsf = yrRows.filter(function(r){ return r.living_area; }).map(function(r){ return r.close_price / r.living_area; });
+        var yrDom = yrRows.filter(function(r){ return r.days_on_market != null; }).map(function(r){ return r.days_on_market; });
+        var label = yr === currentYear ? yr + ' YTD' : yr;
+        var barPct = Math.max(8, Math.round((yrMedian / maxYrMedian) * 100));
+        tableHtml += '<tr' + (yr === currentYear ? ' class="ytd"' : '') + '>' +
+          '<td class="yr">' + label + '</td>' +
+          '<td class="num">$' + Math.round(yrMedian).toLocaleString('en-US') + '</td>' +
+          '<td><div class="bar-cell"><span class="num">' + yrRows.length + '</span><span class="bar-wrap"><span class="bar-fill" style="width:' + barPct + '%"></span></span></div></td>' +
+          '<td class="num">' + (yrPsf.length ? '$' + Math.round(avg(yrPsf)) : '&mdash;') + '</td>' +
+          '<td class="num">' + (yrDom.length ? Math.round(avg(yrDom)) : '&mdash;') + '</td>' +
+          '</tr>';
+      });
+      tableHtml += '</tbody></table></div>';
+
+      wrap.innerHTML = statsHtml + tableHtml;
+      note.style.display = 'block';
+      note.textContent = 'Based on ' + rows.length + ' closed sales at {{name}} over the last 5 years. Information deemed reliable but not guaranteed.';
+  })();
+  }
+})();
+</script>
+
+<!-- ============ IS IT RIGHT FOR YOU (who it suits + tradeoffs) ============ -->
+<section class="fit" id="fit">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Find Your Fit</div>
+      <h2>Is {{name}} the Right Community for You?</h2>
+      <p>Who it suits best, and the honest tradeoffs to weigh before you buy.</p>
+    </div>
+    <div class="fit-cols">
+      <div class="fit-col good">
+        <h3 class="fit-col-h">A great fit for</h3>
+        <ul class="fit-list">
+{{fit_good_html}}
+        </ul>
+      </div>
+      <div class="fit-col weigh">
+        <h3 class="fit-col-h">Tradeoffs to weigh</h3>
+        <ul class="fit-list">
+{{fit_weigh_html}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ============ FAQ (accordion) ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Good to Know</div>
+      <h2>{{faq_h2}}</h2>
+    </div>
+    <div class="faq-list">
+{{faq_html}}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT BLOCK ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <h2>Thinking About {{name}}?</h2>
+      <p class="c-lead">{{contact_lead}}</p>
+    </div>
+    <div class="contact-cta">
+      <div class="agent">
+        <img class="agent-photo" src="/images/sez-sezer-carmel-valley-realtor.jpg" alt="Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty" width="96" height="96" loading="lazy">
+        <div class="agent-info">
+          <div class="agent-name">Sez Sezer</div>
+          <div class="agent-role">Keller Williams Realty &middot; DRE #01988197</div>
+          <a class="agent-phone" href="tel:+18584366585">(858) 436-6585</a>
+        </div>
+      </div>
+      <div class="contact-btns">
+        <a href="tel:+18584366585" class="contact-btn">Call Now</a>
+        <a href="mailto:sez@carmelvalley.com" class="contact-btn outline">Email Sez</a>
+        <a href="https://carmelvalley.com" class="contact-btn outline wide">Search All Listings</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="f-brand">
+        <div class="b-name">Carmel Valley Condos</div>
+        <div class="b-sub">Sez Sezer &middot; Keller Williams</div>
+        <p>Your trusted source for Carmel Valley condos and townhomes in San Diego &mdash; expert guidance for buyers and sellers with 11+ years of local market experience.</p>
+      </div>
+      <div class="f-explore">
+        <h4>Explore</h4>
+        <ul class="footer-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/carmel-valley-condos-for-sale/">Condos for Sale</a></li>
+          <li><a href="/carmel-valley-townhomes-for-sale/">Townhomes for Sale</a></li>
+          <li><a href="/carmel-valley-condo-market-report/">Market Report</a></li>
+          <li><a href="/home-value/#valuation-form">Home Value</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Network</h4>
+        <ul class="footer-nav">
+          <li><a href="https://carmelvalley.com">Carmel Valley Homes</a></li>
+          <li><a href="https://carmelvalleyhomesforsale.com">Homes for Sale</a></li>
+          <li><a href="https://homesforsaleinranchosantafe.com">Rancho Santa Fe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-nav">
+          <li>12750 High Bluff Drive</li>
+          <li>San Diego, CA 92130</li>
+          <li><a href="tel:+18584366585">(858) 436-6585</a></li>
+          <li><a href="mailto:sez@carmelvalley.com">Email Sez</a></li>
+          <li>DRE #01988197</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Carmel Valley Condos &middot; Sez Sezer, Keller Williams Realty</div>
+      <nav class="secondary-nav">
+        <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+    <div class="disclaimer">
+      Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ JSON-LD STRUCTURED DATA ============ -->
+{{jsonld_html}}
+
+<!-- ============ MOBILE BOTTOM NAV ============ -->
+<nav class="bottom-nav" aria-label="Jump to section">
+  <a href="#expand-map"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Find Homes</a>
+  <a href="#glance"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-8h6v8"/></svg>Home Types</a>
+  <a href="#location"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Location</a>
+  <a href="#similar"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Similar</a>
+  <a href="#faq"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.8-2.5 2-2.5 4"/><circle cx="12" cy="16.5" r=".6"/></svg>FAQ</a>
+  <a href="#" class="bn-menu" onclick="event.preventDefault();window.__showMasthead&&window.__showMasthead();document.getElementById('pnav').classList.toggle('open')"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Menu</a>
+</nav>
+<script>
+(function(){
+  // highlight the bottom-bar item for the section on screen
+  var links = Array.prototype.slice.call(document.querySelectorAll('.bottom-nav a[href^="#"]')).filter(function(a){ return document.getElementById(a.getAttribute('href').slice(1)); });
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id); });
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  links.forEach(function(a){ io.observe(document.getElementById(a.getAttribute('href').slice(1))); });
+})();
+</script>
+
+<script>
+(function(){
+  // Prices & Sales tabs, plus in-page links that point into a hidden tab
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#sold-data .px-tabs [role="tab"]'));
+  if (!tabs.length) return;
+  function show(tab, focus){
+    tabs.forEach(function(t){
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ show(t); });
+    t.addEventListener('keydown', function(e){
+      var k = e.key, n = null;
+      if (k === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      else if (k === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (k === 'Home') n = tabs[0];
+      else if (k === 'End') n = tabs[tabs.length - 1];
+      if (n){ e.preventDefault(); show(n, true); }
+    });
+  });
+  function openFor(id){
+    var el = id && document.getElementById(id);
+    var panel = el && el.closest('.px-panel');
+    if (!panel) return false;
+    var tab = document.querySelector('[aria-controls="' + panel.id + '"]');
+    if (tab) show(tab);
+    document.getElementById('sold-data').scrollIntoView({behavior:'smooth', block:'start'});
+    return true;
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if (a && openFor(a.getAttribute('href').slice(1))) e.preventDefault();
+  });
+  if (location.hash) openFor(location.hash.slice(1));
+  // close the menu after picking an in-page link
+  document.querySelectorAll('#pnav a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('pnav').classList.remove('open'); });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  if (window.innerWidth > 760) return;
+  var masthead = document.querySelector('.masthead');
+  var jumpNav = document.querySelector('.jump-nav');
+  var lastY = window.scrollY;
+  var ticking = false;
+  var hidden = false;
+  var upAccum = 0;
+  function setHidden(h){
+    if (h === hidden) return;
+    hidden = h;
+    upAccum = 0;
+    var mh = masthead.getBoundingClientRect().height;
+    masthead.style.transform = h ? 'translateY(-' + mh + 'px)' : '';
+    if (jumpNav) {
+      var jh = jumpNav.getBoundingClientRect().height;
+      jumpNav.style.transform = h ? 'translateY(-' + (mh + jh) + 'px)' : '';
+    }
+  }
+  function onScroll(){
+    var y = Math.max(0, window.scrollY);
+    var delta = y - lastY;
+    if (Math.abs(delta) > 6) {
+      if (delta > 0) {
+        upAccum = 0;
+        if (y > 60) setHidden(true);
+      } else if (hidden) {
+        upAccum += -delta;
+        if (upAccum >= window.innerHeight * 0.25) setHidden(false);
+      }
+      lastY = y;
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!ticking) { requestAnimationFrame(onScroll); ticking = true; }
+  }, {passive:true});
+  window.__showMasthead = function(){ setHidden(false); };
+})();
+</script>
+</body>
+</html>

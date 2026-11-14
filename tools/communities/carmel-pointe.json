@@ -1,0 +1,384 @@
+{
+  "slug": "carmel-pointe",
+  "name": "Carmel Pointe",
+  "path": "/carmel-pointe-condos-for-sale/",
+  "type": "condo",
+  "parent_name": "Condos",
+  "parent_url": "/carmel-valley-condos-for-sale/",
+  "api_community": "Carmel Pointe",
+  "seo": {
+    "title": "Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
+    "description": "Carmel Pointe condos for sale in Carmel Valley, San Diego 92130: 200 units built 2001–2002, underground garage parking, ~$350/mo HOA that includes water, sewer and trash, no Mello-Roos. Live MLS listings from Sez Sezer, Keller Williams Realty.",
+    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA approximately $350/month including water, sewer, trash and hot water, and no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
+  },
+  "geo": {
+    "lat": 32.9464961,
+    "lng": -117.2332252
+  },
+  "boundary": [
+    [
+      32.9454885,
+      -117.2343705
+    ],
+    [
+      32.9455456,
+      -117.2317212
+    ],
+    [
+      32.946006,
+      -117.2317368
+    ],
+    [
+      32.9464289,
+      -117.2323361
+    ],
+    [
+      32.9467468,
+      -117.2332426
+    ],
+    [
+      32.9469243,
+      -117.2338072
+    ],
+    [
+      32.9474252,
+      -117.2341674
+    ],
+    [
+      32.9474032,
+      -117.2344199
+    ],
+    [
+      32.9454885,
+      -117.2343705
+    ]
+  ],
+  "hero": {
+    "eyebrow": "Carmel Valley &middot; 92130",
+    "h1": "Carmel Pointe Condos for Sale",
+    "lead": "A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands &mdash; guided by an agent who has specialized in this community for more than 11 years."
+  },
+  "facts": [
+    {
+      "icon": "price",
+      "value": "$540K&ndash;$1M",
+      "label": "Price"
+    },
+    {
+      "icon": "hoa",
+      "value": "~$350/mo",
+      "label": "HOA Fee"
+    },
+    {
+      "icon": "sqft",
+      "value": "704&ndash;1,387",
+      "label": "Square Feet"
+    },
+    {
+      "icon": "units",
+      "value": "200",
+      "label": "Total Units"
+    },
+    {
+      "icon": "built",
+      "value": "2001&ndash;2002",
+      "label": "Year Built"
+    },
+    {
+      "icon": "mello",
+      "value": "None",
+      "label": "Mello-Roos"
+    },
+    {
+      "icon": "tax",
+      "value": "~1.1%",
+      "label": "Tax Rate"
+    },
+    {
+      "icon": "time",
+      "value": "~5 weeks",
+      "label": "Time to Sell"
+    }
+  ],
+  "location_intro": "Central Carmel Valley, off Elijah Court near Del Mar Heights Road and El Camino Real, right next to Arborlake.",
+  "schools": [
+    {
+      "level": "Elementary",
+      "name": "Carmel Del Mar Elementary",
+      "district": "Del Mar Union Elementary School District"
+    },
+    {
+      "level": "Middle School",
+      "name": "Carmel Valley Middle School",
+      "district": "San Dieguito Union High School District"
+    },
+    {
+      "level": "High School",
+      "name": "Torrey Pines High School",
+      "district": "San Dieguito Union &middot; among California's top-ranked public high schools"
+    },
+    {
+      "level": "High School (Alt.)",
+      "name": "Canyon Crest Academy",
+      "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+    }
+  ],
+  "nearby": [
+    [
+      "Del Mar Highlands Town Center",
+      "~5 min walk"
+    ],
+    [
+      "One Paseo",
+      "~8 min walk"
+    ],
+    [
+      "Carmel Valley Recreation Center",
+      "~10 min walk"
+    ],
+    [
+      "El Camino Real (SR-56 access)",
+      "~0.2 miles"
+    ],
+    [
+      "Interstate 5",
+      "~2 miles"
+    ],
+    [
+      "Del Mar beaches",
+      "~3 miles"
+    ],
+    [
+      "UC San Diego",
+      "~6 miles"
+    ]
+  ],
+  "glance": {
+    "h2": "What a 1-, 2- or 3-Bed Actually Costs",
+    "lede": "Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each sold for over the last 5 years.",
+    "cards": [
+      {
+        "beds": 1,
+        "count": "6 sales &middot; 5 yrs",
+        "size": "704&ndash;777 sq ft",
+        "median": "$575,000",
+        "range": "$540K&ndash;$689K"
+      },
+      {
+        "beds": 2,
+        "count": "12 sales &middot; 5 yrs",
+        "size": "963&ndash;1,193 sq ft",
+        "median": "$855,000",
+        "range": "$725K&ndash;$890K"
+      },
+      {
+        "beds": 3,
+        "count": "6 sales &middot; 5 yrs",
+        "size": "1,387 sq ft",
+        "median": "$970,000",
+        "range": "$850K&ndash;$1M"
+      }
+    ],
+    "ratio": "Two-bedrooms have sold about twice as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after."
+  },
+  "life": {
+    "lead": "A 200-unit condo community built by Western Pacific Housing in 2001&ndash;2002, set in a quiet pocket that's still a short walk from Del Mar Highlands Town Center and One Paseo. High ceilings, private patios or decks, and underground and garage parking set it apart from older Carmel Valley condos. See the full <a href=\"https://www.carmelvalley.com/condos-for-sale/carmel-pointe/\">Carmel Pointe community profile</a>.",
+    "reasons": [
+      [
+        "Walk to shopping and dining.",
+        "Del Mar Highlands Town Center is about a 5-minute walk, with One Paseo just beyond."
+      ],
+      [
+        "Garage parking, not carports.",
+        "Underground and garage parking come with the home, which is rare among Carmel Valley condos of this age."
+      ],
+      [
+        "Resort-style amenities.",
+        "An oversized pool, hydrotherapy spa, fitness center, clubhouse and BBQ area, all HOA-maintained."
+      ]
+    ]
+  },
+  "hoa": {
+    "intro": "One monthly fee covers the amenities, the grounds, and utilities most HOAs bill separately.",
+    "fee": "~$350",
+    "fee_note": "Lower than Arborlake and The Lakes, and it includes water, sewer, trash and hot water.",
+    "amenities": [
+      [
+        "pool",
+        "Oversized pool &amp; spa"
+      ],
+      [
+        "gym",
+        "Fitness center"
+      ],
+      [
+        "clubhouse",
+        "Clubhouse &amp; rec room"
+      ],
+      [
+        "bbq",
+        "BBQ &amp; outdoor area"
+      ],
+      [
+        "garage",
+        "Underground &amp; garage parking"
+      ],
+      [
+        "path",
+        "Walking &amp; biking trail access"
+      ]
+    ],
+    "also": "water, sewer, trash and hot water, plus landscaping and common-area upkeep.",
+    "compare": [
+      [
+        "Arborlake",
+        "~$408/mo",
+        100,
+        false
+      ],
+      [
+        "The Lakes",
+        "~$397/mo",
+        97,
+        false
+      ],
+      [
+        "Carmel Pointe",
+        "~$350/mo",
+        86,
+        true
+      ],
+      [
+        "Del Mar Villas",
+        "~$340/mo",
+        83,
+        false
+      ],
+      [
+        "Martinique",
+        "~$335/mo",
+        82,
+        false
+      ]
+    ],
+    "compare_note": "Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests."
+  },
+  "similar": {
+    "h2": "Other Carmel Valley Condo Communities",
+    "intro": "Worth comparing if you're weighing Carmel Pointe's newer buildings against other nearby condos.",
+    "cards": [
+      {
+        "href": "/arborlake-condos-for-sale/",
+        "img": "/images/arborlake-condos-carmel-valley.jpg",
+        "alt": "Arborlake condo community in Carmel Valley, San Diego",
+        "name": "Arborlake",
+        "meta": "HOA ~$408/mo &middot; Built 1986&ndash;1989",
+        "desc": "Right next door, built around a central lake with fountains and waterfalls. Older buildings and carport parking, but a one-of-a-kind setting.",
+        "cta": "Arborlake condos for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/condos-for-sale/the-lakes/",
+        "img": "/images/the-lakes-condos-carmel-valley.jpg",
+        "alt": "The Lakes condo community in Carmel Valley, San Diego",
+        "name": "The Lakes",
+        "meta": "HOA ~$397/mo &middot; Southwest CV",
+        "desc": "A garden community with koi ponds and lagoons, usually at a lower entry price than Carmel Pointe.",
+        "cta": "The Lakes condos for sale"
+      },
+      {
+        "href": "/camino-villas-condos-for-sale/",
+        "img": "/images/camino-villas-condos-carmel-valley.webp",
+        "alt": "Camino Villas condo community in Carmel Valley, San Diego",
+        "name": "Camino Villas",
+        "meta": "Community pool &middot; Central CV",
+        "desc": "An established condo community next door, known for mature landscaping and a shared pool.",
+        "cta": "Camino Villas condos for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/condos-for-sale/del-mar-villas/",
+        "img": "",
+        "alt": "",
+        "name": "Del Mar Villas",
+        "meta": "HOA ~$340/mo &middot; 216 units",
+        "desc": "A larger central Carmel Valley community with a broad amenity package: sauna, pickleball and a billiards room.",
+        "cta": "Del Mar Villas condos for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/condos-for-sale/martinique/",
+        "img": "",
+        "alt": "",
+        "name": "Martinique",
+        "meta": "HOA ~$335/mo &middot; Carmel Valley",
+        "desc": "One of the lower-HOA options nearby, worth a look if monthly cost comes first.",
+        "cta": "Martinique condos for sale"
+      }
+    ]
+  },
+  "analysis": null,
+  "fit": {
+    "good": [
+      [
+        "Relocating Professionals",
+        "Garage parking, a full gym and walkable shopping, with SR-56 and I-5 close by."
+      ],
+      [
+        "First-Time Buyers",
+        "A 92130 address and top-rated schools, with water, sewer and trash already in the HOA."
+      ],
+      [
+        "Investors",
+        "Steady rental demand near Del Mar Highlands, and a utility-inclusive HOA keeps costs predictable."
+      ]
+    ],
+    "weigh": [
+      [
+        "Shared garage, not a private one",
+        "Parking is underground or in shared garage structures, not an attached private garage."
+      ],
+      [
+        "Compact floor plans",
+        "Most homes are 1- and 2-bedrooms under 1,200 sq ft. 3-bedrooms are rare."
+      ],
+      [
+        "Few sales to compare",
+        "Only about 5 homes a year sell here, so good units go fast and recent comps are thin."
+      ],
+      [
+        "Interiors vary",
+        "Some units still have their original 2002 finishes. Ask what's been updated."
+      ]
+    ]
+  },
+  "faq_h2": "Carmel Pointe Condo FAQs",
+  "faq": [
+    {
+      "q": "What is the price range for Carmel Pointe condos?",
+      "a": "<p>Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,000,000: 1-bedrooms $540K&ndash;$689K, 2-bedrooms $725K&ndash;$890K, and 3-bedrooms $850K&ndash;$1M.</p>"
+    },
+    {
+      "q": "What do Carmel Pointe HOA fees cover?",
+      "a": "<p>The HOA is about $350 per month. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.</p>"
+    },
+    {
+      "q": "Does Carmel Pointe have Mello-Roos?",
+      "a": "<p>No &mdash; Carmel Pointe has no Mello-Roos, and the property tax rate is about 1.1% of assessed value.</p>"
+    },
+    {
+      "q": "How big are the units at Carmel Pointe?",
+      "a": "<p>From about 704 sq ft (1-bedroom) to 1,387 sq ft (3-bedroom). Most sales were 2-bedrooms between about 960 and 1,190 sq ft.</p>"
+    },
+    {
+      "q": "What is parking like at Carmel Pointe?",
+      "a": "<p>Parking is underground and in garages rather than surface carports. Ask which space conveys with a specific unit.</p>"
+    },
+    {
+      "q": "How quickly do Carmel Pointe condos sell?",
+      "a": "<p>About 5 homes sell here a year. Over the last 5 years the median time on market was about 5 weeks; well-priced, updated units often go faster.</p>"
+    },
+    {
+      "q": "How does Carmel Pointe compare to other Carmel Valley condo communities?",
+      "a": "<p>Carmel Pointe (2001&ndash;2002) is newer than neighboring Arborlake (1986&ndash;1989) and The Lakes, has garage parking instead of carports, and its ~$350/mo HOA is lower while also covering utilities.</p>"
+    }
+  ],
+  "contact_lead": "Whether you're buying your first condo or selling at Carmel Pointe, let's talk strategy. No pressure &mdash; just straight answers from someone who knows this community."
+}

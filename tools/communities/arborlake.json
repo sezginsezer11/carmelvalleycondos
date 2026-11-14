@@ -1,0 +1,391 @@
+{
+  "slug": "arborlake",
+  "name": "Arborlake",
+  "path": "/arborlake-condos-for-sale/",
+  "type": "condo",
+  "parent_name": "Condos",
+  "parent_url": "/carmel-valley-condos-for-sale/",
+  "api_community": "Arborlake",
+  "seo": {
+    "title": "Arborlake Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
+    "description": "Arborlake condos for sale in Carmel Valley, San Diego 92130: $650K–$875K, ~$408/mo HOA, no Mello-Roos, 190 units around a landscaped lake. Live MLS listings from Sez Sezer, Keller Williams Realty.",
+    "jsonld_description": "Arborlake condos for sale in Carmel Valley, San Diego: a 190-unit lake-and-waterfall community built 1986-1989, price range $650K-$875K, HOA approximately $408/month, no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
+  },
+  "geo": {
+    "lat": 32.9446313,
+    "lng": -117.233088
+  },
+  "boundary": [
+    [
+      32.9453704,
+      -117.2343306
+    ],
+    [
+      32.944144,
+      -117.2343758
+    ],
+    [
+      32.9439239,
+      -117.2336391
+    ],
+    [
+      32.9434805,
+      -117.2329296
+    ],
+    [
+      32.9437718,
+      -117.2324688
+    ],
+    [
+      32.9440314,
+      -117.2319898
+    ],
+    [
+      32.9454542,
+      -117.2317132
+    ],
+    [
+      32.9453704,
+      -117.2343306
+    ]
+  ],
+  "hero": {
+    "eyebrow": "Carmel Valley &middot; 92130",
+    "h1": "Arborlake Condos for Sale",
+    "lead": "A 190-unit lake-and-waterfall condo community in southwest Carmel Valley &mdash; guided by an agent who has specialized in this community for more than 11 years."
+  },
+  "facts": [
+    {
+      "icon": "price",
+      "value": "$650K&ndash;$875K",
+      "label": "Price"
+    },
+    {
+      "icon": "hoa",
+      "value": "~$408/mo",
+      "label": "HOA Fee"
+    },
+    {
+      "icon": "sqft",
+      "value": "742&ndash;1,145",
+      "label": "Square Feet"
+    },
+    {
+      "icon": "units",
+      "value": "190",
+      "label": "Total Units"
+    },
+    {
+      "icon": "built",
+      "value": "1986&ndash;1989",
+      "label": "Year Built"
+    },
+    {
+      "icon": "mello",
+      "value": "None",
+      "label": "Mello-Roos"
+    },
+    {
+      "icon": "tax",
+      "value": "~1.07%",
+      "label": "Tax Rate"
+    },
+    {
+      "icon": "time",
+      "value": "14&ndash;21 days",
+      "label": "Time to Sell"
+    }
+  ],
+  "location_intro": "Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.",
+  "schools": [
+    {
+      "level": "Elementary",
+      "name": "Carmel Del Mar Elementary",
+      "district": "Del Mar Union Elementary School District"
+    },
+    {
+      "level": "Middle School",
+      "name": "Carmel Valley Middle School",
+      "district": "San Dieguito Union High School District"
+    },
+    {
+      "level": "High School",
+      "name": "Torrey Pines High School",
+      "district": "San Dieguito Union &middot; among California's top-ranked public high schools"
+    },
+    {
+      "level": "High School (Alt.)",
+      "name": "Canyon Crest Academy",
+      "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+    }
+  ],
+  "nearby": [
+    [
+      "Carmel Valley Recreation Center",
+      "~5 min walk"
+    ],
+    [
+      "Piazza Carmel (Vons, dining)",
+      "~8 min walk"
+    ],
+    [
+      "One Paseo",
+      "~12 min walk"
+    ],
+    [
+      "Del Mar Highlands Town Center",
+      "~15 min walk"
+    ],
+    [
+      "SR-56",
+      "~0.6 miles"
+    ],
+    [
+      "Interstate 5",
+      "~2.5 miles"
+    ],
+    [
+      "Del Mar beaches",
+      "~3.5 miles"
+    ]
+  ],
+  "glance": {
+    "h2": "What a 1-Bed vs. a 2-Bed Actually Costs",
+    "lede": "Arborlake has only 1- and 2-bedroom floor plans. Here's what each sold for over the last 5 years.",
+    "cards": [
+      {
+        "beds": 1,
+        "count": "6 sales &middot; 5 yrs",
+        "size": "742&ndash;896 sq ft",
+        "median": "$631,750",
+        "range": "$578K&ndash;$815K"
+      },
+      {
+        "beds": 2,
+        "count": "16 sales &middot; 5 yrs",
+        "size": "964&ndash;1,145 sq ft",
+        "median": "$800,000",
+        "range": "$675K&ndash;$900K"
+      }
+    ],
+    "ratio": "Two-bedrooms have sold nearly three times as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after."
+  },
+  "life": {
+    "lead": "A 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes in 1986&ndash;1989 around a central lake, fountains, waterfalls and greenbelt walking paths. Most patios and balconies face the water and landscaping, not the parking. See the full <a href=\"https://www.carmelvalley.com/condos-for-sale/arborlake/\">Arborlake community profile</a>.",
+    "reasons": [
+      [
+        "The lake &amp; water features.",
+        "A central lake with fountains and waterfalls that no newer 92130 community has room for."
+      ],
+      [
+        "Resort-style amenities.",
+        "Two lighted tennis courts, a heated pool, two spas, a sauna and a fitness center, all HOA-maintained."
+      ],
+      [
+        "Mature, walkable grounds.",
+        "Nearly 40 years of tree canopy, greenbelts and paved walking paths."
+      ]
+    ]
+  },
+  "hoa": {
+    "intro": "One monthly fee covers the lake, the amenities and the outside of every building.",
+    "fee": "~$408",
+    "fee_note": "Higher than nearby condo HOAs, mostly because it maintains the lake, fountains and waterfalls.",
+    "amenities": [
+      [
+        "lake",
+        "Lake, fountains &amp; waterfalls"
+      ],
+      [
+        "pool",
+        "Heated pool &amp; two spas"
+      ],
+      [
+        "gym",
+        "Sauna &amp; fitness center"
+      ],
+      [
+        "tennis",
+        "Two lighted tennis courts"
+      ],
+      [
+        "trees",
+        "Greenbelts &amp; walking paths"
+      ],
+      [
+        "carport",
+        "Covered carports &amp; storage"
+      ]
+    ],
+    "also": "exterior building maintenance and all greenbelt landscaping.",
+    "compare": [
+      [
+        "Arborlake",
+        "~$408/mo",
+        100,
+        true
+      ],
+      [
+        "The Lakes",
+        "~$397/mo",
+        97,
+        false
+      ],
+      [
+        "Carmel Pointe",
+        "~$350/mo",
+        86,
+        false
+      ],
+      [
+        "Del Mar Villas",
+        "~$340/mo",
+        83,
+        false
+      ],
+      [
+        "Martinique",
+        "~$335/mo",
+        82,
+        false
+      ]
+    ],
+    "compare_note": "The HOA gap mostly reflects the lake and fountain system the other communities don't have."
+  },
+  "similar": {
+    "h2": "Other Carmel Valley Condo Communities",
+    "intro": "Worth comparing if you're still deciding whether Arborlake's setting is the right fit.",
+    "cards": [
+      {
+        "href": "https://www.carmelvalley.com/condos-for-sale/the-lakes/",
+        "img": "/images/the-lakes-condos-carmel-valley.jpg",
+        "alt": "The Lakes condo community in Carmel Valley, San Diego",
+        "name": "The Lakes",
+        "meta": "HOA ~$397/mo &middot; Southwest CV",
+        "desc": "Also a water-feature community &mdash; koi ponds and lagoons rather than a central lake &mdash; at a slightly lower HOA.",
+        "cta": "The Lakes condos for sale"
+      },
+      {
+        "href": "/carmel-pointe-condos-for-sale/",
+        "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
+        "alt": "Carmel Pointe condo community in Carmel Valley, San Diego",
+        "name": "Carmel Pointe",
+        "meta": "HOA ~$350/mo &middot; Built 2001&ndash;2002",
+        "desc": "Newer construction with underground garage parking &mdash; the better comparison if you'd trade mature landscaping for a newer building.",
+        "cta": "Carmel Pointe condos for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/condos-for-sale/del-mar-villas/",
+        "img": "",
+        "alt": "",
+        "name": "Del Mar Villas",
+        "meta": "HOA ~$340/mo &middot; 216 units",
+        "desc": "A larger central Carmel Valley community with a broader amenity package &mdash; sauna, pickleball, a billiards room.",
+        "cta": "Del Mar Villas condos for sale"
+      },
+      {
+        "href": "/camino-villas-condos-for-sale/",
+        "img": "/images/camino-villas-condos-carmel-valley.webp",
+        "alt": "Camino Villas condo community in Carmel Valley, San Diego",
+        "name": "Camino Villas",
+        "meta": "Community pool &middot; Central CV",
+        "desc": "An established central Carmel Valley condo community known for mature, resort-style landscaping and a shared pool.",
+        "cta": "Camino Villas condos for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/condos-for-sale/martinique/",
+        "img": "",
+        "alt": "",
+        "name": "Martinique",
+        "meta": "HOA ~$335/mo &middot; Carmel Valley",
+        "desc": "One of the lower-HOA condo options among nearby comparable communities &mdash; worth a look if monthly cost is a priority.",
+        "cta": "Martinique condos for sale"
+      }
+    ]
+  },
+  "analysis": {
+    "title": "Five Years of Arborlake Sales: What the Data Shows",
+    "stamp": "Written November 2026 from 22 closed sales (late 2021&ndash;2026). The other tabs update automatically.",
+    "takeaways": [
+      [
+        "Price per square foot is rising.",
+        "It climbed two years running, to about $815/sq ft in 2025 and $833/sq ft in 2026, a steadier signal than the median price."
+      ],
+      [
+        "2-bedrooms are the main market.",
+        "16 of the 22 sales were 2-bedrooms. 1-bedrooms sell less often, which usually means more room to negotiate."
+      ],
+      [
+        "Well-priced units sell fast again.",
+        "2025 sales averaged 6 days on market, down from 62 days in 2024."
+      ]
+    ],
+    "body_html": "\n      <h3>The Big Picture: 22 Sales in Five Years</h3>\n      <p>Between late 2021 and today, 22 Arborlake condos have closed escrow. That's not a large sample &mdash; some years saw as few as one or two sales, so 2021 and 2024 in particular are single data points, not statistically reliable averages &mdash; so the year-by-year numbers in the Overview tab are best read as a trend, not a guarantee. Still, the trend is legible: after a dip through 2022&ndash;2023, median prices have climbed in each of the last two full years.</p>\n\n      <h3>Price Per Square Foot Is the Steadier Signal</h3>\n      <p>Median price swings around in a market this small &mdash; a single larger or smaller unit selling in a given year can shift the headline number by tens of thousands of dollars. Price per square foot is a cleaner read, because it adjusts for exactly that. And on that measure, Arborlake's story is less bumpy than the median-price table suggests: a climb from $663/sq ft in 2021 to the $770s through 2022&ndash;2023, a dip in 2024, and then a clear move upward to $815/sq ft in 2025 and $833/sq ft so far in 2026.</p>\n      <p class=\"analysis-pull\">Two consecutive years of rising price per square foot, even while the raw median bounced around, is the more trustworthy signal that Arborlake values are genuinely appreciating &mdash; not just that bigger units happened to sell.</p>\n\n      <h3>A Tale of Two Unit Types</h3>\n      <p>Arborlake's 1-bedroom and 2-bedroom units have moved differently enough over the last five years that lumping them into one number hides more than it reveals.</p>\n      <div class=\"analysis-callout\">\n        <div class=\"analysis-chip\"><div class=\"cv\">$800,000</div><div class=\"cl\">2-bed median &middot; 16 sales &middot; $675K&ndash;$900K range</div></div>\n        <div class=\"analysis-chip\"><div class=\"cv\">$631,750</div><div class=\"cl\">1-bed median &middot; 6 sales &middot; $578K&ndash;$815K range</div></div>\n      </div>\n      <p>Two-bedroom units have been the steadier performer: 16 closings, a tight-ish range, and a trend line that points up across the five-year window. One-bedrooms are a different story &mdash; only six sales, a wider spread relative to their price point, and a flatter-to-slightly-declining trend. Some of that gap is a sample-size artifact (six sales is not much to draw a line through), but some of it likely reflects genuine demand: two-bedroom units suit a broader range of buyers &mdash; downsizers who still want a guest room, small families, investors targeting a wider renter pool &mdash; while one-bedrooms draw a narrower, more price-sensitive buyer. The one outlier worth noting: a 1-bedroom sold for $815,000 in the dataset, well above the 1-bed median, almost certainly reflecting an upgraded or larger-than-typical unit rather than a shift in the baseline 1-bed market.</p>\n\n      <h3>Days on Market Tell Their Own Story</h3>\n      <p>If price is what a home sold for, days on market is how hard the seller had to work for it. Arborlake's pattern here is noisy &mdash; again, small numbers &mdash; but the direction lines up with the price data: 2025's four sales averaged just 6 days on market, among the fastest of the five-year window, while 2024's two sales (one of which sat 79 days) averaged 62. That's consistent with a market that cooled into 2023&ndash;2024 and has since tightened back up, rewarding well-priced, well-presented units with quick sales again.</p>\n\n      <h3>How the HOA Fits Into the Value Picture</h3>\n      <p>None of this happens in a vacuum. Arborlake's HOA runs around $408/month &mdash; the highest of the nearby comparable communities this page tracks &mdash; and that premium buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends in the other tabs suggest the market has been willing to pay for that, not penalize it &mdash; appreciation has continued even as the HOA gap versus nearby communities has stayed roughly constant.</p>\n\n      <h3>What This Means If You're Buying or Selling</h3>\n      <p><strong>If you're buying:</strong> don't anchor too hard to any single closed sale &mdash; with this few transactions a year, one unusually large or small unit can swing the \"median\" meaningfully. Price per square foot and the direction of days-on-market are more reliable signals than any one closing. And know that 2-bedroom units have a longer, steadier sales history to lean on than 1-bedrooms do.</p>\n      <p><strong>If you're selling:</strong> the data says pricing discipline matters more now than it did in the slower 2023&ndash;2024 stretch. The fastest, highest sales in this dataset &mdash; several under 10 days on market in 2025 &mdash; went to units priced right and presented well from day one, not to units that started high and chased the market down.</p>"
+  },
+  "fit": {
+    "good": [
+      [
+        "Setting-Driven Buyers",
+        "Lake views and mature landscaping no comparable 92130 condo offers at this price."
+      ],
+      [
+        "Downsizers",
+        "Pool, spa and sauna a short walk away, and no yard to maintain."
+      ],
+      [
+        "Investors",
+        "No Mello-Roos keeps carrying costs predictable for long-term holds."
+      ]
+    ],
+    "weigh": [
+      [
+        "Carport parking, not a garage",
+        "Covered carport with storage, but no enclosed garage."
+      ],
+      [
+        "Floor plans vary by building",
+        "Some units have stairs. Confirm the floor level and elevator access."
+      ],
+      [
+        "HOA covers the exterior, not the interior",
+        "Kitchens, baths and flooring are the owner's job. Ask about a unit's updates."
+      ],
+      [
+        "No private yard",
+        "Outdoor space is a patio or balcony. Lake-facing units are the most sought after."
+      ]
+    ]
+  },
+  "faq_h2": "Arborlake Condo FAQs",
+  "faq": [
+    {
+      "q": "What is the price range for Arborlake condos?",
+      "a": "<p>Arborlake condos typically sell between $650,000 and $875,000, or roughly $680&ndash;$820 per square foot depending on the unit's condition and position within the community.</p>"
+    },
+    {
+      "q": "What do Arborlake HOA fees cover?",
+      "a": "<p>Arborlake's HOA runs approximately $408 per month and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage.</p>"
+    },
+    {
+      "q": "Does Arborlake have Mello-Roos?",
+      "a": "<p>No &mdash; Arborlake carries no Mello-Roos assessment, with a property tax rate of approximately 1.07% of assessed value.</p>"
+    },
+    {
+      "q": "How big are the units at Arborlake?",
+      "a": "<p>Arborlake units range from 742-square-foot one-bedrooms to 1,145-square-foot two-bedroom layouts.</p>"
+    },
+    {
+      "q": "How does Arborlake compare to other Carmel Valley condo communities?",
+      "a": "<p>Arborlake's HOA runs higher than comparable communities like The Lakes (~$397/mo), Carmel Pointe (~$350/mo), and Del Mar Villas (~$340/mo) &mdash; the difference mostly funds the central lake, fountains, and waterfalls that those communities don't have.</p>"
+    },
+    {
+      "q": "How quickly do Arborlake condos sell?",
+      "a": "<p>Well-priced, updated listings typically go under contract within 2&ndash;3 weeks, reflecting a buyer pool that often targets this specific community rather than comparison-shopping broadly.</p>"
+    },
+    {
+      "q": "What should I check when I tour an Arborlake condo?",
+      "a": "<ol class=\"faq-ol\"><li><strong>Which way it faces:</strong> patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.</li><li><strong>Floor level and stairs:</strong> ground-floor walk-up or upstairs, and elevator access for that building.</li><li><strong>Amenity noise:</strong> units near the tennis courts or pool hear weekend activity.</li><li><strong>Age of systems:</strong> water heater, HVAC and plumbing updates. The buildings date to 1986&ndash;1989.</li><li><strong>Carport and storage:</strong> which space and storage unit convey, and how far they are from the door.</li></ol>"
+    }
+  ],
+  "contact_lead": "Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure &mdash; just straight answers from someone who knows this community."
+}

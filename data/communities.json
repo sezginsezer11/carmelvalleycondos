@@ -510,6 +510,196 @@
         "verified": false,
         "note": "Not listed on the community page; verify with Del Mar Union SD (dmusd.org) and San Dieguito Union HSD (sduhsd.net)."
       }
+    },
+    {
+      "name": "Carmel Pointe",
+      "slug": "carmel-pointe",
+      "type": "condo",
+      "url": "https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/",
+      "markdown_url": "https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/index.md",
+      "area": {
+        "value": "Central Carmel Valley, off Elijah Court near Del Mar Heights Road and El Camino Real, San Diego, CA 92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "street_address": {
+        "value": null,
+        "verified": false,
+        "note": "Homes are addressed on Elijah Court; no single community address is published."
+      },
+      "zip": {
+        "value": "92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "geo": {
+        "value": {
+          "lat": 32.9464961,
+          "lng": -117.2332252
+        },
+        "source": "Centroid of the agent's My Maps boundary",
+        "verified": true
+      },
+      "boundary": {
+        "value": [
+          [
+            32.9454885,
+            -117.2343705
+          ],
+          [
+            32.9455456,
+            -117.2317212
+          ],
+          [
+            32.946006,
+            -117.2317368
+          ],
+          [
+            32.9464289,
+            -117.2323361
+          ],
+          [
+            32.9467468,
+            -117.2332426
+          ],
+          [
+            32.9469243,
+            -117.2338072
+          ],
+          [
+            32.9474252,
+            -117.2341674
+          ],
+          [
+            32.9474032,
+            -117.2344199
+          ],
+          [
+            32.9454885,
+            -117.2343705
+          ]
+        ],
+        "source": "Sez Sezer's Google My Maps community boundary (lat, lng pairs)",
+        "verified": true
+      },
+      "year_built": {
+        "value": "2001-2002",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "builder": {
+        "value": "Western Pacific Housing",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "units": {
+        "value": 200,
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "bedrooms": {
+        "value": [
+          "1 bedroom",
+          "2 bedroom",
+          "3 bedroom"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "square_feet": {
+        "value": {
+          "min": 704,
+          "max": 1387
+        },
+        "source": "MLS closed sales, last 5 years",
+        "verified": true
+      },
+      "parking": {
+        "value": "Underground and garage parking (no surface carports)",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "hoa": {
+        "monthly_fee": {
+          "value": "~$350/month",
+          "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+          "verified": true
+        },
+        "covers": {
+          "value": [
+            "Pool and hydrotherapy spa",
+            "Fitness center",
+            "Clubhouse and rec room",
+            "BBQ area",
+            "Landscaping and common areas",
+            "Water",
+            "Sewer",
+            "Trash",
+            "Hot water"
+          ],
+          "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+          "verified": true
+        },
+        "hoa_name_and_management": {
+          "value": null,
+          "verified": false,
+          "note": "HOA legal name and management company are not published on the site."
+        }
+      },
+      "mello_roos": {
+        "value": "None",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "property_tax_rate": {
+        "value": "~1.1% of assessed value",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "amenities": {
+        "value": [
+          "Oversized pool",
+          "Hydrotherapy spa",
+          "Fitness center",
+          "Clubhouse and rec room",
+          "BBQ and outdoor area",
+          "Underground and garage parking",
+          "Walking and biking trail access"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "schools": {
+        "value": [
+          {
+            "level": "Elementary",
+            "name": "Carmel Del Mar Elementary",
+            "district": "Del Mar Union Elementary School District"
+          },
+          {
+            "level": "Middle School",
+            "name": "Carmel Valley Middle School",
+            "district": "San Dieguito Union High School District"
+          },
+          {
+            "level": "High School",
+            "name": "Torrey Pines High School",
+            "district": "San Dieguito Union &middot; among California's top-ranked public high schools"
+          },
+          {
+            "level": "High School (Alt.)",
+            "name": "Canyon Crest Academy",
+            "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+          }
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided); assignments can change, verify with the districts",
+        "verified": true
+      },
+      "price_range": {
+        "value": "$540K-$1M",
+        "source": "MLS closed sales, last 5 years (live data on the page)",
+        "verified": true
+      }
     }
   ]
 }

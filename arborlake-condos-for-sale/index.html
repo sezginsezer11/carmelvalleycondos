@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arborlake Condos for Sale | Carmel Valley, San Diego | Sez Sezer</title>
-<meta name="description" content="Arborlake condos for sale in Carmel Valley, San Diego 92130: $650K&ndash;$875K, ~$408/mo HOA, no Mello-Roos, 190 units around a landscaped lake. Live MLS listings from Sez Sezer, Keller Williams Realty.">
+<meta name="description" content="Arborlake condos for sale in Carmel Valley, San Diego 92130: $650K–$875K, ~$408/mo HOA, no Mello-Roos, 190 units around a landscaped lake. Live MLS listings from Sez Sezer, Keller Williams Realty.">
 <link rel="canonical" href="https://carmelvalleycondos.com/arborlake-condos-for-sale/">
 <link rel="alternate" type="text/markdown" href="https://carmelvalleycondos.com/arborlake-condos-for-sale/index.md">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,6 +100,8 @@
   .glance{background:var(--white)}
   .glance-lede{max-width:680px;margin:0 auto 32px;font-size:15.5px;color:#333a42;text-align:center}
   .glance-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .glance-grid.g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:760px){.glance-grid.g3{grid-template-columns:1fr 1fr}.glance-grid.g3 .glance-card:last-child{grid-column:1/-1}}
 
   .glance-card{background:var(--white);padding:26px 26px 22px}
   .glance-card .gc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
@@ -726,7 +728,7 @@
       <p>Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar.</p>
     </div>
     <div class="loc-map" id="locMap">
-      <div class="loc-map-canvas" id="locMapCanvas" role="img" aria-label="Map with the Arborlake community boundary outlined in southwest Carmel Valley"></div>
+      <div class="loc-map-canvas" id="locMapCanvas" role="img" aria-label="Map with the Arborlake community boundary outlined in Carmel Valley"></div>
       <div class="loc-map-tools" role="group" aria-label="Map style">
         <button type="button" data-base="sat" aria-pressed="true">Satellite</button>
         <button type="button" data-base="map" aria-pressed="false">Map</button>
@@ -759,7 +761,7 @@
         var street = L.tileLayer(ESRI + 'World_Street_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:19, attribution:'Map &copy; Esri, HERE, Garmin, OpenStreetMap contributors'});
         sat.addTo(map);
         var poly = L.polygon(BOUNDARY, {color:'#ffffff', weight:3, fillColor:'#1456e8', fillOpacity:.35}).addTo(map);
-        poly.bindTooltip('Arborlake', {permanent:true, direction:'center', className:'loc-lbl'});
+        poly.bindTooltip("Arborlake", {permanent:true, direction:'center', className:'loc-lbl'});
         map.fitBounds(poly.getBounds(), {padding: mobile ? [40,40] : [90,90], maxZoom:17});
         map.setZoom(Math.min(map.getZoom(), 16));
         el.querySelectorAll('[data-base]').forEach(function(b){
@@ -869,14 +871,14 @@
       <h2>What a 1-Bed vs. a 2-Bed Actually Costs</h2>
     </div>
     <p class="glance-lede">Arborlake has only 1- and 2-bedroom floor plans. Here's what each sold for over the last 5 years.</p>
-    <div class="glance-grid">
-      <div class="glance-card">
+    <div class="glance-grid g2">
+      <div class="glance-card" data-beds="1">
         <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count" id="g1-count">6 sales &middot; 5 yrs</div></div>
         <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g1-size">742&ndash;896 sq ft</span></div>
         <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g1-median">$631,750</span></div>
         <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g1-range">$578K&ndash;$815K</span></div>
       </div>
-      <div class="glance-card">
+      <div class="glance-card" data-beds="2">
         <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count" id="g2-count">16 sales &middot; 5 yrs</div></div>
         <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g2-size">964&ndash;1,145 sq ft</span></div>
         <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g2-median">$800,000</span></div>
@@ -888,7 +890,7 @@
   </div>
 </section>
 
-<!-- ============ LIFE AT ARBORLAKE (about + what stands out) ============ -->
+<!-- ============ LIFE AT THE COMMUNITY (about + what stands out) ============ -->
 <section class="intro" id="life">
   <div class="wrap life-wrap">
     <h2>Life at Arborlake</h2>
@@ -965,7 +967,7 @@
     </div>
     <div class="cmp-carousel">
       <button type="button" class="cmp-arrow prev" aria-label="Previous communities" disabled>&#8249;</button>
-      <div class="cmp-track" tabindex="0" aria-label="Other Carmel Valley condo communities">
+      <div class="cmp-track" tabindex="0" aria-label="Other Carmel Valley Condo Communities">
         <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/the-lakes/">
           <div class="cmp-img"><img src="/images/the-lakes-condos-carmel-valley.jpg" alt="The Lakes condo community in Carmel Valley, San Diego" loading="lazy"></div>
           <div class="cmp-body">
@@ -975,7 +977,7 @@
             <span class="cmp-go">The Lakes condos for sale &rarr;</span>
           </div>
         </a>
-        <a class="cmp-card" href="https://www.carmelvalley.com/condos-for-sale/carmel-pointe/">
+        <a class="cmp-card" href="/carmel-pointe-condos-for-sale/">
           <div class="cmp-img"><img src="/images/carmel-pointe-condos-carmel-valley.jpg" alt="Carmel Pointe condo community in Carmel Valley, San Diego" loading="lazy"></div>
           <div class="cmp-body">
             <h3>Carmel Pointe</h3>
@@ -1154,25 +1156,25 @@
     return m[parseInt(p[1],10)-1] + ' ' + parseInt(p[2],10) + ', ' + p[0];
   }
 
-  // 1-bed vs 2-bed cards: replace the typed-in fallback numbers with live ones
+  // bedroom cards: replace the typed-in fallback numbers with live ones
   function renderGlance(allRows){
     var now = new Date();
     var start = new Date(now.getFullYear() - 5, now.getMonth(), now.getDate());
     var rows = allRows.filter(function(r){ return r.close_price != null && r.close_date && new Date(r.close_date) >= start; });
     if (!rows.length) return;
     function set(id, html){ var el = document.getElementById(id); if (el) el.innerHTML = html; }
-    function k(n){ return '$' + Math.round(n / 1000) + 'K'; }
+    function k(n){ return n >= 1e6 ? '$' + (Math.round(n / 1e5) / 10).toString().replace(/\.0$/, '') + 'M' : '$' + Math.round(n / 1000) + 'K'; }
     var counts = {};
-    [1, 2].forEach(function(b){
+    Array.prototype.map.call(document.querySelectorAll('[data-beds]'), function(c){ return +c.getAttribute('data-beds'); }).forEach(function(b){
       var g = rows.filter(function(r){ return r.beds_total === b; });
       counts[b] = g.length;
       if (!g.length) return;
       var prices = g.map(function(r){ return r.close_price; });
       var sizes = g.filter(function(r){ return r.living_area; }).map(function(r){ return r.living_area; });
       set('g' + b + '-count', g.length + (g.length === 1 ? ' sale' : ' sales') + ' &middot; 5 yrs');
-      if (sizes.length) set('g' + b + '-size', Math.min.apply(null, sizes).toLocaleString('en-US') + '&ndash;' + Math.max.apply(null, sizes).toLocaleString('en-US') + ' sq ft');
+      if (sizes.length){ var lo = Math.min.apply(null, sizes), hi = Math.max.apply(null, sizes); set('g' + b + '-size', lo.toLocaleString('en-US') + (hi > lo ? '&ndash;' + hi.toLocaleString('en-US') : '') + ' sq ft'); }
       set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
-      set('g' + b + '-range', k(Math.min.apply(null, prices)) + '&ndash;' + k(Math.max.apply(null, prices)));
+      var pl = Math.min.apply(null, prices), ph = Math.max.apply(null, prices); set('g' + b + '-range', ph > pl ? k(pl) + '&ndash;' + k(ph) : k(pl));
     });
     if (counts[1] && counts[2]){
       var ratio = counts[2] / counts[1];
@@ -1348,23 +1350,23 @@
         return html;
       }
 
-      var oneBed = rows.filter(function(r){ return r.beds_total === 1; }).slice(0, 8);
-      var twoBed = rows.filter(function(r){ return r.beds_total === 2; }).slice(0, 8);
-
-      var html = '';
-      if (oneBed.length){
-        html += '<div class="sold-group"><div class="sold-group-head"><h3>1 Bedroom</h3><span class="cnt">' + oneBed.length + ' most recent</span></div>' + tableFor(oneBed) + '</div>';
-      }
-      if (twoBed.length){
-        html += '<div class="sold-group"><div class="sold-group-head"><h3>2 Bedroom</h3><span class="cnt">' + twoBed.length + ' most recent</span></div>' + tableFor(twoBed) + '</div>';
-      }
+      // one table per bedroom count present (1, 2, 3...), 8 most recent each
+      var bedCounts = [];
+      rows.forEach(function(r){ if (r.beds_total && bedCounts.indexOf(r.beds_total) === -1) bedCounts.push(r.beds_total); });
+      bedCounts.sort(function(a, b){ return a - b; });
+      var html = '', shown = 0;
+      bedCounts.forEach(function(b){
+        var g = rows.filter(function(r){ return r.beds_total === b; }).slice(0, 8);
+        if (!g.length) return;
+        shown += g.length;
+        html += '<div class="sold-group"><div class="sold-group-head"><h3>' + b + ' Bedroom</h3><span class="cnt">' + g.length + ' most recent</span></div>' + tableFor(g) + '</div>';
+      });
       if (!html){
         state.textContent = 'Recently sold data isn’t available right now — call or email for current comps.';
         return;
       }
       wrap.innerHTML = html;
       note.style.display = 'block';
-      var shown = oneBed.length + twoBed.length;
       note.textContent = 'Based on the ' + shown + ' most recent closed sales at Arborlake, grouped by bedroom count. Information deemed reliable but not guaranteed.';
   })();
   }
@@ -1477,7 +1479,7 @@
 })();
 </script>
 
-<!-- ============ IS ARBORLAKE RIGHT FOR YOU (who it suits + tradeoffs) ============ -->
+<!-- ============ IS IT RIGHT FOR YOU (who it suits + tradeoffs) ============ -->
 <section class="fit" id="fit">
   <div class="wrap">
     <div class="sec-head">
@@ -1629,59 +1631,129 @@
 <!-- ============ JSON-LD STRUCTURED DATA ============ -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://carmelvalleycondos.com/"},
-    {"@type":"ListItem","position":2,"name":"Condos","item":"https://carmelvalleycondos.com/carmel-valley-condos-for-sale/"},
-    {"@type":"ListItem","position":3,"name":"Arborlake","item":"https://carmelvalleycondos.com/arborlake-condos-for-sale/"}
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://carmelvalleycondos.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Condos",
+      "item": "https://carmelvalleycondos.com/carmel-valley-condos-for-sale/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Arborlake",
+      "item": "https://carmelvalleycondos.com/arborlake-condos-for-sale/"
+    }
   ]
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"RealEstateAgent",
-  "name":"Sez Sezer",
-  "image":"https://carmelvalleycondos.com/images/carmel-valley-real-estate-sez-sezer.jpg",
-  "url":"https://carmelvalleycondos.com/arborlake-condos-for-sale/",
-  "mainEntityOfPage":"https://carmelvalleycondos.com/arborlake-condos-for-sale/",
-  "telephone":"+1-858-436-6585",
-  "email":"sez@carmelvalley.com",
-  "priceRange":"$$$",
-  "description":"Arborlake condos for sale in Carmel Valley, San Diego: a 190-unit lake-and-waterfall community built 1986-1989, price range $650K-$875K, HOA approximately $408/month, no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty.",
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"12750 High Bluff Drive",
-    "addressLocality":"San Diego",
-    "addressRegion":"CA",
-    "postalCode":"92130",
-    "addressCountry":"US"
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Sez Sezer",
+  "image": "https://carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg",
+  "url": "https://carmelvalleycondos.com/arborlake-condos-for-sale/",
+  "mainEntityOfPage": "https://carmelvalleycondos.com/arborlake-condos-for-sale/",
+  "telephone": "+1-858-436-6585",
+  "email": "sez@carmelvalley.com",
+  "priceRange": "$$$",
+  "description": "Arborlake condos for sale in Carmel Valley, San Diego: a 190-unit lake-and-waterfall community built 1986-1989, price range $650K-$875K, HOA approximately $408/month, no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12750 High Bluff Drive",
+    "addressLocality": "San Diego",
+    "addressRegion": "CA",
+    "postalCode": "92130",
+    "addressCountry": "US"
   },
-  "areaServed":{
-    "@type":"Place",
-    "name":"Arborlake, Carmel Valley, San Diego, CA",
-    "geo":{"@type":"GeoCoordinates","latitude":32.9446313,"longitude":-117.233088}
+  "areaServed": {
+    "@type": "Place",
+    "name": "Arborlake, Carmel Valley, San Diego, CA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.9446313,
+      "longitude": -117.233088
+    }
   },
-  "memberOf":{"@type":"Organization","name":"Keller Williams Realty"}
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Keller Williams Realty"
+  }
 }
 </script>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is the price range for Arborlake condos?","acceptedAnswer":{"@type":"Answer","text":"Arborlake condos typically sell between $650,000 and $875,000, or roughly $680-$820 per square foot depending on the unit's condition and position within the community."}},
-    {"@type":"Question","name":"What do Arborlake HOA fees cover?","acceptedAnswer":{"@type":"Answer","text":"Arborlake's HOA runs approximately $408 per month and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage."}},
-    {"@type":"Question","name":"Does Arborlake have Mello-Roos?","acceptedAnswer":{"@type":"Answer","text":"No — Arborlake carries no Mello-Roos assessment, with a property tax rate of approximately 1.07% of assessed value."}},
-    {"@type":"Question","name":"How big are the units at Arborlake?","acceptedAnswer":{"@type":"Answer","text":"Arborlake units range from 742-square-foot one-bedrooms to 1,145-square-foot two-bedroom layouts."}},
-    {"@type":"Question","name":"How does Arborlake compare to other Carmel Valley condo communities?","acceptedAnswer":{"@type":"Answer","text":"Arborlake's HOA runs higher than comparable communities like The Lakes (~$397/mo), Carmel Pointe (~$350/mo), and Del Mar Villas (~$340/mo) — the difference mostly funds the central lake, fountains, and waterfalls that those communities don't have."}},
-    {"@type":"Question","name":"What should I check when I tour an Arborlake condo?","acceptedAnswer":{"@type":"Answer","text":"Which way it faces: patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.; Floor level and stairs: ground-floor walk-up or upstairs, and elevator access for that building.; Amenity noise: units near the tennis courts or pool hear weekend activity.; Age of systems: water heater, HVAC and plumbing updates. The buildings date to 1986–1989.; Carport and storage: which space and storage unit convey, and how far they are from the door."}},
-    {"@type":"Question","name":"How quickly do Arborlake condos sell?","acceptedAnswer":{"@type":"Answer","text":"Well-priced, updated listings typically go under contract within 2-3 weeks, reflecting a buyer pool that often targets this specific community rather than comparison-shopping broadly."}}
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the price range for Arborlake condos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Arborlake condos typically sell between $650,000 and $875,000, or roughly $680–$820 per square foot depending on the unit's condition and position within the community."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do Arborlake HOA fees cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Arborlake's HOA runs approximately $408 per month and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Arborlake have Mello-Roos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — Arborlake carries no Mello-Roos assessment, with a property tax rate of approximately 1.07% of assessed value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How big are the units at Arborlake?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Arborlake units range from 742-square-foot one-bedrooms to 1,145-square-foot two-bedroom layouts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Arborlake compare to other Carmel Valley condo communities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Arborlake's HOA runs higher than comparable communities like The Lakes (~$397/mo), Carmel Pointe (~$350/mo), and Del Mar Villas (~$340/mo) — the difference mostly funds the central lake, fountains, and waterfalls that those communities don't have."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly do Arborlake condos sell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Well-priced, updated listings typically go under contract within 2–3 weeks, reflecting a buyer pool that often targets this specific community rather than comparison-shopping broadly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I check when I tour an Arborlake condo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Which way it faces: patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.; Floor level and stairs: ground-floor walk-up or upstairs, and elevator access for that building.; Amenity noise: units near the tennis courts or pool hear weekend activity.; Age of systems: water heater, HVAC and plumbing updates. The buildings date to 1986–1989.; Carport and storage: which space and storage unit convey, and how far they are from the door."
+      }
+    }
   ]
 }
 </script>
-
 
 <!-- ============ MOBILE BOTTOM NAV ============ -->
 <nav class="bottom-nav" aria-label="Jump to section">
