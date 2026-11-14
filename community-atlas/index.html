@@ -81,6 +81,7 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,3.4vw,30px);lin
 .pill.ghost{border-style:dashed;cursor:default;color:var(--muted)}
 .area-key{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted)}
 .area-key span{display:inline-flex;align-items:center;gap:6px}
+.chip-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:-10px}
 .sub-note{font-size:12px;color:var(--muted);margin-top:4px}
 .pill.on{background:var(--lake);border-color:var(--lake);color:#fff}
 .notes{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
@@ -97,8 +98,10 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,3.4vw,30px);lin
     <h1>Carmel Valley Community Atlas</h1>
     <p class="lede">All 161 communities from your Google My Maps boundaries on a live map, grouped into Carmel Valley&rsquo;s areas with the number of homes in each community. Tap any community to see the six closest ones, measured edge to edge.</p>
   </header>
+  <div class="chip-label">Areas</div>
+  <div class="legend" id="areaKey" aria-label="Show or hide areas"></div>
+  <div class="chip-label">Home types</div>
   <div class="legend" id="legend" aria-label="Show or hide categories"></div>
-  <div class="area-key" id="areaKey" aria-label="Area colors"></div>
   <section class="explore" aria-label="Community map">
     <div class="mapcard">
       <div id="map"></div>
@@ -138,7 +141,7 @@ var CATS=[["condo","Condos"],["town","Townhomes"],["phr","Pacific Highlands Ranc
 var CATN={},SUBN={};CATS.forEach(function(c){CATN[c[0]]=c[1]});SUBS.forEach(function(s){SUBN[s[0]]=s[1]});
 var css=getComputedStyle(document.documentElement);
 function v(n){return css.getPropertyValue(n).trim();}
-var mode='sub', base='hyb', shown={condo:1,town:1,phr:1,dmm:1,th:1}, sel=-1;
+var mode='sub', base='hyb', shown={condo:1,town:1,phr:1,dmm:1,th:1}, shownArea={}, sel=-1;
 function col(o){return mode==='sub'?(o.sub?v('--s-'+o.sub):'#8a94a3'):v('--c-'+o.cat);}
 var map=L.map('map',{zoomControl:true,attributionControl:true,preferCanvas:false}).setView([32.95,-117.21],13);
 map.zoomControl.setPosition('bottomright');
@@ -163,7 +166,7 @@ var bounds=L.latLngBounds([]);layers.forEach(function(l){bounds.extend(l.getBoun
 function nbSet(){var s={};if(sel>=0)C[sel].nb.forEach(function(n){s[n[0]]=1;});return s;}
 function style(){var nb=nbSet(), sat=base!=='map';
   C.forEach(function(o,i){var l=layers[i];
-    if(!shown[o.cat]){if(map.hasLayer(l))map.removeLayer(l);return;} if(!map.hasLayer(l))l.addTo(map);
+    if(!shown[o.cat]||shownArea[o.sub]===0){if(map.hasLayer(l))map.removeLayer(l);return;} if(!map.hasLayer(l))l.addTo(map);
     var c=col(o), isSel=i===sel, isNb=!!nb[i], dim=sel>=0&&!isSel&&!isNb;
     l.setStyle({color:isSel?'#ffffff':(isNb?'#ffffff':c),fillColor:c,weight:isSel?3.5:(isNb?2.2:(sat?1.6:1.2)),
       opacity:dim?.45:1,fillOpacity:isSel?.6:(isNb?.45:(dim?(sat?.12:.18):(sat?.32:.42)))});
@@ -171,7 +174,7 @@ function style(){var nb=nbSet(), sat=base!=='map';
   labels();}
 var lblLayer=L.layerGroup().addTo(map), linkLayer=L.layerGroup().addTo(map);
 function labels(){lblLayer.clearLayers();var z=map.getZoom(), nb=nbSet(), b=map.getBounds().pad(.1);
-  C.forEach(function(o,i){if(!shown[o.cat])return;var show=i===sel||(nb[i]&&z>=16)||(o.cat==='condo'&&z>=15)||z>=17;if(!show)return;
+  C.forEach(function(o,i){if(!shown[o.cat]||shownArea[o.sub]===0)return;var show=i===sel||(nb[i]&&z>=16)||(o.cat==='condo'&&z>=15)||z>=17;if(!show)return;
     var c=layers[i].getCenter();if(!b.contains(c))return;
     lblLayer.addLayer(L.tooltip({permanent:true,direction:'center',className:'lbl'+(i===sel?' big':''),interactive:false}).setLatLng(c).setContent(o.n.replace(/&/g,'&amp;').replace(/</g,'&lt;')));});}
 map.on('zoomend moveend',labels);
@@ -201,9 +204,9 @@ document.querySelectorAll('[data-base]').forEach(function(b){b.onclick=function(
 document.querySelectorAll('[data-mode]').forEach(function(b){b.onclick=function(){mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.mode===mode)});style();
   lg.querySelectorAll('.chip .sw').forEach(function(s,k){s.style.background=v('--c-'+CATS[k][0]);});};});
 var ak=document.getElementById('areaKey');
-function drawKey(){ak.innerHTML=mode==='sub'?'<span><b>Map colors:</b></span>'+SUBS.map(function(s){return '<span>'+sw(v('--s-'+s[0]))+esc(s[1])+'</span>'}).join(''):'';}
-drawKey();
-document.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',drawKey);});
+var acount={};C.forEach(function(o){if(o.sub)acount[o.sub]=(acount[o.sub]||0)+1;});
+ak.innerHTML=SUBS.filter(function(s){return acount[s[0]]}).map(function(s){return '<button type="button" class="chip" aria-pressed="true" data-a="'+s[0]+'">'+sw(v('--s-'+s[0]))+esc(s[1])+' <b>'+acount[s[0]]+'</b></button>';}).join('');
+ak.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;var a=b.dataset.a;shownArea[a]=shownArea[a]===0?1:0;b.setAttribute('aria-pressed',shownArea[a]?'true':'false');style();});
 var tree=document.getElementById('tree');
 function pill(i){return '<button type="button" class="pill'+(C[i].cat==='condo'?' condo':'')+'" data-i="'+i+'">'+esc(C[i].n)+'</button>';}
 function byName(a,b){return C[a].n.localeCompare(C[b].n);}
