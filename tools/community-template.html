@@ -6,6 +6,13 @@
 <title>{{seo_title}}</title>
 <meta name="description" content="{{seo_description}}">
 <link rel="canonical" href="https://carmelvalleycondos.com{{path}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carmel Valley Condos">
+<meta property="og:title" content="{{seo_title}}">
+<meta property="og:description" content="{{seo_description}}">
+<meta property="og:url" content="https://carmelvalleycondos.com{{path}}">
+<meta property="og:image" content="https://carmelvalleycondos.com{{hero_img}}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="text/markdown" href="https://carmelvalleycondos.com{{path}}index.md">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,8 +76,10 @@
   .breadcrumb .current{color:var(--ink);font-weight:500}
 
   /* ============ PAGE HERO (interior) ============ */
-  .page-hero{position:relative;min-height:38vh;display:flex;align-items:center;background:linear-gradient(rgba(16,20,24,.42),rgba(16,20,24,.64)),url('/images/arborlake-condos-carmel-valley.jpg') center/cover no-repeat;color:var(--white)}
-  .page-hero-inner{max-width:820px;padding:56px 28px;margin:0 auto;text-align:center}
+  .page-hero{position:relative;min-height:38vh;display:flex;align-items:center;background:#2a3138;color:var(--white);overflow:hidden}
+  .page-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(rgba(16,20,24,.42),rgba(16,20,24,.64))}
+  .page-hero-inner{position:relative;z-index:2;max-width:820px;padding:56px 28px;margin:0 auto;text-align:center}
   .page-hero .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.02em;color:var(--white);background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 14px;border-radius:100px;margin-bottom:20px;font-weight:600}
   .page-hero h1{font-size:clamp(30px,4.6vw,48px);font-weight:800;line-height:1.1;letter-spacing:-.02em}
   .page-hero p{font-size:clamp(15px,1.6vw,17px);font-weight:400;margin:18px auto 0;max-width:600px;color:rgba(255,255,255,.92)}
@@ -224,6 +233,21 @@
   .trend-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
   .trend-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
+
+  /* crawlable sales summary */
+  .px-summary{max-width:760px;margin:-14px auto 22px;text-align:center;font-size:15px;color:#333a42;line-height:1.6}
+  /* seller section */
+  .seller{background:var(--white)}
+  .seller-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
+  .seller-tile{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .seller-tile .sv{font-family:var(--mono);font-size:22px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+  .seller-tile .sl{font-size:13px;color:var(--label);margin-top:2px}
+  .seller-copy{font-size:15px;color:#333a42;line-height:1.6;max-width:820px;margin:0 0 18px}
+  .seller-cta{display:flex;flex-wrap:wrap;gap:10px}
+  .seller-cta a{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:10px;font-weight:700;font-size:15px;border:1.5px solid var(--lake)}
+  .seller-cta a.solid{background:var(--lake);color:#fff!important}
+  .seller-cta a.line{background:#fff;color:var(--lake)!important}
+  @media(max-width:760px){.seller-grid{grid-template-columns:1fr 1fr;gap:8px}.seller-tile{padding:12px}.seller-tile .sv{font-size:17px}.seller-grid .seller-tile:last-child{grid-column:1/-1}.seller-copy{font-size:14px}.seller-cta a{flex:1 1 140px;padding:12px 14px}.px-summary{font-size:14px;margin:-8px auto 16px}}
 
   /* prices & sales tabs */
   .prices{background:var(--white)}
@@ -694,6 +718,7 @@
 
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero" style="padding:0">
+  <img class="page-hero-img" src="{{hero_img}}" alt="{{hero_alt}}" width="1200" height="800" fetchpriority="high">
   <div class="page-hero-inner">
     <div class="eyebrow">{{hero_eyebrow}}</div>
     <h1>{{h1}}</h1>
@@ -898,6 +923,7 @@
       <h2>{{name}} Prices &amp; Sales</h2>
       <p class="data-stamp" id="px-stamp"></p>
     </div>
+    {{sales_summary_html}}
     <div class="px-tabs btn-tabs px-wide" role="tablist" aria-label="{{name}} price and sales views">
       <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
       <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
@@ -916,7 +942,7 @@
     <div class="px-panel" role="tabpanel" id="px-sold" aria-labelledby="tab-sold" hidden>
       <p class="px-intro">The most recent closed sales, grouped by bedroom count.</p>
       <div id="soldWrap">
-        <div class="sold-state" id="soldState">Loading recent sales&hellip;</div>
+        <div id="soldState">{{sold_static_html}}</div>
       </div>
       <p class="sold-note" id="soldNote" style="display:none"></p>
     </div>
@@ -1006,6 +1032,15 @@
       } else {
         set('g-ratio', 'One- and two-bedrooms have sold at a similar pace over the last 5 years.');
       }
+    }
+    // seller tiles (trailing 12 months)
+    var y1 = new Date(now.getFullYear() - 1, now.getMonth(), now.getDate());
+    var t12 = rows.filter(function(r){ return new Date(r.close_date) >= y1; });
+    if (t12.length){
+      set('sv-median', '$' + Math.round(median(t12.map(function(r){ return r.close_price; }))).toLocaleString('en-US'));
+      var ps = t12.filter(function(r){ return r.living_area; }).map(function(r){ return r.close_price / r.living_area; });
+      if (ps.length) set('sv-psf', '$' + Math.round(avg(ps)).toLocaleString('en-US'));
+      set('sv-count', t12.length + (t12.length === 1 ? ' sale' : ' sales'));
     }
     var latest = rows.map(function(r){ return r.close_date; }).sort().pop();
     var stamp = 'Live from MLS closed sales &middot; most recent {{name}} closing ' + fmtDate(latest);
@@ -1300,6 +1335,8 @@
   }
 })();
 </script>
+
+{{seller_html}}
 
 <!-- ============ IS IT RIGHT FOR YOU (who it suits + tradeoffs) ============ -->
 <section class="fit" id="fit">

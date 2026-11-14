@@ -19,6 +19,9 @@ import json
 import os
 import re
 import sys
+import datetime
+import statistics
+import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS = os.path.join(ROOT, "tools")
@@ -222,11 +225,162 @@ def render_jsonld(c):
     return "\n".join(f'<script type="application/ld+json">\n{b}\n</script>' for b in blocks)
 
 
+API = "https://www.sellmyhomesforcash.com/api/public/sold-listings?community={}&zip=92130&limit=200"
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def fetch_sales(c):
+    """Closed sales for the community (deduped), or None if the feed is unreachable.
+    Same rules as the page's own script: first row per group_key wins."""
+    try:
+        url = API.format(urllib.request.quote(c["api_community"]))
+        with urllib.request.urlopen(url, timeout=25) as r:
+            d = json.load(r)
+    except Exception as e:  # build still works with the JSON fallback values
+        print(f"  ! sales feed unavailable ({e}); using fallback values")
+        return None
+    seen, rows = set(), []
+    for r in d.get("rows", []):
+        if r.get("group_key") in seen:
+            continue
+        seen.add(r.get("group_key"))
+        if r.get("close_price") is not None and r.get("close_date"):
+            r["_d"] = datetime.date.fromisoformat(r["close_date"][:10])
+            rows.append(r)
+    rows.sort(key=lambda r: r["_d"], reverse=True)
+    return rows
+
+
+def years_ago(n):
+    t = datetime.date.today()
+    try:
+        return t.replace(year=t.year - n)
+    except ValueError:  # Feb 29
+        return t.replace(year=t.year - n, day=28)
+
+
+def money(n):
+    return "${:,.0f}".format(n)
+
+
+def k(n):
+    return "${:g}M".format(round(n / 1e6, 1)) if n >= 1e6 else "${}K".format(round(n / 1000))
+
+
+def fmt_date(d):
+    return f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
+
+
+def glance_from_sales(c, rows):
+    five = [r for r in rows if r["_d"] >= years_ago(5)]
+    cards = []
+    for card in c["glance"]["cards"]:
+        b = card["beds"]
+        g = [r for r in five if r.get("beds_total") == b]
+        if not g:
+            cards.append(card)
+            continue
+        prices = [r["close_price"] for r in g]
+        sizes = [r["living_area"] for r in g if r.get("living_area")]
+        lo, hi = (min(sizes), max(sizes)) if sizes else (0, 0)
+        cards.append({
+            "beds": b,
+            "count": f"{len(g)} sale{'s' if len(g) != 1 else ''} &middot; 5 yrs",
+            "size": (f"{lo:,}&ndash;{hi:,} sq ft" if hi > lo else f"{lo:,} sq ft") if sizes else card["size"],
+            "median": money(statistics.median(prices)),
+            "range": f"{k(min(prices))}&ndash;{k(max(prices))}" if max(prices) > min(prices) else k(min(prices)),
+        })
+    return cards
+
+
+def stats(rows):
+    t12 = [r for r in rows if r["_d"] >= years_ago(1)]
+    five = [r for r in rows if r["_d"] >= years_ago(5)]
+    def med(rs):
+        return statistics.median([r["close_price"] for r in rs]) if rs else None
+    def psf(rs):
+        v = [r["close_price"] / r["living_area"] for r in rs if r.get("living_area")]
+        return sum(v) / len(v) if v else None  # average, like the Overview tab
+    return {"t12": t12, "five": five, "t12_median": med(t12), "t12_psf": psf(t12),
+            "five_median": med(five), "five_psf": psf(five), "latest": rows[0] if rows else None}
+
+
+def render_sales_summary(c, st):
+    if not st or not st["five"]:
+        return ""
+    n = c["name"]
+    parts = []
+    if st["t12"]:
+        parts.append(f'In the last 12 months, {len(st["t12"])} {n} condo{"s" if len(st["t12"]) != 1 else ""} sold, '
+                     f'at a median of {money(st["t12_median"])}' + (f' ({money(st["t12_psf"])}/sq ft)' if st["t12_psf"] else '') + '.')
+    parts.append(f'Over the last 5 years, {len(st["five"])} sold at a median of {money(st["five_median"])}.')
+    if st["latest"]:
+        r = st["latest"]
+        desc = f'{r.get("beds_total")}-bedroom' + (f', {r["living_area"]:,} sq ft' if r.get("living_area") else "")
+        parts.append(f'The most recent sale was a {desc} home that closed at {money(r["close_price"])} on {fmt_date(r["_d"])}.')
+    return f'<p class="px-summary">{" ".join(parts)} <span class="data-stamp">MLS closed sales as of {fmt_date(datetime.date.today())}.</span></p>'
+
+
+def short_addr(a):
+    return re.sub(r"\bCourt\b", "Ct", re.sub(r"\bRoad\b", "Rd", a or ""))
+
+
+def render_sold_static(rows):
+    """Same markup the page's script builds, so search engines see real sales."""
+    if not rows:
+        return '<div class="sold-state">Loading recent sales&hellip;</div>'
+    beds = sorted({r["beds_total"] for r in rows if r.get("beds_total")})
+    out = []
+    for b in beds:
+        g = [r for r in rows if r.get("beds_total") == b][:8]
+        trs = "".join(
+            f'<tr><td class="addr">{html.escape(short_addr(r.get("address")))}</td>'
+            f'<td class="num">{r.get("beds_total", "&mdash;")} / {r.get("baths_total", "&mdash;")}</td>'
+            f'<td class="num">{("{:,}".format(r["living_area"]) if r.get("living_area") else "&mdash;")}</td>'
+            f'<td class="num">{r.get("year_built") or "&mdash;"}</td>'
+            f'<td class="price">{money(r["close_price"])}</td>'
+            f'<td class="num">{fmt_date(r["_d"])}</td></tr>' for r in g)
+        out.append(f'<div class="sold-group"><div class="sold-group-head"><h3>{b} Bedroom</h3><span class="cnt">{len(g)} most recent</span></div>'
+                   f'<div class="sold-table-wrap"><table class="sold-table"><thead><tr><th>Address</th><th>Beds / Baths</th><th>Sq Ft</th>'
+                   f'<th>Year Built</th><th>Sold Price</th><th>Close Date</th></tr></thead><tbody>{trs}</tbody></table></div></div>')
+    return "".join(out)
+
+
+def render_seller(c, st):
+    n = c["name"]
+    med = money(st["t12_median"]) if st and st["t12_median"] else "&mdash;"
+    psf = money(st["t12_psf"]) if st and st["t12_psf"] else "&mdash;"
+    cnt = (f'{len(st["t12"])} sale{"s" if len(st["t12"]) != 1 else ""}') if st and st["t12"] else "&mdash;"
+    return f'''<!-- ============ SELLER: WHAT'S IT WORTH ============ -->
+<section class="seller" id="sell">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Thinking of Selling?</div>
+      <h2>What's Your {n} Condo Worth?</h2>
+    </div>
+    <div class="seller-grid">
+      <div class="seller-tile"><div class="sv" id="sv-median">{med}</div><div class="sl">Median sale price, last 12 months</div></div>
+      <div class="seller-tile"><div class="sv" id="sv-psf">{psf}</div><div class="sl">Average price per sq ft, last 12 months</div></div>
+      <div class="seller-tile"><div class="sv" id="sv-count">{cnt}</div><div class="sl">Closed in the last 12 months</div></div>
+    </div>
+    <p class="seller-copy">{c.get("seller_copy") or f"Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every {n} sale and can tell you what yours would likely sell for today, with the comps to back it up."}</p>
+    <div class="seller-cta">
+      <a class="solid" href="/home-value/#valuation-form">Get my {n} home value</a>
+      <a class="line" href="tel:+18584366585">Call Sez &middot; (858) 436-6585</a>
+    </div>
+  </div>
+</section>'''
+
+
 def build(slug):
     with open(os.path.join(TOOLS, "communities", slug + ".json"), encoding="utf-8") as f:
         c = json.load(f)
     with open(os.path.join(TOOLS, "community-template.html"), encoding="utf-8") as f:
         t = f.read()
+    rows = fetch_sales(c)
+    st = stats(rows) if rows else None
+    if rows:
+        c["glance"]["cards"] = glance_from_sales(c, rows)
     v = {
         "name": c["name"], "name_json": json.dumps(c["name"]), "path": c["path"],
         "parent_name": c["parent_name"], "parent_url": c["parent_url"],
@@ -247,6 +401,10 @@ def build(slug):
         "fit_good_html": render_fit(c["fit"]["good"]), "fit_weigh_html": render_fit(c["fit"]["weigh"]),
         "faq_h2": c["faq_h2"], "faq_html": render_faq(c),
         "contact_lead": c["contact_lead"], "jsonld_html": render_jsonld(c),
+        "hero_img": c["hero"]["img"], "hero_alt": c["hero"]["alt"],
+        "sales_summary_html": render_sales_summary(c, st),
+        "sold_static_html": render_sold_static(rows or []),
+        "seller_html": render_seller(c, st),
     }
     missing = set(re.findall(r"\{\{(\w+)\}\}", t)) - set(v)
     if missing:

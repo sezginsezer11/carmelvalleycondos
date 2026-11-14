@@ -1,10 +1,12 @@
 # Arborlake Condos for Sale | Carmel Valley, San Diego | Sez Sezer
 
-> Arborlake condos for sale in Carmel Valley, San Diego 92130: $650K–$875K, ~$408/mo HOA, no Mello-Roos, 190 units around a landscaped lake. Live MLS listings from Sez Sezer, Keller Williams Realty.
+> Arborlake condos for sale in Carmel Valley 92130: live listings, recent sold prices, HOA and amenities, schools, and a local agent’s honest guide.
 
 Source page: https://carmelvalleycondos.com/arborlake-condos-for-sale/
 
 [Arborlake Homes for Sale Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
+
+![Arborlake community entrance sign in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
 
 *Carmel Valley · 92130*
 
@@ -175,13 +177,51 @@ One of the lower-HOA condo options among nearby comparable communities — worth
 
 ## Arborlake Prices & Sales
 
+In the last 12 months, 4 Arborlake condos sold, at a median of $802,875 ($828/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 13, 2026.
+
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
 *Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
 
 The most recent closed sales, grouped by bedroom count.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
+### 1 Bedroom
+
+8 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 4049 Carmel View Rd 74 | 1 / 1 | 896 | 1987 | $640,000 | Dec 8, 2025 |
+| 4059 Carmel View RD 29 | 1 / 1 | 742 | 1987 | $600,000 | Aug 28, 2023 |
+| 4029 Carmel View Rd 148 | 1 / 1 | 886 | 1989 | $685,000 | May 17, 2023 |
+| 4005 Carmel View Rd 57 | 1 / 1 | 742 | 1987 | $578,000 | Oct 11, 2022 |
+| 4049 Carmel View Rd 82 | 1 / 1 | 886 | 1987 | $623,500 | Aug 1, 2022 |
+| 4029 Carmel View Rd 138 | 1 / 1 | 886 | 1989 | $815,000 | Apr 5, 2022 |
+| 4059 Carmel View Rd | 1 / 1 | 742 | 1987 | $437,000 | Apr 6, 2021 |
+| 4029 Carmel View Rd 147 | 1 / 1 | 742 | 1989 | $405,000 | Sep 23, 2020 |
+
+### 2 Bedroom
+
+8 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 4045 Carmel View Rd 88 | 2 / 2 | 964 | 1987 | $850,000 | May 19, 2026 |
+| 4029 Carmel View Rd 142 | 2 / 2 | 964 | 1989 | $755,750 | Jan 2, 2026 |
+| 4065 Carmel View Rd 24 | 2 / 2 | 964 | 1987 | $900,000 | Nov 21, 2025 |
+| 4045 Carmel View Rd 95 | 2 / 2 | 1,071 | 1987 | $815,000 | May 29, 2025 |
+| 4045 Carmel View Rd 93 | 2 / 2 | 964 | 1987 | $820,000 | Mar 17, 2025 |
+| 4055 Carmel View Rd 43 | 2 / 2 | 1,071 | 1987 | $800,000 | Sep 18, 2024 |
+| 4035 Carmel View Rd. Unit 114 | 2 / 2 | 1,145 | 1987 | $810,000 | Jan 5, 2024 |
+| 4075 Carmel View Rd 6 | 2 / 2 | 1,005 | 1987 | $840,000 | Sep 7, 2023 |
+
+### 3 Bedroom
+
+1 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 4009 Carmel View Rd 166 | 3 / 2 | 1,081 | 1989 | $455,000 | May 18, 2017 |
 
 Every closed sale over the last 5 years, plotted by close date and price.
 
@@ -227,6 +267,26 @@ None of this happens in a vacuum. Arborlake's HOA runs around $408/month — the
 **If you're buying:** don't anchor too hard to any single closed sale — with this few transactions a year, one unusually large or small unit can swing the "median" meaningfully. Price per square foot and the direction of days-on-market are more reliable signals than any one closing. And know that 2-bedroom units have a longer, steadier sales history to lean on than 1-bedrooms do.
 
 **If you're selling:** the data says pricing discipline matters more now than it did in the slower 2023–2024 stretch. The fastest, highest sales in this dataset — several under 10 days on market in 2025 — went to units priced right and presented well from day one, not to units that started high and chased the market down.
+
+*Thinking of Selling?*
+
+## What's Your Arborlake Condo Worth?
+
+$802,875
+
+Median sale price, last 12 months
+
+$828
+
+Average price per sq ft, last 12 months
+
+4 sales
+
+Closed in the last 12 months
+
+Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every Arborlake sale and can tell you what yours would likely sell for today, with the comps to back it up.
+
+[Get my Arborlake home value](https://carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
 
 *Find Your Fit*
 

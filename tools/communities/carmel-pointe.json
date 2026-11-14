@@ -8,7 +8,7 @@
   "api_community": "Carmel Pointe",
   "seo": {
     "title": "Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
-    "description": "Carmel Pointe condos for sale in Carmel Valley, San Diego 92130: 200 units built 2001–2002, underground garage parking, ~$350/mo HOA that includes water, sewer and trash, no Mello-Roos. Live MLS listings from Sez Sezer, Keller Williams Realty.",
+    "description": "Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.",
     "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA approximately $350/month including water, sewer, trash and hot water, and no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
   },
   "geo": {
@@ -56,7 +56,9 @@
   "hero": {
     "eyebrow": "Carmel Valley &middot; 92130",
     "h1": "Carmel Pointe Condos for Sale",
-    "lead": "A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands &mdash; guided by an agent who has specialized in this community for more than 11 years."
+    "lead": "A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands &mdash; guided by an agent who has specialized in this community for more than 11 years.",
+    "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
+    "alt": "Carmel Pointe condo community in Carmel Valley, San Diego"
   },
   "facts": [
     {

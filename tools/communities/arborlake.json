@@ -8,7 +8,7 @@
   "api_community": "Arborlake",
   "seo": {
     "title": "Arborlake Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
-    "description": "Arborlake condos for sale in Carmel Valley, San Diego 92130: $650K–$875K, ~$408/mo HOA, no Mello-Roos, 190 units around a landscaped lake. Live MLS listings from Sez Sezer, Keller Williams Realty.",
+    "description": "Arborlake condos for sale in Carmel Valley 92130: live listings, recent sold prices, HOA and amenities, schools, and a local agent’s honest guide.",
     "jsonld_description": "Arborlake condos for sale in Carmel Valley, San Diego: a 190-unit lake-and-waterfall community built 1986-1989, price range $650K-$875K, HOA approximately $408/month, no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
   },
   "geo": {
@@ -52,7 +52,9 @@
   "hero": {
     "eyebrow": "Carmel Valley &middot; 92130",
     "h1": "Arborlake Condos for Sale",
-    "lead": "A 190-unit lake-and-waterfall condo community in southwest Carmel Valley &mdash; guided by an agent who has specialized in this community for more than 11 years."
+    "lead": "A 190-unit lake-and-waterfall condo community in southwest Carmel Valley &mdash; guided by an agent who has specialized in this community for more than 11 years.",
+    "img": "/images/arborlake-condos-carmel-valley.jpg",
+    "alt": "Arborlake community entrance sign in Carmel Valley, San Diego"
   },
   "facts": [
     {

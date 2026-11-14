@@ -4,8 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer</title>
-<meta name="description" content="Carmel Pointe condos for sale in Carmel Valley, San Diego 92130: 200 units built 2001–2002, underground garage parking, ~$350/mo HOA that includes water, sewer and trash, no Mello-Roos. Live MLS listings from Sez Sezer, Keller Williams Realty.">
+<meta name="description" content="Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.">
 <link rel="canonical" href="https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carmel Valley Condos">
+<meta property="og:title" content="Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer">
+<meta property="og:description" content="Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.">
+<meta property="og:url" content="https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/">
+<meta property="og:image" content="https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="text/markdown" href="https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/index.md">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,8 +76,10 @@
   .breadcrumb .current{color:var(--ink);font-weight:500}
 
   /* ============ PAGE HERO (interior) ============ */
-  .page-hero{position:relative;min-height:38vh;display:flex;align-items:center;background:linear-gradient(rgba(16,20,24,.42),rgba(16,20,24,.64)),url('/images/arborlake-condos-carmel-valley.jpg') center/cover no-repeat;color:var(--white)}
-  .page-hero-inner{max-width:820px;padding:56px 28px;margin:0 auto;text-align:center}
+  .page-hero{position:relative;min-height:38vh;display:flex;align-items:center;background:#2a3138;color:var(--white);overflow:hidden}
+  .page-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(rgba(16,20,24,.42),rgba(16,20,24,.64))}
+  .page-hero-inner{position:relative;z-index:2;max-width:820px;padding:56px 28px;margin:0 auto;text-align:center}
   .page-hero .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.02em;color:var(--white);background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 14px;border-radius:100px;margin-bottom:20px;font-weight:600}
   .page-hero h1{font-size:clamp(30px,4.6vw,48px);font-weight:800;line-height:1.1;letter-spacing:-.02em}
   .page-hero p{font-size:clamp(15px,1.6vw,17px);font-weight:400;margin:18px auto 0;max-width:600px;color:rgba(255,255,255,.92)}
@@ -224,6 +233,21 @@
   .trend-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
   .trend-note{text-align:center;font-size:13px;color:var(--label);margin-top:16px}
   .trend-state{text-align:center;padding:40px;color:var(--label);font-size:15px}
+
+  /* crawlable sales summary */
+  .px-summary{max-width:760px;margin:-14px auto 22px;text-align:center;font-size:15px;color:#333a42;line-height:1.6}
+  /* seller section */
+  .seller{background:var(--white)}
+  .seller-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
+  .seller-tile{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .seller-tile .sv{font-family:var(--mono);font-size:22px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+  .seller-tile .sl{font-size:13px;color:var(--label);margin-top:2px}
+  .seller-copy{font-size:15px;color:#333a42;line-height:1.6;max-width:820px;margin:0 0 18px}
+  .seller-cta{display:flex;flex-wrap:wrap;gap:10px}
+  .seller-cta a{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:10px;font-weight:700;font-size:15px;border:1.5px solid var(--lake)}
+  .seller-cta a.solid{background:var(--lake);color:#fff!important}
+  .seller-cta a.line{background:#fff;color:var(--lake)!important}
+  @media(max-width:760px){.seller-grid{grid-template-columns:1fr 1fr;gap:8px}.seller-tile{padding:12px}.seller-tile .sv{font-size:17px}.seller-grid .seller-tile:last-child{grid-column:1/-1}.seller-copy{font-size:14px}.seller-cta a{flex:1 1 140px;padding:12px 14px}.px-summary{font-size:14px;margin:-8px auto 16px}}
 
   /* prices & sales tabs */
   .prices{background:var(--white)}
@@ -694,6 +718,7 @@
 
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero" style="padding:0">
+  <img class="page-hero-img" src="/images/carmel-pointe-condos-carmel-valley.jpg" alt="Carmel Pointe condo community in Carmel Valley, San Diego" width="1200" height="800" fetchpriority="high">
   <div class="page-hero-inner">
     <div class="eyebrow">Carmel Valley &middot; 92130</div>
     <h1>Carmel Pointe Condos for Sale</h1>
@@ -1044,6 +1069,7 @@
       <h2>Carmel Pointe Prices &amp; Sales</h2>
       <p class="data-stamp" id="px-stamp"></p>
     </div>
+    <p class="px-summary">In the last 12 months, 5 Carmel Pointe condos sold, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 sold at a median of $850,000. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. <span class="data-stamp">MLS closed sales as of Nov 13, 2026.</span></p>
     <div class="px-tabs btn-tabs px-wide" role="tablist" aria-label="Carmel Pointe price and sales views">
       <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
       <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
@@ -1062,7 +1088,7 @@
     <div class="px-panel" role="tabpanel" id="px-sold" aria-labelledby="tab-sold" hidden>
       <p class="px-intro">The most recent closed sales, grouped by bedroom count.</p>
       <div id="soldWrap">
-        <div class="sold-state" id="soldState">Loading recent sales&hellip;</div>
+        <div id="soldState"><div class="sold-group"><div class="sold-group-head"><h3>1 Bedroom</h3><span class="cnt">8 most recent</span></div><div class="sold-table-wrap"><table class="sold-table"><thead><tr><th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th></tr></thead><tbody><tr><td class="addr">3825 Elijah 327</td><td class="num">1 / 1</td><td class="num">777</td><td class="num">2002</td><td class="price">$540,000</td><td class="num">Sep 23, 2026</td></tr><tr><td class="addr">3835 Elijah Ct 533</td><td class="num">1 / 1</td><td class="num">704</td><td class="num">2002</td><td class="price">$575,000</td><td class="num">Jun 10, 2026</td></tr><tr><td class="addr">3830 Elijah Ct 435</td><td class="num">1 / 1</td><td class="num">704</td><td class="num">2002</td><td class="price">$575,000</td><td class="num">May 1, 2026</td></tr><tr><td class="addr">3840 Elijah Ct 825</td><td class="num">1 / 1</td><td class="num">704</td><td class="num">2002</td><td class="price">$589,000</td><td class="num">Jun 30, 2025</td></tr><tr><td class="addr">3845 Elijah Ct 633</td><td class="num">1 / 1</td><td class="num">704</td><td class="num">2002</td><td class="price">$689,000</td><td class="num">Mar 24, 2022</td></tr><tr><td class="addr">3850 Elijah Ct 917</td><td class="num">1 / 1</td><td class="num">777</td><td class="num">2002</td><td class="price">$550,000</td><td class="num">Dec 20, 2021</td></tr><tr><td class="addr">3820 Elijah Ct 213</td><td class="num">1 / 1</td><td class="num">808</td><td class="num">2002</td><td class="price">$500,000</td><td class="num">Sep 15, 2021</td></tr><tr><td class="addr">3850 Elijah Ct 925</td><td class="num">1 / 1</td><td class="num">704</td><td class="num">2002</td><td class="price">$500,000</td><td class="num">Aug 27, 2021</td></tr></tbody></table></div></div><div class="sold-group"><div class="sold-group-head"><h3>2 Bedroom</h3><span class="cnt">8 most recent</span></div><div class="sold-table-wrap"><table class="sold-table"><thead><tr><th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th></tr></thead><tbody><tr><td class="addr">3855 Elijah Ct 721</td><td class="num">2 / 2</td><td class="num">1,018</td><td class="num">2002</td><td class="price">$725,000</td><td class="num">Oct 27, 2026</td></tr><tr><td class="addr">3835 Elijah Ct 518</td><td class="num">2 / 2</td><td class="num">1,193</td><td class="num">2002</td><td class="price">$863,000</td><td class="num">Apr 13, 2026</td></tr><tr><td class="addr">3835 Elijah Ct 526</td><td class="num">2 / 2</td><td class="num">1,102</td><td class="num">2002</td><td class="price">$810,000</td><td class="num">Mar 28, 2025</td></tr><tr><td class="addr">3845 Elijah Ct 634</td><td class="num">2 / 2</td><td class="num">1,102</td><td class="num">2002</td><td class="price">$860,000</td><td class="num">Nov 26, 2024</td></tr><tr><td class="addr">3835 Elijah Ct #512</td><td class="num">2 / 2</td><td class="num">1,193</td><td class="num">2002</td><td class="price">$890,000</td><td class="num">Nov 14, 2024</td></tr><tr><td class="addr">3835 Elijah Ct 524</td><td class="num">2 / 2</td><td class="num">1,102</td><td class="num">2002</td><td class="price">$867,500</td><td class="num">Apr 10, 2024</td></tr><tr><td class="addr">3820 Elijah Ct 227</td><td class="num">2 / 2</td><td class="num">1,018</td><td class="num">2002</td><td class="price">$830,000</td><td class="num">Jan 3, 2024</td></tr><tr><td class="addr">3835 Elijah Ct 532</td><td class="num">2 / 2</td><td class="num">1,193</td><td class="num">2002</td><td class="price">$870,000</td><td class="num">Nov 29, 2023</td></tr></tbody></table></div></div><div class="sold-group"><div class="sold-group-head"><h3>3 Bedroom</h3><span class="cnt">8 most recent</span></div><div class="sold-table-wrap"><table class="sold-table"><thead><tr><th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th></tr></thead><tbody><tr><td class="addr">3840 Elijah Ct 828</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$970,000</td><td class="num">Feb 28, 2024</td></tr><tr><td class="addr">3840 Elijah Ct 812</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$995,000</td><td class="num">Feb 15, 2024</td></tr><tr><td class="addr">3860 Elijah Ct 1038</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$970,000</td><td class="num">Nov 13, 2023</td></tr><tr><td class="addr">3820 Elijah Ct 222</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$880,000</td><td class="num">Mar 20, 2023</td></tr><tr><td class="addr">3840 Elijah Ct 832</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$850,000</td><td class="num">Dec 9, 2022</td></tr><tr><td class="addr">3850 Elijah Ct 912</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$1,000,000</td><td class="num">Feb 3, 2022</td></tr><tr><td class="addr">3840 Elijah Ct 838</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$820,000</td><td class="num">Oct 18, 2021</td></tr><tr><td class="addr">3860 ELIJAH CT 1022</td><td class="num">3 / 2</td><td class="num">1,387</td><td class="num">2002</td><td class="price">$689,900</td><td class="num">Feb 10, 2021</td></tr></tbody></table></div></div><div class="sold-group"><div class="sold-group-head"><h3>4 Bedroom</h3><span class="cnt">1 most recent</span></div><div class="sold-table-wrap"><table class="sold-table"><thead><tr><th>Address</th><th>Beds / Baths</th><th>Sq Ft</th><th>Year Built</th><th>Sold Price</th><th>Close Date</th></tr></thead><tbody><tr><td class="addr">3825 Elijah Ct 334</td><td class="num">4 / 2</td><td class="num">953</td><td class="num">2002</td><td class="price">$535,000</td><td class="num">Jul 31, 2018</td></tr></tbody></table></div></div></div>
       </div>
       <p class="sold-note" id="soldNote" style="display:none"></p>
     </div>
@@ -1152,6 +1178,15 @@
       } else {
         set('g-ratio', 'One- and two-bedrooms have sold at a similar pace over the last 5 years.');
       }
+    }
+    // seller tiles (trailing 12 months)
+    var y1 = new Date(now.getFullYear() - 1, now.getMonth(), now.getDate());
+    var t12 = rows.filter(function(r){ return new Date(r.close_date) >= y1; });
+    if (t12.length){
+      set('sv-median', '$' + Math.round(median(t12.map(function(r){ return r.close_price; }))).toLocaleString('en-US'));
+      var ps = t12.filter(function(r){ return r.living_area; }).map(function(r){ return r.close_price / r.living_area; });
+      if (ps.length) set('sv-psf', '$' + Math.round(avg(ps)).toLocaleString('en-US'));
+      set('sv-count', t12.length + (t12.length === 1 ? ' sale' : ' sales'));
     }
     var latest = rows.map(function(r){ return r.close_date; }).sort().pop();
     var stamp = 'Live from MLS closed sales &middot; most recent Carmel Pointe closing ' + fmtDate(latest);
@@ -1446,6 +1481,26 @@
   }
 })();
 </script>
+
+<!-- ============ SELLER: WHAT'S IT WORTH ============ -->
+<section class="seller" id="sell">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Thinking of Selling?</div>
+      <h2>What's Your Carmel Pointe Condo Worth?</h2>
+    </div>
+    <div class="seller-grid">
+      <div class="seller-tile"><div class="sv" id="sv-median">$575,000</div><div class="sl">Median sale price, last 12 months</div></div>
+      <div class="seller-tile"><div class="sv" id="sv-psf">$753</div><div class="sl">Average price per sq ft, last 12 months</div></div>
+      <div class="seller-tile"><div class="sv" id="sv-count">5 sales</div><div class="sl">Closed in the last 12 months</div></div>
+    </div>
+    <p class="seller-copy">Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every Carmel Pointe sale and can tell you what yours would likely sell for today, with the comps to back it up.</p>
+    <div class="seller-cta">
+      <a class="solid" href="/home-value/#valuation-form">Get my Carmel Pointe home value</a>
+      <a class="line" href="tel:+18584366585">Call Sez &middot; (858) 436-6585</a>
+    </div>
+  </div>
+</section>
 
 <!-- ============ IS IT RIGHT FOR YOU (who it suits + tradeoffs) ============ -->
 <section class="fit" id="fit">

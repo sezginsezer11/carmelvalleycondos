@@ -1,10 +1,12 @@
 # Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer
 
-> Carmel Pointe condos for sale in Carmel Valley, San Diego 92130: 200 units built 2001–2002, underground garage parking, ~$350/mo HOA that includes water, sewer and trash, no Mello-Roos. Live MLS listings from Sez Sezer, Keller Williams Realty.
+> Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.
 
 Source page: https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/
 
 [Carmel Pointe Homes for Sale Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
+
+![Carmel Pointe condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 *Carmel Valley · 92130*
 
@@ -183,17 +185,90 @@ One of the lower-HOA options nearby, worth a look if monthly cost comes first.
 
 ## Carmel Pointe Prices & Sales
 
+In the last 12 months, 5 Carmel Pointe condos sold, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 sold at a median of $850,000. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. MLS closed sales as of Nov 13, 2026.
+
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
 *Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/#sold-data*
 
 The most recent closed sales, grouped by bedroom count.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/#sold-data*
+### 1 Bedroom
+
+8 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 3825 Elijah 327 | 1 / 1 | 777 | 2002 | $540,000 | Sep 23, 2026 |
+| 3835 Elijah Ct 533 | 1 / 1 | 704 | 2002 | $575,000 | Jun 10, 2026 |
+| 3830 Elijah Ct 435 | 1 / 1 | 704 | 2002 | $575,000 | May 1, 2026 |
+| 3840 Elijah Ct 825 | 1 / 1 | 704 | 2002 | $589,000 | Jun 30, 2025 |
+| 3845 Elijah Ct 633 | 1 / 1 | 704 | 2002 | $689,000 | Mar 24, 2022 |
+| 3850 Elijah Ct 917 | 1 / 1 | 777 | 2002 | $550,000 | Dec 20, 2021 |
+| 3820 Elijah Ct 213 | 1 / 1 | 808 | 2002 | $500,000 | Sep 15, 2021 |
+| 3850 Elijah Ct 925 | 1 / 1 | 704 | 2002 | $500,000 | Aug 27, 2021 |
+
+### 2 Bedroom
+
+8 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 3855 Elijah Ct 721 | 2 / 2 | 1,018 | 2002 | $725,000 | Oct 27, 2026 |
+| 3835 Elijah Ct 518 | 2 / 2 | 1,193 | 2002 | $863,000 | Apr 13, 2026 |
+| 3835 Elijah Ct 526 | 2 / 2 | 1,102 | 2002 | $810,000 | Mar 28, 2025 |
+| 3845 Elijah Ct 634 | 2 / 2 | 1,102 | 2002 | $860,000 | Nov 26, 2024 |
+| 3835 Elijah Ct #512 | 2 / 2 | 1,193 | 2002 | $890,000 | Nov 14, 2024 |
+| 3835 Elijah Ct 524 | 2 / 2 | 1,102 | 2002 | $867,500 | Apr 10, 2024 |
+| 3820 Elijah Ct 227 | 2 / 2 | 1,018 | 2002 | $830,000 | Jan 3, 2024 |
+| 3835 Elijah Ct 532 | 2 / 2 | 1,193 | 2002 | $870,000 | Nov 29, 2023 |
+
+### 3 Bedroom
+
+8 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 3840 Elijah Ct 828 | 3 / 2 | 1,387 | 2002 | $970,000 | Feb 28, 2024 |
+| 3840 Elijah Ct 812 | 3 / 2 | 1,387 | 2002 | $995,000 | Feb 15, 2024 |
+| 3860 Elijah Ct 1038 | 3 / 2 | 1,387 | 2002 | $970,000 | Nov 13, 2023 |
+| 3820 Elijah Ct 222 | 3 / 2 | 1,387 | 2002 | $880,000 | Mar 20, 2023 |
+| 3840 Elijah Ct 832 | 3 / 2 | 1,387 | 2002 | $850,000 | Dec 9, 2022 |
+| 3850 Elijah Ct 912 | 3 / 2 | 1,387 | 2002 | $1,000,000 | Feb 3, 2022 |
+| 3840 Elijah Ct 838 | 3 / 2 | 1,387 | 2002 | $820,000 | Oct 18, 2021 |
+| 3860 ELIJAH CT 1022 | 3 / 2 | 1,387 | 2002 | $689,900 | Feb 10, 2021 |
+
+### 4 Bedroom
+
+1 most recent
+
+| Address | Beds / Baths | Sq Ft | Year Built | Sold Price | Close Date |
+|---|---|---|---|---|---|
+| 3825 Elijah Ct 334 | 4 / 2 | 953 | 2002 | $535,000 | Jul 31, 2018 |
 
 Every closed sale over the last 5 years, plotted by close date and price.
 
 *Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/#sold-data*
+
+*Thinking of Selling?*
+
+## What's Your Carmel Pointe Condo Worth?
+
+$575,000
+
+Median sale price, last 12 months
+
+$753
+
+Average price per sq ft, last 12 months
+
+5 sales
+
+Closed in the last 12 months
+
+Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every Carmel Pointe sale and can tell you what yours would likely sell for today, with the comps to back it up.
+
+[Get my Carmel Pointe home value](https://carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
 
 *Find Your Fit*
 
