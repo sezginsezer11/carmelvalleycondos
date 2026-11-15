@@ -6,8 +6,8 @@
 
 - Area      = the KML folder ("North of Del Mar Heights Road", "Torrey Hills", ...).
               Shapes in the "Carmel Valley Condos" folder take their area from the chart below.
-- Home type = tools/atlas_home_types.json (condo / town / sfr). New names default to sfr;
-              add them to that file to change it.
+- Home type = condo folder -> condo; chart "(a)" -> condo/townhome; other chart names -> single-family;
+              communities not on the chart -> tools/atlas_home_types.json (new names default to sfr).
 - Homes and condo/fractional flag = California Title Company community chart (2012), CHART below.
 - Neighbors = six closest communities, edge to edge, in miles.
 The result is written into community-atlas/index.html (the DATA line). Stdlib only.
@@ -130,7 +130,15 @@ def main(argv):
         e = next((x for x in entries if x["area"] == area), entries[0] if entries else None)
         if area is None and folder == CONDO_FOLDER and e:
             area = e["area"]
-        comms.append({"n": name, "cat": types.get(name, "sfr"), "sub": area, "folder": folder,
+        # home type: condo folder -> condo; on the chart, "(a)" -> condo/townhome, otherwise single-family;
+        # not on the chart -> tools/atlas_home_types.json
+        if folder == CONDO_FOLDER:
+            cat = "ct"
+        elif e:
+            cat = "ct" if e["condo"] else "sfr"
+        else:
+            cat = "sfr" if types.get(name, "sfr") == "sfr" else "ct"
+        comms.append({"n": name, "cat": cat, "sub": area, "folder": folder,
                       "homes": e["homes"] if e else None, "condo": e["condo"] if e else None, "chart": e["name"] if e else None,
                       "P": P, "c": (sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts)),
                       "p": [[[round(p[1], 5), round(p[0], 5)] for p in poly] for poly in polys]})
@@ -144,9 +152,9 @@ def main(argv):
                     a["sub"], a["est"] = comms[j]["sub"], True
                     break
     used = {(ALIAS.get(c["n"].lower(), c["n"].lower())) for c in comms if c["chart"]}
-    missing = [x for k, v in chart.items() if k not in used for x in v]
+    missing = [{k2: v2 for k2, v2 in x.items() if k2 != "condo"} for k, v in chart.items() if k not in used for x in v]
     unknown_folders = sorted({c["folder"] for c in comms if c["folder"] not in folder_area and c["folder"] != CONDO_FOLDER})
-    out = {"c": [{k: v for k, v in c.items() if k not in ("P", "c", "folder") and v is not None} for c in comms],
+    out = {"c": [{k: v for k, v in c.items() if k not in ("P", "c", "folder", "condo") and v is not None} for c in comms],
            "subs": [[k, l] for k, l in AREAS], "missing": missing}
     s = open(PAGE, encoding="utf-8").read()
     s = re.sub(r"var DATA=\{.*?\};\n", lambda m: "var DATA=" + json.dumps(out, separators=(",", ":")) + ";\n", s, count=1, flags=re.S)
