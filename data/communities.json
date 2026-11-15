@@ -322,9 +322,9 @@
         "note": "Not stated on the site."
       },
       "units": {
-        "value": null,
-        "verified": false,
-        "note": "Not stated on the site."
+        "value": 316,
+        "source": "California Title Company community chart (2012), listed as Carmel Villas; confirmed by the agent",
+        "verified": true
       },
       "hoa": {
         "monthly_fee": {

@@ -49,7 +49,8 @@ CHART = {
 # map name -> chart name, where they're spelled differently
 ALIAS = {"regents square": "regentz square", "the lakes": "lakes", "the groves": "groves", "carmel pointe": "carmel point",
          "torrey del mar west": "torrey del mar", "bridle ridge": "bridleridge",
-         "silver oaks estates / anderson estates": "silver oaks estates", "rancho glens estates": "rancho glens"}
+         "silver oaks estates / anderson estates": "silver oaks estates", "rancho glens estates": "rancho glens",
+         "palacio del mar": "palacio", "camino villas": "carmel villas"}
 
 
 def latest_kml():
