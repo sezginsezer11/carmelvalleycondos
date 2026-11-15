@@ -32,6 +32,8 @@ PAGES = [
      "Guide to Carmel Valley condo communities, prices, HOA fees, and live 92130 condo listings."),
     ("/carmel-valley-townhomes-for-sale/", "Communities",
      "Guide to Carmel Valley townhome communities, prices, HOA fees, and live 92130 townhome listings."),
+    ("/carmel-valley-communities/", "Communities",
+     "Map of all Carmel Valley condo and townhome communities, grouped by area, with home counts and links to each community guide."),
     ("/arborlake-condos-for-sale/", "Communities",
      "Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs."),
     ("/carmel-pointe-condos-for-sale/", "Communities",
