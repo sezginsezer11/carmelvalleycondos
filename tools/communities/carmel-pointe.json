@@ -9,7 +9,7 @@
   "seo": {
     "title": "Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
     "description": "Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.",
-    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA about $340-$433/month including water, sewer, trash and hot water, and no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
+    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA about $340-$433/month including water, sewer, trash and hot water, and Mello-Roos of about $366-$564/year. Represented by Sez Sezer, Keller Williams Realty."
   },
   "geo": {
     "lat": 32.9464961,
@@ -88,7 +88,7 @@
     },
     {
       "icon": "mello",
-      "value": "None",
+      "value": "~$366&ndash;$564/yr",
       "label": "Mello-Roos"
     },
     {
@@ -369,7 +369,7 @@
     },
     {
       "q": "Does Carmel Pointe have Mello-Roos?",
-      "a": "<p>No — Carmel Pointe has no Mello-Roos, and the property tax rate is about 1.1% of assessed value.</p>"
+      "a": "<p>Yes. In 2025–2026 MLS listings, most Carmel Pointe units show a Mello-Roos (CFD) assessment of about $366–$564 per year, a median of about $457 (roughly $38 a month). The base property tax rate is about 1.1% of assessed value. Check the exact amount for a specific unit on its tax bill.</p>"
     },
     {
       "q": "How big are the units at Carmel Pointe?",

@@ -647,8 +647,8 @@
         }
       },
       "mello_roos": {
-        "value": "None",
-        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "value": "About $366-$564/year (median ~$457) on 8 of 10 listings",
+        "source": "2025-2026 MLS listings (Property Comparable Sales export), matched by APN",
         "verified": true
       },
       "property_tax_rate": {

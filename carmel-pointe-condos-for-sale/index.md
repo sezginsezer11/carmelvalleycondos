@@ -19,7 +19,7 @@ A 200-unit resort-style condo community with underground garage parking, a short
 - **Square Feet:** 704–1,387
 - **Total Units:** 200
 - **Year Built:** 2001–2002
-- **Mello-Roos:** None
+- **Mello-Roos:** ~$366–$564/yr
 - **Tax Rate:** ~1.1%
 - **Time to Sell:** ~5 weeks
 
@@ -304,7 +304,7 @@ The HOA is $340–$433 per month in 2025–2026 MLS listings: about $340–$355 
 
 ### Does Carmel Pointe have Mello-Roos?
 
-No — Carmel Pointe has no Mello-Roos, and the property tax rate is about 1.1% of assessed value.
+Yes. In 2025–2026 MLS listings, most Carmel Pointe units show a Mello-Roos (CFD) assessment of about $366–$564 per year, a median of about $457 (roughly $38 a month). The base property tax rate is about 1.1% of assessed value. Check the exact amount for a specific unit on its tax bill.
 
 ### How big are the units at Carmel Pointe?
 
