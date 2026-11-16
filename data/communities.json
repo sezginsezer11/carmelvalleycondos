@@ -122,8 +122,8 @@
       },
       "hoa": {
         "monthly_fee": {
-          "value": "~$408/month",
-          "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
+          "value": "$450-$460/month",
+          "source": "2025-2026 MLS listings (Property Comparable Sales export), matched by APN",
           "verified": true
         },
         "covers": {
@@ -621,8 +621,8 @@
       },
       "hoa": {
         "monthly_fee": {
-          "value": "~$350/month",
-          "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+          "value": "$340-$433/month",
+          "source": "2025-2026 MLS listings (Property Comparable Sales export), matched by APN",
           "verified": true
         },
         "covers": {
@@ -697,6 +697,183 @@
       },
       "price_range": {
         "value": "$540K-$1M",
+        "source": "MLS closed sales, last 5 years (live data on the page)",
+        "verified": true
+      }
+    },
+    {
+      "name": "The Lakes",
+      "slug": "the-lakes",
+      "type": "condo",
+      "url": "https://carmelvalleycondos.com/the-lakes-condos-for-sale/",
+      "markdown_url": "https://carmelvalleycondos.com/the-lakes-condos-for-sale/index.md",
+      "area": {
+        "value": "Southwest Carmel Valley along Carmel Vista Road, San Diego, CA 92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "street_address": {
+        "value": null,
+        "verified": false,
+        "note": "Homes are addressed on Carmel Vista Road; no single community address is published."
+      },
+      "zip": {
+        "value": "92130",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "geo": {
+        "value": {
+          "lat": 32.941,
+          "lng": -117.2374
+        },
+        "source": "Centroid of the agent's My Maps boundary",
+        "verified": true
+      },
+      "boundary": {
+        "value": [
+          [
+            32.94189,
+            -117.23813
+          ],
+          [
+            32.94098,
+            -117.23857
+          ],
+          [
+            32.94039,
+            -117.23864
+          ],
+          [
+            32.94001,
+            -117.2385
+          ],
+          [
+            32.9405,
+            -117.23628
+          ],
+          [
+            32.94187,
+            -117.23622
+          ],
+          [
+            32.94189,
+            -117.23813
+          ]
+        ],
+        "source": "Sez Sezer's Google My Maps community boundary (lat, lng pairs)",
+        "verified": true
+      },
+      "year_built": {
+        "value": "1984-1985",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "builder": {
+        "value": "Baldwin Homes",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "units": {
+        "value": 192,
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "bedrooms": {
+        "value": [
+          "1 bedroom",
+          "2 bedroom"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "square_feet": {
+        "value": {
+          "min": 791,
+          "max": 1269
+        },
+        "source": "MLS closed sales, last 5 years",
+        "verified": true
+      },
+      "parking": {
+        "value": "Reserved covered carport space with storage per unit; guest parking and EV charging; no garages",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "hoa": {
+        "monthly_fee": {
+          "value": "$560-$599/month",
+          "source": "2025-2026 MLS listings (Property Comparable Sales export), matched by APN",
+          "verified": true
+        },
+        "covers": {
+          "value": [
+            "Pool and spa",
+            "Tennis and pickleball courts",
+            "Five lakes, streams and koi ponds",
+            "Walking paths and dog area",
+            "BBQ area",
+            "Community room",
+            "Landscaping and exterior building maintenance"
+          ],
+          "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+          "verified": true
+        }
+      },
+      "mello_roos": {
+        "value": "None",
+        "source": "2025-2026 MLS listings (Property Comparable Sales export), matched by APN; no listing reported one",
+        "verified": true
+      },
+      "property_tax_rate": {
+        "value": "~1.07% of assessed value",
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "amenities": {
+        "value": [
+          "Five lakes connected by streams",
+          "Koi and lily ponds",
+          "Pool",
+          "Spa",
+          "Two tennis courts lined for pickleball",
+          "Walking paths",
+          "Dog area",
+          "BBQ area",
+          "Community room",
+          "EV charging"
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "schools": {
+        "value": [
+          {
+            "level": "Elementary",
+            "name": "Carmel Del Mar Elementary",
+            "district": "Del Mar Union Elementary School District · within 0.5 miles"
+          },
+          {
+            "level": "Middle School",
+            "name": "Carmel Valley Middle School",
+            "district": "San Dieguito Union High School District · within 0.5 miles"
+          },
+          {
+            "level": "High School",
+            "name": "Torrey Pines High School",
+            "district": "San Dieguito Union · among California's top-ranked public high schools"
+          },
+          {
+            "level": "High School (Alt.)",
+            "name": "Canyon Crest Academy",
+            "district": "San Dieguito Union · arts & academics magnet"
+          }
+        ],
+        "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
+        "verified": true
+      },
+      "price_range": {
+        "value": "$550K-$935K",
         "source": "MLS closed sales, last 5 years (live data on the page)",
         "verified": true
       }

@@ -15,7 +15,7 @@ Source page: https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/
 A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands — guided by an agent who has specialized in this community for more than 11 years.
 
 - **Price:** $540K–$1M
-- **HOA Fee:** ~$350/mo
+- **HOA Fee:** $340–$433/mo
 - **Square Feet:** 704–1,387
 - **Total Units:** 200
 - **Year Built:** 2001–2002
@@ -104,9 +104,9 @@ A 200-unit condo community built by Western Pacific Housing in 2001–2002, set 
 
 One monthly fee covers the amenities, the grounds, and utilities most HOAs bill separately.
 
-~$350/month
+$340–$433/month
 
-**HOA fee** Lower than Arborlake and The Lakes, and it includes water, sewer, trash and hot water.
+**HOA fee** Depends on size: about $340–$355 for 1-bedrooms and $387–$433 for 2-bedrooms in 2025–2026 MLS listings. Lower than Arborlake and The Lakes, and it includes water, sewer, trash and hot water.
 
 ### Amenities included
 
@@ -121,13 +121,14 @@ One monthly fee covers the amenities, the grounds, and utilities most HOAs bill 
 
 ### How Carmel Pointe's HOA Compares
 
-- **Arborlake:** ~$408/mo
-- **The Lakes:** ~$397/mo
-- **Carmel Pointe:** ~$350/mo
-- **Del Mar Villas:** ~$340/mo
-- **Martinique:** ~$335/mo
+- **The Lakes:** $560–$599/mo
+- **Martinique:** $428–$500/mo
+- **Arborlake:** $450–$460/mo
+- **Camino Villas:** $375–$450/mo
+- **Carmel Pointe:** $340–$433/mo
+- **Del Mar Villas:** $330–$370/mo
 
-Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests.
+Ranges are from 2025–2026 MLS listings. Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests.
 
 *Explore More*
 
@@ -139,7 +140,7 @@ Worth comparing if you're weighing Carmel Pointe's newer buildings against other
 
 ### Arborlake
 
-HOA ~$408/mo · Built 1986–1989
+HOA $450–$460/mo · Built 1986–1989
 
 Right next door, built around a central lake with fountains and waterfalls. Older buildings and carport parking, but a one-of-a-kind setting.
 
@@ -149,11 +150,11 @@ Right next door, built around a central lake with fountains and waterfalls. Olde
 
 ### The Lakes
 
-HOA ~$397/mo · Southwest CV
+HOA $560–$599/mo · Southwest CV
 
 A garden community with koi ponds and lagoons, usually at a lower entry price than Carmel Pointe.
 
-[The Lakes condos for sale →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
+[The Lakes condos for sale →](https://carmelvalleycondos.com/the-lakes-condos-for-sale/)
 
 ![Camino Villas condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
 
@@ -167,7 +168,7 @@ An established condo community next door, known for mature landscaping and a sha
 
 ### Del Mar Villas
 
-HOA ~$340/mo · 216 units
+HOA $330–$370/mo · 216 units
 
 A larger central Carmel Valley community with a broad amenity package: sauna, pickleball and a billiards room.
 
@@ -175,7 +176,7 @@ A larger central Carmel Valley community with a broad amenity package: sauna, pi
 
 ### Martinique
 
-HOA ~$335/mo · Carmel Valley
+HOA $428–$500/mo · Carmel Valley
 
 One of the lower-HOA options nearby, worth a look if monthly cost comes first.
 
@@ -185,7 +186,7 @@ One of the lower-HOA options nearby, worth a look if monthly cost comes first.
 
 ## Carmel Pointe Prices & Sales
 
-In the last 12 months, 5 Carmel Pointe condos sold, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 sold at a median of $850,000. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. MLS closed sales as of Nov 13, 2026.
+In the last 12 months, 5 Carmel Pointe condos sold, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 sold at a median of $850,000. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. MLS closed sales as of Nov 16, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -299,7 +300,7 @@ Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,0
 
 ### What do Carmel Pointe HOA fees cover?
 
-The HOA is about $350 per month. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.
+The HOA is $340–$433 per month in 2025–2026 MLS listings: about $340–$355 for 1-bedrooms and $387–$433 for 2-bedrooms. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.
 
 ### Does Carmel Pointe have Mello-Roos?
 
@@ -319,7 +320,7 @@ About 5 homes sell here a year. Over the last 5 years the median time on market 
 
 ### How does Carmel Pointe compare to other Carmel Valley condo communities?
 
-Carmel Pointe (2001–2002) is newer than neighboring Arborlake (1986–1989) and The Lakes, has garage parking instead of carports, and its ~$350/mo HOA is lower while also covering utilities.
+Carmel Pointe (2001–2002) is newer than neighboring Arborlake (1986–1989) and The Lakes, has garage parking instead of carports, and its HOA ($340–$433/mo) is lower while also covering utilities.
 
 ## Thinking About Carmel Pointe?
 

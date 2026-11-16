@@ -66,7 +66,7 @@ Where most of Carmel Valley's condos and townhomes are. These communities sit be
 - **Sunstream** — 260 homes
 - **The Groves** — 173 homes
 - [The Heights](https://carmelvalleycondos.com/the-heights-townhomes-for-sale/) — **The Heights** — 267 homes
-- [The Lakes](https://www.carmelvalley.com/condos-for-sale/the-lakes/) — **The Lakes** — 192 homes
+- [The Lakes](https://carmelvalleycondos.com/the-lakes-condos-for-sale/) — **The Lakes** — 192 homes
 - **Windwood** — 167 homes
 
 ### Carmel Country Highlands

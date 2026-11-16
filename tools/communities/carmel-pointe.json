@@ -9,7 +9,7 @@
   "seo": {
     "title": "Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
     "description": "Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.",
-    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA approximately $350/month including water, sewer, trash and hot water, and no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
+    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA about $340-$433/month including water, sewer, trash and hot water, and no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
   },
   "geo": {
     "lat": 32.9464961,
@@ -56,24 +56,24 @@
   "hero": {
     "eyebrow": "Carmel Valley &middot; 92130",
     "h1": "Carmel Pointe Condos for Sale",
-    "lead": "A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands &mdash; guided by an agent who has specialized in this community for more than 11 years.",
+    "lead": "A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands — guided by an agent who has specialized in this community for more than 11 years.",
     "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
     "alt": "Carmel Pointe condo community in Carmel Valley, San Diego"
   },
   "facts": [
     {
       "icon": "price",
-      "value": "$540K&ndash;$1M",
+      "value": "$540K–$1M",
       "label": "Price"
     },
     {
       "icon": "hoa",
-      "value": "~$350/mo",
+      "value": "$340&ndash;$433/mo",
       "label": "HOA Fee"
     },
     {
       "icon": "sqft",
-      "value": "704&ndash;1,387",
+      "value": "704–1,387",
       "label": "Square Feet"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "icon": "built",
-      "value": "2001&ndash;2002",
+      "value": "2001–2002",
       "label": "Year Built"
     },
     {
@@ -202,8 +202,8 @@
   },
   "hoa": {
     "intro": "One monthly fee covers the amenities, the grounds, and utilities most HOAs bill separately.",
-    "fee": "~$350",
-    "fee_note": "Lower than Arborlake and The Lakes, and it includes water, sewer, trash and hot water.",
+    "fee": "$340&ndash;$433",
+    "fee_note": "Depends on size: about $340&ndash;$355 for 1-bedrooms and $387&ndash;$433 for 2-bedrooms in 2025&ndash;2026 MLS listings. Lower than Arborlake and The Lakes, and it includes water, sewer, trash and hot water.",
     "amenities": [
       [
         "pool",
@@ -233,37 +233,43 @@
     "also": "water, sewer, trash and hot water, plus landscaping and common-area upkeep.",
     "compare": [
       [
-        "Arborlake",
-        "~$408/mo",
+        "The Lakes",
+        "$560&ndash;$599/mo",
         100,
         false
       ],
       [
-        "The Lakes",
-        "~$397/mo",
-        97,
-        false
-      ],
-      [
-        "Carmel Pointe",
-        "~$350/mo",
-        86,
-        true
-      ],
-      [
-        "Del Mar Villas",
-        "~$340/mo",
+        "Martinique",
+        "$428&ndash;$500/mo",
         83,
         false
       ],
       [
-        "Martinique",
-        "~$335/mo",
-        82,
+        "Arborlake",
+        "$450&ndash;$460/mo",
+        77,
+        false
+      ],
+      [
+        "Camino Villas",
+        "$375&ndash;$450/mo",
+        75,
+        false
+      ],
+      [
+        "Carmel Pointe",
+        "$340&ndash;$433/mo",
+        72,
+        true
+      ],
+      [
+        "Del Mar Villas",
+        "$330&ndash;$370/mo",
+        62,
         false
       ]
     ],
-    "compare_note": "Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests."
+    "compare_note": "Ranges are from 2025&ndash;2026 MLS listings. Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests."
   },
   "similar": {
     "h2": "Other Carmel Valley Condo Communities",
@@ -274,16 +280,16 @@
         "img": "/images/arborlake-condos-carmel-valley.jpg",
         "alt": "Arborlake condo community in Carmel Valley, San Diego",
         "name": "Arborlake",
-        "meta": "HOA ~$408/mo &middot; Built 1986&ndash;1989",
+        "meta": "HOA $450&ndash;$460/mo &middot; Built 1986&ndash;1989",
         "desc": "Right next door, built around a central lake with fountains and waterfalls. Older buildings and carport parking, but a one-of-a-kind setting.",
         "cta": "Arborlake condos for sale"
       },
       {
-        "href": "https://www.carmelvalley.com/condos-for-sale/the-lakes/",
+        "href": "/the-lakes-condos-for-sale/",
         "img": "/images/the-lakes-condos-carmel-valley.jpg",
         "alt": "The Lakes condo community in Carmel Valley, San Diego",
         "name": "The Lakes",
-        "meta": "HOA ~$397/mo &middot; Southwest CV",
+        "meta": "HOA $560&ndash;$599/mo &middot; Southwest CV",
         "desc": "A garden community with koi ponds and lagoons, usually at a lower entry price than Carmel Pointe.",
         "cta": "The Lakes condos for sale"
       },
@@ -301,7 +307,7 @@
         "img": "",
         "alt": "",
         "name": "Del Mar Villas",
-        "meta": "HOA ~$340/mo &middot; 216 units",
+        "meta": "HOA $330&ndash;$370/mo &middot; 216 units",
         "desc": "A larger central Carmel Valley community with a broad amenity package: sauna, pickleball and a billiards room.",
         "cta": "Del Mar Villas condos for sale"
       },
@@ -310,7 +316,7 @@
         "img": "",
         "alt": "",
         "name": "Martinique",
-        "meta": "HOA ~$335/mo &middot; Carmel Valley",
+        "meta": "HOA $428&ndash;$500/mo &middot; Carmel Valley",
         "desc": "One of the lower-HOA options nearby, worth a look if monthly cost comes first.",
         "cta": "Martinique condos for sale"
       }
@@ -355,15 +361,15 @@
   "faq": [
     {
       "q": "What is the price range for Carmel Pointe condos?",
-      "a": "<p>Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,000,000: 1-bedrooms $540K&ndash;$689K, 2-bedrooms $725K&ndash;$890K, and 3-bedrooms $850K&ndash;$1M.</p>"
+      "a": "<p>Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,000,000: 1-bedrooms $540K–$689K, 2-bedrooms $725K–$890K, and 3-bedrooms $850K–$1M.</p>"
     },
     {
       "q": "What do Carmel Pointe HOA fees cover?",
-      "a": "<p>The HOA is about $350 per month. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.</p>"
+      "a": "<p>The HOA is $340–$433 per month in 2025–2026 MLS listings: about $340–$355 for 1-bedrooms and $387–$433 for 2-bedrooms. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.</p>"
     },
     {
       "q": "Does Carmel Pointe have Mello-Roos?",
-      "a": "<p>No &mdash; Carmel Pointe has no Mello-Roos, and the property tax rate is about 1.1% of assessed value.</p>"
+      "a": "<p>No — Carmel Pointe has no Mello-Roos, and the property tax rate is about 1.1% of assessed value.</p>"
     },
     {
       "q": "How big are the units at Carmel Pointe?",
@@ -379,8 +385,8 @@
     },
     {
       "q": "How does Carmel Pointe compare to other Carmel Valley condo communities?",
-      "a": "<p>Carmel Pointe (2001&ndash;2002) is newer than neighboring Arborlake (1986&ndash;1989) and The Lakes, has garage parking instead of carports, and its ~$350/mo HOA is lower while also covering utilities.</p>"
+      "a": "<p>Carmel Pointe (2001–2002) is newer than neighboring Arborlake (1986–1989) and The Lakes, has garage parking instead of carports, and its HOA ($340–$433/mo) is lower while also covering utilities.</p>"
     }
   ],
-  "contact_lead": "Whether you're buying your first condo or selling at Carmel Pointe, let's talk strategy. No pressure &mdash; just straight answers from someone who knows this community."
+  "contact_lead": "Whether you're buying your first condo or selling at Carmel Pointe, let's talk strategy. No pressure — just straight answers from someone who knows this community."
 }

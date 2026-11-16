@@ -38,6 +38,8 @@ PAGES = [
      "Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs."),
     ("/carmel-pointe-condos-for-sale/", "Communities",
      "Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs."),
+    ("/the-lakes-condos-for-sale/", "Communities",
+     "The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs."),
     ("/camino-villas-condos-for-sale/", "Communities",
      "Camino Villas: established central Carmel Valley condo community with a community pool - overview, listings, FAQs."),
     ("/the-heights-townhomes-for-sale/", "Communities",

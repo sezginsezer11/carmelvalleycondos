@@ -1,0 +1,381 @@
+{
+  "slug": "the-lakes",
+  "name": "The Lakes",
+  "path": "/the-lakes-condos-for-sale/",
+  "type": "condo",
+  "parent_name": "Condos",
+  "parent_url": "/carmel-valley-condos-for-sale/",
+  "api_community": "The Lakes",
+  "seo": {
+    "title": "The Lakes Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
+    "description": "The Lakes condos for sale in Carmel Valley 92130: live listings, sold prices, HOA $560–$599/mo, no Mello-Roos, koi ponds, schools and FAQs.",
+    "jsonld_description": "The Lakes condos for sale in Carmel Valley, San Diego: a 192-unit community built 1984-1985 by Baldwin Homes around five small lakes and koi ponds, with a pool, spa, tennis and pickleball courts, HOA about $560-$599/month and no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
+  },
+  "geo": {
+    "lat": 32.941,
+    "lng": -117.2374
+  },
+  "boundary": [
+    [
+      32.94189,
+      -117.23813
+    ],
+    [
+      32.94098,
+      -117.23857
+    ],
+    [
+      32.94039,
+      -117.23864
+    ],
+    [
+      32.94001,
+      -117.2385
+    ],
+    [
+      32.9405,
+      -117.23628
+    ],
+    [
+      32.94187,
+      -117.23622
+    ],
+    [
+      32.94189,
+      -117.23813
+    ]
+  ],
+  "hero": {
+    "eyebrow": "Carmel Valley &middot; 92130",
+    "h1": "The Lakes Condos for Sale",
+    "lead": "A 192-unit condo community built around five small lakes, koi ponds and walking paths in southwest Carmel Valley &mdash; guided by an agent who has specialized in this community for more than 11 years.",
+    "img": "/images/the-lakes-condos-carmel-valley.jpg",
+    "alt": "The Lakes condo community in Carmel Valley, San Diego"
+  },
+  "facts": [
+    {
+      "icon": "price",
+      "value": "$550K&ndash;$935K",
+      "label": "Price"
+    },
+    {
+      "icon": "hoa",
+      "value": "$560&ndash;$599/mo",
+      "label": "HOA Fee"
+    },
+    {
+      "icon": "sqft",
+      "value": "791&ndash;1,269",
+      "label": "Square Feet"
+    },
+    {
+      "icon": "units",
+      "value": "192",
+      "label": "Total Units"
+    },
+    {
+      "icon": "built",
+      "value": "1984&ndash;1985",
+      "label": "Year Built"
+    },
+    {
+      "icon": "mello",
+      "value": "None",
+      "label": "Mello-Roos"
+    },
+    {
+      "icon": "tax",
+      "value": "~1.07%",
+      "label": "Tax Rate"
+    },
+    {
+      "icon": "time",
+      "value": "~2 weeks",
+      "label": "Time to Sell"
+    }
+  ],
+  "location_intro": "Southwest Carmel Valley along Carmel Vista Road, a short walk from Piazza Carmel and next to Chateau Village, The Groves and Sunstream.",
+  "schools": [
+    {
+      "level": "Elementary",
+      "name": "Carmel Del Mar Elementary",
+      "district": "Del Mar Union Elementary School District &middot; within 0.5 miles"
+    },
+    {
+      "level": "Middle School",
+      "name": "Carmel Valley Middle School",
+      "district": "San Dieguito Union High School District &middot; within 0.5 miles"
+    },
+    {
+      "level": "High School",
+      "name": "Torrey Pines High School",
+      "district": "San Dieguito Union &middot; among California's top-ranked public high schools"
+    },
+    {
+      "level": "High School (Alt.)",
+      "name": "Canyon Crest Academy",
+      "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+    }
+  ],
+  "nearby": [
+    [
+      "Piazza Carmel (Vons, dining)",
+      "~5 min walk"
+    ],
+    [
+      "Carmel Valley Recreation Center",
+      "~10 min walk"
+    ],
+    [
+      "One Paseo",
+      "~12 min walk"
+    ],
+    [
+      "Del Mar Highlands Town Center",
+      "~14 min walk"
+    ],
+    [
+      "Route 56",
+      "~0.5 miles"
+    ],
+    [
+      "Interstate 5",
+      "~2.5 miles"
+    ],
+    [
+      "Del Mar beaches",
+      "~3.5 miles"
+    ],
+    [
+      "Torrey Pines State Reserve",
+      "~10 min drive"
+    ]
+  ],
+  "glance": {
+    "h2": "What a 1-Bed vs. a 2-Bed Actually Costs",
+    "lede": "Nearly every sale at The Lakes is a 1- or 2-bedroom. Here's what each sold for over the last 5 years.",
+    "cards": [
+      {
+        "beds": 1,
+        "count": "22 sales &middot; 5 yrs",
+        "size": "791&ndash;951 sq ft",
+        "median": "$644,000",
+        "range": "$550K&ndash;$815K"
+      },
+      {
+        "beds": 2,
+        "count": "19 sales &middot; 5 yrs",
+        "size": "1,101&ndash;1,269 sq ft",
+        "median": "$805,000",
+        "range": "$659K&ndash;$935K"
+      }
+    ],
+    "ratio": "One- and two-bedrooms sell about equally often here, so there are recent comps for either size &mdash; unusual for a community this size."
+  },
+  "life": {
+    "lead": "Built by Baldwin Homes in 1984&ndash;1985, The Lakes is set around five small lakes connected by streams, with koi and lily ponds, grassy walkways and four decades of mature trees. It's one of the most affordable ways into a 92130 address, with no Mello-Roos. See the full <a href=\"https://www.carmelvalley.com/condos-for-sale/the-lakes/\">The Lakes community profile</a>.",
+    "reasons": [
+      [
+        "Water everywhere you look.",
+        "Lakes, streams and koi ponds run through the grounds, and many units look out on them."
+      ],
+      [
+        "Walk to errands and schools.",
+        "Piazza Carmel is about 5 minutes on foot, and the elementary and middle schools are within half a mile."
+      ],
+      [
+        "No Mello-Roos.",
+        "Older construction means no special tax on top of the property tax &mdash; a real monthly saving next to newer communities."
+      ]
+    ]
+  },
+  "hoa": {
+    "intro": "One monthly fee covers the grounds, the water features and the amenities.",
+    "fee": "$560&ndash;$599",
+    "fee_note": "2025 sales listed $560&ndash;$565; every 2026 listing shows $599, so expect about $599 now. Confirm the current fee for a specific unit.",
+    "amenities": [
+      [
+        "lake",
+        "Five lakes &amp; koi ponds"
+      ],
+      [
+        "pool",
+        "Pool &amp; spa"
+      ],
+      [
+        "tennis",
+        "Tennis &amp; pickleball courts"
+      ],
+      [
+        "path",
+        "Walking paths &amp; dog area"
+      ],
+      [
+        "bbq",
+        "BBQ area &amp; community room"
+      ],
+      [
+        "carport",
+        "Covered carport &amp; storage"
+      ]
+    ],
+    "also": "landscaping, exterior building maintenance and common-area upkeep. Units have in-unit laundry, and there is EV charging and guest parking.",
+    "compare": [
+      [
+        "The Lakes",
+        "$560&ndash;$599/mo",
+        100,
+        true
+      ],
+      [
+        "Martinique",
+        "$428&ndash;$500/mo",
+        83,
+        false
+      ],
+      [
+        "Arborlake",
+        "$450&ndash;$460/mo",
+        77,
+        false
+      ],
+      [
+        "Camino Villas",
+        "$375&ndash;$450/mo",
+        75,
+        false
+      ],
+      [
+        "Carmel Pointe",
+        "$340&ndash;$433/mo",
+        72,
+        false
+      ],
+      [
+        "Del Mar Villas",
+        "$330&ndash;$370/mo",
+        62,
+        false
+      ]
+    ],
+    "compare_note": "The Lakes' HOA is on the high side for nearby condos, but there's no Mello-Roos, which narrows the gap with newer communities. Ranges are from 2025&ndash;2026 MLS listings."
+  },
+  "similar": {
+    "h2": "Other Carmel Valley Condo Communities",
+    "intro": "Worth comparing if you like The Lakes' water-garden setting or its price point.",
+    "cards": [
+      {
+        "href": "/arborlake-condos-for-sale/",
+        "img": "/images/arborlake-condos-carmel-valley.jpg",
+        "alt": "Arborlake condo community in Carmel Valley, San Diego",
+        "name": "Arborlake",
+        "meta": "HOA $450&ndash;$460/mo &middot; Built 1986&ndash;1989",
+        "desc": "Also built around water: a central lake with fountains and waterfalls, at similar prices and a lower HOA.",
+        "cta": "Arborlake condos for sale"
+      },
+      {
+        "href": "/carmel-pointe-condos-for-sale/",
+        "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
+        "alt": "Carmel Pointe condo community in Carmel Valley, San Diego",
+        "name": "Carmel Pointe",
+        "meta": "HOA $340&ndash;$433/mo &middot; Built 2001&ndash;2002",
+        "desc": "Newer buildings with underground garage parking and a utility-inclusive HOA, a short walk from Del Mar Highlands.",
+        "cta": "Carmel Pointe condos for sale"
+      },
+      {
+        "href": "/camino-villas-condos-for-sale/",
+        "img": "/images/camino-villas-condos-carmel-valley.webp",
+        "alt": "Camino Villas condo community in Carmel Valley, San Diego",
+        "name": "Camino Villas",
+        "meta": "HOA $375&ndash;$450/mo &middot; 316 homes",
+        "desc": "A larger established condo community a block away, with mature landscaping and a community pool.",
+        "cta": "Camino Villas condos for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/townhomes-for-sale/chateau-village/",
+        "img": "",
+        "alt": "",
+        "name": "Chateau Village",
+        "meta": "HOA $400&ndash;$415/mo &middot; Next door",
+        "desc": "Right next to The Lakes, with bigger 2- and 3-bedroom townhome-style homes.",
+        "cta": "Chateau Village homes for sale"
+      },
+      {
+        "href": "https://www.carmelvalley.com/townhomes-for-sale/the-groves/",
+        "img": "",
+        "alt": "",
+        "name": "The Groves",
+        "meta": "HOA $485&ndash;$590/mo &middot; Next door",
+        "desc": "Shares a border with The Lakes; 2- and 3-bedroom homes for buyers who need more space.",
+        "cta": "The Groves homes for sale"
+      }
+    ]
+  },
+  "analysis": null,
+  "fit": {
+    "good": [
+      [
+        "First-Time Buyers",
+        "One of the lowest price points in 92130, with no Mello-Roos and top-rated schools within walking distance."
+      ],
+      [
+        "Downsizers",
+        "Single-level living, HOA-managed grounds, and dinner at Piazza Carmel or One Paseo without driving."
+      ],
+      [
+        "Investors",
+        "Steady rental demand from the SR-56 and Sorrento Valley job centers, and no Mello-Roos in the numbers."
+      ]
+    ],
+    "weigh": [
+      [
+        "Carport parking, no garages",
+        "Each unit has a reserved covered carport space with storage, but there are no garages."
+      ],
+      [
+        "Higher HOA than nearby condos",
+        "About $599/mo in 2026, more than Arborlake or Carmel Pointe. Ask what reserves and recent projects look like."
+      ],
+      [
+        "1980s buildings",
+        "Built in 1984&ndash;1985; interiors range from original to fully updated, so compare finishes carefully."
+      ],
+      [
+        "Few 3-bedrooms",
+        "Almost every sale is a 1- or 2-bedroom; for more space, look at Chateau Village or The Groves next door."
+      ]
+    ]
+  },
+  "faq_h2": "The Lakes Condo FAQs",
+  "faq": [
+    {
+      "q": "What is the price range for The Lakes condos?",
+      "a": "<p>Over the last 5 years, The Lakes condos sold between about $550,000 and $935,000: 1-bedrooms $550K–$815K (median $644K) and 2-bedrooms $659K–$935K (median $805K).</p>"
+    },
+    {
+      "q": "What are the HOA fees at The Lakes?",
+      "a": "<p>MLS listings show $560–$599 per month: 2025 sales listed $560–$565, and every 2026 listing shows $599. The fee covers the pool, spa, tennis and pickleball courts, the lakes and koi ponds, landscaping, exterior maintenance and the community room. Confirm the current fee for a specific unit.</p>"
+    },
+    {
+      "q": "Does The Lakes have Mello-Roos?",
+      "a": "<p>No. None of the recent MLS listings at The Lakes show a Mello-Roos assessment, and the property tax rate is about 1.07% of assessed value.</p>"
+    },
+    {
+      "q": "How big are the units at The Lakes?",
+      "a": "<p>From about 791 sq ft (1-bedroom) to 1,269 sq ft (2-bedroom). Most 1-bedrooms are 790–950 sq ft and most 2-bedrooms are 1,100–1,270 sq ft.</p>"
+    },
+    {
+      "q": "What is parking like at The Lakes?",
+      "a": "<p>Each unit has a reserved covered carport space with extra storage, plus guest parking and EV charging stations. There are no garages.</p>"
+    },
+    {
+      "q": "How quickly do The Lakes condos sell?",
+      "a": "<p>About 8 homes a year have sold here over the last 5 years. The median time on market was about 12 days, so well-priced units go quickly.</p>"
+    },
+    {
+      "q": "How does The Lakes compare to other Carmel Valley condo communities?",
+      "a": "<p>The Lakes and neighboring Arborlake are the two Carmel Valley condo communities built around water. The Lakes is a few years older, sells at similar prices, has a higher HOA ($560–$599 vs. $450–$460) and carport parking. Carmel Pointe is newer with garage parking and a lower HOA.</p>"
+    }
+  ],
+  "contact_lead": "Whether you're buying your first condo or selling at The Lakes, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+}

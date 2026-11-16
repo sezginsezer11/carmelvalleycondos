@@ -47,10 +47,10 @@
   "Arborlake": "/arborlake-condos-for-sale/",
   "Carmel Pointe": "/carmel-pointe-condos-for-sale/",
   "Camino Villas": "/camino-villas-condos-for-sale/",
-  "The Heights": "/the-heights-townhomes-for-sale/"
+  "The Heights": "/the-heights-townhomes-for-sale/",
+  "The Lakes": "/the-lakes-condos-for-sale/"
  },
  "ext": {
-  "The Lakes": "https://www.carmelvalley.com/condos-for-sale/the-lakes/",
   "Martinique": "https://www.carmelvalley.com/condos-for-sale/martinique/",
   "Del Mar Villas": "https://www.carmelvalley.com/condos-for-sale/del-mar-villas/"
  },

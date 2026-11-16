@@ -15,7 +15,7 @@ Source page: https://carmelvalleycondos.com/arborlake-condos-for-sale/
 A 190-unit lake-and-waterfall condo community in southwest Carmel Valley — guided by an agent who has specialized in this community for more than 11 years.
 
 - **Price:** $650K–$875K
-- **HOA Fee:** ~$408/mo
+- **HOA Fee:** $450–$460/mo
 - **Square Feet:** 742–1,145
 - **Total Units:** 190
 - **Year Built:** 1986–1989
@@ -96,9 +96,9 @@ A 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes in
 
 One monthly fee covers the lake, the amenities and the outside of every building.
 
-~$408/month
+$450–$460/month
 
-**HOA fee** Higher than nearby condo HOAs, mostly because it maintains the lake, fountains and waterfalls.
+**HOA fee** 2025–2026 MLS listings show $450–$460 for 1- and 2-bedrooms alike. Much of it maintains the lake, fountains and waterfalls.
 
 ### Amenities included
 
@@ -113,13 +113,14 @@ One monthly fee covers the lake, the amenities and the outside of every building
 
 ### How Arborlake's HOA Compares
 
-- **Arborlake:** ~$408/mo
-- **The Lakes:** ~$397/mo
-- **Carmel Pointe:** ~$350/mo
-- **Del Mar Villas:** ~$340/mo
-- **Martinique:** ~$335/mo
+- **The Lakes:** $560–$599/mo
+- **Martinique:** $428–$500/mo
+- **Arborlake:** $450–$460/mo
+- **Camino Villas:** $375–$450/mo
+- **Carmel Pointe:** $340–$433/mo
+- **Del Mar Villas:** $330–$370/mo
 
-The HOA gap mostly reflects the lake and fountain system the other communities don't have.
+Ranges are from 2025–2026 MLS listings. Arborlake sits in the middle: below The Lakes, above Carmel Pointe and Del Mar Villas.
 
 *Explore More*
 
@@ -131,17 +132,17 @@ Worth comparing if you're still deciding whether Arborlake's setting is the righ
 
 ### The Lakes
 
-HOA ~$397/mo · Southwest CV
+HOA $560–$599/mo · Southwest CV
 
 Also a water-feature community — koi ponds and lagoons rather than a central lake — at a slightly lower HOA.
 
-[The Lakes condos for sale →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
+[The Lakes condos for sale →](https://carmelvalleycondos.com/the-lakes-condos-for-sale/)
 
 ![Carmel Pointe condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 ### Carmel Pointe
 
-HOA ~$350/mo · Built 2001–2002
+HOA $340–$433/mo · Built 2001–2002
 
 Newer construction with underground garage parking — the better comparison if you'd trade mature landscaping for a newer building.
 
@@ -149,7 +150,7 @@ Newer construction with underground garage parking — the better comparison if 
 
 ### Del Mar Villas
 
-HOA ~$340/mo · 216 units
+HOA $330–$370/mo · 216 units
 
 A larger central Carmel Valley community with a broader amenity package — sauna, pickleball, a billiards room.
 
@@ -167,7 +168,7 @@ An established central Carmel Valley condo community known for mature, resort-st
 
 ### Martinique
 
-HOA ~$335/mo · Carmel Valley
+HOA $428–$500/mo · Carmel Valley
 
 One of the lower-HOA condo options among nearby comparable communities — worth a look if monthly cost is a priority.
 
@@ -177,7 +178,7 @@ One of the lower-HOA condo options among nearby comparable communities — worth
 
 ## Arborlake Prices & Sales
 
-In the last 12 months, 4 Arborlake condos sold, at a median of $802,875 ($828/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 13, 2026.
+In the last 12 months, 4 Arborlake condos sold, at a median of $802,875 ($828/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 16, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -260,7 +261,7 @@ If price is what a home sold for, days on market is how hard the seller had to w
 
 ### How the HOA Fits Into the Value Picture
 
-None of this happens in a vacuum. Arborlake's HOA runs around $408/month — the highest of the nearby comparable communities this page tracks — and that premium buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends in the other tabs suggest the market has been willing to pay for that, not penalize it — appreciation has continued even as the HOA gap versus nearby communities has stayed roughly constant.
+None of this happens in a vacuum. Arborlake's HOA is $450–$460/month in 2025–2026 MLS listings — above Carmel Pointe and Del Mar Villas, below The Lakes — and that fee buys something those comparables don't have: a maintained central lake with fountains and waterfalls, two tennis courts, a heated pool, two spas, a sauna, and a fitness center. The price and $/sq ft trends in the other tabs suggest the market has been willing to pay for that, not penalize it — appreciation has continued with the HOA where it is.
 
 ### What This Means If You're Buying or Selling
 
@@ -317,7 +318,7 @@ Arborlake condos typically sell between $650,000 and $875,000, or roughly $680�
 
 ### What do Arborlake HOA fees cover?
 
-Arborlake's HOA runs approximately $408 per month and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage.
+Arborlake's HOA is $450–$460 per month in 2025–2026 MLS listings and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage.
 
 ### Does Arborlake have Mello-Roos?
 
@@ -329,7 +330,7 @@ Arborlake units range from 742-square-foot one-bedrooms to 1,145-square-foot two
 
 ### How does Arborlake compare to other Carmel Valley condo communities?
 
-Arborlake's HOA runs higher than comparable communities like The Lakes (~$397/mo), Carmel Pointe (~$350/mo), and Del Mar Villas (~$340/mo) — the difference mostly funds the central lake, fountains, and waterfalls that those communities don't have.
+Arborlake's HOA ($450–$460/mo) sits between The Lakes ($560–$599/mo) and Carmel Pointe ($340–$433/mo) or Del Mar Villas ($330–$370/mo). Much of it funds the central lake, fountains and waterfalls that most nearby communities don't have.
 
 ### How quickly do Arborlake condos sell?
 
