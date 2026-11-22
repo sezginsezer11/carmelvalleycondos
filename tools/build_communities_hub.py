@@ -17,7 +17,7 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PATH = "/carmel-valley-communities/"
 OUT = os.path.join(ROOT, "carmel-valley-communities", "index.html")
-SITE = "https://carmelvalleycondos.com"
+SITE = "https://www.carmelvalleycondos.com"
 HERO = "/images/carmel-valley-condos-townhomes-san-diego.jpg"
 COLORS = {"n": "#0d8f84", "s": "#1456e8", "cch": "#c27a0e", "phr": "#e0691c", "tdm": "#3f9a2a",
           "th": "#d0346f", "dmm": "#7a4ce0", "rp": "#64748b"}

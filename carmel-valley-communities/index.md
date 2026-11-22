@@ -2,7 +2,7 @@
 
 > Map of all 41 Carmel Valley condo and townhome communities by area, with home counts and links to community guides. San Diego 92130.
 
-Source page: https://carmelvalleycondos.com/carmel-valley-communities/
+Source page: https://www.carmelvalleycondos.com/carmel-valley-communities/
 
 *Carmel Valley · San Diego 92130*
 
@@ -16,7 +16,7 @@ Every condo and townhome community in Carmel Valley on one map, grouped by area.
 
 **5**areas
 
-[North of Del Mar Hts Rd **8**](https://carmelvalleycondos.com/carmel-valley-communities/#area-north-of-del-mar-heights-road)[South of Del Mar Hts Rd **23**](https://carmelvalleycondos.com/carmel-valley-communities/#area-south-of-del-mar-heights-road)[Carmel Country Highlands **2**](https://carmelvalleycondos.com/carmel-valley-communities/#area-carmel-country-highlands)[Pacific Highlands Ranch **6**](https://carmelvalleycondos.com/carmel-valley-communities/#area-pacific-highlands-ranch)[Torrey Hills **2**](https://carmelvalleycondos.com/carmel-valley-communities/#area-torrey-hills)
+[North of Del Mar Hts Rd **8**](https://www.carmelvalleycondos.com/carmel-valley-communities/#area-north-of-del-mar-heights-road)[South of Del Mar Hts Rd **23**](https://www.carmelvalleycondos.com/carmel-valley-communities/#area-south-of-del-mar-heights-road)[Carmel Country Highlands **2**](https://www.carmelvalleycondos.com/carmel-valley-communities/#area-carmel-country-highlands)[Pacific Highlands Ranch **6**](https://www.carmelvalleycondos.com/carmel-valley-communities/#area-pacific-highlands-ranch)[Torrey Hills **2**](https://www.carmelvalleycondos.com/carmel-valley-communities/#area-torrey-hills)
 
 Boundaries are approximate. Home counts are from the California Title Company community chart.
 
@@ -47,14 +47,14 @@ Where most of Carmel Valley's condos and townhomes are. These communities sit be
 
 - **Andalucia** — 184 homes
 - **Antares** — 100 homes
-- [Arborlake](https://carmelvalleycondos.com/arborlake-condos-for-sale/) — **Arborlake** — 189 homes
-- [Camino Villas](https://carmelvalleycondos.com/camino-villas-condos-for-sale/) — **Camino Villas** — 316 homes
+- [Arborlake](https://www.carmelvalleycondos.com/arborlake-carmel-valley/) — **Arborlake** — 189 homes
+- [Camino Villas](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/) — **Camino Villas** — 316 homes
 - **Canyon Ridge** — 116 homes
-- [Carmel Pointe](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/) — **Carmel Pointe** — 202 homes
+- [Carmel Pointe](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/) — **Carmel Pointe** — 202 homes
 - **Chateau Village** — 170 homes
 - **Coral Cove** — 118 homes
 - **Crest Del Mar** — 197 homes
-- [Del Mar Villas](https://carmelvalleycondos.com/del-mar-villas-carmel-valley/) — **Del Mar Villas** — 241 homes
+- [Del Mar Villas](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/) — **Del Mar Villas** — 241 homes
 - **Elysian** — 160 homes
 - **Halcyon** — 184 homes
 - **La Plage** — 126 homes
@@ -65,8 +65,8 @@ Where most of Carmel Valley's condos and townhomes are. These communities sit be
 - **Stone Canyon** — 99 homes
 - **Sunstream** — 260 homes
 - **The Groves** — 173 homes
-- [The Heights](https://carmelvalleycondos.com/the-heights-townhomes-for-sale/) — **The Heights** — 267 homes
-- [The Lakes](https://carmelvalleycondos.com/the-lakes-condos-for-sale/) — **The Lakes** — 192 homes
+- [The Heights](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/) — **The Heights** — 267 homes
+- [The Lakes](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/) — **The Lakes** — 192 homes
 - **Windwood** — 167 homes
 
 ### Carmel Country Highlands
@@ -126,7 +126,7 @@ Tap the community on the map or its card below. Where we have a community guide,
 
 Tell me what matters to you (size, budget, schools, commute) and I’ll point you to the communities that fit, with current listings and recent sales for each.
 
-![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
+![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://www.carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
 
 Sez Sezer
 

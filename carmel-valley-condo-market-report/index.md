@@ -2,7 +2,7 @@
 
 > Carmel Valley condo and townhome market data for San Diego 92130 — median sale price, price per square foot, and days on market by year, compiled by local specialist Sez Sezer, Keller Williams Realty.
 
-Source page: https://carmelvalleycondos.com/carmel-valley-condo-market-report/
+Source page: https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/
 
 *Carmel Valley · 92130*
 
@@ -86,7 +86,7 @@ Sez Sezer
 
 Luxury Real Estate Advisor
 
-[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Browse Condos for Sale](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/)
+[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Browse Condos for Sale](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/)
 
 ---
 

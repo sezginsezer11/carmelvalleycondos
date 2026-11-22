@@ -2,7 +2,7 @@
 
 > Browse Carmel Valley condos and townhomes for sale in San Diego. Expert local guidance from Sez Sezer, luxury real estate agent with Keller Williams Realty and 11+ years in Carmel Valley, Del Mar & Rancho Santa Fe.
 
-Source page: https://carmelvalleycondos.com/
+Source page: https://www.carmelvalleycondos.com/
 
 [Carmel Valley Condos & Townhomes — Live Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
 
@@ -12,7 +12,7 @@ Source page: https://carmelvalleycondos.com/
 
 Low-maintenance luxury in one of San Diego's most sought-after communities — guided by an agent who has specialized here for more than 11 years.
 
-[Browse Condos](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/) [Browse Townhomes](https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
+[Browse Condos](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/) [Browse Townhomes](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
 
 ## The Carmel Valley Market, Handled With Care
 
@@ -22,7 +22,7 @@ From the gated enclaves near One Paseo to the established communities of West Ca
 
 As a Keller Williams Realty agent who has worked these streets for 11+ years, I help buyers and sellers move with confidence — backed by real market data, not guesswork.
 
-![Carmel Valley condominium community in San Diego](https://carmelvalleycondos.com/images/carmel-valley-real-estate-sez-sezer.jpg)
+![Carmel Valley condominium community in San Diego](https://www.carmelvalleycondos.com/images/carmel-valley-real-estate-sez-sezer.jpg)
 
 *Find Your Fit*
 
@@ -36,7 +36,7 @@ Two paths into the Carmel Valley market — explore current listings by the prop
 
 Single-level, low-maintenance living across nine established condo communities.
 
-[View Condos for Sale →](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/)
+[View Condos for Sale →](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/)
 
 24 Communities · 5 Neighborhoods
 
@@ -44,7 +44,7 @@ Single-level, low-maintenance living across nine established condo communities.
 
 Spacious multi-level townhomes from Pacific Highlands Ranch to West Carmel Valley.
 
-[View Townhomes for Sale →](https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
+[View Townhomes for Sale →](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
 
 - **Years in Carmel Valley:** 11+
 - **Communities Covered:** 33
@@ -61,13 +61,13 @@ Condos
 
 ### Arborlake
 
-[View Listings →](https://carmelvalleycondos.com/arborlake-condos-for-sale/)
+[View Listings →](https://www.carmelvalleycondos.com/arborlake-carmel-valley/)
 
 Condos
 
 ### Carmel Pointe
 
-[View Listings →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
+[View Listings →](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/)
 
 Condos
 
@@ -93,7 +93,7 @@ Townhomes
 
 [View Listings →](https://www.carmelvalley.com/townhomes-for-sale/pacifica/)
 
-[View All Condos](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/) [View All Townhomes](https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
+[View All Condos](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/) [View All Townhomes](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/)
 
 *Free Resources*
 
@@ -105,7 +105,7 @@ For Buyers
 
 Everything you need to buy a condo or townhome in Carmel Valley — from financing and HOAs to making a winning offer in a competitive market.
 
-[Ask Sez About Buying →](https://carmelvalleycondos.com/#contact)
+[Ask Sez About Buying →](https://www.carmelvalleycondos.com/#contact)
 
 For Sellers
 
@@ -113,7 +113,7 @@ For Sellers
 
 How to position, price, and market your Carmel Valley home for top dollar — backed by a proven process and recent local results.
 
-[Get Your Home Value →](https://carmelvalleycondos.com/home-value/)
+[Get Your Home Value →](https://www.carmelvalleycondos.com/home-value/)
 
 *Why Work With Sez*
 

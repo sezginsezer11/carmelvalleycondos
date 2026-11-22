@@ -207,7 +207,7 @@ def export(path):
     comm_rows = [COMM_HEADERS]
     for c in comms:
         facts = {f["label"]: plain(f["value"]) for f in c["facts"]}
-        comm_rows.append([c["slug"], c["name"], "https://carmelvalleycondos.com" + c["path"], plain(c["hero"]["lead"]),
+        comm_rows.append([c["slug"], c["name"], "https://www.carmelvalleycondos.com" + c["path"], plain(c["hero"]["lead"]),
                           plain(c["location_intro"]), *[facts.get(l, "") for l in FACT_LABELS], plain(c["contact_lead"])])
     bank_rows = [BANK_HEADERS]
     for i, (qid, text, topic) in enumerate(BANK, 2):

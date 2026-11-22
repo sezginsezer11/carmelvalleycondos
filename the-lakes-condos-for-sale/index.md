@@ -2,11 +2,11 @@
 
 > The Lakes condos for sale in Carmel Valley 92130: live listings, sold prices, HOA $560–$599/mo, no Mello-Roos, koi ponds, schools and FAQs.
 
-Source page: https://carmelvalleycondos.com/the-lakes-condos-for-sale/
+Source page: https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/
 
 [The Lakes Homes for Sale Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
 
-![The Lakes condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
+![The Lakes condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
 
 *Carmel Valley · 92130*
 
@@ -77,7 +77,7 @@ Nearly every sale at The Lakes is a 1- or 2-bedroom. Here's what each sold for o
 - **Median sale price:** $805,000
 - **Price range:** $659K–$935K
 
-One- and two-bedrooms sell about equally often here, so there are recent comps for either size — unusual for a community this size. See the [price history](https://carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data).
+One- and two-bedrooms sell about equally often here, so there are recent comps for either size — unusual for a community this size. See the [price history](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data).
 
 Closed MLS sales, last 5 years.
 
@@ -129,7 +129,7 @@ The Lakes' HOA is on the high side for nearby condos, but there's no Mello-Roos,
 
 Worth comparing if you like The Lakes' water-garden setting or its price point.
 
-![Arborlake condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
+![Arborlake condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
 
 ### Arborlake
 
@@ -137,9 +137,9 @@ HOA $450–$460/mo · Built 1986–1989
 
 Also built around water: a central lake with fountains and waterfalls, at similar prices and a lower HOA.
 
-[Arborlake condos for sale →](https://carmelvalleycondos.com/arborlake-condos-for-sale/)
+[Arborlake condos for sale →](https://www.carmelvalleycondos.com/arborlake-carmel-valley/)
 
-![Carmel Pointe condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
+![Carmel Pointe condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 ### Carmel Pointe
 
@@ -147,9 +147,9 @@ HOA $340–$433/mo · Built 2001–2002
 
 Newer buildings with underground garage parking and a utility-inclusive HOA, a short walk from Del Mar Highlands.
 
-[Carmel Pointe condos for sale →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
+[Carmel Pointe condos for sale →](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/)
 
-![Camino Villas condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
+![Camino Villas condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
 
 ### Camino Villas
 
@@ -157,7 +157,7 @@ HOA $375–$450/mo · 316 homes
 
 A larger established condo community a block away, with mature landscaping and a community pool.
 
-[Camino Villas condos for sale →](https://carmelvalleycondos.com/camino-villas-condos-for-sale/)
+[Camino Villas condos for sale →](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/)
 
 ### Chateau Village
 
@@ -183,7 +183,7 @@ In the last 12 months, 5 The Lakes condos sold, at a median of $660,000 ($710/sq
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data*
 
 The most recent closed sales, grouped by bedroom count.
 
@@ -232,7 +232,7 @@ The most recent closed sales, grouped by bedroom count.
 
 Every closed sale over the last 5 years, plotted by close date and price.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data*
 
 *Thinking of Selling?*
 
@@ -252,7 +252,7 @@ Closed in the last 12 months
 
 Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every The Lakes sale and can tell you what yours would likely sell for today, with the comps to back it up.
 
-[Get my The Lakes home value](https://carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
+[Get my The Lakes home value](https://www.carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
 
 *Find Your Fit*
 
@@ -309,7 +309,7 @@ The Lakes and neighboring Arborlake are the two Carmel Valley condo communities 
 
 Whether you're buying your first condo or selling at The Lakes, let's talk strategy. No pressure — just straight answers from someone who knows this community.
 
-![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
+![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://www.carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
 
 Sez Sezer
 

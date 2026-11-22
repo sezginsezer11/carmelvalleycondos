@@ -1,21 +1,21 @@
-# Arborlake Condos for Sale | Carmel Valley, San Diego | Sez Sezer
+# Arborlake Carmel Valley Condos for Sale | Sez Sezer
 
-> Arborlake condos for sale in Carmel Valley 92130: live listings, recent sold prices, HOA and amenities, schools, and a local agent’s honest guide.
+> Arborlake condos for sale in Carmel Valley, San Diego: listings, Quick Facts, schools and recent sales from Sez Sezer, Keller Williams Realty.
 
-Source page: https://carmelvalleycondos.com/arborlake-condos-for-sale/
+Source page: https://www.carmelvalleycondos.com/arborlake-carmel-valley/
 
 [Arborlake Homes for Sale Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
 
-![Arborlake community entrance sign in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
+![Arborlake community entrance sign in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
 
 *Carmel Valley · 92130*
 
-## Arborlake Condos for Sale
+## Arborlake Condos for Sale in Carmel Valley
 
 A 190-unit lake-and-waterfall condo community in southwest Carmel Valley — guided by an agent who has specialized in this community for more than 11 years.
 
 - **Price:** $650K–$875K
-- **HOA Fee:** $450–$460/mo
+- **Monthly Dues:** $450–$460/mo
 - **Square Feet:** 742–1,145
 - **Total Units:** 190
 - **Year Built:** 1986–1989
@@ -76,7 +76,7 @@ Arborlake has only 1- and 2-bedroom floor plans. Here's what each sold for over 
 - **Median sale price:** $800,000
 - **Price range:** $675K–$900K
 
-Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full breakdown](https://carmelvalleycondos.com/arborlake-condos-for-sale/#analysis).
+Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full breakdown](https://www.carmelvalleycondos.com/arborlake-carmel-valley/#analysis).
 
 Closed MLS sales, last 5 years.
 
@@ -92,7 +92,7 @@ A 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes in
 
 *HOA*
 
-## Arborlake HOA: Fee & Amenities
+## Arborlake Monthly Dues & Amenities
 
 One monthly fee covers the lake, the amenities and the outside of every building.
 
@@ -111,7 +111,7 @@ $450–$460/month
 
 **Also covered:** exterior building maintenance and all greenbelt landscaping.
 
-### How Arborlake's HOA Compares
+### How the Monthly Dues Compare
 
 - **The Lakes:** $560–$599/mo
 - **Martinique:** $428–$500/mo
@@ -128,7 +128,7 @@ Ranges are from 2025–2026 MLS listings. Arborlake sits in the middle: below Th
 
 Worth comparing if you're still deciding whether Arborlake's setting is the right fit.
 
-![The Lakes condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
+![The Lakes condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
 
 ### The Lakes
 
@@ -136,9 +136,9 @@ HOA $560–$599/mo · Southwest CV
 
 Also a water-feature community — koi ponds and lagoons rather than a central lake — at a slightly lower HOA.
 
-[The Lakes condos for sale →](https://carmelvalleycondos.com/the-lakes-condos-for-sale/)
+[The Lakes condos for sale →](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/)
 
-![Carmel Pointe condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
+![Carmel Pointe condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 ### Carmel Pointe
 
@@ -146,7 +146,9 @@ HOA $340–$433/mo · Built 2001–2002
 
 Newer construction with underground garage parking — the better comparison if you'd trade mature landscaping for a newer building.
 
-[Carmel Pointe condos for sale →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
+[Carmel Pointe condos for sale →](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/)
+
+![Del Mar Villas condos in Carmel Valley](https://www.carmelvalleycondos.com/images/del-mar-villas-condos-carmel-valley.webp)
 
 ### Del Mar Villas
 
@@ -154,9 +156,9 @@ HOA $330–$370/mo · 216 units
 
 A larger central Carmel Valley community with a broader amenity package — sauna, pickleball, a billiards room.
 
-[Del Mar Villas condos for sale →](https://www.carmelvalley.com/condos-for-sale/del-mar-villas/)
+[Del Mar Villas Carmel Valley homes →](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/)
 
-![Camino Villas condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
+![Camino Villas condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
 
 ### Camino Villas
 
@@ -164,7 +166,7 @@ Community pool · Central CV
 
 An established central Carmel Valley condo community known for mature, resort-style landscaping and a shared pool.
 
-[Camino Villas condos for sale →](https://carmelvalleycondos.com/camino-villas-condos-for-sale/)
+[Camino Villas condos for sale →](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/)
 
 ### Martinique
 
@@ -182,7 +184,7 @@ In the last 12 months, 3 Arborlake condos sold, at a median of $755,750 ($793/sq
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://www.carmelvalleycondos.com/arborlake-carmel-valley/#sold-data*
 
 The most recent closed sales, grouped by bedroom count.
 
@@ -226,7 +228,7 @@ The most recent closed sales, grouped by bedroom count.
 
 Every closed sale over the last 5 years, plotted by close date and price.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/arborlake-condos-for-sale/#sold-data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://www.carmelvalleycondos.com/arborlake-carmel-valley/#sold-data*
 
 ### Five Years of Arborlake Sales: What the Data Shows
 
@@ -287,7 +289,7 @@ Closed in the last 12 months
 
 Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every Arborlake sale and can tell you what yours would likely sell for today, with the comps to back it up.
 
-[Get my Arborlake home value](https://carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
+[Get my Arborlake home value](https://www.carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
 
 *Find Your Fit*
 
@@ -310,13 +312,13 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 *Good to Know*
 
-## Arborlake Condo FAQs
+## Arborlake Carmel Valley FAQs
 
 ### What is the price range for Arborlake condos?
 
 Arborlake condos typically sell between $650,000 and $875,000, or roughly $680–$820 per square foot depending on the unit's condition and position within the community.
 
-### What do Arborlake HOA fees cover?
+### What do the monthly dues at Arborlake cover?
 
 Arborlake's HOA is $450–$460 per month in 2025–2026 MLS listings and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage.
 
@@ -348,7 +350,7 @@ Well-priced, updated listings typically go under contract within 2–3 weeks, re
 
 Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure — just straight answers from someone who knows this community.
 
-![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
+![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://www.carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
 
 Sez Sezer
 

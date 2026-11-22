@@ -2,43 +2,43 @@
 
 > Carmel Valley condos and townhomes for sale in San Diego, CA 92130. Community guides, sold data, HOA details, and market reports by Sez Sezer, Keller Williams Realty (DRE #01988197) - 858-436-6585, sez@carmelvalley.com, 12750 High Bluff Drive, San Diego, CA 92130.
 
-Every page listed below has a clean Markdown version at the same path (index.md). Structured community facts are in [communities.json](https://carmelvalleycondos.com/data/communities.json); the full text of every page is in [llms-full.txt](https://carmelvalleycondos.com/llms-full.txt).
+Every page listed below has a clean Markdown version at the same path (index.md). Structured community facts are in [communities.json](https://www.carmelvalleycondos.com/data/communities.json); the full text of every page is in [llms-full.txt](https://www.carmelvalleycondos.com/llms-full.txt).
 
 ## Overview
 
-- [Carmel Valley Condos & Townhomes for Sale](https://carmelvalleycondos.com/index.md): Home page: Carmel Valley (San Diego, CA 92130) condos and townhomes for sale, communities, and how to work with Sez Sezer.
+- [Carmel Valley Condos & Townhomes for Sale](https://www.carmelvalleycondos.com/index.md): Home page: Carmel Valley (San Diego, CA 92130) condos and townhomes for sale, communities, and how to work with Sez Sezer.
 
 ## Communities
 
-- [Carmel Valley Condos for Sale](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md): Guide to Carmel Valley condo communities, prices, HOA fees, and live 92130 condo listings.
-- [Carmel Valley Townhomes for Sale](https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md): Guide to Carmel Valley townhome communities, prices, HOA fees, and live 92130 townhome listings.
-- [Carmel Valley Condo & Townhome Communities: Map by Area](https://carmelvalleycondos.com/carmel-valley-communities/index.md): Map of all Carmel Valley condo and townhome communities, grouped by area, with home counts and links to each community guide.
-- [Arborlake Condos for Sale](https://carmelvalleycondos.com/arborlake-condos-for-sale/index.md): Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs.
-- [Carmel Pointe Condos for Sale](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/index.md): Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs.
-- [The Lakes Condos for Sale](https://carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs.
-- [Del Mar Villas Carmel Valley Condos for Sale](https://carmelvalleycondos.com/del-mar-villas-carmel-valley/index.md): Del Mar Villas: 216-home condo community (built 1990, condos since 2004) of single-level 1- and 2-bedrooms near Carmel Valley's schools - prices by bedroom count, monthly dues, sold data, FAQs.
-- [Camino Villas Condos for Sale](https://carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): Camino Villas: established central Carmel Valley condo community with a community pool - overview, listings, FAQs.
-- [The Heights Townhomes for Sale](https://carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): The Heights: Carmel Valley townhome community - overview, listings, FAQs.
+- [Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md): Guide to Carmel Valley condo communities, prices, HOA fees, and live 92130 condo listings.
+- [Carmel Valley Townhomes for Sale](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md): Guide to Carmel Valley townhome communities, prices, HOA fees, and live 92130 townhome listings.
+- [Carmel Valley Condo & Townhome Communities: Map by Area](https://www.carmelvalleycondos.com/carmel-valley-communities/index.md): Map of all Carmel Valley condo and townhome communities, grouped by area, with home counts and links to each community guide.
+- [Arborlake Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/arborlake-carmel-valley/index.md): Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs.
+- [Carmel Pointe Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md): Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs.
+- [The Lakes Condos for Sale](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs.
+- [Del Mar Villas Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/index.md): Del Mar Villas: 216-home condo community (built 1990, condos since 2004) of single-level 1- and 2-bedrooms near Carmel Valley's schools - prices by bedroom count, monthly dues, sold data, FAQs.
+- [Camino Villas Condos for Sale](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): Camino Villas: established central Carmel Valley condo community with a community pool - overview, listings, FAQs.
+- [The Heights Townhomes for Sale](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): The Heights: Carmel Valley townhome community - overview, listings, FAQs.
 
 ## Guides
 
-- [Carmel Valley Condo & Townhome Market Report](https://carmelvalleycondos.com/carmel-valley-condo-market-report/index.md): Carmel Valley condo and townhome market report: 92130 prices, trends, and what they mean for buyers and sellers.
-- [What's My Carmel Valley Condo Worth?](https://carmelvalleycondos.com/home-value/index.md): Free home value estimate for Carmel Valley condos and townhomes, and how valuations are prepared.
+- [Carmel Valley Condo & Townhome Market Report](https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/index.md): Carmel Valley condo and townhome market report: 92130 prices, trends, and what they mean for buyers and sellers.
+- [What's My Carmel Valley Condo Worth?](https://www.carmelvalleycondos.com/home-value/index.md): Free home value estimate for Carmel Valley condos and townhomes, and how valuations are prepared.
 
 ## FAQs
 
-- [Carmel Valley Condos & Townhomes for Sale - FAQs](https://carmelvalleycondos.com/index.md): 5 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/).
-- [Carmel Valley Condos for Sale - FAQs](https://carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/carmel-valley-condos-for-sale/).
-- [Carmel Valley Townhomes for Sale - FAQs](https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/carmel-valley-townhomes-for-sale/).
-- [Carmel Valley Condo & Townhome Communities: Map by Area - FAQs](https://carmelvalleycondos.com/carmel-valley-communities/index.md): 5 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/carmel-valley-communities/).
-- [Arborlake Condos for Sale - FAQs](https://carmelvalleycondos.com/arborlake-condos-for-sale/index.md): 7 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/arborlake-condos-for-sale/).
-- [Carmel Pointe Condos for Sale - FAQs](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/index.md): 7 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/).
-- [The Lakes Condos for Sale - FAQs](https://carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): 7 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/the-lakes-condos-for-sale/).
-- [Del Mar Villas Carmel Valley Condos for Sale - FAQs](https://carmelvalleycondos.com/del-mar-villas-carmel-valley/index.md): 8 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/del-mar-villas-carmel-valley/).
-- [Camino Villas Condos for Sale - FAQs](https://carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/camino-villas-condos-for-sale/).
-- [The Heights Townhomes for Sale - FAQs](https://carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/the-heights-townhomes-for-sale/).
-- [Carmel Valley Condo & Townhome Market Report - FAQs](https://carmelvalleycondos.com/carmel-valley-condo-market-report/index.md): 4 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/carmel-valley-condo-market-report/).
-- [What's My Carmel Valley Condo Worth? - FAQs](https://carmelvalleycondos.com/home-value/index.md): 4 questions and answers (the FAQ section near the end of https://carmelvalleycondos.com/home-value/).
+- [Carmel Valley Condos & Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/index.md): 5 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/).
+- [Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/).
+- [Carmel Valley Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/).
+- [Carmel Valley Condo & Townhome Communities: Map by Area - FAQs](https://www.carmelvalleycondos.com/carmel-valley-communities/index.md): 5 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-communities/).
+- [Arborlake Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/arborlake-carmel-valley/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/arborlake-carmel-valley/).
+- [Carmel Pointe Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/).
+- [The Lakes Condos for Sale - FAQs](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/).
+- [Del Mar Villas Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/index.md): 8 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/).
+- [Camino Villas Condos for Sale - FAQs](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/).
+- [The Heights Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/).
+- [Carmel Valley Condo & Townhome Market Report - FAQs](https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/).
+- [What's My Carmel Valley Condo Worth? - FAQs](https://www.carmelvalleycondos.com/home-value/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/home-value/).
 
 ## Contact
 
@@ -46,10 +46,10 @@ Every page listed below has a clean Markdown version at the same path (index.md)
 - Phone: [858-436-6585](tel:+18584366585)
 - Email: [sez@carmelvalley.com](mailto:sez@carmelvalley.com)
 - Office: 12750 High Bluff Drive, San Diego, CA 92130
-- [Free home value estimate](https://carmelvalleycondos.com/home-value/): request a valuation for a Carmel Valley condo or townhome.
+- [Free home value estimate](https://www.carmelvalleycondos.com/home-value/): request a valuation for a Carmel Valley condo or townhome.
 
 ## Optional
 
-- [Community data (JSON)](https://carmelvalleycondos.com/data/communities.json): structured facts per community, with unverified fields flagged.
-- [Full site text](https://carmelvalleycondos.com/llms-full.txt): all pages above combined into one Markdown file.
-- [Sitemap](https://carmelvalleycondos.com/sitemap.xml)
+- [Community data (JSON)](https://www.carmelvalleycondos.com/data/communities.json): structured facts per community, with unverified fields flagged.
+- [Full site text](https://www.carmelvalleycondos.com/llms-full.txt): all pages above combined into one Markdown file.
+- [Sitemap](https://www.carmelvalleycondos.com/sitemap.xml)

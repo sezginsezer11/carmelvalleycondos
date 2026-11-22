@@ -2,7 +2,7 @@
 
 > Browse The Heights townhomes for sale in Carmel Valley, San Diego 92130. Gated community, live MLS listings, and local guidance from Sez Sezer, Keller Williams Realty — 11+ years local.
 
-Source page: https://carmelvalleycondos.com/the-heights-townhomes-for-sale/
+Source page: https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/
 
 *Carmel Valley · 92130*
 
@@ -18,7 +18,7 @@ The gated entrance and consistent tile-roof, stucco architecture give The Height
 
 As a Keller Williams Realty agent who has worked this community for 11+ years, I can walk you through current HOA details, recent comparable sales, and what to look for in a specific building or floor plan.
 
-![Gated entrance to The Heights townhome community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/the-heights-entrance-carmel-valley.webp)
+![Gated entrance to The Heights townhome community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-heights-entrance-carmel-valley.webp)
 
 *Community Highlights*
 

@@ -2,7 +2,7 @@
 
 > Browse Camino Villas condos for sale in Carmel Valley, San Diego 92130. Live MLS listings and local guidance from Sez Sezer, Keller Williams Realty — 11+ years local.
 
-Source page: https://carmelvalleycondos.com/camino-villas-condos-for-sale/
+Source page: https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/
 
 *Carmel Valley · 92130*
 
@@ -18,7 +18,7 @@ The community's shared amenities, including a community pool, give Camino Villas
 
 As a Keller Williams Realty agent who has worked this community for 11+ years, I can walk you through current HOA details, recent comparable sales, and what to look for in a specific building or floor plan. You can also browse [Camino Villas condos](https://www.carmelvalley.com/condos-for-sale/camino-villas/) on my Carmel Valley Homes search site.
 
-![Community pool at Camino Villas condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/camino-villas-pool-carmel-valley.webp)
+![Community pool at Camino Villas condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/camino-villas-pool-carmel-valley.webp)
 
 *Community Highlights*
 

@@ -1,15 +1,15 @@
 {
   "slug": "carmel-pointe",
   "name": "Carmel Pointe",
-  "path": "/carmel-pointe-condos-for-sale/",
+  "path": "/carmel-pointe-carmel-valley/",
   "type": "condo",
-  "parent_name": "Condos",
-  "parent_url": "/carmel-valley-condos-for-sale/",
+  "parent_name": "Communities",
+  "parent_url": "/carmel-valley-communities/",
   "api_community": "Carmel Pointe",
   "seo": {
-    "title": "Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
-    "description": "Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.",
-    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, HOA about $340-$433/month including water, sewer, trash and hot water, and Mello-Roos of about $366-$564/year. Represented by Sez Sezer, Keller Williams Realty."
+    "title": "Carmel Pointe Carmel Valley Condos for Sale | Sez Sezer",
+    "description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: listings, Quick Facts, schools and recent sales from Sez Sezer, Keller Williams Realty.",
+    "jsonld_description": "Carmel Pointe condos for sale in Carmel Valley, San Diego: a 200-unit community built 2001-2002 by Western Pacific Housing, with underground and garage parking, monthly dues of about $340-$433/month including water, sewer, trash and hot water, and Mello-Roos of about $366-$564/year. Represented by Sez Sezer, Keller Williams Realty."
   },
   "geo": {
     "lat": 32.9464961,
@@ -55,7 +55,7 @@
   ],
   "hero": {
     "eyebrow": "Carmel Valley &middot; 92130",
-    "h1": "Carmel Pointe Condos for Sale",
+    "h1": "Carmel Pointe Condos for Sale in Carmel Valley",
     "lead": "A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands — guided by an agent who has specialized in this community for more than 11 years.",
     "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
     "alt": "Carmel Pointe condo community in Carmel Valley, San Diego"
@@ -69,7 +69,7 @@
     {
       "icon": "hoa",
       "value": "$340&ndash;$433/mo",
-      "label": "HOA Fee"
+      "label": "Monthly Dues"
     },
     {
       "icon": "sqft",
@@ -184,7 +184,7 @@
     "ratio": "Two-bedrooms have sold about twice as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after."
   },
   "life": {
-    "lead": "A 200-unit condo community built by Western Pacific Housing in 2001&ndash;2002, set in a quiet pocket that's still a short walk from Del Mar Highlands Town Center and One Paseo. High ceilings, private patios or decks, and underground and garage parking set it apart from older Carmel Valley condos. See the full <a href=\"https://www.carmelvalley.com/condos-for-sale/carmel-pointe/\">Carmel Pointe community profile</a>.",
+    "lead": "A 200-unit condo community built by Western Pacific Housing in 2001&ndash;2002, set in a quiet pocket that's still a short walk from Del Mar Highlands Town Center and One Paseo. High ceilings, private patios or decks, and underground and garage parking set it apart from older Carmel Valley condos.",
     "reasons": [
       [
         "Walk to shopping and dining.",
@@ -269,14 +269,16 @@
         false
       ]
     ],
-    "compare_note": "Ranges are from 2025&ndash;2026 MLS listings. Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests."
+    "compare_note": "Ranges are from 2025&ndash;2026 MLS listings. Counting the utilities it covers, Carmel Pointe's real monthly cost is lower than the fee alone suggests.",
+    "h2": "Carmel Pointe Monthly Dues &amp; Amenities",
+    "compare_h3": "How the Monthly Dues Compare"
   },
   "similar": {
     "h2": "Other Carmel Valley Condo Communities",
     "intro": "Worth comparing if you're weighing Carmel Pointe's newer buildings against other nearby condos.",
     "cards": [
       {
-        "href": "/arborlake-condos-for-sale/",
+        "href": "/arborlake-carmel-valley/",
         "img": "/images/arborlake-condos-carmel-valley.jpg",
         "alt": "Arborlake condo community in Carmel Valley, San Diego",
         "name": "Arborlake",
@@ -303,22 +305,22 @@
         "cta": "Camino Villas condos for sale"
       },
       {
-        "href": "https://www.carmelvalley.com/condos-for-sale/del-mar-villas/",
-        "img": "",
-        "alt": "",
+        "href": "/del-mar-villas-carmel-valley/",
+        "img": "/images/del-mar-villas-condos-carmel-valley.webp",
+        "alt": "Del Mar Villas condos in Carmel Valley",
         "name": "Del Mar Villas",
         "meta": "HOA $330&ndash;$370/mo &middot; 216 units",
         "desc": "A larger central Carmel Valley community with a broad amenity package: sauna, pickleball and a billiards room.",
-        "cta": "Del Mar Villas condos for sale"
+        "cta": "Del Mar Villas Carmel Valley homes"
       },
       {
-        "href": "https://www.carmelvalley.com/condos-for-sale/martinique/",
+        "href": "https://www.carmelvalley.com/townhomes-for-sale/elysian/",
         "img": "",
         "alt": "",
-        "name": "Martinique",
-        "meta": "HOA $428&ndash;$500/mo &middot; Carmel Valley",
-        "desc": "One of the lower-HOA options nearby, worth a look if monthly cost comes first.",
-        "cta": "Martinique condos for sale"
+        "name": "Elysian",
+        "meta": "HOA $550&ndash;$605/mo &middot; Townhomes",
+        "desc": "For buyers who want a multi-level townhome with more space instead of a single-level condo.",
+        "cta": "Elysian townhomes in Carmel Valley"
       }
     ]
   },
@@ -357,14 +359,14 @@
       ]
     ]
   },
-  "faq_h2": "Carmel Pointe Condo FAQs",
+  "faq_h2": "Carmel Pointe Carmel Valley FAQs",
   "faq": [
     {
       "q": "What is the price range for Carmel Pointe condos?",
       "a": "<p>Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,000,000: 1-bedrooms $540K–$689K, 2-bedrooms $725K–$890K, and 3-bedrooms $850K–$1M.</p>"
     },
     {
-      "q": "What do Carmel Pointe HOA fees cover?",
+      "q": "What do the monthly dues at Carmel Pointe cover?",
       "a": "<p>The HOA is $340–$433 per month in 2025–2026 MLS listings: about $340–$355 for 1-bedrooms and $387–$433 for 2-bedrooms. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.</p>"
     },
     {

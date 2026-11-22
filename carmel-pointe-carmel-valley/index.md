@@ -1,21 +1,21 @@
-# Carmel Pointe Condos for Sale | Carmel Valley, San Diego | Sez Sezer
+# Carmel Pointe Carmel Valley Condos for Sale | Sez Sezer
 
-> Carmel Pointe condos for sale in Carmel Valley 92130: live listings, recent sold prices, a utility-inclusive HOA, garage parking, schools and FAQs.
+> Carmel Pointe condos for sale in Carmel Valley, San Diego: listings, Quick Facts, schools and recent sales from Sez Sezer, Keller Williams Realty.
 
-Source page: https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/
+Source page: https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/
 
 [Carmel Pointe Homes for Sale Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
 
-![Carmel Pointe condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
+![Carmel Pointe condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 *Carmel Valley · 92130*
 
-## Carmel Pointe Condos for Sale
+## Carmel Pointe Condos for Sale in Carmel Valley
 
 A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands — guided by an agent who has specialized in this community for more than 11 years.
 
 - **Price:** $540K–$1M
-- **HOA Fee:** $340–$433/mo
+- **Monthly Dues:** $340–$433/mo
 - **Square Feet:** 704–1,387
 - **Total Units:** 200
 - **Year Built:** 2001–2002
@@ -84,13 +84,13 @@ Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each sold for ov
 - **Median sale price:** $970,000
 - **Price range:** $850K–$1M
 
-Two-bedrooms have sold about twice as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you’re after. See the [price history](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/#sold-data).
+Two-bedrooms have sold about twice as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you’re after. See the [price history](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/#sold-data).
 
 Closed MLS sales, last 5 years.
 
 ## Life at Carmel Pointe
 
-A 200-unit condo community built by Western Pacific Housing in 2001–2002, set in a quiet pocket that's still a short walk from Del Mar Highlands Town Center and One Paseo. High ceilings, private patios or decks, and underground and garage parking set it apart from older Carmel Valley condos. See the full [Carmel Pointe community profile](https://www.carmelvalley.com/condos-for-sale/carmel-pointe/).
+A 200-unit condo community built by Western Pacific Housing in 2001–2002, set in a quiet pocket that's still a short walk from Del Mar Highlands Town Center and One Paseo. High ceilings, private patios or decks, and underground and garage parking set it apart from older Carmel Valley condos.
 
 ### Why buyers choose Carmel Pointe
 
@@ -100,7 +100,7 @@ A 200-unit condo community built by Western Pacific Housing in 2001–2002, set 
 
 *HOA*
 
-## Carmel Pointe HOA: Fee & Amenities
+## Carmel Pointe Monthly Dues & Amenities
 
 One monthly fee covers the amenities, the grounds, and utilities most HOAs bill separately.
 
@@ -119,7 +119,7 @@ $340–$433/month
 
 **Also covered:** water, sewer, trash and hot water, plus landscaping and common-area upkeep.
 
-### How Carmel Pointe's HOA Compares
+### How the Monthly Dues Compare
 
 - **The Lakes:** $560–$599/mo
 - **Martinique:** $428–$500/mo
@@ -136,7 +136,7 @@ Ranges are from 2025–2026 MLS listings. Counting the utilities it covers, Carm
 
 Worth comparing if you're weighing Carmel Pointe's newer buildings against other nearby condos.
 
-![Arborlake condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
+![Arborlake condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
 
 ### Arborlake
 
@@ -144,9 +144,9 @@ HOA $450–$460/mo · Built 1986–1989
 
 Right next door, built around a central lake with fountains and waterfalls. Older buildings and carport parking, but a one-of-a-kind setting.
 
-[Arborlake condos for sale →](https://carmelvalleycondos.com/arborlake-condos-for-sale/)
+[Arborlake condos for sale →](https://www.carmelvalleycondos.com/arborlake-carmel-valley/)
 
-![The Lakes condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
+![The Lakes condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
 
 ### The Lakes
 
@@ -154,9 +154,9 @@ HOA $560–$599/mo · Southwest CV
 
 A garden community with koi ponds and lagoons, usually at a lower entry price than Carmel Pointe.
 
-[The Lakes condos for sale →](https://carmelvalleycondos.com/the-lakes-condos-for-sale/)
+[The Lakes condos for sale →](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/)
 
-![Camino Villas condo community in Carmel Valley, San Diego](https://carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
+![Camino Villas condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
 
 ### Camino Villas
 
@@ -164,7 +164,9 @@ Community pool · Central CV
 
 An established condo community next door, known for mature landscaping and a shared pool.
 
-[Camino Villas condos for sale →](https://carmelvalleycondos.com/camino-villas-condos-for-sale/)
+[Camino Villas condos for sale →](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/)
+
+![Del Mar Villas condos in Carmel Valley](https://www.carmelvalleycondos.com/images/del-mar-villas-condos-carmel-valley.webp)
 
 ### Del Mar Villas
 
@@ -172,15 +174,15 @@ HOA $330–$370/mo · 216 units
 
 A larger central Carmel Valley community with a broad amenity package: sauna, pickleball and a billiards room.
 
-[Del Mar Villas condos for sale →](https://www.carmelvalley.com/condos-for-sale/del-mar-villas/)
+[Del Mar Villas Carmel Valley homes →](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/)
 
-### Martinique
+### Elysian
 
-HOA $428–$500/mo · Carmel Valley
+HOA $550–$605/mo · Townhomes
 
-One of the lower-HOA options nearby, worth a look if monthly cost comes first.
+For buyers who want a multi-level townhome with more space instead of a single-level condo.
 
-[Martinique condos for sale →](https://www.carmelvalley.com/condos-for-sale/martinique/)
+[Elysian townhomes in Carmel Valley →](https://www.carmelvalley.com/townhomes-for-sale/elysian/)
 
 *Sold Data · Last 5 Years*
 
@@ -190,7 +192,7 @@ In the last 12 months, 5 Carmel Pointe condos sold, at a median of $575,000 ($75
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/#sold-data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/#sold-data*
 
 The most recent closed sales, grouped by bedroom count.
 
@@ -249,7 +251,7 @@ The most recent closed sales, grouped by bedroom count.
 
 Every closed sale over the last 5 years, plotted by close date and price.
 
-*Live MLS data: this section loads current closed-sale figures on the web page. See https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/#sold-data*
+*Live MLS data: this section loads current closed-sale figures on the web page. See https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/#sold-data*
 
 *Thinking of Selling?*
 
@@ -269,7 +271,7 @@ Closed in the last 12 months
 
 Your unit's value depends on its size, floor, view, parking and updates, not just the community median. I track every Carmel Pointe sale and can tell you what yours would likely sell for today, with the comps to back it up.
 
-[Get my Carmel Pointe home value](https://carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
+[Get my Carmel Pointe home value](https://www.carmelvalleycondos.com/home-value/#valuation-form) [Call Sez · (858) 436-6585](tel:+18584366585)
 
 *Find Your Fit*
 
@@ -292,13 +294,13 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 *Good to Know*
 
-## Carmel Pointe Condo FAQs
+## Carmel Pointe Carmel Valley FAQs
 
 ### What is the price range for Carmel Pointe condos?
 
 Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,000,000: 1-bedrooms $540K–$689K, 2-bedrooms $725K–$890K, and 3-bedrooms $850K–$1M.
 
-### What do Carmel Pointe HOA fees cover?
+### What do the monthly dues at Carmel Pointe cover?
 
 The HOA is $340–$433 per month in 2025–2026 MLS listings: about $340–$355 for 1-bedrooms and $387–$433 for 2-bedrooms. It covers the pool, spa, fitness center, clubhouse, landscaping and common areas, plus water, sewer, trash and hot water.
 
@@ -326,7 +328,7 @@ Carmel Pointe (2001–2002) is newer than neighboring Arborlake (1986–1989) an
 
 Whether you're buying your first condo or selling at Carmel Pointe, let's talk strategy. No pressure — just straight answers from someone who knows this community.
 
-![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
+![Sez Sezer, Carmel Valley real estate agent with Keller Williams Realty](https://www.carmelvalleycondos.com/images/sez-sezer-carmel-valley-realtor.jpg)
 
 Sez Sezer
 

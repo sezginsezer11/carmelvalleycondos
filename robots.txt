@@ -32,4 +32,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://carmelvalleycondos.com/sitemap.xml
+Sitemap: https://www.carmelvalleycondos.com/sitemap.xml

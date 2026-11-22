@@ -1,15 +1,15 @@
 {
   "slug": "arborlake",
   "name": "Arborlake",
-  "path": "/arborlake-condos-for-sale/",
+  "path": "/arborlake-carmel-valley/",
   "type": "condo",
-  "parent_name": "Condos",
-  "parent_url": "/carmel-valley-condos-for-sale/",
+  "parent_name": "Communities",
+  "parent_url": "/carmel-valley-communities/",
   "api_community": "Arborlake",
   "seo": {
-    "title": "Arborlake Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
-    "description": "Arborlake condos for sale in Carmel Valley 92130: live listings, recent sold prices, HOA and amenities, schools, and a local agent’s honest guide.",
-    "jsonld_description": "Arborlake condos for sale in Carmel Valley, San Diego: a 190-unit lake-and-waterfall community built 1986-1989, price range $650K-$875K, HOA about $450-$460/month, no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
+    "title": "Arborlake Carmel Valley Condos for Sale | Sez Sezer",
+    "description": "Arborlake condos for sale in Carmel Valley, San Diego: listings, Quick Facts, schools and recent sales from Sez Sezer, Keller Williams Realty.",
+    "jsonld_description": "Arborlake condos for sale in Carmel Valley, San Diego: a 190-unit lake-and-waterfall community built 1986-1989, price range $650K-$875K, monthly dues of about $450-$460/month, no Mello-Roos. Represented by Sez Sezer, Keller Williams Realty."
   },
   "geo": {
     "lat": 32.9446313,
@@ -51,7 +51,7 @@
   ],
   "hero": {
     "eyebrow": "Carmel Valley &middot; 92130",
-    "h1": "Arborlake Condos for Sale",
+    "h1": "Arborlake Condos for Sale in Carmel Valley",
     "lead": "A 190-unit lake-and-waterfall condo community in southwest Carmel Valley — guided by an agent who has specialized in this community for more than 11 years.",
     "img": "/images/arborlake-condos-carmel-valley.jpg",
     "alt": "Arborlake community entrance sign in Carmel Valley, San Diego"
@@ -65,7 +65,7 @@
     {
       "icon": "hoa",
       "value": "$450&ndash;$460/mo",
-      "label": "HOA Fee"
+      "label": "Monthly Dues"
     },
     {
       "icon": "sqft",
@@ -258,7 +258,9 @@
         false
       ]
     ],
-    "compare_note": "Ranges are from 2025&ndash;2026 MLS listings. Arborlake sits in the middle: below The Lakes, above Carmel Pointe and Del Mar Villas."
+    "compare_note": "Ranges are from 2025&ndash;2026 MLS listings. Arborlake sits in the middle: below The Lakes, above Carmel Pointe and Del Mar Villas.",
+    "h2": "Arborlake Monthly Dues &amp; Amenities",
+    "compare_h3": "How the Monthly Dues Compare"
   },
   "similar": {
     "h2": "Other Carmel Valley Condo Communities",
@@ -274,7 +276,7 @@
         "cta": "The Lakes condos for sale"
       },
       {
-        "href": "/carmel-pointe-condos-for-sale/",
+        "href": "/carmel-pointe-carmel-valley/",
         "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
         "alt": "Carmel Pointe condo community in Carmel Valley, San Diego",
         "name": "Carmel Pointe",
@@ -283,13 +285,13 @@
         "cta": "Carmel Pointe condos for sale"
       },
       {
-        "href": "https://www.carmelvalley.com/condos-for-sale/del-mar-villas/",
-        "img": "",
-        "alt": "",
+        "href": "/del-mar-villas-carmel-valley/",
+        "img": "/images/del-mar-villas-condos-carmel-valley.webp",
+        "alt": "Del Mar Villas condos in Carmel Valley",
         "name": "Del Mar Villas",
         "meta": "HOA $330&ndash;$370/mo &middot; 216 units",
         "desc": "A larger central Carmel Valley community with a broader amenity package &mdash; sauna, pickleball, a billiards room.",
-        "cta": "Del Mar Villas condos for sale"
+        "cta": "Del Mar Villas Carmel Valley homes"
       },
       {
         "href": "/camino-villas-condos-for-sale/",
@@ -364,14 +366,14 @@
       ]
     ]
   },
-  "faq_h2": "Arborlake Condo FAQs",
+  "faq_h2": "Arborlake Carmel Valley FAQs",
   "faq": [
     {
       "q": "What is the price range for Arborlake condos?",
       "a": "<p>Arborlake condos typically sell between $650,000 and $875,000, or roughly $680–$820 per square foot depending on the unit's condition and position within the community.</p>"
     },
     {
-      "q": "What do Arborlake HOA fees cover?",
+      "q": "What do the monthly dues at Arborlake cover?",
       "a": "<p>Arborlake's HOA is $450&ndash;$460 per month in 2025&ndash;2026 MLS listings and covers the community's central lake and fountain system, two lighted tennis courts, a heated pool, two spas, a dry sauna, a fitness center, all greenbelt landscaping, exterior building maintenance, and covered carport parking with storage.</p>"
     },
     {

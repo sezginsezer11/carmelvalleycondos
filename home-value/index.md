@@ -2,7 +2,7 @@
 
 > Get a free, instant home value estimate for your Carmel Valley condo or townhome, plus a complimentary in-depth market analysis from local specialist Sez Sezer, Keller Williams Realty.
 
-Source page: https://carmelvalleycondos.com/home-value/
+Source page: https://www.carmelvalleycondos.com/home-value/
 
 *Free & Instant*
 
@@ -10,7 +10,7 @@ Source page: https://carmelvalleycondos.com/home-value/
 
 Get an instant estimate below, then a complimentary, hands-on market analysis from a specialist who actually tracks these communities — not just an algorithm.
 
-*An instant home value estimate tool (RealScout) is available on the web page: https://carmelvalleycondos.com/home-value/#valuation-form*
+*An instant home value estimate tool (RealScout) is available on the web page: https://www.carmelvalleycondos.com/home-value/#valuation-form*
 
 Automated estimates are a starting point, not a substitute for a local market read — HOA fees, floor plan, and recent comparable sales all move the number. Want the real figure? See below.
 
@@ -74,7 +74,7 @@ Sez Sezer
 
 Luxury Real Estate Advisor
 
-[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [See the Market Report](https://carmelvalleycondos.com/carmel-valley-condo-market-report/)
+[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [See the Market Report](https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/)
 
 ---
 

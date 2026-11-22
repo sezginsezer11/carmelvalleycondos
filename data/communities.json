@@ -1,5 +1,5 @@
 {
-  "site": "https://carmelvalleycondos.com",
+  "site": "https://www.carmelvalleycondos.com",
   "agent": {
     "name": "Sez Sezer",
     "brokerage": "Keller Williams Realty",
@@ -19,8 +19,8 @@
       "name": "Arborlake",
       "slug": "arborlake",
       "type": "condo",
-      "url": "https://carmelvalleycondos.com/arborlake-condos-for-sale/",
-      "markdown_url": "https://carmelvalleycondos.com/arborlake-condos-for-sale/index.md",
+      "url": "https://www.carmelvalleycondos.com/arborlake-carmel-valley/",
+      "markdown_url": "https://www.carmelvalleycondos.com/arborlake-carmel-valley/index.md",
       "area": {
         "value": "Southwest Carmel Valley, just north of Carmel View Road and Camino Mira Del Mar, San Diego, CA 92130",
         "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
@@ -204,8 +204,8 @@
       "name": "Camino Villas",
       "slug": "camino-villas",
       "type": "condo",
-      "url": "https://carmelvalleycondos.com/camino-villas-condos-for-sale/",
-      "markdown_url": "https://carmelvalleycondos.com/camino-villas-condos-for-sale/index.md",
+      "url": "https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/",
+      "markdown_url": "https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md",
       "area": {
         "value": "Central Carmel Valley, San Diego, CA 92130",
         "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
@@ -367,8 +367,8 @@
       "name": "The Heights",
       "slug": "the-heights",
       "type": "townhome",
-      "url": "https://carmelvalleycondos.com/the-heights-townhomes-for-sale/",
-      "markdown_url": "https://carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md",
+      "url": "https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/",
+      "markdown_url": "https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md",
       "area": {
         "value": "Central Carmel Valley, San Diego, CA 92130",
         "source": "Stated on this community's page on carmelvalleycondos.com (agent-provided)",
@@ -515,8 +515,8 @@
       "name": "Carmel Pointe",
       "slug": "carmel-pointe",
       "type": "condo",
-      "url": "https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/",
-      "markdown_url": "https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/index.md",
+      "url": "https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/",
+      "markdown_url": "https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md",
       "area": {
         "value": "Central Carmel Valley, off Elijah Court near Del Mar Heights Road and El Camino Real, San Diego, CA 92130",
         "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",
@@ -705,8 +705,8 @@
       "name": "The Lakes",
       "slug": "the-lakes",
       "type": "condo",
-      "url": "https://carmelvalleycondos.com/the-lakes-condos-for-sale/",
-      "markdown_url": "https://carmelvalleycondos.com/the-lakes-condos-for-sale/index.md",
+      "url": "https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/",
+      "markdown_url": "https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md",
       "area": {
         "value": "Southwest Carmel Valley along Carmel Vista Road, San Diego, CA 92130",
         "source": "Stated on this community's page on carmelvalleycondos.com and the agent's carmelvalley.com profile (agent-provided)",

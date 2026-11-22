@@ -20,7 +20,7 @@ import re
 import sys
 from html.parser import HTMLParser
 
-SITE = "https://carmelvalleycondos.com"
+SITE = "https://www.carmelvalleycondos.com"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Key pages, in the order they appear in llms.txt / llms-full.txt.
@@ -34,9 +34,9 @@ PAGES = [
      "Guide to Carmel Valley townhome communities, prices, HOA fees, and live 92130 townhome listings."),
     ("/carmel-valley-communities/", "Communities",
      "Map of all Carmel Valley condo and townhome communities, grouped by area, with home counts and links to each community guide."),
-    ("/arborlake-condos-for-sale/", "Communities",
+    ("/arborlake-carmel-valley/", "Communities",
      "Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs."),
-    ("/carmel-pointe-condos-for-sale/", "Communities",
+    ("/carmel-pointe-carmel-valley/", "Communities",
      "Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs."),
     ("/the-lakes-condos-for-sale/", "Communities",
      "The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs."),

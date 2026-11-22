@@ -2,7 +2,7 @@
 
 > Browse all Carmel Valley condos for sale in San Diego 92130 — live MLS listings across nine established condo communities. Expert guidance from Sez Sezer, Keller Williams Realty.
 
-Source page: https://carmelvalleycondos.com/carmel-valley-condos-for-sale/
+Source page: https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/
 
 [Carmel Valley Condos for Sale — Live Listings](https://sezsezer.realscout.com/homesearch/map?ptype=TC&geo_type=zipcode&geo_id=92130&for_sale=1&for_rent=0)
 
@@ -20,7 +20,7 @@ From gated enclaves near One Paseo to established communities throughout West Ca
 
 As a Keller Williams Realty agent who has worked these streets for 11+ years, I help buyers and sellers move with confidence — backed by real market data, not guesswork.
 
-![Carmel Valley condo community in San Diego](https://carmelvalleycondos.com/images/carmel-valley-condos-for-sale.jpg)
+![Carmel Valley condo community in San Diego](https://www.carmelvalleycondos.com/images/carmel-valley-condos-for-sale.jpg)
 
 *Explore by Community*
 
@@ -32,13 +32,13 @@ Condos
 
 ### Arborlake
 
-[View Listings →](https://carmelvalleycondos.com/arborlake-condos-for-sale/)
+[View Listings →](https://www.carmelvalleycondos.com/arborlake-carmel-valley/)
 
 Condos
 
 ### Carmel Pointe
 
-[View Listings →](https://carmelvalleycondos.com/carmel-pointe-condos-for-sale/)
+[View Listings →](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/)
 
 Condos
 
@@ -50,7 +50,7 @@ Condos
 
 ### Camino Villas
 
-[View Listings →](https://carmelvalleycondos.com/camino-villas-condos-for-sale/)
+[View Listings →](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/)
 
 *Why Work With Sez*
 
