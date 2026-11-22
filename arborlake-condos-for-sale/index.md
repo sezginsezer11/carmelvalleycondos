@@ -178,7 +178,7 @@ One of the lower-HOA condo options among nearby comparable communities — worth
 
 ## Arborlake Prices & Sales
 
-In the last 12 months, 4 Arborlake condos sold, at a median of $802,875 ($828/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 16, 2026.
+In the last 12 months, 3 Arborlake condos sold, at a median of $755,750 ($793/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 22, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -273,15 +273,15 @@ None of this happens in a vacuum. Arborlake's HOA is $450–$460/month in 2025�
 
 ## What's Your Arborlake Condo Worth?
 
-$802,875
+$755,750
 
 Median sale price, last 12 months
 
-$828
+$793
 
 Average price per sq ft, last 12 months
 
-4 sales
+3 sales
 
 Closed in the last 12 months
 
@@ -360,4 +360,4 @@ Keller Williams Realty · DRE #01988197
 
 ---
 
-Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity.
+Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity. This site is not the homeowners association or its management company.

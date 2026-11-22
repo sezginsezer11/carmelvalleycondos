@@ -54,7 +54,7 @@ Where most of Carmel Valley's condos and townhomes are. These communities sit be
 - **Chateau Village** — 170 homes
 - **Coral Cove** — 118 homes
 - **Crest Del Mar** — 197 homes
-- [Del Mar Villas](https://www.carmelvalley.com/condos-for-sale/del-mar-villas/) — **Del Mar Villas** — 241 homes
+- [Del Mar Villas](https://carmelvalleycondos.com/del-mar-villas-carmel-valley/) — **Del Mar Villas** — 241 homes
 - **Elysian** — 160 homes
 - **Halcyon** — 184 homes
 - **La Plage** — 126 homes
@@ -138,4 +138,4 @@ Keller Williams Realty · DRE #01988197
 
 ---
 
-Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity.
+Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity. This site is not the homeowners association or its management company.

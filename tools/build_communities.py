@@ -124,7 +124,7 @@ def render_hoa(c):
     rows = "\n".join(rows)
     return f'''    <div class="sec-head">
       <div class="eyebrow">HOA</div>
-      <h2>{c["name"]} HOA: Fee &amp; Amenities</h2>
+      <h2>{h.get("h2", c["name"] + " HOA: Fee &amp; Amenities")}</h2>
       <p>{h["intro"]}</p>
     </div>
     <div class="hoa-fee">
@@ -140,7 +140,7 @@ def render_hoa(c):
         <p class="hoa-also"><strong>Also covered:</strong> {h["also"]}</p>
       </div>
       <div class="hoa-compare">
-        <h3>How {c["name"]}'s HOA Compares</h3>
+        <h3>{h.get("compare_h3", "How " + c["name"] + "'s HOA Compares")}</h3>
 {rows}
         <p style="margin-top:20px;font-size:13.5px;color:#7a8389">{h["compare_note"]}</p>
       </div>
@@ -221,7 +221,17 @@ def render_jsonld(c):
     faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": plain(f["q"]), "acceptedAnswer": {"@type": "Answer", "text": faq_answer_text(f["a"])}}
         for f in c["faq"]]}
-    blocks = [json.dumps(x, ensure_ascii=False, indent=2) for x in (crumbs, agent, faq)]
+    page = {"@context": "https://schema.org", "@type": "WebPage", "@id": url, "url": url, "name": c["seo"]["title"],
+            "description": c["seo"]["description"], "inLanguage": "en-US",
+            "isPartOf": {"@type": "WebSite", "name": "Carmel Valley Condos", "url": SITE + "/"},
+            "about": {"@id": url + "#place"}, "primaryImageOfPage": SITE + c["hero"]["img"]}
+    place = {"@context": "https://schema.org", "@type": "Place", "@id": url + "#place",
+             "name": f'{c["name"]}, Carmel Valley',
+             "address": {"@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA",
+                         "postalCode": "92130", "addressCountry": "US"},
+             "geo": {"@type": "GeoCoordinates", "latitude": c["geo"]["lat"], "longitude": c["geo"]["lng"]},
+             "containedInPlace": {"@type": "Place", "name": "Carmel Valley, San Diego"}}
+    blocks = [json.dumps(x, ensure_ascii=False, indent=2) for x in (page, crumbs, place, agent, faq)]
     return "\n".join(f'<script type="application/ld+json">\n{b}\n</script>' for b in blocks)
 
 

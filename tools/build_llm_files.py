@@ -40,6 +40,8 @@ PAGES = [
      "Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs."),
     ("/the-lakes-condos-for-sale/", "Communities",
      "The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs."),
+    ("/del-mar-villas-carmel-valley/", "Communities",
+     "Del Mar Villas: 216-home condo community (built 1990, condos since 2004) of single-level 1- and 2-bedrooms near Carmel Valley's schools - prices by bedroom count, monthly dues, sold data, FAQs."),
     ("/camino-villas-condos-for-sale/", "Communities",
      "Camino Villas: established central Carmel Valley condo community with a community pool - overview, listings, FAQs."),
     ("/the-heights-townhomes-for-sale/", "Communities",

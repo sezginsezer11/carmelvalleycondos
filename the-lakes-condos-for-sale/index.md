@@ -179,7 +179,7 @@ Shares a border with The Lakes; 2- and 3-bedroom homes for buyers who need more 
 
 ## The Lakes Prices & Sales
 
-In the last 12 months, 5 The Lakes condos sold, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 sold at a median of $726,000. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 16, 2026.
+In the last 12 months, 5 The Lakes condos sold, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 sold at a median of $726,000. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 22, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -321,4 +321,4 @@ Keller Williams Realty · DRE #01988197
 
 ---
 
-Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity.
+Sez Sezer, California DRE #01988197, Keller Williams Realty. Each office is independently owned and operated. Information deemed reliable but not guaranteed. This is not intended to solicit properties already listed. Equal Housing Opportunity. This site is not the homeowners association or its management company.

@@ -48,11 +48,11 @@
   "Carmel Pointe": "/carmel-pointe-condos-for-sale/",
   "Camino Villas": "/camino-villas-condos-for-sale/",
   "The Heights": "/the-heights-townhomes-for-sale/",
-  "The Lakes": "/the-lakes-condos-for-sale/"
+  "The Lakes": "/the-lakes-condos-for-sale/",
+  "Del Mar Villas": "/del-mar-villas-carmel-valley/"
  },
  "ext": {
-  "Martinique": "https://www.carmelvalley.com/condos-for-sale/martinique/",
-  "Del Mar Villas": "https://www.carmelvalley.com/condos-for-sale/del-mar-villas/"
+  "Martinique": "https://www.carmelvalley.com/condos-for-sale/martinique/"
  },
  "photos": {
   "Arborlake": "/images/arborlake-condos-carmel-valley.jpg",
@@ -62,7 +62,8 @@
   "Andalucia": "/images/andalucia-townhomes-carmel-valley.jpg",
   "Pacifica": "/images/pacifica-townhomes-carmel-valley.jpg",
   "Palmilla": "/images/palmilla-townhomes-carmel-valley.jpg",
-  "The Lakes": "/images/the-lakes-condos-carmel-valley.jpg"
+  "The Lakes": "/images/the-lakes-condos-carmel-valley.jpg",
+  "Del Mar Villas": "/images/del-mar-villas-condos-carmel-valley.webp"
  },
  "areas": {
   "n": "The northern half of central Carmel Valley, above Del Mar Heights Road. Its condo and townhome communities sit among single-family neighborhoods, a short drive from the Del Mar coast and Torrey Pines.",
