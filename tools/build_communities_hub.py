@@ -4,7 +4,7 @@
     python3 tools/build_communities_hub.py
 
 The SEO plan (~/seo-plan/plans/carmelvalleycondos.com.md, Option A, chosen 2026-11-23) makes the home page
-a directory: title/H1/meta from the plan, map, sortable table, cards, how to choose, FAQ. The old
+a directory: title/H1/meta from the plan, map with an area list beside it (shared explorer), cards, how to choose, FAQ. The old
 /carmel-valley-communities/ hub 301s here (see _redirects).
 
 Inputs
@@ -20,6 +20,10 @@ import html
 import json
 import os
 import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from explorer import explorer  # noqa: E402  (shared with carmelvalleyhomesforsale.com)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PATH = "/"
@@ -85,7 +89,8 @@ def main():
             ph = photos.get(c["n"])
             img = (f'<img src="{ph}" alt="{e(c["n"])} in Carmel Valley" loading="lazy" width="320" height="200">'
                    if ph else f'<div class="cc-ph" aria-hidden="true">{e(c["n"][:1])}</div>')
-            meta = f'{c["homes"]} homes' if c.get("homes") else "Condos &amp; townhomes"
+            dt = "Detached condos" if hub.get("types", {}).get(c["n"]) == "detached" else ""
+            meta = " &middot; ".join(s for s in [f'{c["homes"]} homes' if c.get("homes") else "", dt] if s) or "Condos &amp; townhomes"
             cta = ""
             if c["n"] in pages:
                 cta = '<span class="cc-cta">Community guide &rarr;</span>'
@@ -110,25 +115,31 @@ def main():
   </div>
 </section>''')
 
-    chips = "".join(
-        f'<a class="chip" href="#area-{slug(l)}" data-a="{k}" style="--ac:{COLORS.get(k)}"><span class="dot"></span>{e(SHORT.get(k, l))} <b>{len(cs)}</b></a>'
-        for k, l, cs in groups)
-
-    # ---------- sortable table (verified facts only) ----------
-    label_of = {k: l for k, l in areas}
-    tname = {"condo": "Condo", "town": "Townhome"}
-    rows = []
-    for c in sorted(comms, key=lambda c: c["n"]):
-        u = link(c)
-        name = f'<a href="{u}">{e(c["n"])}</a>' if u else e(c["n"])
-        t = tname.get(types.get(c["n"]), "Condo / townhome")
-        h = c.get("homes")
-        b = built.get(c["n"])
-        rows.append(
-            f'<tr><td data-v="{e(c["n"])}">{name}</td><td data-v="{e(label_of.get(c["sub"], ""))}">{e(SHORT.get(c["sub"], label_of.get(c["sub"], "")))}</td>'
-            f'<td data-v="{e(t)}">{e(t)}</td><td data-v="{h or 0}" class="num">{f"{h:,}" if h else "&ndash;"}</td>'
-            f'<td data-v="{e(b[:4]) if b else "9999"}" class="num">{e(b) if b else "&ndash;"}</td></tr>')
-    table_html = "\n        ".join(rows)
+    # ---------- map explorer (same as carmelvalleyhomesforsale.com): area list beside the map ----------
+    # Map card buttons: "See homes" and "Community guide".
+    #   our guide:            See homes -> guide#listings, Community guide -> guide#location
+    #   carmelvalley.com page: See homes -> that page,     second button -> Ask about (contact)
+    #   neither:              See homes -> live listings full screen (#expand-map), second -> Ask about
+    tname = {"condo": "Condo", "town": "Townhome", "detached": "Detached condo (single-family home)"}
+    types.update({k: v for k, v in hub.get("types", {}).items() if not k.startswith("_")})
+    xcomms = []
+    for c in comms:
+        n = c["n"]
+        x = dict(c)
+        t = tname.get(types.get(n))
+        x["note"] = " &middot; ".join(s for s in [t or "", f"built {e(built[n])}" if n in built else ""] if s)
+        if n in pages:
+            x["hu"], x["gu"] = pages[n] + "#listings", pages[n] + "#location"
+        else:
+            x["hu"] = ext.get(n) or "#expand-map"
+            x["gu"], x["gl"] = "#contact", "Ask about " + n
+        xcomms.append(x)
+    xgroups = [(k, l, [x for x in xcomms if x["sub"] == k and x["n"] in {c["n"] for c in cs}]) for k, l, cs in groups]
+    xgroups = [(k, l, sorted(cs, key=lambda c: c["n"])) for k, l, cs in xgroups]
+    xp = explorer(xcomms, xgroups, COLORS, pages, {}, list_title="Communities by Area",
+                  hint="Every condo and townhome community in Carmel Valley, grouped by area. Open an area to see its communities, their type and how many homes each has, then tap one to find it on the map.",
+                  map_aria="Map of Carmel Valley condo and townhome communities",
+                  map_note="Boundaries are approximate. Home counts are from the California Title Company community chart. Year built is shown only where verified from MLS records.")
 
     # ---------- FAQ ----------
     biggest = max(groups, key=lambda g: len(g[2]))
@@ -148,10 +159,10 @@ def main():
          "Yes. Pacific Highlands Ranch, in the east of Carmel Valley, was built out from the 2000s onward, so its attached homes are newer. "
          "Many communities there carry a Mello-Roos tax on top of the HOA fee, so compare the full monthly cost."),
         ("Is there a list of every condo community in Carmel Valley?",
-         f"Yes. The table on this page lists all {len(comms)} condo and townhome communities in Carmel Valley with their area, type and "
-         "number of homes. Tap a column heading to sort it, or tap a community name to open its guide."),
+         f"Yes. The list beside the map on this page has all {len(comms)} condo and townhome communities in Carmel Valley, grouped by area, "
+         "with their type and number of homes. Open an area, then tap a community to see it on the map."),
         ("How do I find out what is for sale in a specific community?",
-         "Tap the community on the map or its card below. Where we have a community guide, it shows live listings, recent sales, "
+         "Tap the community on the map, then See homes. Where we have a community guide, it shows live listings, recent sales, "
          "monthly dues and schools. For any other community, call or email Sez Sezer for current listings and recent sales."),
     ]
     faq_html = "\n".join(f'      <details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in faqs)
@@ -182,10 +193,6 @@ def main():
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
     ]
     jsonld = "\n".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
-
-    # ---------- map data ----------
-    mdata = {"c": [{"n": c["n"], "a": c["sub"], "h": c.get("homes"), "u": link(c), "g": c["n"] in pages, "p": c["p"]} for c in comms],
-             "areas": {k: [l, COLORS.get(k)] for k, l, _ in groups}}
 
     # ---------- shell from the community template ----------
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
@@ -229,23 +236,6 @@ def main():
   /* ============ HOME: DIRECTORY ============ */
   .hub-intro .lead-links{{max-width:680px;margin:10px auto 0;font-size:15px;color:var(--label)}}
   .hub-intro .lead-links a{{font-weight:600}}
-  .dir-sec{{padding:36px 0 8px}}
-  .dir-scroll{{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--white);max-width:1100px;margin:0 auto}}
-  .dir-table{{width:100%;border-collapse:collapse;font-size:14.5px}}
-  .dir-table th,.dir-table td{{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}}
-  .dir-table tbody tr:last-child td{{border-bottom:0}}
-  .dir-table th{{background:var(--paper);font-size:13px;color:var(--label);font-weight:700;position:sticky;top:0}}
-  .dir-table th button{{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:4px}}
-  .dir-table th button::after{{content:"\\2195";opacity:.45;font-size:12px}}
-  .dir-table th[aria-sort="ascending"] button::after{{content:"\\2191";opacity:1}}
-  .dir-table th[aria-sort="descending"] button::after{{content:"\\2193";opacity:1}}
-  .dir-table td:first-child,.dir-table th:first-child{{position:sticky;left:0;z-index:1;background:var(--white);box-shadow:1px 0 0 var(--line)}}
-  .dir-table th:first-child{{background:var(--paper);z-index:2}}
-  @media(max-width:760px){{.dir-table{{font-size:13.5px}}.dir-table th,.dir-table td{{padding:9px 10px}}}}
-  .dir-table .num{{text-align:right}}
-  .dir-table th.num button{{justify-content:flex-end;width:100%}}
-  .dir-table a{{font-weight:600}}
-  .dir-note{{text-align:center;font-size:13px;color:var(--label);margin-top:10px}}
   .choose{{padding:36px 0 8px}}
   .choose-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1100px;margin:0 auto}}
   .choose-grid div{{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 18px}}
@@ -253,7 +243,6 @@ def main():
   .choose-grid p{{font-size:15px;color:#333a42}}
   .choose .answer{{max-width:820px;margin:0 auto 18px;font-size:16px;color:#333a42}}
   /* ============ COMMUNITIES HUB ============ */
-  .sr{{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
   .hub-intro{{padding:40px 0 8px;text-align:center}}
   .hub-intro .eyebrow{{display:inline-block;font-size:12.5px;color:var(--lake);background:#eaf0fe;padding:5px 14px;border-radius:100px;font-weight:700;margin-bottom:14px}}
   .hub-intro h1{{font-size:clamp(28px,4.4vw,44px);font-weight:800;line-height:1.12;letter-spacing:-.02em;max-width:820px;margin:0 auto}}
@@ -261,33 +250,7 @@ def main():
   .hub-stats{{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:20px}}
   .hub-stats div{{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:14px;color:var(--label)}}
   .hub-stats b{{color:var(--ink);font-size:16px;margin-right:4px}}
-  .map-sec{{padding:24px 0 8px}}
-  .chips{{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:14px}}
-  .chip{{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--white);color:var(--ink);font-size:13.5px;font-weight:600;padding:7px 12px;border-radius:100px;cursor:pointer}}
-  .chip:hover{{border-color:var(--ac);color:var(--ink)}}
-  .chip b{{color:var(--label);font-weight:600}}
-  .chip.on{{background:var(--ac);border-color:var(--ac);color:#fff}}
-  .chip.on b{{color:rgba(255,255,255,.85)}}
-  .chip.on .dot{{background:#fff}}
-  .dot{{width:10px;height:10px;border-radius:50%;background:var(--ac);flex:none;display:inline-block}}
-  .map-box{{position:relative;z-index:0;isolation:isolate;max-width:1100px;margin:0 auto;border:1px solid var(--line);border-radius:14px;overflow:hidden}}
-  #map{{height:min(64vh,560px);background:#e8ecef}}
-  .map-views{{position:absolute;top:10px;right:10px;z-index:500;display:flex;background:#fff;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,.18);overflow:hidden}}
-  .map-views button{{border:0;background:#fff;font:600 12.5px var(--sans);padding:7px 11px;cursor:pointer;color:#37404a}}
-  .map-views button[aria-pressed="true"]{{background:var(--lake);color:#fff}}
-  .map-card{{position:absolute;left:10px;bottom:10px;z-index:500;background:#fff;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.18);padding:14px 16px;max-width:300px;display:none}}
-  .map-card.show{{display:block}}
-  .map-card h3{{font-size:17px;font-weight:800;margin-right:22px}}
-  .map-card .mc-area{{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--label);margin-top:4px}}
-  .map-card .mc-homes{{font-size:14px;margin-top:6px}}
-  .map-card a.mc-go{{display:inline-block;margin-top:10px;background:var(--lake);color:#fff;font-weight:600;font-size:13.5px;padding:8px 14px;border-radius:7px}}
-  .map-card .mc-x{{position:absolute;top:8px;right:10px;border:0;background:none;font-size:20px;line-height:1;color:var(--label);cursor:pointer}}
-  .map-note{{text-align:center;font-size:13px;color:var(--label);margin-top:10px}}
-  .leaflet-container{{font-family:var(--sans)}}
-  .leaflet-control-attribution{{font-size:9.5px!important}}
-  .leaflet-tooltip.lbl{{background:none;border:0;box-shadow:none;padding:0;color:#101418;font-weight:700;font-size:11.5px;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 2px #fff;white-space:nowrap}}
-  .leaflet-tooltip.lbl::before{{display:none}}
-  .sat .leaflet-tooltip.lbl{{color:#fff;text-shadow:0 0 3px #000,0 0 3px #000,0 0 2px #000}}
+{xp["css"]}
   .areas-wrap{{padding:32px 0 8px}}
   .area{{padding:28px 0}}
   .area + .area{{border-top:1px solid var(--line)}}
@@ -314,20 +277,13 @@ def main():
     .hub-stats{{gap:6px;flex-wrap:nowrap}}
     .hub-stats div{{padding:6px 9px;font-size:12.5px}}
     .hub-stats b{{font-size:14px;margin-right:3px}}
-    .map-card{{padding:12px 14px}}
-    .map-card a.mc-go{{margin-top:8px;padding:7px 12px}}
-    #map{{height:58vh}}
-    .chips{{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:0 2px 4px;scrollbar-width:none}}
-    .chips::-webkit-scrollbar{{display:none}}
-    .chip{{white-space:nowrap}}
-    .map-box{{border-radius:10px}}
-    .map-card{{right:10px;max-width:none}}
     .cc-grid{{grid-template-columns:1fr 1fr;gap:10px}}
     .cc h4{{font-size:14.5px}}
     .cc-body{{padding:10px 10px 12px}}
     .area{{padding:22px 0}}
   }}
 </style>
+{xp["head_js"]}
 </head>
 <body>
 
@@ -337,39 +293,13 @@ def main():
   <div class="wrap">
     <span class="eyebrow">Carmel Valley &middot; San Diego 92130</span>
     <h1>Every Condo and Townhome Community in Carmel Valley</h1>
-    <p data-speakable>Carmel Valley (San Diego, 92130) has {len(comms)} condo and townhome communities with more than {homes_floor} homes between them, spread across {len(groups)} areas. This directory shows each one on a map and in a sortable list, with its type and number of homes, and links to a full guide where one exists.</p>
+    <p data-speakable>Carmel Valley (San Diego, 92130) has {len(comms)} condo and townhome communities with more than {homes_floor} homes between them, spread across {len(groups)} areas. This directory shows each one on a map and in a list by area, with its type and number of homes, and links to a full guide where one exists.</p>
     <p class="lead-links">For everything currently on the market, browse <a href="https://www.carmelvalley.com/condos-for-sale/">Carmel Valley condos for sale</a> or <a href="https://www.carmelvalley.com/townhomes-for-sale/">Carmel Valley townhomes for sale</a>.</p>
     <div class="hub-stats"><div><b>{len(comms)}</b>communities</div><div><b>{homes_floor}+</b>homes</div><div><b>{len(groups)}</b>areas</div></div>
   </div>
 </section>
 
-<section class="map-sec" id="map-section">
-  <div class="wrap">
-    <div class="sec-head" style="margin-bottom:12px"><h2>Carmel Valley Condo Community Map</h2></div>
-    <div class="chips" id="chips">{chips}</div>
-    <div class="map-box">
-      <div id="map" role="region" aria-label="Map of Carmel Valley condo and townhome communities"></div>
-      <div class="map-views" role="group" aria-label="Map view"><button type="button" data-b="map" aria-pressed="true">Map</button><button type="button" data-b="sat" aria-pressed="false">Satellite</button></div>
-      <div class="map-card" id="mcard" aria-live="polite"></div>
-    </div>
-    <p class="map-note">Boundaries are approximate. Home counts are from the California Title Company community chart.</p>
-  </div>
-</section>
-
-<section class="dir-sec" id="list">
-  <div class="wrap">
-    <div class="sec-head" style="margin-bottom:14px"><h2>List of Condo and Townhome Communities in Carmel Valley</h2><p>All {len(comms)} communities in one table. Tap a column heading to sort.</p></div>
-    <div class="dir-scroll">
-      <table class="dir-table" id="dirTable">
-        <thead><tr><th scope="col" aria-sort="ascending"><button type="button">Community</button></th><th scope="col"><button type="button">Area</button></th><th scope="col"><button type="button">Type</button></th><th scope="col" class="num"><button type="button">Homes</button></th><th scope="col" class="num"><button type="button">Year built</button></th></tr></thead>
-        <tbody>
-        {table_html}
-        </tbody>
-      </table>
-    </div>
-    <p class="dir-note">Home counts are from the California Title Company community chart. Year built is shown only where we have verified it from MLS records.</p>
-  </div>
-</section>
+{xp["html"]}
 
 <div class="areas-wrap" id="communities">
 <div class="wrap"><div class="sec-head" style="margin-bottom:8px"><h2>Carmel Valley Condo and Townhome Complexes by Area</h2><p>Each area has its own feel, prices and mix of homes. Start with the area, then compare the communities in it.</p></div></div>
@@ -417,70 +347,12 @@ def main():
   <a href="#" class="bn-menu" onclick="event.preventDefault();window.__showMasthead&&window.__showMasthead();document.getElementById('pnav').classList.toggle('open')"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Menu</a>
 </nav>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+{xp["js"]}
 <script>
-var HUB={json.dumps(mdata, separators=(",", ":"))};
-(function(){{
-  var C=HUB.c, A=HUB.areas, sel=-1, area=null;
-  function esc(s){{return String(s).replace(/[&<>"]/g,function(c){{return {{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]}});}}
-  var map=L.map('map',{{scrollWheelZoom:false,zoomSnap:0.5}}).setView([32.94,-117.22],13);
-  var ESRI='https://server.arcgisonline.com/ArcGIS/rest/services/';
-  var base={{map:L.tileLayer(ESRI+'World_Street_Map/MapServer/tile/{{z}}/{{y}}/{{x}}',{{maxZoom:19,attribution:'Map &copy; Esri, HERE, Garmin, OpenStreetMap contributors'}}),
-    sat:L.layerGroup([L.tileLayer(ESRI+'World_Imagery/MapServer/tile/{{z}}/{{y}}/{{x}}',{{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}}),
-      L.tileLayer(ESRI+'Reference/World_Transportation/MapServer/tile/{{z}}/{{y}}/{{x}}',{{maxZoom:19}})])}};
-  var cur='map'; base.map.addTo(map);
-  document.querySelectorAll('.map-views button').forEach(function(b){{b.addEventListener('click',function(){{
-    map.removeLayer(base[cur]); cur=b.dataset.b; base[cur].addTo(map);
-    document.getElementById('map').classList.toggle('sat',cur==='sat');
-    document.querySelectorAll('.map-views button').forEach(function(x){{x.setAttribute('aria-pressed',x===b?'true':'false');}});
-    style();}});}});
-  var layers=C.map(function(o,i){{var l=L.polygon(o.p,{{weight:1.5}}).addTo(map);
-    l.on('click',function(e){{L.DomEvent.stopPropagation(e);pick(i,false);}});
-    l.bindTooltip(o.n,{{sticky:true,direction:'top'}});return l;}});
-  var all=L.latLngBounds([]);layers.forEach(function(l){{all.extend(l.getBounds());}});
-  function fitAll(){{map.invalidateSize();map.fitBounds(all,{{padding:[16,16]}});}}
-  var touched=false;map.getContainer().addEventListener('pointerdown',function(){{touched=true;}});
-  fitAll();window.addEventListener('load',fitAll);
-  var rt;window.addEventListener('resize',function(){{clearTimeout(rt);rt=setTimeout(function(){{if(!touched&&!area&&sel<0)fitAll();else map.invalidateSize();}},150);}});
-  var lbl=L.layerGroup().addTo(map);
-  function style(){{var sat=cur==='sat';layers.forEach(function(l,i){{var o=C[i],c=A[o.a][1],dim=area&&o.a!==area,on=i===sel;
-    l.setStyle({{color:on?'#101418':(sat?'#fff':c),weight:on?3:1.5,fillColor:c,fillOpacity:dim?0.06:(on?0.75:(sat?0.45:0.38)),opacity:dim?0.3:1}});}});}}
-  function labels(){{lbl.clearLayers();if(map.getZoom()<15)return;var b=map.getBounds();
-    C.forEach(function(o,i){{if(area&&o.a!==area)return;var c=layers[i].getBounds().getCenter();if(!b.contains(c))return;
-      lbl.addLayer(L.tooltip({{permanent:true,direction:'center',className:'lbl',interactive:false}}).setLatLng(c).setContent(esc(o.n)));}});}}
-  map.on('zoomend moveend',labels);
-  var card=document.getElementById('mcard');
-  function pick(i,zoom){{touched=true;sel=i;var o=C[i];style();
-    var go=o.u?'<a class="mc-go" href="'+o.u+'">'+(o.g?'Community guide &rarr;':'See homes &rarr;')+'</a>':'<a class="mc-go" href="#contact">Ask about '+esc(o.n)+'</a>';
-    card.innerHTML='<button type="button" class="mc-x" aria-label="Close">&times;</button><h3>'+esc(o.n)+'</h3><div class="mc-area"><span class="dot" style="--ac:'+A[o.a][1]+'"></span>'+esc(A[o.a][0])+'</div>'+(o.h?'<div class="mc-homes"><b>'+o.h+'</b> homes</div>':'')+go;
-    card.classList.add('show');card.querySelector('.mc-x').onclick=function(){{card.classList.remove('show');sel=-1;style();}};
-    if(zoom)map.flyToBounds(layers[i].getBounds(),{{maxZoom:16,duration:.6,padding:[40,40]}});}}
-  map.on('click',function(){{card.classList.remove('show');sel=-1;style();}});
-  function setArea(k){{touched=true;area=(area===k)?null:k;
-    document.querySelectorAll('#chips .chip').forEach(function(c){{c.classList.toggle('on',c.dataset.a===area);}});
-    var b=L.latLngBounds([]);layers.forEach(function(l,i){{if(!area||C[i].a===area)b.extend(l.getBounds());}});
-    map.flyToBounds(b,{{padding:[20,20],duration:.6}});card.classList.remove('show');sel=-1;style();labels();}}
-  document.querySelectorAll('#chips .chip').forEach(function(c){{c.addEventListener('click',function(e){{e.preventDefault();setArea(c.dataset.a);}});}});
-  document.querySelectorAll('.cc-map').forEach(function(b){{b.addEventListener('click',function(){{
-    var i=C.findIndex(function(o){{return o.n===b.dataset.n;}});if(i<0)return;
-    if(area&&C[i].a!==area){{area=null;document.querySelectorAll('#chips .chip').forEach(function(c){{c.classList.remove('on');}});}}
-    document.getElementById('map-section').scrollIntoView({{behavior:'smooth',block:'start'}});pick(i,true);}});}});
-  style();
-}})();
-(function(){{
-  var t=document.getElementById('dirTable');if(!t)return;
-  var ths=t.querySelectorAll('th'),body=t.tBodies[0];
-  ths.forEach(function(th,i){{th.querySelector('button').addEventListener('click',function(){{
-    var asc=th.getAttribute('aria-sort')!=='ascending';
-    ths.forEach(function(x){{x.removeAttribute('aria-sort');}});th.setAttribute('aria-sort',asc?'ascending':'descending');
-    var num=th.classList.contains('num');
-    Array.prototype.slice.call(body.rows).sort(function(a,b){{
-      var x=a.cells[i].dataset.v,y=b.cells[i].dataset.v;
-      var r=num?(parseFloat(x)-parseFloat(y)):x.localeCompare(y);
-      if(num&&i===4){{if(x==='9999')return 1;if(y==='9999')return -1;}}
-      if(num&&i===3){{if(x==='0')return 1;if(y==='0')return -1;}}
-      return asc?r:-r;}}).forEach(function(r){{body.appendChild(r);}});}});}});
-}})();
+// area cards: "Show on map" picks the community in the list beside the map
+document.querySelectorAll('.cc-map').forEach(function(b){{b.addEventListener('click',function(){{
+  var r=document.querySelector('.nr-pick[data-n="'+b.dataset.n.replace(/"/g,'\\"')+'"]');if(!r)return;
+  document.getElementById('map-section').scrollIntoView({{behavior:'smooth',block:'start'}});setTimeout(function(){{r.click();}},350);}});}});
 </script>
 <script>
 (function(){{

@@ -52,7 +52,33 @@
   "Del Mar Villas": "/del-mar-villas-carmel-valley/"
  },
  "ext": {
-  "Martinique": "https://www.carmelvalley.com/condos-for-sale/martinique/"
+  "Martinique": "https://www.carmelvalley.com/condos-for-sale/martinique/",
+  "Cambria": "https://www.carmelvalley.com/townhomes-for-sale/cambria/",
+  "East Bluff": "https://www.carmelvalley.com/condos-for-sale/east-bluff/",
+  "Pacifica": "https://www.carmelvalley.com/townhomes-for-sale/pacifica/",
+  "Palmilla": "https://www.carmelvalley.com/townhomes-for-sale/palmilla/",
+  "Regents Square": "https://www.carmelvalley.com/townhomes-for-sale/regents-square/",
+  "Andalucia": "https://www.carmelvalley.com/townhomes-for-sale/andalucia/",
+  "Antares": "https://www.carmelvalley.com/townhomes-for-sale/antares/",
+  "Canyon Ridge": "https://www.carmelvalley.com/townhomes-for-sale/canyon-ridge/",
+  "Chateau Village": "https://www.carmelvalley.com/townhomes-for-sale/chateau-village/",
+  "Coral Cove": "https://www.carmelvalley.com/townhomes-for-sale/coral-cove/",
+  "Crest Del Mar": "https://www.carmelvalley.com/townhomes-for-sale/crest-del-mar/",
+  "Elysian": "https://www.carmelvalley.com/townhomes-for-sale/elysian/",
+  "Halcyon": "https://www.carmelvalley.com/townhomes-for-sale/halcyon/",
+  "La Plage": "https://www.carmelvalley.com/townhomes-for-sale/la-plage/",
+  "Montemar": "https://www.carmelvalley.com/townhomes-for-sale/montemar/",
+  "Palermo": "https://www.carmelvalley.com/townhomes-for-sale/palermo/",
+  "Pelagos": "https://www.carmelvalley.com/townhomes-for-sale/pelagos/",
+  "Pell Place": "https://www.carmelvalley.com/condos-for-sale/pell-place/",
+  "Sunstream": "https://www.carmelvalley.com/townhomes-for-sale/sunstream/",
+  "The Groves": "https://www.carmelvalley.com/townhomes-for-sale/the-groves/",
+  "Windwood": "https://www.carmelvalley.com/townhomes-for-sale/windwood/",
+  "Carmel Row": "https://www.carmelvalley.com/townhomes-for-sale/carmel-row/",
+  "Highlands Village": "https://www.carmelvalley.com/townhomes-for-sale/highlands-village/",
+  "Airoso": "https://www.carmelvalley.com/townhomes-for-sale/airoso/",
+  "Laterra": "https://www.carmelvalley.com/townhomes-for-sale/laterra/",
+  "Rancho Milagro": "https://www.carmelvalley.com/townhomes-for-sale/rancho-milagro/"
  },
  "photos": {
   "Arborlake": "/images/arborlake-condos-carmel-valley.jpg",
@@ -71,5 +97,12 @@
   "cch": "A quieter, mostly single-family area in the north-east of Carmel Valley. Only a couple of attached-home communities are here, so listings come up less often than in the central neighborhoods.",
   "phr": "The newest part of Carmel Valley, built out from the 2000s onward, and home to Canyon Crest Academy. Its condos and townhomes are newer construction; check each community's Mello-Roos tax along with the HOA fee.",
   "th": "South of SR-56, Torrey Hills is close to Sorrento Valley and the I-5/I-805 merge. It has two condo and townhome communities among its single-family neighborhoods."
+ },
+ "types": {
+  "_note": "Overrides tools/atlas_home_types.json. 'detached' = detached condominium: single-family homes held as condos on title.",
+  "San Raphael": "detached",
+  "Sausalito": "detached",
+  "Senterra": "detached",
+  "Stratford": "detached"
  }
 }
