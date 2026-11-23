@@ -171,7 +171,7 @@ Sez Sezer
 
 Luxury Real Estate Advisor
 
-[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://carmelvalley.com)
+[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://www.carmelvalley.com/)
 
 ---
 

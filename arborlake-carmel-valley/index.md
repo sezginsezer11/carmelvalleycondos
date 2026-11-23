@@ -180,7 +180,7 @@ One of the lower-HOA condo options among nearby comparable communities — worth
 
 ## Arborlake Prices & Sales
 
-In the last 12 months, 3 Arborlake condos sold, at a median of $755,750 ($793/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 22, 2026.
+In the last 12 months, 3 Arborlake condos sold, at a median of $755,750 ($793/sq ft). Over the last 5 years, 22 sold at a median of $755,875. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 23, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -358,7 +358,7 @@ Keller Williams Realty · DRE #01988197
 
 [(858) 436-6585](tel:+18584366585)
 
-[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://carmelvalley.com)
+[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://www.carmelvalley.com/)
 
 ---
 

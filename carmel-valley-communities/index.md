@@ -134,7 +134,7 @@ Keller Williams Realty · DRE #01988197
 
 [(858) 436-6585](tel:+18584366585)
 
-[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://carmelvalley.com)
+[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://www.carmelvalley.com/)
 
 ---
 

@@ -181,7 +181,7 @@ For buyers who want a multi-level townhome with more space instead of a single-l
 
 ## Del Mar Villas Prices & Sales
 
-In the last 12 months, 2 Del Mar Villas condos sold, at a median of $599,000 ($939/sq ft). Over the last 5 years, 15 sold at a median of $665,000. The most recent sale was a 1-bedroom, 638 sq ft home that closed at $599,000 on Jul 7, 2026. MLS closed sales as of Nov 22, 2026.
+In the last 12 months, 2 Del Mar Villas condos sold, at a median of $599,000 ($939/sq ft). Over the last 5 years, 15 sold at a median of $665,000. The most recent sale was a 1-bedroom, 638 sq ft home that closed at $599,000 on Jul 7, 2026. MLS closed sales as of Nov 23, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -310,7 +310,7 @@ Keller Williams Realty · DRE #01988197
 
 [(858) 436-6585](tel:+18584366585)
 
-[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://carmelvalley.com)
+[Call Now](tel:+18584366585) [Email Sez](mailto:sez@carmelvalley.com) [Search All Listings](https://www.carmelvalley.com/)
 
 ---
 
