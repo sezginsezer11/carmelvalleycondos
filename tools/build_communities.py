@@ -374,9 +374,10 @@ def render_sales_summary(c, st):
     n = c["name"]
     parts = []
     if st["t12"]:
-        parts.append(f'In the last 12 months, {len(st["t12"])} {n} condo{"s" if len(st["t12"]) != 1 else ""} sold, '
+        parts.append(f'In the last 12 months, {len(st["t12"])} condo{"s" if len(st["t12"]) != 1 else ""} sold at {n}, '
                      f'at a median of {money(st["t12_median"])}' + (f' ({money(st["t12_psf"])}/sq ft)' if st["t12_psf"] else '') + '.')
-    parts.append(f'Over the last 5 years, {len(st["five"])} sold at a median of {money(st["five_median"])}.')
+    # price points come from recent sales only; 5 years is for how often homes sell
+    parts.append(f'Over the last 5 years, {len(st["five"])} condo{"s" if len(st["five"]) != 1 else ""} have sold there.')
     if st["latest"]:
         r = st["latest"]
         desc = f'{r.get("beds_total")}-bedroom' + (f', {r["living_area"]:,} sq ft' if r.get("living_area") else "")

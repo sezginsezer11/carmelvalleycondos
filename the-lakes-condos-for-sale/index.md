@@ -179,7 +179,7 @@ Shares a border with The Lakes; 2- and 3-bedroom homes for buyers who need more 
 
 ## The Lakes Prices & Sales
 
-In the last 12 months, 5 The Lakes condos sold, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 sold at a median of $726,000. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 23, 2026.
+In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 23, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
