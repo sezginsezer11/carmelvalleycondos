@@ -283,12 +283,26 @@ def fmt_date(d):
     return f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
 
 
+RECENT_MIN = 3  # bedroom price cards need at least this many sales
+
+
+def recent_window(g):
+    """Recent sales for a price point (rows newest first): the last 12 months if 3+ sold,
+    else the last 24 months if 3+ sold, else the 3 most recent sales within 5 years.
+    Returns (rows, label). The page's own script uses the same rule."""
+    for yrs, lbl in ((1, "12 mo"), (2, "24 mo")):
+        w = [r for r in g if r["_d"] >= years_ago(yrs)]
+        if len(w) >= RECENT_MIN:
+            return w, lbl
+    w = [r for r in g if r["_d"] >= years_ago(5)][:RECENT_MIN]
+    return w, (f"since {MONTHS[w[-1]['_d'].month - 1]} {w[-1]['_d'].year}" if w else "")
+
+
 def glance_from_sales(c, rows):
-    five = [r for r in rows if r["_d"] >= years_ago(5)]
     cards = []
     for card in c["glance"]["cards"]:
         b = card["beds"]
-        g = [r for r in five if r.get("beds_total") == b]
+        g, lbl = recent_window([r for r in rows if r.get("beds_total") == b])
         if not g:
             cards.append(card)
             continue
@@ -297,12 +311,49 @@ def glance_from_sales(c, rows):
         lo, hi = (min(sizes), max(sizes)) if sizes else (0, 0)
         cards.append({
             "beds": b,
-            "count": f"{len(g)} sale{'s' if len(g) != 1 else ''} &middot; 5 yrs",
+            "count": f"{'last ' if lbl.startswith('since') else ''}{len(g)} sale{'s' if len(g) != 1 else ''} &middot; {lbl}",
             "size": (f"{lo:,}&ndash;{hi:,} sq ft" if hi > lo else f"{lo:,} sq ft") if sizes else card["size"],
             "median": money(statistics.median(prices)),
             "range": f"{k(min(prices))}&ndash;{k(max(prices))}" if max(prices) > min(prices) else k(min(prices)),
         })
     return cards
+
+
+def window_words(lbl, n):
+    if lbl == "12 mo":
+        return f"{n} sale{'s' if n != 1 else ''} in the last 12 months"
+    if lbl == "24 mo":
+        return f"{n} sales in the last 24 months"
+    return f"the last {n} sale{'s' if n != 1 else ''}, {lbl}"
+
+
+def apply_recent_prices(c, rows):
+    """Price points come from recent sales, never a 5-year spread: the Quick Facts price
+    and the price-range FAQ are rebuilt from each bedroom size's recent window."""
+    parts, prices = [], []
+    for card in c["glance"]["cards"]:
+        b = card["beds"]
+        g, lbl = recent_window([r for r in rows if r.get("beds_total") == b])
+        if not g:
+            continue
+        p = [r["close_price"] for r in g]
+        prices += p
+        rng = f"{k(min(p))}&ndash;{k(max(p))}" if max(p) > min(p) else k(min(p))
+        parts.append(f"{b}-bedrooms {rng} (median {k(statistics.median(p))}; {window_words(lbl, len(g))})")
+    if not prices:
+        return
+    lo, hi = min(prices), max(prices)
+    for f in c["facts"]:
+        if f["icon"] == "price":
+            f["value"], f["label"] = f"{k(lo)}&ndash;{k(hi)}", "Recent Sales"
+    by_size = parts[0] if len(parts) == 1 else ", ".join(parts[:-1]) + " and " + parts[-1]
+    for f in c["faq"]:
+        q = f["q"].lower()
+        if "price range" in q or "sell for" in q:
+            f["a"] = (f"<p>Recent sales at {c['name']} ranged from about {money(round(lo, -3))} to {money(round(hi, -3))}. "
+                      f"By size: {by_size}. Condition, floor level and location in the community explain most of the gap. "
+                      f"Ask for a current comparison before you make an offer.</p>")
+            break
 
 
 def stats(rows):
@@ -393,6 +444,7 @@ def build(slug):
     st = stats(rows) if rows else None
     if rows:
         c["glance"]["cards"] = glance_from_sales(c, rows)
+        apply_recent_prices(c, rows)
     v = {
         "name": c["name"], "name_json": json.dumps(c["name"]), "path": c["path"],
         "parent_name": c["parent_name"], "parent_url": c["parent_url"],

@@ -157,7 +157,7 @@
   ],
   "glance": {
     "h2": "What a 1-, 2- or 3-Bed Actually Costs",
-    "lede": "Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each sold for over the last 5 years.",
+    "lede": "Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.",
     "cards": [
       {
         "beds": 1,
@@ -181,7 +181,7 @@
         "range": "$850K&ndash;$1M"
       }
     ],
-    "ratio": "Two-bedrooms have sold about twice as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after."
+    "ratio": "Over the last 5 years, two-bedrooms have sold about twice as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after."
   },
   "life": {
     "lead": "A 200-unit condo community built by Western Pacific Housing in 2001&ndash;2002, set in a quiet pocket that's still a short walk from Del Mar Highlands Town Center and One Paseo. High ceilings, private patios or decks, and underground and garage parking set it apart from older Carmel Valley condos.",

@@ -14,7 +14,7 @@ Source page: https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/
 
 216 single-level condo homes on park-like grounds off Carmel Creek Road, with the elementary and middle schools about a third of a mile away — guided by an agent who has specialized in Carmel Valley condos for more than 11 years.
 
-- **Sold (5 yrs):** $536K–$769K
+- **Recent Sales:** $593K–$700K
 - **Monthly Dues:** $330–$370/mo
 - **Square Feet:** 638–950
 - **Total Homes:** 216
@@ -59,23 +59,23 @@ School assignments can change. Verify current boundaries directly with [Del Mar 
 
 ## What a 1-Bed vs. a 2-Bed Sells For
 
-Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each sold for over the last 5 years.
+Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.
 
 ### 1 Bedroom
 
-5 sales · 5 yrs
+3 sales · 24 mo
 
 - **Size:** 638 sq ft
-- **Median sale price:** $593,000
-- **Price range:** $536K–$599K
+- **Median sale price:** $599,000
+- **Price range:** $593K–$599K
 
 ### 2 Bedroom
 
-10 sales · 5 yrs
+4 sales · 24 mo
 
-- **Size:** 864–950 sq ft
+- **Size:** 864 sq ft
 - **Median sale price:** $683,750
-- **Price range:** $650K–$769K
+- **Price range:** $664K–$700K
 
 About two of every three sales are 2-bedrooms. The 1-bedroom plan is one of the lowest-priced ways into a 92130 address. See the [price history](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/#sold-data).
 
@@ -268,7 +268,7 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 ### How much do Del Mar Villas Carmel Valley homes sell for?
 
-Over the last 5 years, Del Mar Villas condos sold between about $536,000 and $769,000: 1-bedrooms $536K–$599K (median $593K) and 2-bedrooms $650K–$769K (median about $684K).
+Recent sales at Del Mar Villas ranged from about $593,000 to $700,000. By size: 1-bedrooms $593K–$599K (median $599K; 3 sales in the last 24 months) and 2-bedrooms $664K–$700K (median $684K; 4 sales in the last 24 months). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.
 
 ### What are the monthly dues at Del Mar Villas?
 

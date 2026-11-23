@@ -67,7 +67,7 @@
   ],
   "glance": {
     "h2": "What a 1-Bed vs. a 2-Bed Sells For",
-    "lede": "Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each sold for over the last 5 years.",
+    "lede": "Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.",
     "cards": [
       {"beds": 1, "count": "5 sales &middot; 5 yrs", "size": "638 sq ft", "median": "$593,000", "range": "$536K&ndash;$599K"},
       {"beds": 2, "count": "10 sales &middot; 5 yrs", "size": "864&ndash;950 sq ft", "median": "$683,750", "range": "$650K&ndash;$769K"}

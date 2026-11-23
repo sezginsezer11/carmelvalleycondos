@@ -14,7 +14,7 @@ Source page: https://www.carmelvalleycondos.com/arborlake-carmel-valley/
 
 A 190-unit lake-and-waterfall condo community in southwest Carmel Valley — guided by an agent who has specialized in this community for more than 11 years.
 
-- **Price:** $650K–$875K
+- **Recent Sales:** $600K–$900K
 - **Monthly Dues:** $450–$460/mo
 - **Square Feet:** 742–1,145
 - **Total Units:** 190
@@ -58,25 +58,25 @@ School assignments can change. Verify current boundaries directly with [Del Mar 
 
 ## What a 1-Bed vs. a 2-Bed Actually Costs
 
-Arborlake has only 1- and 2-bedroom floor plans. Here's what each sold for over the last 5 years.
+Arborlake has only 1- and 2-bedroom floor plans. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.
 
 ### 1 Bedroom
 
-6 sales · 5 yrs
+last 3 sales · since May 2023
 
 - **Size:** 742–896 sq ft
-- **Median sale price:** $631,750
-- **Price range:** $578K–$815K
+- **Median sale price:** $640,000
+- **Price range:** $600K–$685K
 
 ### 2 Bedroom
 
-16 sales · 5 yrs
+5 sales · 24 mo
 
-- **Size:** 964–1,145 sq ft
-- **Median sale price:** $800,000
-- **Price range:** $675K–$900K
+- **Size:** 964–1,071 sq ft
+- **Median sale price:** $820,000
+- **Price range:** $756K–$900K
 
-Two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full breakdown](https://www.carmelvalleycondos.com/arborlake-carmel-valley/#analysis).
+Over the last 5 years, two-bedrooms have sold nearly three times as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you're after. See the [full breakdown](https://www.carmelvalleycondos.com/arborlake-carmel-valley/#analysis).
 
 Closed MLS sales, last 5 years.
 
@@ -316,7 +316,7 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 ### What is the price range for Arborlake condos?
 
-Arborlake condos typically sell between $650,000 and $875,000, or roughly $680–$820 per square foot depending on the unit's condition and position within the community.
+Recent sales at Arborlake ranged from about $600,000 to $900,000. By size: 1-bedrooms $600K–$685K (median $640K; the last 3 sales, since May 2023) and 2-bedrooms $756K–$900K (median $820K; 5 sales in the last 24 months). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.
 
 ### What do the monthly dues at Arborlake cover?
 

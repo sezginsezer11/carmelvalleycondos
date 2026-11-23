@@ -731,7 +731,7 @@
 <!-- ============ QUICK FACTS ============ -->
 <section class="facts">
   <div class="wrap facts-grid">
-    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div class="num">$536K&ndash;$769K</div><div class="lbl">Sold (5 yrs)</div></div>
+    <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div class="num">$593K&ndash;$700K</div><div class="lbl">Recent Sales</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg><div class="num">$330&ndash;$370/mo</div><div class="lbl">Monthly Dues</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h7v7H3zM14 14h7v7h-7z"/><path d="M10 3 21 14"/></svg><div class="num">638&ndash;950</div><div class="lbl">Square Feet</div></div>
     <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l6-4 6 4v12"/><path d="M15 21V11l6 2v8z"/></svg><div class="num">216</div><div class="lbl">Total Homes</div></div>
@@ -894,19 +894,19 @@
       <div class="eyebrow">The First Question</div>
       <h2>What a 1-Bed vs. a 2-Bed Sells For</h2>
     </div>
-    <p class="glance-lede">Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each sold for over the last 5 years.</p>
+    <p class="glance-lede">Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.</p>
     <div class="glance-grid g2">
       <div class="glance-card" data-beds="1">
-        <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count" id="g1-count">5 sales &middot; 5 yrs</div></div>
+        <div class="gc-head"><h3>1 Bedroom</h3><div class="gc-count" id="g1-count">3 sales &middot; 24 mo</div></div>
         <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g1-size">638 sq ft</span></div>
-        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g1-median">$593,000</span></div>
-        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g1-range">$536K&ndash;$599K</span></div>
+        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g1-median">$599,000</span></div>
+        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g1-range">$593K&ndash;$599K</span></div>
       </div>
       <div class="glance-card" data-beds="2">
-        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count" id="g2-count">10 sales &middot; 5 yrs</div></div>
-        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g2-size">864&ndash;950 sq ft</span></div>
+        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count" id="g2-count">4 sales &middot; 24 mo</div></div>
+        <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g2-size">864 sq ft</span></div>
         <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g2-median">$683,750</span></div>
-        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g2-range">$650K&ndash;$769K</span></div>
+        <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g2-range">$664K&ndash;$700K</span></div>
       </div>
     </div>
     <p class="glance-lede" style="margin-top:14px;margin-bottom:0"><span id="g-ratio">About two of every three sales are 2-bedrooms. The 1-bedroom plan is one of the lowest-priced ways into a 92130 address.</span> See the <a href="#sold-data">price history</a>.</p>
@@ -1156,13 +1156,28 @@
     function set(id, html){ var el = document.getElementById(id); if (el) el.innerHTML = html; }
     function k(n){ return n >= 1e6 ? '$' + (Math.round(n / 1e5) / 10).toString().replace(/\.0$/, '') + 'M' : '$' + Math.round(n / 1000) + 'K'; }
     var counts = {};
+    var MO = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    // price points use recent sales: last 12 months if 3+ sold, else last 24 months if 3+ sold,
+    // else the 3 most recent sales (same rule as tools/build_communities.py)
+    function recent(g){
+      g = g.slice().sort(function(a, b){ return a.close_date < b.close_date ? 1 : -1; });
+      for (var y = 1; y <= 2; y++){
+        var s = new Date(now.getFullYear() - y, now.getMonth(), now.getDate());
+        var w = g.filter(function(r){ return new Date(r.close_date) >= s; });
+        if (w.length >= 3) return {rows: w, label: w.length + ' sales &middot; ' + (y * 12) + ' mo'};
+      }
+      w = g.slice(0, 3);
+      var d = w.length ? w[w.length - 1].close_date.split('-') : null;
+      return {rows: w, label: d ? 'last ' + w.length + (w.length === 1 ? ' sale' : ' sales') + ' &middot; since ' + MO[parseInt(d[1], 10) - 1] + ' ' + d[0] : ''};
+    }
     Array.prototype.map.call(document.querySelectorAll('[data-beds]'), function(c){ return +c.getAttribute('data-beds'); }).forEach(function(b){
-      var g = rows.filter(function(r){ return r.beds_total === b; });
-      counts[b] = g.length;
-      if (!g.length) return;
+      var all = rows.filter(function(r){ return r.beds_total === b; });
+      counts[b] = all.length;  // 5-year count: how often each size sells
+      if (!all.length) return;
+      var rc = recent(all), g = rc.rows;
       var prices = g.map(function(r){ return r.close_price; });
       var sizes = g.filter(function(r){ return r.living_area; }).map(function(r){ return r.living_area; });
-      set('g' + b + '-count', g.length + (g.length === 1 ? ' sale' : ' sales') + ' &middot; 5 yrs');
+      set('g' + b + '-count', rc.label);
       if (sizes.length){ var lo = Math.min.apply(null, sizes), hi = Math.max.apply(null, sizes); set('g' + b + '-size', lo.toLocaleString('en-US') + (hi > lo ? '&ndash;' + hi.toLocaleString('en-US') : '') + ' sq ft'); }
       set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
       var pl = Math.min.apply(null, prices), ph = Math.max.apply(null, prices); set('g' + b + '-range', ph > pl ? k(pl) + '&ndash;' + k(ph) : k(pl));
@@ -1171,7 +1186,7 @@
       var ratio = counts[2] / counts[1];
       if (ratio >= 1.5){
         var words = ratio >= 3.5 ? Math.round(ratio) + ' times' : ratio >= 2.5 ? 'about three times' : ratio >= 1.75 ? 'about twice' : 'about 1.5 times';
-        set('g-ratio', 'Two-bedrooms have sold ' + words + ' as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after.');
+        set('g-ratio', 'Over the last 5 years, two-bedrooms have sold ' + words + ' as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after.');
       } else {
         set('g-ratio', 'One- and two-bedrooms have sold at a similar pace over the last 5 years.');
       }
@@ -1542,7 +1557,7 @@
     <div class="faq-list">
       <details>
         <summary>How much do Del Mar Villas Carmel Valley homes sell for?</summary>
-        <p>Over the last 5 years, Del Mar Villas condos sold between about $536,000 and $769,000: 1-bedrooms $536K–$599K (median $593K) and 2-bedrooms $650K–$769K (median about $684K).</p>
+        <p>Recent sales at Del Mar Villas ranged from about $593,000 to $700,000. By size: 1-bedrooms $593K&ndash;$599K (median $599K; 3 sales in the last 24 months) and 2-bedrooms $664K&ndash;$700K (median $684K; 4 sales in the last 24 months). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.</p>
       </details>
       <details>
         <summary>What are the monthly dues at Del Mar Villas?</summary>
@@ -1763,7 +1778,7 @@
       "name": "How much do Del Mar Villas Carmel Valley homes sell for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Over the last 5 years, Del Mar Villas condos sold between about $536,000 and $769,000: 1-bedrooms $536K–$599K (median $593K) and 2-bedrooms $650K–$769K (median about $684K)."
+        "text": "Recent sales at Del Mar Villas ranged from about $593,000 to $700,000. By size: 1-bedrooms $593K–$599K (median $599K; 3 sales in the last 24 months) and 2-bedrooms $664K–$700K (median $684K; 4 sales in the last 24 months). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer."
       }
     },
     {

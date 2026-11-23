@@ -14,7 +14,7 @@ Source page: https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/
 
 A 200-unit resort-style condo community with underground garage parking, a short walk from Del Mar Highlands — guided by an agent who has specialized in this community for more than 11 years.
 
-- **Price:** $540K–$1M
+- **Recent Sales:** $540K–$995K
 - **Monthly Dues:** $340–$433/mo
 - **Square Feet:** 704–1,387
 - **Total Units:** 200
@@ -58,33 +58,33 @@ School assignments can change. Verify current boundaries directly with [Del Mar 
 
 ## What a 1-, 2- or 3-Bed Actually Costs
 
-Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each sold for over the last 5 years.
+Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.
 
 ### 1 Bedroom
 
-6 sales · 5 yrs
+3 sales · 12 mo
 
 - **Size:** 704–777 sq ft
 - **Median sale price:** $575,000
-- **Price range:** $540K–$689K
+- **Price range:** $540K–$575K
 
 ### 2 Bedroom
 
-12 sales · 5 yrs
+4 sales · 24 mo
 
-- **Size:** 963–1,193 sq ft
-- **Median sale price:** $855,000
-- **Price range:** $725K–$890K
+- **Size:** 1,018–1,193 sq ft
+- **Median sale price:** $835,000
+- **Price range:** $725K–$863K
 
 ### 3 Bedroom
 
-6 sales · 5 yrs
+last 3 sales · since Nov 2023
 
 - **Size:** 1,387 sq ft
 - **Median sale price:** $970,000
-- **Price range:** $850K–$1M
+- **Price range:** $970K–$995K
 
-Two-bedrooms have sold about twice as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you’re after. See the [price history](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/#sold-data).
+Over the last 5 years, two-bedrooms have sold about twice as often as one-bedrooms — a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you’re after. See the [price history](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/#sold-data).
 
 Closed MLS sales, last 5 years.
 
@@ -298,7 +298,7 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 ### What is the price range for Carmel Pointe condos?
 
-Over the last 5 years, Carmel Pointe condos sold between about $540,000 and $1,000,000: 1-bedrooms $540K–$689K, 2-bedrooms $725K–$890K, and 3-bedrooms $850K–$1M.
+Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K–$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K–$863K (median $835K; 4 sales in the last 24 months) and 3-bedrooms $970K–$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.
 
 ### What do the monthly dues at Carmel Pointe cover?
 

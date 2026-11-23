@@ -14,7 +14,7 @@ Source page: https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/
 
 A 192-unit condo community built around five small lakes, koi ponds and walking paths in southwest Carmel Valley — guided by an agent who has specialized in this community for more than 11 years.
 
-- **Price:** $550K–$935K
+- **Recent Sales:** $630K–$935K
 - **HOA Fee:** $560–$599/mo
 - **Square Feet:** 791–1,269
 - **Total Units:** 192
@@ -59,23 +59,23 @@ School assignments can change. Verify current boundaries directly with [Del Mar 
 
 ## What a 1-Bed vs. a 2-Bed Actually Costs
 
-Nearly every sale at The Lakes is a 1- or 2-bedroom. Here's what each sold for over the last 5 years.
+Nearly every sale at The Lakes is a 1- or 2-bedroom. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.
 
 ### 1 Bedroom
 
-22 sales · 5 yrs
+4 sales · 12 mo
 
 - **Size:** 791–951 sq ft
-- **Median sale price:** $644,000
-- **Price range:** $550K–$815K
+- **Median sale price:** $655,000
+- **Price range:** $630K–$670K
 
 ### 2 Bedroom
 
-19 sales · 5 yrs
+last 3 sales · since Nov 2024
 
-- **Size:** 1,101–1,269 sq ft
-- **Median sale price:** $805,000
-- **Price range:** $659K–$935K
+- **Size:** 1,269 sq ft
+- **Median sale price:** $850,000
+- **Price range:** $808K–$935K
 
 One- and two-bedrooms sell about equally often here, so there are recent comps for either size — unusual for a community this size. See the [price history](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/#sold-data).
 
@@ -279,7 +279,7 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 ### What is the price range for The Lakes condos?
 
-Over the last 5 years, The Lakes condos sold between about $550,000 and $935,000: 1-bedrooms $550K–$815K (median $644K) and 2-bedrooms $659K–$935K (median $805K).
+Recent sales at The Lakes ranged from about $630,000 to $935,000. By size: 1-bedrooms $630K–$670K (median $655K; 4 sales in the last 12 months) and 2-bedrooms $808K–$935K (median $850K; the last 3 sales, since Nov 2024). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.
 
 ### What are the HOA fees at The Lakes?
 

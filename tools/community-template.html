@@ -1013,13 +1013,28 @@
     function set(id, html){ var el = document.getElementById(id); if (el) el.innerHTML = html; }
     function k(n){ return n >= 1e6 ? '$' + (Math.round(n / 1e5) / 10).toString().replace(/\.0$/, '') + 'M' : '$' + Math.round(n / 1000) + 'K'; }
     var counts = {};
+    var MO = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    // price points use recent sales: last 12 months if 3+ sold, else last 24 months if 3+ sold,
+    // else the 3 most recent sales (same rule as tools/build_communities.py)
+    function recent(g){
+      g = g.slice().sort(function(a, b){ return a.close_date < b.close_date ? 1 : -1; });
+      for (var y = 1; y <= 2; y++){
+        var s = new Date(now.getFullYear() - y, now.getMonth(), now.getDate());
+        var w = g.filter(function(r){ return new Date(r.close_date) >= s; });
+        if (w.length >= 3) return {rows: w, label: w.length + ' sales &middot; ' + (y * 12) + ' mo'};
+      }
+      w = g.slice(0, 3);
+      var d = w.length ? w[w.length - 1].close_date.split('-') : null;
+      return {rows: w, label: d ? 'last ' + w.length + (w.length === 1 ? ' sale' : ' sales') + ' &middot; since ' + MO[parseInt(d[1], 10) - 1] + ' ' + d[0] : ''};
+    }
     Array.prototype.map.call(document.querySelectorAll('[data-beds]'), function(c){ return +c.getAttribute('data-beds'); }).forEach(function(b){
-      var g = rows.filter(function(r){ return r.beds_total === b; });
-      counts[b] = g.length;
-      if (!g.length) return;
+      var all = rows.filter(function(r){ return r.beds_total === b; });
+      counts[b] = all.length;  // 5-year count: how often each size sells
+      if (!all.length) return;
+      var rc = recent(all), g = rc.rows;
       var prices = g.map(function(r){ return r.close_price; });
       var sizes = g.filter(function(r){ return r.living_area; }).map(function(r){ return r.living_area; });
-      set('g' + b + '-count', g.length + (g.length === 1 ? ' sale' : ' sales') + ' &middot; 5 yrs');
+      set('g' + b + '-count', rc.label);
       if (sizes.length){ var lo = Math.min.apply(null, sizes), hi = Math.max.apply(null, sizes); set('g' + b + '-size', lo.toLocaleString('en-US') + (hi > lo ? '&ndash;' + hi.toLocaleString('en-US') : '') + ' sq ft'); }
       set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
       var pl = Math.min.apply(null, prices), ph = Math.max.apply(null, prices); set('g' + b + '-range', ph > pl ? k(pl) + '&ndash;' + k(ph) : k(pl));
@@ -1028,7 +1043,7 @@
       var ratio = counts[2] / counts[1];
       if (ratio >= 1.5){
         var words = ratio >= 3.5 ? Math.round(ratio) + ' times' : ratio >= 2.5 ? 'about three times' : ratio >= 1.75 ? 'about twice' : 'about 1.5 times';
-        set('g-ratio', 'Two-bedrooms have sold ' + words + ' as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after.');
+        set('g-ratio', 'Over the last 5 years, two-bedrooms have sold ' + words + ' as often as one-bedrooms &mdash; a narrower buyer pool for the smaller units usually means more negotiating room if a 1-bed is what you&rsquo;re after.');
       } else {
         set('g-ratio', 'One- and two-bedrooms have sold at a similar pace over the last 5 years.');
       }
