@@ -4,6 +4,8 @@
 
 Source page: https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/
 
+![Camino Villas condo community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
+
 *Carmel Valley · 92130*
 
 ## Camino Villas Condos for Sale

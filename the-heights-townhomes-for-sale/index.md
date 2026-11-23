@@ -4,6 +4,8 @@
 
 Source page: https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/
 
+![The Heights townhome community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-heights-townhomes-carmel-valley.webp)
+
 *Carmel Valley · 92130*
 
 ## The Heights Townhomes for Sale

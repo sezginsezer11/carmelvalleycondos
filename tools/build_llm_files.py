@@ -526,6 +526,8 @@ def write_headers():
 
 
 def main():
+    import responsive_images   # widths, heights and srcset on every photo
+    responsive_images.main()
     results = []
     for path, section, blurb in PAGES:
         if add_alternate_link(path):

@@ -28,11 +28,15 @@ As a Keller Williams Realty agent who has worked these streets for 11+ years, I 
 
 A starting point for your search — each links to current availability and local detail.
 
+![Arborlake community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/arborlake-condos-carmel-valley.jpg)
+
 Condos
 
 ### Arborlake
 
 [View Listings →](https://www.carmelvalleycondos.com/arborlake-carmel-valley/)
+
+![Carmel Pointe community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/carmel-pointe-condos-carmel-valley.jpg)
 
 Condos
 
@@ -40,11 +44,15 @@ Condos
 
 [View Listings →](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/)
 
+![The Lakes community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg)
+
 Condos
 
 ### The Lakes
 
 [View Listings →](https://www.carmelvalley.com/condos-for-sale/the-lakes/)
+
+![Camino Villas community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/camino-villas-condos-carmel-valley.webp)
 
 Condos
 

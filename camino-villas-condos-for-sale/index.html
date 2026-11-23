@@ -63,8 +63,10 @@
   .breadcrumb .current{color:var(--ink);font-weight:500}
 
   /* ============ PAGE HERO (interior) ============ */
-  .page-hero{position:relative;min-height:46vh;display:flex;align-items:center;background:linear-gradient(rgba(26,31,36,.58),rgba(38,56,68,.76)),url('/images/camino-villas-condos-carmel-valley.webp') center/cover no-repeat;color:var(--white)}
-  .page-hero-inner{max-width:820px;padding:70px 28px;margin:0 auto;text-align:center}
+  .page-hero{position:relative;min-height:46vh;display:flex;align-items:center;background:#2a3138;color:var(--white);overflow:hidden}
+  .page-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .page-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(rgba(26,31,36,.58),rgba(38,56,68,.76))}
+  .page-hero-inner{position:relative;z-index:2;max-width:820px;padding:70px 28px;margin:0 auto;text-align:center}
   .page-hero .eyebrow{font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;font-weight:500}
   .page-hero h1{font-family:var(--serif);font-size:clamp(34px,4.8vw,58px);font-weight:600;line-height:1.08;letter-spacing:.01em}
   .page-hero p{font-size:clamp(15px,1.6vw,18px);font-weight:300;margin:22px auto 0;max-width:600px;color:rgba(255,255,255,.9)}
@@ -259,6 +261,7 @@
 
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero" style="padding:0">
+  <img class="page-hero-img" src="/images/camino-villas-condos-carmel-valley.webp" alt="Camino Villas condo community in Carmel Valley, San Diego" fetchpriority="high" sizes="100vw" width="1250" height="764" srcset="/images/camino-villas-condos-carmel-valley-640.webp 640w, /images/camino-villas-condos-carmel-valley-960.webp 960w, /images/camino-villas-condos-carmel-valley.webp 1250w">
   <div class="page-hero-inner">
     <div class="eyebrow">Carmel Valley &middot; 92130</div>
     <h1>Camino Villas Condos for Sale</h1>
@@ -276,7 +279,7 @@
       <p>As a Keller Williams Realty agent who has worked this community for 11+ years, I can walk you through current HOA details, recent comparable sales, and what to look for in a specific building or floor plan. You can also browse <a href="https://www.carmelvalley.com/condos-for-sale/camino-villas/">Camino Villas condos</a> on my Carmel Valley Homes search site.</p>
     </div>
     <div class="intro-img">
-      <img src="/images/camino-villas-pool-carmel-valley.webp" alt="Community pool at Camino Villas condo community in Carmel Valley, San Diego">
+      <img loading="lazy" sizes="(max-width: 900px) 100vw, 45vw" src="/images/camino-villas-pool-carmel-valley.webp" alt="Community pool at Camino Villas condo community in Carmel Valley, San Diego" width="1500" height="1000" srcset="/images/camino-villas-pool-carmel-valley-640.webp 640w, /images/camino-villas-pool-carmel-valley-960.webp 960w, /images/camino-villas-pool-carmel-valley-1280.webp 1280w">
     </div>
   </div>
 </section>

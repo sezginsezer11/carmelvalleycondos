@@ -28,11 +28,15 @@ As a Keller Williams Realty agent who has worked these streets for 11+ years, I 
 
 A starting point for your search — each links to current availability and local detail.
 
+![Palmilla community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/palmilla-townhomes-carmel-valley.jpg)
+
 Townhomes
 
 ### Palmilla
 
 [View Listings →](https://www.carmelvalley.com/townhomes-for-sale/palmilla/)
+
+![Andalucia community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/andalucia-townhomes-carmel-valley.jpg)
 
 Townhomes
 
@@ -40,11 +44,15 @@ Townhomes
 
 [View Listings →](https://www.carmelvalley.com/townhomes-for-sale/andalucia/)
 
+![Pacifica community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/pacifica-townhomes-carmel-valley.jpg)
+
 Townhomes
 
 ### Pacifica
 
 [View Listings →](https://www.carmelvalley.com/townhomes-for-sale/pacifica/)
+
+![The Heights community in Carmel Valley, San Diego](https://www.carmelvalleycondos.com/images/the-heights-townhomes-carmel-valley.webp)
 
 Townhomes
 

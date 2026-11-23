@@ -113,7 +113,7 @@
   .comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
   .comm-card{background:var(--paper);border:1px solid var(--line);overflow:hidden;transition:transform .3s ease,box-shadow .3s ease}
   .comm-card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(38,56,68,.14)}
-  .comm-card .cc-img{height:200px;background-size:cover;background-position:center}
+  .comm-card .cc-img{height:200px;width:100%;object-fit:cover}
   .comm-card .cc-body{padding:24px}
   .comm-card .cc-type{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
   .comm-card h3{font-family:var(--serif);font-size:23px;font-weight:600;margin-bottom:16px}
@@ -298,7 +298,7 @@
       <p>As a Keller Williams Realty agent who has worked these streets for 11+ years, I help buyers and sellers move with confidence &mdash; backed by real market data, not guesswork.</p>
     </div>
     <div class="intro-img">
-      <img src="/images/carmel-valley-condos-for-sale.jpg" alt="Carmel Valley condo community in San Diego">
+      <img loading="lazy" sizes="(max-width: 900px) 100vw, 45vw" src="/images/carmel-valley-condos-for-sale.jpg" alt="Carmel Valley condo community in San Diego" width="1275" height="682" srcset="/images/carmel-valley-condos-for-sale-640.webp 640w, /images/carmel-valley-condos-for-sale-960.webp 960w, /images/carmel-valley-condos-for-sale.jpg 1275w">
     </div>
   </div>
 </section>
@@ -313,7 +313,7 @@
     </div>
     <div class="comm-grid">
       <div class="comm-card">
-        <div class="cc-img" style="background-image:url('/images/arborlake-condos-carmel-valley.jpg')"></div>
+        <img class="cc-img" src="/images/arborlake-condos-carmel-valley.jpg" alt="Arborlake community in Carmel Valley, San Diego" loading="lazy" sizes="(max-width: 600px) 92vw, (max-width: 900px) 46vw, 360px" width="1275" height="714" srcset="/images/arborlake-condos-carmel-valley-640.webp 640w, /images/arborlake-condos-carmel-valley-960.webp 960w, /images/arborlake-condos-carmel-valley.jpg 1275w">
         <div class="cc-body">
           <div class="cc-type">Condos</div>
           <h3>Arborlake</h3>
@@ -321,7 +321,7 @@
         </div>
       </div>
       <div class="comm-card">
-        <div class="cc-img" style="background-image:url('/images/carmel-pointe-condos-carmel-valley.jpg')"></div>
+        <img class="cc-img" src="/images/carmel-pointe-condos-carmel-valley.jpg" alt="Carmel Pointe community in Carmel Valley, San Diego" loading="lazy" sizes="(max-width: 600px) 92vw, (max-width: 900px) 46vw, 360px" width="1275" height="840" srcset="/images/carmel-pointe-condos-carmel-valley-640.webp 640w, /images/carmel-pointe-condos-carmel-valley-960.webp 960w, /images/carmel-pointe-condos-carmel-valley.jpg 1275w">
         <div class="cc-body">
           <div class="cc-type">Condos</div>
           <h3>Carmel Pointe</h3>
@@ -329,7 +329,7 @@
         </div>
       </div>
       <div class="comm-card">
-        <div class="cc-img" style="background-image:url('/images/the-lakes-condos-carmel-valley.jpg')"></div>
+        <img class="cc-img" src="/images/the-lakes-condos-carmel-valley.jpg" alt="The Lakes community in Carmel Valley, San Diego" loading="lazy" sizes="(max-width: 600px) 92vw, (max-width: 900px) 46vw, 360px" width="1275" height="956" srcset="/images/the-lakes-condos-carmel-valley-640.webp 640w, /images/the-lakes-condos-carmel-valley-960.webp 960w, /images/the-lakes-condos-carmel-valley.jpg 1275w">
         <div class="cc-body">
           <div class="cc-type">Condos</div>
           <h3>The Lakes</h3>
@@ -337,7 +337,7 @@
         </div>
       </div>
       <div class="comm-card">
-        <div class="cc-img" style="background-image:url('/images/camino-villas-condos-carmel-valley.webp')"></div>
+        <img class="cc-img" src="/images/camino-villas-condos-carmel-valley.webp" alt="Camino Villas community in Carmel Valley, San Diego" loading="lazy" sizes="(max-width: 600px) 92vw, (max-width: 900px) 46vw, 360px" width="1250" height="764" srcset="/images/camino-villas-condos-carmel-valley-640.webp 640w, /images/camino-villas-condos-carmel-valley-960.webp 960w, /images/camino-villas-condos-carmel-valley.webp 1250w">
         <div class="cc-body">
           <div class="cc-type">Condos</div>
           <h3>Camino Villas</h3>

@@ -87,7 +87,7 @@ def main():
         for c in cs:
             u = link(c)
             ph = photos.get(c["n"])
-            img = (f'<img src="{ph}" alt="{e(c["n"])} in Carmel Valley" loading="lazy" width="320" height="200">'
+            img = (f'<img src="{ph}" alt="{e(c["n"])} in Carmel Valley" loading="lazy" width="320" height="200" sizes="(max-width: 460px) 92vw, 260px">'
                    if ph else f'<div class="cc-ph" aria-hidden="true">{e(c["n"][:1])}</div>')
             dt = "Detached condos" if hub.get("types", {}).get(c["n"]) == "detached" else ""
             meta = " &middot; ".join(s for s in [f'{c["homes"]} homes' if c.get("homes") else "", dt] if s) or "Condos &amp; townhomes"

@@ -151,7 +151,7 @@ def render_similar(c):
     out = []
     for k in c["similar"]["cards"]:
         if k.get("img"):
-            img = f'<div class="cmp-img"><img src="{k["img"]}" alt="{k["alt"]}" loading="lazy"></div>'
+            img = f'<div class="cmp-img"><img src="{k["img"]}" alt="{k["alt"]}" loading="lazy" sizes="(max-width: 860px) 46vw, 280px"></div>'
         else:
             img = f'<div class="cmp-img ph" aria-hidden="true">{k["name"]}</div>'
         out.append(f'''        <a class="cmp-card" href="{k["href"]}">
