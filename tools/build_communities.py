@@ -209,6 +209,8 @@ def render_jsonld(c):
         {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
         {"@type": "ListItem", "position": 2, "name": c["parent_name"], "item": SITE + c["parent_url"]},
         {"@type": "ListItem", "position": 3, "name": c["name"], "item": url}]}
+    if c["parent_url"] == "/":
+        crumbs["itemListElement"] = [crumbs["itemListElement"][0], {"@type": "ListItem", "position": 2, "name": c["name"], "item": url}]
     agent = {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Sez Sezer",
              "image": SITE + "/images/sez-sezer-carmel-valley-realtor.jpg", "url": url, "mainEntityOfPage": url,
              "telephone": "+1-858-436-6585", "email": "sez@carmelvalley.com", "priceRange": "$$$",
@@ -419,6 +421,8 @@ def build(slug):
     missing = set(re.findall(r"\{\{(\w+)\}\}", t)) - set(v)
     if missing:
         raise SystemExit(f"{slug}: template needs {sorted(missing)}")
+    if c["parent_url"] == "/":  # parent is the home page (the community directory): Home / Name
+        t = t.replace('    <a href="{{parent_url}}">{{parent_name}}</a>\n    <span class="sep">/</span>\n', "")
     out = re.sub(r"\{\{(\w+)\}\}", lambda m: str(v[m.group(1)]), t)
     dest = os.path.join(ROOT, c["path"].strip("/"), "index.html")
     os.makedirs(os.path.dirname(dest), exist_ok=True)

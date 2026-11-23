@@ -1,22 +1,29 @@
 #!/usr/bin/env python3
-"""Build the public communities hub: /carmel-valley-communities/.
+"""Build the home page: the directory of every Carmel Valley condo and townhome community.
 
     python3 tools/build_communities_hub.py
+
+The SEO plan (~/seo-plan/plans/carmelvalleycondos.com.md, Option A, chosen 2026-11-23) makes the home page
+a directory: title/H1/meta from the plan, map, sortable table, cards, how to choose, FAQ. The old
+/carmel-valley-communities/ hub 301s here (see _redirects).
 
 Inputs
 - community-atlas/index.html   the DATA line (boundaries, areas, home counts) from tools/build_atlas.py
 - tools/hub_communities.json   which communities appear (condos & townhomes), area text, links, photos
+- tools/atlas_home_types.json  condo / townhome type per community
+- tools/communities/*.json     verified year built, for communities with a guide
 - tools/community-template.html  site CSS, masthead, contact block and footer (so the look stays in sync)
 Run tools/build_atlas.py first when the map changes, and tools/build_llm_files.py after. Stdlib only.
 """
+import glob
 import html
 import json
 import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PATH = "/carmel-valley-communities/"
-OUT = os.path.join(ROOT, "carmel-valley-communities", "index.html")
+PATH = "/"
+OUT = os.path.join(ROOT, "index.html")
 SITE = "https://www.carmelvalleycondos.com"
 HERO = "/images/carmel-valley-condos-townhomes-san-diego.jpg"
 COLORS = {"n": "#0d8f84", "s": "#1456e8", "cch": "#c27a0e", "phr": "#e0691c", "tdm": "#3f9a2a",
@@ -38,8 +45,21 @@ def load():
     return data, hub, tpl
 
 
+def verified_facts():
+    """Year built from the community guides (MLS-verified). Other communities show a dash."""
+    built = {}
+    for f in glob.glob(os.path.join(ROOT, "tools", "communities", "*.json")):
+        c = json.load(open(f, encoding="utf-8"))
+        for fact in c.get("facts", []):
+            if fact.get("icon") == "built":
+                built[c["name"]] = html.unescape(fact["value"])
+    return built
+
+
 def main():
     data, hub, tpl = load()
+    types = json.load(open(os.path.join(ROOT, "tools", "atlas_home_types.json"), encoding="utf-8"))
+    built = verified_facts()
     by_name = {c["n"]: c for c in data["c"]}
     missing = [n for n in hub["communities"] if n not in by_name]
     if missing:
@@ -94,6 +114,22 @@ def main():
         f'<a class="chip" href="#area-{slug(l)}" data-a="{k}" style="--ac:{COLORS.get(k)}"><span class="dot"></span>{e(SHORT.get(k, l))} <b>{len(cs)}</b></a>'
         for k, l, cs in groups)
 
+    # ---------- sortable table (verified facts only) ----------
+    label_of = {k: l for k, l in areas}
+    tname = {"condo": "Condo", "town": "Townhome"}
+    rows = []
+    for c in sorted(comms, key=lambda c: c["n"]):
+        u = link(c)
+        name = f'<a href="{u}">{e(c["n"])}</a>' if u else e(c["n"])
+        t = tname.get(types.get(c["n"]), "Condo / townhome")
+        h = c.get("homes")
+        b = built.get(c["n"])
+        rows.append(
+            f'<tr><td data-v="{e(c["n"])}">{name}</td><td data-v="{e(label_of.get(c["sub"], ""))}">{e(SHORT.get(c["sub"], label_of.get(c["sub"], "")))}</td>'
+            f'<td data-v="{e(t)}">{e(t)}</td><td data-v="{h or 0}" class="num">{f"{h:,}" if h else "&ndash;"}</td>'
+            f'<td data-v="{e(b[:4]) if b else "9999"}" class="num">{e(b) if b else "&ndash;"}</td></tr>')
+    table_html = "\n        ".join(rows)
+
     # ---------- FAQ ----------
     biggest = max(groups, key=lambda g: len(g[2]))
     n_big = len(biggest[2])
@@ -111,23 +147,37 @@ def main():
         ("Are there newer condos and townhomes in Carmel Valley?",
          "Yes. Pacific Highlands Ranch, in the east of Carmel Valley, was built out from the 2000s onward, so its attached homes are newer. "
          "Many communities there carry a Mello-Roos tax on top of the HOA fee, so compare the full monthly cost."),
+        ("Is there a list of every condo community in Carmel Valley?",
+         f"Yes. The table on this page lists all {len(comms)} condo and townhome communities in Carmel Valley with their area, type and "
+         "number of homes. Tap a column heading to sort it, or tap a community name to open its guide."),
         ("How do I find out what is for sale in a specific community?",
          "Tap the community on the map or its card below. Where we have a community guide, it shows live listings, recent sales, "
-         "HOA details and schools. For any other community, call or email Sez Sezer for current listings and recent sales."),
+         "monthly dues and schools. For any other community, call or email Sez Sezer for current listings and recent sales."),
     ]
     faq_html = "\n".join(f'      <details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in faqs)
 
     # ---------- JSON-LD ----------
     ld = [
-        {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Carmel Valley Condo & Townhome Communities",
-         "url": SITE + PATH, "about": {"@type": "Place", "name": "Carmel Valley, San Diego, CA 92130"},
+        {"@context": "https://schema.org", "@type": "WebSite", "name": "Carmel Valley Condos", "url": SITE + "/"},
+        {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Every Condo and Townhome Community in Carmel Valley",
+         "url": SITE + PATH, "isPartOf": {"@type": "WebSite", "url": SITE + "/"},
+         "about": {"@type": "Place", "name": "Carmel Valley, San Diego, CA 92130"},
          "mainEntity": {"@type": "ItemList", "numberOfItems": len(comms), "itemListElement": [
              dict({"@type": "ListItem", "position": i + 1, "name": c["n"]},
                   **({"url": SITE + pages[c["n"]]} if c["n"] in pages else {}))
              for i, c in enumerate(c for _, _, cs in groups for c in cs)]}},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
-            {"@type": "ListItem", "position": 2, "name": "Carmel Valley Communities", "item": SITE + PATH}]},
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"}]},
+        {"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Sez Sezer",
+         "image": SITE + "/images/sez-sezer-carmel-valley-realtor.jpg", "url": SITE + "/", "mainEntityOfPage": SITE + "/",
+         "telephone": "+1-858-436-6585", "email": "sez@carmelvalley.com", "priceRange": "$$$",
+         "description": "Real estate agent with Keller Williams Realty (DRE #01988197) specializing in Carmel Valley condo and townhome communities in San Diego, with more than 11 years of local experience.",
+         "address": {"@type": "PostalAddress", "streetAddress": "12750 High Bluff Drive", "addressLocality": "San Diego",
+                     "addressRegion": "CA", "postalCode": "92130", "addressCountry": "US"},
+         "areaServed": {"@type": "Place", "name": "Carmel Valley, San Diego, CA 92130"},
+         "memberOf": {"@type": "Organization", "name": "Keller Williams Realty"},
+         "sameAs": ["https://www.carmelvalley.com/", "https://www.carmelvalleyhomesforsale.com/",
+                    "https://www.homesforsaleinranchosantafe.com/"]},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]},
     ]
@@ -145,9 +195,13 @@ def main():
         "{{contact_lead}}", "Tell me what matters to you (size, budget, schools, commute) and I&rsquo;ll point you to the communities that fit, with current listings and recent sales for each.")
     hide_js = tpl[tpl.rindex("<script>"):tpl.rindex("</script>") + len("</script>")]
 
-    title = "Carmel Valley Condo & Townhome Communities: Map by Area"
-    desc = f"Map of all {len(comms)} Carmel Valley condo and townhome communities by area, with home counts and links to community guides. San Diego 92130."
-    assert len(desc) <= 155, len(desc)
+    title = "Carmel Valley Condo & Townhome Communities (Directory)"
+    desc = "A directory of every condo and townhome community in Carmel Valley, San Diego, with home counts and links to each community guide."
+    assert len(title) <= 60 and len(desc) <= 155, (len(title), len(desc))
+    listings = tpl[tpl.index('<section class="listings" id="listings"'):]
+    listings = listings[:listings.index("</section>") + len("</section>")]
+    listings = listings.replace('style="padding-top:12px;padding-bottom:16px"', 'style="padding:8px 0 24px"').replace(
+        "{{name}} Homes for Sale Listings", "Carmel Valley Condo and Townhome Listings")
 
     page = f'''<!doctype html>
 <html lang="en">
@@ -169,7 +223,35 @@ def main():
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="/assets/rs-embed.css?v=3">
+<script src="/assets/rs-embed.js?v=3" defer></script>
 <style>{css}
+  /* ============ HOME: DIRECTORY ============ */
+  .hub-intro .lead-links{{max-width:680px;margin:10px auto 0;font-size:15px;color:var(--label)}}
+  .hub-intro .lead-links a{{font-weight:600}}
+  .dir-sec{{padding:36px 0 8px}}
+  .dir-scroll{{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--white);max-width:1100px;margin:0 auto}}
+  .dir-table{{width:100%;border-collapse:collapse;font-size:14.5px}}
+  .dir-table th,.dir-table td{{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}}
+  .dir-table tbody tr:last-child td{{border-bottom:0}}
+  .dir-table th{{background:var(--paper);font-size:13px;color:var(--label);font-weight:700;position:sticky;top:0}}
+  .dir-table th button{{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:4px}}
+  .dir-table th button::after{{content:"\\2195";opacity:.45;font-size:12px}}
+  .dir-table th[aria-sort="ascending"] button::after{{content:"\\2191";opacity:1}}
+  .dir-table th[aria-sort="descending"] button::after{{content:"\\2193";opacity:1}}
+  .dir-table td:first-child,.dir-table th:first-child{{position:sticky;left:0;z-index:1;background:var(--white);box-shadow:1px 0 0 var(--line)}}
+  .dir-table th:first-child{{background:var(--paper);z-index:2}}
+  @media(max-width:760px){{.dir-table{{font-size:13.5px}}.dir-table th,.dir-table td{{padding:9px 10px}}}}
+  .dir-table .num{{text-align:right}}
+  .dir-table th.num button{{justify-content:flex-end;width:100%}}
+  .dir-table a{{font-weight:600}}
+  .dir-note{{text-align:center;font-size:13px;color:var(--label);margin-top:10px}}
+  .choose{{padding:36px 0 8px}}
+  .choose-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:1100px;margin:0 auto}}
+  .choose-grid div{{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 18px}}
+  .choose-grid h3{{font-size:16.5px;font-weight:800;margin-bottom:6px}}
+  .choose-grid p{{font-size:15px;color:#333a42}}
+  .choose .answer{{max-width:820px;margin:0 auto 18px;font-size:16px;color:#333a42}}
   /* ============ COMMUNITIES HUB ============ */
   .sr{{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
   .hub-intro{{padding:40px 0 8px;text-align:center}}
@@ -251,21 +333,19 @@ def main():
 
 {masthead}
 
-<nav class="breadcrumb" aria-label="Breadcrumb">
-  <div class="wrap"><a href="/">Home</a><span class="sep">/</span><span class="current">Carmel Valley Communities</span></div>
-</nav>
-
 <section class="hub-intro">
   <div class="wrap">
     <span class="eyebrow">Carmel Valley &middot; San Diego 92130</span>
-    <h1>Carmel Valley Condo &amp; Townhome Communities</h1>
-    <p>Every condo and townhome community in Carmel Valley on one map, grouped by area. Tap a community to see where it sits, how many homes it has, and where to learn more.</p>
+    <h1>Every Condo and Townhome Community in Carmel Valley</h1>
+    <p data-speakable>Carmel Valley (San Diego, 92130) has {len(comms)} condo and townhome communities with more than {homes_floor} homes between them, spread across {len(groups)} areas. This directory shows each one on a map and in a sortable list, with its type and number of homes, and links to a full guide where one exists.</p>
+    <p class="lead-links">For everything currently on the market, browse <a href="https://www.carmelvalley.com/condos-for-sale/">Carmel Valley condos for sale</a> or <a href="https://www.carmelvalley.com/townhomes-for-sale/">Carmel Valley townhomes for sale</a>.</p>
     <div class="hub-stats"><div><b>{len(comms)}</b>communities</div><div><b>{homes_floor}+</b>homes</div><div><b>{len(groups)}</b>areas</div></div>
   </div>
 </section>
 
 <section class="map-sec" id="map-section">
   <div class="wrap">
+    <div class="sec-head" style="margin-bottom:12px"><h2>Carmel Valley Condo Community Map</h2></div>
     <div class="chips" id="chips">{chips}</div>
     <div class="map-box">
       <div id="map" role="region" aria-label="Map of Carmel Valley condo and townhome communities"></div>
@@ -276,10 +356,45 @@ def main():
   </div>
 </section>
 
-<div class="areas-wrap" id="areas">
-<div class="wrap"><div class="sec-head" style="margin-bottom:8px"><h2>Communities by Area</h2><p>Each area has its own feel, prices and mix of homes. Start with the area, then compare the communities in it.</p></div></div>
+<section class="dir-sec" id="list">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:14px"><h2>List of Condo and Townhome Communities in Carmel Valley</h2><p>All {len(comms)} communities in one table. Tap a column heading to sort.</p></div>
+    <div class="dir-scroll">
+      <table class="dir-table" id="dirTable">
+        <thead><tr><th scope="col" aria-sort="ascending"><button type="button">Community</button></th><th scope="col"><button type="button">Area</button></th><th scope="col"><button type="button">Type</button></th><th scope="col" class="num"><button type="button">Homes</button></th><th scope="col" class="num"><button type="button">Year built</button></th></tr></thead>
+        <tbody>
+        {table_html}
+        </tbody>
+      </table>
+    </div>
+    <p class="dir-note">Home counts are from the California Title Company community chart. Year built is shown only where we have verified it from MLS records.</p>
+  </div>
+</section>
+
+<div class="areas-wrap" id="communities">
+<div class="wrap"><div class="sec-head" style="margin-bottom:8px"><h2>Carmel Valley Condo and Townhome Complexes by Area</h2><p>Each area has its own feel, prices and mix of homes. Start with the area, then compare the communities in it.</p></div></div>
 {chr(10).join(sec)}
 </div>
+
+<section class="choose" id="choose">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:14px"><h2>How to Choose a Carmel Valley Condo Community</h2></div>
+    <p class="answer">Start with location, then compare what you pay each month and what you get for it. Two homes at the same price can cost very different amounts to own once monthly dues and Mello-Roos are added, and a community&rsquo;s age, size and layout shape day-to-day life more than its name does.</p>
+    <div class="choose-grid">
+      <div><h3>Area and commute</h3><p>Communities south of Del Mar Heights Road are closest to the shops, offices and I-5/SR-56. Pacific Highlands Ranch is newer and further east; Torrey Hills sits near Sorrento Valley.</p></div>
+      <div><h3>Condo or townhome</h3><p>Condos are often single-level with shared walls above or below. Townhomes usually have two or more levels, an attached garage and no one overhead.</p></div>
+      <div><h3>Full monthly cost</h3><p>Add the monthly dues, any Mello-Roos tax and property tax to the mortgage. Newer communities often carry Mello-Roos; older ones may have lower dues but older systems.</p></div>
+      <div><h3>Schools</h3><p>Most of Carmel Valley is in the Del Mar Union and San Dieguito Union districts, but school assignment depends on the address. Each community guide lists its schools.</p></div>
+      <div><h3>Size and turnover</h3><p>Larger communities have more sales each year, so prices are easier to compare and there is more to choose from. Smaller ones come up less often.</p></div>
+      <div><h3>Rules and amenities</h3><p>Pools, gyms, pet rules and rental limits differ by community. Ask for the HOA documents before you commit, and check the reserves.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="listings-head" style="padding:36px 0 0">
+  <div class="wrap"><div class="sec-head" style="margin-bottom:12px"><h2>Condos and Townhomes on the Market Now</h2><p>Live MLS listings across Carmel Valley (92130). Tap to search full screen.</p></div></div>
+</section>
+{listings}
 
 <section class="faq" id="faq">
   <div class="wrap">
@@ -295,9 +410,9 @@ def main():
 {jsonld}
 
 <nav class="bottom-nav" aria-label="Jump to section">
+  <a href="#expand-map"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Find Homes</a>
   <a href="#map-section"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.1 7-12a7 7 0 0 0-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Map</a>
-  <a href="#areas"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Areas</a>
-  <a href="#faq"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.8-2.5 2-2.5 4"/><circle cx="12" cy="16.5" r=".6"/></svg>FAQ</a>
+  <a href="#communities"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Communities</a>
   <a href="#contact"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Contact</a>
   <a href="#" class="bn-menu" onclick="event.preventDefault();window.__showMasthead&&window.__showMasthead();document.getElementById('pnav').classList.toggle('open')"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Menu</a>
 </nav>
@@ -351,6 +466,20 @@ var HUB={json.dumps(mdata, separators=(",", ":"))};
     if(area&&C[i].a!==area){{area=null;document.querySelectorAll('#chips .chip').forEach(function(c){{c.classList.remove('on');}});}}
     document.getElementById('map-section').scrollIntoView({{behavior:'smooth',block:'start'}});pick(i,true);}});}});
   style();
+}})();
+(function(){{
+  var t=document.getElementById('dirTable');if(!t)return;
+  var ths=t.querySelectorAll('th'),body=t.tBodies[0];
+  ths.forEach(function(th,i){{th.querySelector('button').addEventListener('click',function(){{
+    var asc=th.getAttribute('aria-sort')!=='ascending';
+    ths.forEach(function(x){{x.removeAttribute('aria-sort');}});th.setAttribute('aria-sort',asc?'ascending':'descending');
+    var num=th.classList.contains('num');
+    Array.prototype.slice.call(body.rows).sort(function(a,b){{
+      var x=a.cells[i].dataset.v,y=b.cells[i].dataset.v;
+      var r=num?(parseFloat(x)-parseFloat(y)):x.localeCompare(y);
+      if(num&&i===4){{if(x==='9999')return 1;if(y==='9999')return -1;}}
+      if(num&&i===3){{if(x==='0')return 1;if(y==='0')return -1;}}
+      return asc?r:-r;}}).forEach(function(r){{body.appendChild(r);}});}});}});
 }})();
 </script>
 <script>

@@ -6,13 +6,12 @@ Every page listed below has a clean Markdown version at the same path (index.md)
 
 ## Overview
 
-- [Carmel Valley Condos & Townhomes for Sale](https://www.carmelvalleycondos.com/index.md): Home page: Carmel Valley (San Diego, CA 92130) condos and townhomes for sale, communities, and how to work with Sez Sezer.
+- [Carmel Valley Condo & Townhome Communities (Directory)](https://www.carmelvalleycondos.com/index.md): Home page: directory of every condo and townhome community in Carmel Valley (San Diego, CA 92130) - map, sortable list with home counts, how to choose a community, live listings, and links to each community guide.
 
 ## Communities
 
 - [Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md): Guide to Carmel Valley condo communities, prices, HOA fees, and live 92130 condo listings.
 - [Carmel Valley Townhomes for Sale](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md): Guide to Carmel Valley townhome communities, prices, HOA fees, and live 92130 townhome listings.
-- [Carmel Valley Condo & Townhome Communities: Map by Area](https://www.carmelvalleycondos.com/carmel-valley-communities/index.md): Map of all Carmel Valley condo and townhome communities, grouped by area, with home counts and links to each community guide.
 - [Arborlake Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/arborlake-carmel-valley/index.md): Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs.
 - [Carmel Pointe Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md): Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs.
 - [The Lakes Condos for Sale](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs.
@@ -27,10 +26,9 @@ Every page listed below has a clean Markdown version at the same path (index.md)
 
 ## FAQs
 
-- [Carmel Valley Condos & Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/index.md): 5 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/).
+- [Carmel Valley Condo & Townhome Communities (Directory) - FAQs](https://www.carmelvalleycondos.com/index.md): 6 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/).
 - [Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/).
 - [Carmel Valley Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/).
-- [Carmel Valley Condo & Townhome Communities: Map by Area - FAQs](https://www.carmelvalleycondos.com/carmel-valley-communities/index.md): 5 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-communities/).
 - [Arborlake Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/arborlake-carmel-valley/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/arborlake-carmel-valley/).
 - [Carmel Pointe Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/).
 - [The Lakes Condos for Sale - FAQs](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/).

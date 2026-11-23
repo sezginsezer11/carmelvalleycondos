@@ -27,13 +27,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # (path, llms.txt section, one-line description)
 PAGES = [
     ("/", "Overview",
-     "Home page: Carmel Valley (San Diego, CA 92130) condos and townhomes for sale, communities, and how to work with Sez Sezer."),
+     "Home page: directory of every condo and townhome community in Carmel Valley (San Diego, CA 92130) - map, sortable list with home counts, how to choose a community, live listings, and links to each community guide."),
     ("/carmel-valley-condos-for-sale/", "Communities",
      "Guide to Carmel Valley condo communities, prices, HOA fees, and live 92130 condo listings."),
     ("/carmel-valley-townhomes-for-sale/", "Communities",
      "Guide to Carmel Valley townhome communities, prices, HOA fees, and live 92130 townhome listings."),
-    ("/carmel-valley-communities/", "Communities",
-     "Map of all Carmel Valley condo and townhome communities, grouped by area, with home counts and links to each community guide."),
     ("/arborlake-carmel-valley/", "Communities",
      "Arborlake: 190-unit lake-and-waterfall condo community (built 1986-1989) - prices by bedroom count, HOA, sold data, schools, FAQs."),
     ("/carmel-pointe-carmel-valley/", "Communities",
