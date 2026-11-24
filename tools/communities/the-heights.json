@@ -1,0 +1,403 @@
+{
+  "slug": "the-heights",
+  "name": "The Heights",
+  "path": "/the-heights-townhomes-for-sale/",
+  "type": "townhome",
+  "parent_name": "Townhomes",
+  "parent_url": "/carmel-valley-townhomes-for-sale/",
+  "api_community": "The Heights",
+  "seo": {
+    "title": "The Heights Townhomes for Sale | San Diego 92130 | Sez Sezer",
+    "description": "The Heights townhomes for sale in 92130: gated community built 2003, live listings, recent sold prices, dues of $392–$485/mo, schools and FAQs.",
+    "jsonld_description": "The Heights townhomes for sale in Carmel Valley, San Diego: a gated community built in 2003 on Carmel Country Road, with Spanish-Mediterranean architecture, a pool, spa, fitness center and clubhouse, 1- to 3-bedroom homes and monthly dues about $392-$485. Represented by Sez Sezer, Keller Williams Realty."
+  },
+  "geo": {
+    "lat": 32.9472,
+    "lng": -117.2281
+  },
+  "boundary": [
+    [
+      32.9489108,
+      -117.2287267
+    ],
+    [
+      32.9491833,
+      -117.2288688
+    ],
+    [
+      32.9491729,
+      -117.2290382
+    ],
+    [
+      32.9467452,
+      -117.2290546
+    ],
+    [
+      32.9464922,
+      -117.2287013
+    ],
+    [
+      32.9461684,
+      -117.2283297
+    ],
+    [
+      32.9461713,
+      -117.2282556
+    ],
+    [
+      32.9471902,
+      -117.2270615
+    ],
+    [
+      32.9474454,
+      -117.2273478
+    ],
+    [
+      32.9479081,
+      -117.2278239
+    ],
+    [
+      32.9482718,
+      -117.22819
+    ],
+    [
+      32.9485326,
+      -117.2284482
+    ],
+    [
+      32.9489108,
+      -117.2287267
+    ]
+  ],
+  "hero": {
+    "eyebrow": "Carmel Valley &middot; 92130",
+    "h1": "The Heights Townhomes for Sale",
+    "lead": "A gated, Spanish-Mediterranean community built in 2003 on Carmel Country Road, a 5-minute walk from Carmel Valley Middle School &mdash; guided by an agent who has specialized in this community for more than 11 years.",
+    "img": "/images/the-heights-townhomes-carmel-valley.webp",
+    "alt": "The Heights community in Carmel Valley, San Diego"
+  },
+  "facts": [
+    {
+      "icon": "price",
+      "value": "$585K&ndash;$939K",
+      "label": "Price"
+    },
+    {
+      "icon": "hoa",
+      "value": "$392&ndash;$485/mo",
+      "label": "Monthly Dues"
+    },
+    {
+      "icon": "sqft",
+      "value": "770&ndash;1,444",
+      "label": "Square Feet"
+    },
+    {
+      "icon": "units",
+      "value": "~215&ndash;225",
+      "label": "Total Units (listings vary)"
+    },
+    {
+      "icon": "built",
+      "value": "2003",
+      "label": "Year Built"
+    },
+    {
+      "icon": "mello",
+      "value": "~$389&ndash;$675/yr",
+      "label": "Mello-Roos"
+    },
+    {
+      "icon": "tax",
+      "value": "~1.1%",
+      "label": "Tax Rate"
+    },
+    {
+      "icon": "time",
+      "value": "~3 weeks",
+      "label": "Time to Sell"
+    }
+  ],
+  "location_intro": "Central Carmel Valley on Carmel Country Road, a short walk from Carmel Valley Middle School, the recreation center and library, and Del Mar Highlands Town Center.",
+  "schools": [
+    {
+      "level": "Elementary",
+      "name": "Carmel Del Mar Elementary",
+      "district": "Del Mar Union Elementary School District &middot; about 0.5 miles &middot; some listings show Carmel Creek; confirm with the district"
+    },
+    {
+      "level": "Middle School",
+      "name": "Carmel Valley Middle School",
+      "district": "San Dieguito Union High School District &middot; about 0.2 miles"
+    },
+    {
+      "level": "High School",
+      "name": "Torrey Pines High School",
+      "district": "San Dieguito Union &middot; among California's top-ranked public high schools"
+    },
+    {
+      "level": "High School (Alt.)",
+      "name": "Canyon Crest Academy",
+      "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+    }
+  ],
+  "nearby": [
+    [
+      "Carmel Valley Middle School",
+      "~5 min walk"
+    ],
+    [
+      "Carmel Creek Elementary",
+      "~9 min walk"
+    ],
+    [
+      "Carmel Valley Recreation Center",
+      "~9 min walk"
+    ],
+    [
+      "Carmel Valley Library",
+      "~10 min walk"
+    ],
+    [
+      "Del Mar Highlands Town Center",
+      "~11 min walk"
+    ],
+    [
+      "One Paseo",
+      "~15 min walk"
+    ],
+    [
+      "Torrey Pines High School",
+      "~0.7 miles"
+    ]
+  ],
+  "glance": {
+    "h2": "What 1, 2 and 3 Bedrooms Actually Cost",
+    "lede": "The Heights sells all three sizes, from about 770 sq ft to over 1,400. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.",
+    "cards": [
+      {
+        "beds": 1,
+        "count": "12 sales &middot; 5 yrs",
+        "size": "770&ndash;800 sq ft",
+        "median": "$630,000",
+        "range": "$545K&ndash;$682K"
+      },
+      {
+        "beds": 2,
+        "count": "9 sales &middot; 5 yrs",
+        "size": "1,145&ndash;1,244 sq ft",
+        "median": "$830,000",
+        "range": "$769K&ndash;$939K"
+      },
+      {
+        "beds": 3,
+        "count": "7 sales &middot; 5 yrs",
+        "size": "1,131&ndash;1,444 sq ft",
+        "median": "$993,888",
+        "range": "$790K&ndash;$1.1M"
+      }
+    ],
+    "ratio": "Over the last 5 years, sales split across all three sizes: 12 one-bedrooms, 9 two-bedrooms and 7 three-bedrooms, so there are recent comps for each."
+  },
+  "life": {
+    "lead": "Built in 2003, The Heights is a gated community on Carmel Country Road with tile roofs, stucco exteriors and mature palms. Most homes are recorded as condominiums in the MLS, even though the community is often called a townhome community, and they range from 1-bedroom starter homes to 3-bedrooms of more than 1,400 sq ft. See the full <a href=\"https://www.carmelvalley.com/condos-for-sale/the-heights/\">The Heights community profile</a>.",
+    "reasons": [
+      [
+        "Gated and quiet.",
+        "A controlled-access entrance and well-kept grounds give it a private, settled feel."
+      ],
+      [
+        "Walk to school and errands.",
+        "Carmel Valley Middle School is about 5 minutes on foot, and Del Mar Highlands Town Center about 11."
+      ],
+      [
+        "Room to grow.",
+        "With 1-, 2- and 3-bedroom homes, you can move up within the community instead of leaving it."
+      ]
+    ]
+  },
+  "hoa": {
+    "intro": "One monthly fee covers the gated grounds and the shared amenities.",
+    "fee": "$392&ndash;$485",
+    "fee_note": "2025 and 2026 listings show $392&ndash;$485, varying by unit. Confirm the current fee for a specific unit.",
+    "amenities": [
+      [
+        "gate",
+        "Gated entrance"
+      ],
+      [
+        "pool",
+        "Pool"
+      ],
+      [
+        "spa",
+        "Spa"
+      ],
+      [
+        "gym",
+        "Fitness center"
+      ],
+      [
+        "clubhouse",
+        "Clubhouse"
+      ],
+      [
+        "trees",
+        "Mature palm landscaping"
+      ]
+    ],
+    "also": "landscaping, exterior building maintenance and common-area upkeep.",
+    "compare": [
+      [
+        "The Lakes",
+        "$560&ndash;$599/mo",
+        100,
+        false
+      ],
+      [
+        "The Heights",
+        "$392&ndash;$485/mo",
+        81,
+        true
+      ],
+      [
+        "Arborlake",
+        "$450&ndash;$460/mo",
+        77,
+        false
+      ],
+      [
+        "Camino Villas",
+        "$375&ndash;$450/mo",
+        75,
+        false
+      ],
+      [
+        "Carmel Pointe",
+        "$340&ndash;$433/mo",
+        72,
+        false
+      ],
+      [
+        "Del Mar Villas",
+        "$330&ndash;$370/mo",
+        62,
+        false
+      ]
+    ],
+    "compare_note": "The Heights' dues are mid-range for nearby communities, and include a gated entrance. Ranges are from 2025&ndash;2026 MLS listings."
+  },
+  "similar": {
+    "h2": "Other Carmel Valley Communities to Compare",
+    "intro": "Worth comparing if you like The Heights' central location or its size range.",
+    "cards": [
+      {
+        "href": "/carmel-pointe-carmel-valley/",
+        "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
+        "alt": "Carmel Pointe condo community in Carmel Valley, San Diego",
+        "name": "Carmel Pointe",
+        "meta": "Dues $340&ndash;$433/mo &middot; Built 2001&ndash;2002",
+        "desc": "Built around the same time, with underground garage parking and 1- to 3-bedroom condos.",
+        "cta": "Carmel Pointe condos for sale"
+      },
+      {
+        "href": "/del-mar-villas-carmel-valley/",
+        "img": "/images/del-mar-villas-condos-carmel-valley.webp",
+        "alt": "Del Mar Villas condo community in Carmel Valley, San Diego",
+        "name": "Del Mar Villas",
+        "meta": "Dues $330&ndash;$370/mo",
+        "desc": "Nearby on Carmel Creek Road, with smaller 1- and 2-bedrooms and lower dues.",
+        "cta": "Del Mar Villas condos for sale"
+      },
+      {
+        "href": "/camino-villas-condos-for-sale/",
+        "img": "/images/camino-villas-condos-carmel-valley.webp",
+        "alt": "Camino Villas condo community in Carmel Valley, San Diego",
+        "name": "Camino Villas",
+        "meta": "Dues $375&ndash;$450/mo &middot; Built 1993&ndash;1997",
+        "desc": "A larger 1990s community of mostly 2-bedroom, 2-bath condos with a pool, spa and tennis.",
+        "cta": "Camino Villas condos for sale"
+      },
+      {
+        "href": "/arborlake-carmel-valley/",
+        "img": "/images/arborlake-condos-carmel-valley.jpg",
+        "alt": "Arborlake condo community in Carmel Valley, San Diego",
+        "name": "Arborlake",
+        "meta": "Dues $450&ndash;$460/mo &middot; Built 1986&ndash;1989",
+        "desc": "Built around a lake with fountains and waterfalls, with no Mello-Roos.",
+        "cta": "Arborlake condos for sale"
+      }
+    ]
+  },
+  "analysis": null,
+  "fit": {
+    "good": [
+      [
+        "First-Time Buyers",
+        "1-bedrooms of about 770&ndash;800 sq ft in a gated 92130 community, a few minutes' walk from the middle school."
+      ],
+      [
+        "Growing Families",
+        "2- and 3-bedroom homes with Carmel Valley Middle School down the street and Torrey Pines High under a mile away."
+      ],
+      [
+        "Downsizers",
+        "Gated, HOA-managed grounds with a pool, spa and clubhouse, close to shops, the library and the recreation center."
+      ]
+    ],
+    "weigh": [
+      [
+        "Mello-Roos on top of property tax",
+        "Most listings show about $389&ndash;$675 a year. Ask for the exact amount on a unit's tax bill."
+      ],
+      [
+        "Condo ownership",
+        "Most homes are recorded as condominiums, so check the floor plan and what the association insures before you buy."
+      ],
+      [
+        "Elementary assignment varies in listings",
+        "Most show Carmel Del Mar Elementary, some Carmel Creek. Confirm with Del Mar Union for the specific address."
+      ],
+      [
+        "Few sales a year",
+        "About 6 homes a year have sold here, so the right size may take time to come up."
+      ]
+    ]
+  },
+  "faq_h2": "The Heights FAQs",
+  "faq": [
+    {
+      "q": "What do homes at The Heights sell for?",
+      "a": "<p>See the recent sales above.</p>"
+    },
+    {
+      "q": "What are the monthly dues at The Heights?",
+      "a": "<p>MLS listings from 2025 and 2026 show $392–$485 a month, varying by unit. The fee covers the gated entrance, pool, spa, fitness center, clubhouse, landscaping and exterior maintenance. Confirm the current fee for a specific unit.</p>"
+    },
+    {
+      "q": "Does The Heights have Mello-Roos?",
+      "a": "<p>Yes. Most recent listings show a Mello-Roos (Community Facilities District) assessment of about $389–$675 a year on top of the regular property tax. Ask for the exact figure on a unit's tax bill.</p>"
+    },
+    {
+      "q": "Are homes at The Heights townhomes or condos?",
+      "a": "<p>The community is often called a townhome community, but most homes are recorded as condominiums in the MLS. Ask about the specific floor plan and what the association insures before you make an offer.</p>"
+    },
+    {
+      "q": "How big are the homes at The Heights?",
+      "a": "<p>1-bedrooms are about 770–800 sq ft, 2-bedrooms about 1,145–1,244 sq ft, and 3-bedrooms about 1,130–1,444 sq ft.</p>"
+    },
+    {
+      "q": "Is The Heights a gated community?",
+      "a": "<p>Yes. The Heights has a controlled-access gated entrance.</p>"
+    },
+    {
+      "q": "How quickly do homes at The Heights sell?",
+      "a": "<p>About 6 homes a year have sold here over the last 5 years, with a median of about 3 weeks on the market.</p>"
+    },
+    {
+      "q": "Which schools serve The Heights?",
+      "a": "<p>Most listings show Carmel Del Mar Elementary (Del Mar Union), Carmel Valley Middle School and Torrey Pines High School (San Dieguito Union); some show Carmel Creek Elementary instead. Canyon Crest Academy is a district-wide option. Confirm with each district for a specific address.</p>"
+    }
+  ],
+  "contact_lead": "Whether you're buying your first home or selling at The Heights, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+}

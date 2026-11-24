@@ -1,0 +1,429 @@
+{
+  "slug": "camino-villas",
+  "name": "Camino Villas",
+  "path": "/camino-villas-condos-for-sale/",
+  "type": "condo",
+  "parent_name": "Condos",
+  "parent_url": "/carmel-valley-condos-for-sale/",
+  "api_community": "Camino Villas",
+  "seo": {
+    "title": "Camino Villas Condos for Sale | San Diego 92130 | Sez Sezer",
+    "description": "Camino Villas condos for sale in 92130: live listings, recent sold prices, dues of $375–$450/mo, pool, spa, tennis, schools and FAQs.",
+    "jsonld_description": "Camino Villas condos for sale in Carmel Valley, San Diego: a 316-home condo community built 1993-1997 with a pool, spa, tennis courts and fitness room, monthly dues about $375-$450 and a small Mello-Roos assessment. Represented by Sez Sezer, Keller Williams Realty."
+  },
+  "geo": {
+    "lat": 32.9447,
+    "lng": -117.2368
+  },
+  "boundary": [
+    [
+      32.9455523,
+      -117.2344464
+    ],
+    [
+      32.9455778,
+      -117.2344428
+    ],
+    [
+      32.9455866,
+      -117.2360903
+    ],
+    [
+      32.9456201,
+      -117.2365639
+    ],
+    [
+      32.9456073,
+      -117.2370857
+    ],
+    [
+      32.9455966,
+      -117.2377503
+    ],
+    [
+      32.9456222,
+      -117.2378962
+    ],
+    [
+      32.9456895,
+      -117.2382342
+    ],
+    [
+      32.9450356,
+      -117.2386176
+    ],
+    [
+      32.9439693,
+      -117.2392196
+    ],
+    [
+      32.9435078,
+      -117.2381522
+    ],
+    [
+      32.9432269,
+      -117.2375195
+    ],
+    [
+      32.9437745,
+      -117.2369461
+    ],
+    [
+      32.9439718,
+      -117.2364494
+    ],
+    [
+      32.9441381,
+      -117.2359726
+    ],
+    [
+      32.9441539,
+      -117.2353025
+    ],
+    [
+      32.9441786,
+      -117.2349755
+    ],
+    [
+      32.9441513,
+      -117.2344313
+    ],
+    [
+      32.9455523,
+      -117.2344464
+    ]
+  ],
+  "hero": {
+    "eyebrow": "Carmel Valley &middot; 92130",
+    "h1": "Camino Villas Condos for Sale",
+    "lead": "A 316-home condo community from the mid-1990s, with a pool, spa and tennis courts set in mature, resort-style landscaping &mdash; guided by an agent who has specialized in this community for more than 11 years.",
+    "img": "/images/camino-villas-condos-carmel-valley.webp",
+    "alt": "Camino Villas condo community in Carmel Valley, San Diego"
+  },
+  "facts": [
+    {
+      "icon": "price",
+      "value": "$510K&ndash;$775K",
+      "label": "Price"
+    },
+    {
+      "icon": "hoa",
+      "value": "$375&ndash;$450/mo",
+      "label": "Monthly Dues"
+    },
+    {
+      "icon": "sqft",
+      "value": "624&ndash;974",
+      "label": "Square Feet"
+    },
+    {
+      "icon": "units",
+      "value": "316",
+      "label": "Total Units"
+    },
+    {
+      "icon": "built",
+      "value": "1993&ndash;1997",
+      "label": "Year Built"
+    },
+    {
+      "icon": "mello",
+      "value": "~$366&ndash;$540/yr",
+      "label": "Mello-Roos"
+    },
+    {
+      "icon": "tax",
+      "value": "~1.1%",
+      "label": "Tax Rate"
+    },
+    {
+      "icon": "time",
+      "value": "~2&ndash;3 weeks",
+      "label": "Time to Sell"
+    }
+  ],
+  "location_intro": "Central Carmel Valley on Caminito El Rincon and Ruette Alliante, next to Arborlake and Carmel Pointe and a block north of The Lakes.",
+  "schools": [
+    {
+      "level": "Elementary",
+      "name": "Carmel Del Mar Elementary",
+      "district": "Del Mar Union Elementary School District &middot; about 0.6 miles &middot; confirm assignment with the district"
+    },
+    {
+      "level": "Middle School",
+      "name": "Carmel Valley Middle School",
+      "district": "San Dieguito Union High School District &middot; about 0.4 miles"
+    },
+    {
+      "level": "High School",
+      "name": "Torrey Pines High School",
+      "district": "San Dieguito Union &middot; among California's top-ranked public high schools"
+    },
+    {
+      "level": "High School (Alt.)",
+      "name": "Canyon Crest Academy",
+      "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+    }
+  ],
+  "nearby": [
+    [
+      "Carmel Valley Recreation Center",
+      "~8 min walk"
+    ],
+    [
+      "Carmel Valley Middle School",
+      "~10 min walk"
+    ],
+    [
+      "One Paseo",
+      "~13 min walk"
+    ],
+    [
+      "Piazza Carmel (Vons, dining)",
+      "~13 min walk"
+    ],
+    [
+      "Del Mar Highlands Town Center",
+      "~15 min walk"
+    ],
+    [
+      "Carmel Valley Library",
+      "~16 min walk"
+    ],
+    [
+      "Torrey Pines High School",
+      "~1.1 miles"
+    ]
+  ],
+  "glance": {
+    "h2": "What a 1-Bed vs. a 2-Bed Actually Costs",
+    "lede": "Almost every home at Camino Villas is a 2-bedroom, 2-bath condo, with a few 1-bedrooms. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.",
+    "cards": [
+      {
+        "beds": 1,
+        "count": "6 sales &middot; 5 yrs",
+        "size": "624 sq ft",
+        "median": "$563,000",
+        "range": "$500K&ndash;$635K"
+      },
+      {
+        "beds": 2,
+        "count": "41 sales &middot; 5 yrs",
+        "size": "944&ndash;974 sq ft",
+        "median": "$761,250",
+        "range": "$610K&ndash;$832K"
+      }
+    ],
+    "ratio": "Over the last 5 years, 41 of 47 sales were 2-bedrooms. A 1-bedroom comes up about once a year, so if you want one, be ready to move when it lists."
+  },
+  "life": {
+    "lead": "Built in 1993&ndash;1997, Camino Villas is one of Carmel Valley's larger condo communities: 316 homes along two quiet loop streets, set among mature trees and lush common grounds. Nearly every home is a 2-bedroom, 2-bath condo of about 950 sq ft, which makes it one of the more affordable ways into a 92130 address. See the full <a href=\"https://www.carmelvalley.com/condos-for-sale/camino-villas/\">Camino Villas community profile</a>.",
+    "reasons": [
+      [
+        "Resort-style grounds.",
+        "The pool, spa and tennis courts sit among landscaping that has had 30 years to grow in."
+      ],
+      [
+        "Walk to the center of Carmel Valley.",
+        "The recreation center is about 8 minutes on foot, and One Paseo, Piazza Carmel and Del Mar Highlands are all within about 15 minutes."
+      ],
+      [
+        "Easy to compare.",
+        "With dozens of near-identical 2-bedroom sales, it's easy to see what a unit is worth and whether a list price is fair."
+      ]
+    ]
+  },
+  "hoa": {
+    "intro": "One monthly fee covers the grounds and the shared amenities.",
+    "fee": "$375&ndash;$450",
+    "fee_note": "Most 2025 sales listed $420; 2026 listings show $420&ndash;$450. Confirm the current fee for a specific unit.",
+    "amenities": [
+      [
+        "pool",
+        "Pool"
+      ],
+      [
+        "spa",
+        "Spa"
+      ],
+      [
+        "tennis",
+        "Tennis courts"
+      ],
+      [
+        "gym",
+        "Fitness room"
+      ],
+      [
+        "trees",
+        "Mature landscaping"
+      ],
+      [
+        "carport",
+        "Carport parking"
+      ]
+    ],
+    "also": "landscaping, exterior building maintenance and common-area upkeep. Listings show a sauna and guest parking as well.",
+    "compare": [
+      [
+        "The Lakes",
+        "$560&ndash;$599/mo",
+        100,
+        false
+      ],
+      [
+        "The Heights",
+        "$392&ndash;$485/mo",
+        81,
+        false
+      ],
+      [
+        "Arborlake",
+        "$450&ndash;$460/mo",
+        77,
+        false
+      ],
+      [
+        "Camino Villas",
+        "$375&ndash;$450/mo",
+        75,
+        true
+      ],
+      [
+        "Carmel Pointe",
+        "$340&ndash;$433/mo",
+        72,
+        false
+      ],
+      [
+        "Del Mar Villas",
+        "$330&ndash;$370/mo",
+        62,
+        false
+      ]
+    ],
+    "compare_note": "Camino Villas' dues sit in the middle for nearby condos. Ranges are from 2025&ndash;2026 MLS listings."
+  },
+  "similar": {
+    "h2": "Other Carmel Valley Condo Communities",
+    "intro": "Worth comparing if you like Camino Villas' central location or its price point.",
+    "cards": [
+      {
+        "href": "/arborlake-carmel-valley/",
+        "img": "/images/arborlake-condos-carmel-valley.jpg",
+        "alt": "Arborlake condo community in Carmel Valley, San Diego",
+        "name": "Arborlake",
+        "meta": "Dues $450&ndash;$460/mo &middot; Built 1986&ndash;1989",
+        "desc": "Right next door, built around a lake with fountains and waterfalls, with no Mello-Roos.",
+        "cta": "Arborlake condos for sale"
+      },
+      {
+        "href": "/carmel-pointe-carmel-valley/",
+        "img": "/images/carmel-pointe-condos-carmel-valley.jpg",
+        "alt": "Carmel Pointe condo community in Carmel Valley, San Diego",
+        "name": "Carmel Pointe",
+        "meta": "Dues $340&ndash;$433/mo &middot; Built 2001&ndash;2002",
+        "desc": "Newer buildings with underground garage parking and a utility-inclusive fee.",
+        "cta": "Carmel Pointe condos for sale"
+      },
+      {
+        "href": "/the-lakes-condos-for-sale/",
+        "img": "/images/the-lakes-condos-carmel-valley.jpg",
+        "alt": "The Lakes condo community in Carmel Valley, San Diego",
+        "name": "The Lakes",
+        "meta": "Dues $560&ndash;$599/mo &middot; Built 1984&ndash;1985",
+        "desc": "A block south: five small lakes and koi ponds, similar prices and no Mello-Roos.",
+        "cta": "The Lakes condos for sale"
+      },
+      {
+        "href": "/del-mar-villas-carmel-valley/",
+        "img": "/images/del-mar-villas-condos-carmel-valley.webp",
+        "alt": "Del Mar Villas condo community in Carmel Valley, San Diego",
+        "name": "Del Mar Villas",
+        "meta": "Dues $330&ndash;$370/mo",
+        "desc": "Smaller 1- and 2-bedrooms near the recreation center, with some of the lowest dues in 92130.",
+        "cta": "Del Mar Villas condos for sale"
+      },
+      {
+        "href": "/the-heights-townhomes-for-sale/",
+        "img": "/images/the-heights-townhomes-carmel-valley.webp",
+        "alt": "The Heights community in Carmel Valley, San Diego",
+        "name": "The Heights",
+        "meta": "Dues $392&ndash;$485/mo &middot; Built 2003",
+        "desc": "A newer gated community with 1-, 2- and 3-bedroom homes on Carmel Country Road.",
+        "cta": "The Heights homes for sale"
+      }
+    ]
+  },
+  "analysis": null,
+  "fit": {
+    "good": [
+      [
+        "First-Time Buyers",
+        "A 2-bedroom, 2-bath in 92130 at one of the area's lower price points, with top-rated schools nearby."
+      ],
+      [
+        "Downsizers",
+        "Single-level condo living, HOA-managed grounds, and the pool and spa without the upkeep."
+      ],
+      [
+        "Investors",
+        "Uniform 2-bedroom floor plans make rents and resale easy to predict, close to the Sorrento Valley and SR-56 job centers."
+      ]
+    ],
+    "weigh": [
+      [
+        "Mello-Roos on top of property tax",
+        "Most listings show about $366&ndash;$540 a year. Ask for the exact amount on a unit's tax bill."
+      ],
+      [
+        "Carport parking, not garages",
+        "Listings show assigned carport spaces; there are no private garages."
+      ],
+      [
+        "Few 1-bedrooms",
+        "Only about one 1-bedroom sells a year, so options at the lowest price point are limited."
+      ],
+      [
+        "1990s buildings",
+        "Interiors range from original to fully updated, so compare finishes carefully."
+      ]
+    ]
+  },
+  "faq_h2": "Camino Villas Condo FAQs",
+  "faq": [
+    {
+      "q": "What do Camino Villas condos sell for?",
+      "a": "<p>See the recent sales above.</p>"
+    },
+    {
+      "q": "What are the monthly dues at Camino Villas?",
+      "a": "<p>MLS listings show $375–$450 a month. Most 2025 sales listed $420, and 2026 listings show $420–$450. The fee covers the pool, spa, tennis courts, fitness room, landscaping and exterior maintenance. Confirm the current fee for a specific unit.</p>"
+    },
+    {
+      "q": "Does Camino Villas have Mello-Roos?",
+      "a": "<p>Yes. Most recent listings show a Mello-Roos (Community Facilities District) assessment of about $366–$540 a year on top of the regular property tax. Ask for the exact figure on a unit's tax bill.</p>"
+    },
+    {
+      "q": "How big are the condos at Camino Villas?",
+      "a": "<p>1-bedroom, 1-bath condos are about 624 sq ft, and 2-bedroom, 2-bath condos are about 944–974 sq ft. Over the last 5 years, 41 of 47 sales were 2-bedrooms.</p>"
+    },
+    {
+      "q": "What amenities does Camino Villas have?",
+      "a": "<p>A pool and spa, tennis courts, a fitness room and mature, resort-style landscaping. Listings also show a sauna, assigned carport parking and guest parking.</p>"
+    },
+    {
+      "q": "How quickly do Camino Villas condos sell?",
+      "a": "<p>About 9 homes a year have sold here over the last 5 years, with a median of about 17 days on the market.</p>"
+    },
+    {
+      "q": "Which schools serve Camino Villas?",
+      "a": "<p>Listings show Carmel Del Mar Elementary (Del Mar Union), Carmel Valley Middle School and Torrey Pines High School (San Dieguito Union). Canyon Crest Academy is a district-wide option. School assignments can change, so confirm with each district for a specific address.</p>"
+    },
+    {
+      "q": "How does Camino Villas compare to Arborlake next door?",
+      "a": "<p>Arborlake is older (1986–1989), built around a lake, with higher dues ($450–$460) and no Mello-Roos. Camino Villas is newer and larger, with mostly 2-bedroom, 2-bath condos and lower dues, but a small Mello-Roos assessment.</p>"
+    }
+  ],
+  "contact_lead": "Whether you're buying your first condo or selling at Camino Villas, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+}

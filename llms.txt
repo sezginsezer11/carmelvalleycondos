@@ -16,8 +16,8 @@ Every page listed below has a clean Markdown version at the same path (index.md)
 - [Carmel Pointe Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md): Carmel Pointe: 200-unit condo community (built 2001-2002) with underground garage parking and a utility-inclusive HOA - prices by bedroom count, HOA, sold data, schools, FAQs.
 - [The Lakes Condos for Sale](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): The Lakes: 192-unit condo community (built 1984-1985) set around five small lakes and koi ponds, no Mello-Roos - prices by bedroom count, HOA, sold data, schools, FAQs.
 - [Del Mar Villas Carmel Valley Condos for Sale](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/index.md): Del Mar Villas: 216-home condo community (built 1990, condos since 2004) of single-level 1- and 2-bedrooms near Carmel Valley's schools - prices by bedroom count, monthly dues, sold data, FAQs.
-- [Camino Villas Condos for Sale](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): Camino Villas: established central Carmel Valley condo community with a community pool - overview, listings, FAQs.
-- [The Heights Townhomes for Sale](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): The Heights: Carmel Valley townhome community - overview, listings, FAQs.
+- [Camino Villas Condos for Sale](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): Camino Villas: 316-home condo community (built 1993-1997) with a pool, spa and tennis - recent sold prices by bedroom count, monthly dues, Mello-Roos, schools, FAQs.
+- [The Heights Townhomes for Sale](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): The Heights: gated community built in 2003 on Carmel Country Road with 1- to 3-bedroom homes - recent sold prices by bedroom count, monthly dues, Mello-Roos, schools, FAQs.
 
 ## Guides
 
@@ -33,8 +33,8 @@ Every page listed below has a clean Markdown version at the same path (index.md)
 - [Carmel Pointe Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-pointe-carmel-valley/).
 - [The Lakes Condos for Sale - FAQs](https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md): 7 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/).
 - [Del Mar Villas Carmel Valley Condos for Sale - FAQs](https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/index.md): 8 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/del-mar-villas-carmel-valley/).
-- [Camino Villas Condos for Sale - FAQs](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/).
-- [The Heights Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/).
+- [Camino Villas Condos for Sale - FAQs](https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/index.md): 8 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/camino-villas-condos-for-sale/).
+- [The Heights Townhomes for Sale - FAQs](https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/index.md): 8 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/the-heights-townhomes-for-sale/).
 - [Carmel Valley Condo & Townhome Market Report - FAQs](https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/).
 - [What's My Carmel Valley Condo Worth? - FAQs](https://www.carmelvalleycondos.com/home-value/index.md): 4 questions and answers (the FAQ section near the end of https://www.carmelvalleycondos.com/home-value/).
 

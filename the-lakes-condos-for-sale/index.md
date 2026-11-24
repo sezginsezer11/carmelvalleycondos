@@ -1,4 +1,4 @@
-# The Lakes Condos for Sale | Carmel Valley, San Diego | Sez Sezer
+# The Lakes Condos for Sale | San Diego 92130 | Sez Sezer
 
 > The Lakes condos for sale in Carmel Valley 92130: live listings, sold prices, HOA $560–$599/mo, no Mello-Roos, koi ponds, schools and FAQs.
 
@@ -179,7 +179,7 @@ Shares a border with The Lakes; 2- and 3-bedroom homes for buyers who need more 
 
 ## The Lakes Prices & Sales
 
-In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 23, 2026.
+In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 24, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -236,7 +236,7 @@ Every closed sale over the last 5 years, plotted by close date and price.
 
 *Thinking of Selling?*
 
-## What's Your The Lakes Condo Worth?
+## What's Your Condo at The Lakes Worth?
 
 $660,000
 

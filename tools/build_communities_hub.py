@@ -102,7 +102,7 @@ def main():
                 cards.append(f'<li class="cc"><a class="cc-link" href="{u}"><span class="sr">{e(c["n"])}</span></a>{inner}</li>')
             else:
                 cards.append(f'<li class="cc">{inner}</li>')
-        sec.append(f'''<section class="area" id="area-{slug(label)}" style="--ac:{COLORS.get(k, "#64748b")}">
+        sec.append(f'''<section class="area" id="cards-{slug(label)}" style="--ac:{COLORS.get(k, "#64748b")}">
   <div class="wrap">
     <div class="area-head">
       <h3><span class="dot"></span>{e(label)}</h3>
@@ -218,6 +218,9 @@ def main():
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{SITE}{PATH}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Carmel Valley Condos">
 <meta property="og:title" content="{e(title)}">
@@ -229,7 +232,7 @@ def main():
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="/assets/rs-embed.css?v=3">
 <script src="/assets/rs-embed.js?v=3" defer></script>
 <style>{css}

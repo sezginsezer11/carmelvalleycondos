@@ -1,6 +1,6 @@
 # Carmel Valley Condos for Sale | San Diego 92130 | Sez Sezer
 
-> Browse all Carmel Valley condos for sale in San Diego 92130 — live MLS listings across nine established condo communities. Expert guidance from Sez Sezer, Keller Williams Realty.
+> Carmel Valley condos for sale in San Diego 92130: live MLS listings across nine established condo communities, with local guidance from Sez Sezer.
 
 Source page: https://www.carmelvalleycondos.com/carmel-valley-condos-for-sale/
 

@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Lakes Condos for Sale | Carmel Valley, San Diego | Sez Sezer</title>
+<title>The Lakes Condos for Sale | San Diego 92130 | Sez Sezer</title>
 <meta name="description" content="The Lakes condos for sale in Carmel Valley 92130: live listings, sold prices, HOA $560–$599/mo, no Mello-Roos, koi ponds, schools and FAQs.">
 <link rel="canonical" href="https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Carmel Valley Condos">
-<meta property="og:title" content="The Lakes Condos for Sale | Carmel Valley, San Diego | Sez Sezer">
+<meta property="og:title" content="The Lakes Condos for Sale | San Diego 92130 | Sez Sezer">
 <meta property="og:description" content="The Lakes condos for sale in Carmel Valley 92130: live listings, sold prices, HOA $560–$599/mo, no Mello-Roos, koi ponds, schools and FAQs.">
 <meta property="og:url" content="https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/">
 <meta property="og:image" content="https://www.carmelvalleycondos.com/images/the-lakes-condos-carmel-valley.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="text/markdown" href="https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/index.md">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -766,10 +769,11 @@
       var el = document.getElementById('locMap');
       if (!el) return;
       var started = false;
-      function load(src, css){
+      function load(src, css, sri){
         return new Promise(function(res, rej){
           var n = document.createElement(css ? 'link' : 'script');
           if (css){ n.rel = 'stylesheet'; n.href = src; } else { n.src = src; }
+          if (sri){ n.integrity = sri; n.crossOrigin = 'anonymous'; n.referrerPolicy = 'no-referrer'; }
           n.onload = res; n.onerror = rej; document.head.appendChild(n);
         });
       }
@@ -802,8 +806,8 @@
       function start(){
         if (started) return; started = true;
         Promise.all([
-          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true),
-          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js')
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true, 'sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb'),
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js', false, 'sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO')
         ]).then(draw).catch(function(){ el.classList.add('is-fallback'); });
       }
       if ('IntersectionObserver' in window){
@@ -1068,7 +1072,7 @@
       <h2>The Lakes Prices &amp; Sales</h2>
       <p class="data-stamp" id="px-stamp"></p>
     </div>
-    <p class="px-summary">In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. <span class="data-stamp">MLS closed sales as of Nov 23, 2026.</span></p>
+    <p class="px-summary">In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. <span class="data-stamp">MLS closed sales as of Nov 24, 2026.</span></p>
     <div class="px-tabs btn-tabs px-wide" role="tablist" aria-label="The Lakes price and sales views">
       <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
       <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
@@ -1184,7 +1188,7 @@
       set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
       var pl = Math.min.apply(null, prices), ph = Math.max.apply(null, prices); set('g' + b + '-range', ph > pl ? k(pl) + '&ndash;' + k(ph) : k(pl));
     });
-    if (counts[1] && counts[2]){
+    if (counts[1] && counts[2] && !document.querySelector('[data-beds="3"]')){  // 1 vs 2 only; 3-bed communities keep their written mix
       var ratio = counts[2] / counts[1];
       if (ratio >= 1.5){
         var words = ratio >= 3.5 ? Math.round(ratio) + ' times' : ratio >= 2.5 ? 'about three times' : ratio >= 1.75 ? 'about twice' : 'about 1.5 times';
@@ -1501,7 +1505,7 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Thinking of Selling?</div>
-      <h2>What's Your The Lakes Condo Worth?</h2>
+      <h2>What's Your Condo at The Lakes Worth?</h2>
     </div>
     <div class="seller-grid">
       <div class="seller-tile"><div class="sv" id="sv-median">$660,000</div><div class="sl">Median sale price, last 12 months</div></div>
@@ -1673,7 +1677,7 @@
   "@type": "WebPage",
   "@id": "https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/",
   "url": "https://www.carmelvalleycondos.com/the-lakes-condos-for-sale/",
-  "name": "The Lakes Condos for Sale | Carmel Valley, San Diego | Sez Sezer",
+  "name": "The Lakes Condos for Sale | San Diego 92130 | Sez Sezer",
   "description": "The Lakes condos for sale in Carmel Valley 92130: live listings, sold prices, HOA $560–$599/mo, no Mello-Roos, koi ponds, schools and FAQs.",
   "inLanguage": "en-US",
   "isPartOf": {

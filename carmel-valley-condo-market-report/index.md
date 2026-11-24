@@ -1,6 +1,6 @@
-# Carmel Valley Condo & Townhome Market Report | 92130 Prices | Sez Sezer
+# Carmel Valley Condo & Townhome Market Report | Sez Sezer
 
-> Carmel Valley condo and townhome market data for San Diego 92130 — median sale price, price per square foot, and days on market by year, compiled by local specialist Sez Sezer, Keller Williams Realty.
+> Carmel Valley condo and townhome market data for 92130: median sale price, price per square foot and days on market by year, from Sez Sezer.
 
 Source page: https://www.carmelvalleycondos.com/carmel-valley-condo-market-report/
 

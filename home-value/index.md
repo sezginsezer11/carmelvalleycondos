@@ -1,6 +1,6 @@
-# What's My Carmel Valley Condo Worth? | Free Home Value Estimate | Sez Sezer
+# What's My Carmel Valley Condo Worth? | Sez Sezer
 
-> Get a free, instant home value estimate for your Carmel Valley condo or townhome, plus a complimentary in-depth market analysis from local specialist Sez Sezer, Keller Williams Realty.
+> Get a free home value estimate for your Carmel Valley condo or townhome, plus an in-depth market analysis from local specialist Sez Sezer.
 
 Source page: https://www.carmelvalleycondos.com/home-value/
 

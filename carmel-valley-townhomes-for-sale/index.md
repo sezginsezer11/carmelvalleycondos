@@ -1,6 +1,6 @@
-# Carmel Valley Townhomes for Sale | San Diego 92130 | Sez Sezer
+# Carmel Valley Townhomes for Sale | 92130 | Sez Sezer
 
-> Browse all Carmel Valley townhomes for sale in San Diego 92130 — live MLS listings across 24 communities and 5 neighborhoods. Expert guidance from Sez Sezer, Keller Williams Realty.
+> Carmel Valley townhomes for sale in San Diego 92130: live MLS listings across 24 communities and 5 neighborhoods, with local guidance from Sez Sezer.
 
 Source page: https://www.carmelvalleycondos.com/carmel-valley-townhomes-for-sale/
 

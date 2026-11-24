@@ -13,6 +13,9 @@
 <meta property="og:url" content="https://www.carmelvalleycondos.com{{path}}">
 <meta property="og:image" content="https://www.carmelvalleycondos.com{{hero_img}}">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="text/markdown" href="https://www.carmelvalleycondos.com{{path}}index.md">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -759,10 +762,11 @@
       var el = document.getElementById('locMap');
       if (!el) return;
       var started = false;
-      function load(src, css){
+      function load(src, css, sri){
         return new Promise(function(res, rej){
           var n = document.createElement(css ? 'link' : 'script');
           if (css){ n.rel = 'stylesheet'; n.href = src; } else { n.src = src; }
+          if (sri){ n.integrity = sri; n.crossOrigin = 'anonymous'; n.referrerPolicy = 'no-referrer'; }
           n.onload = res; n.onerror = rej; document.head.appendChild(n);
         });
       }
@@ -795,8 +799,8 @@
       function start(){
         if (started) return; started = true;
         Promise.all([
-          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true),
-          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js')
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css', true, 'sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb'),
+          load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js', false, 'sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO')
         ]).then(draw).catch(function(){ el.classList.add('is-fallback'); });
       }
       if ('IntersectionObserver' in window){
@@ -1039,7 +1043,7 @@
       set('g' + b + '-median', '$' + Math.round(median(prices)).toLocaleString('en-US'));
       var pl = Math.min.apply(null, prices), ph = Math.max.apply(null, prices); set('g' + b + '-range', ph > pl ? k(pl) + '&ndash;' + k(ph) : k(pl));
     });
-    if (counts[1] && counts[2]){
+    if (counts[1] && counts[2] && !document.querySelector('[data-beds="3"]')){  // 1 vs 2 only; 3-bed communities keep their written mix
       var ratio = counts[2] / counts[1];
       if (ratio >= 1.5){
         var words = ratio >= 3.5 ? Math.round(ratio) + ' times' : ratio >= 2.5 ? 'about three times' : ratio >= 1.75 ? 'about twice' : 'about 1.5 times';

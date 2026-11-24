@@ -49,7 +49,21 @@ AMENITY_ICONS = {
     "bbq": '<path d="M5 9h14a7 7 0 0 1-14 0z"/><path d="M8 16l-2 5M16 16l2 5M9 3c0 1.5 1 2 1 3.5M13 3c0 1.5 1 2 1 3.5"/>',
     "water": '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>',
     "path": '<path d="M4 20c4-1 4-6 8-7s4-6 8-7"/><circle cx="4" cy="20" r="1.5"/><circle cx="20" cy="6" r="1.5"/>',
+    "gate": '<path d="M3 21V5M21 21V5M3 8h18M7 8v13M11 8v13M15 8v13M19 8v13"/>',
+    "spa": '<path d="M3 14h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M8 10c0-1.5 1-2 1-3.5S8 4 8 3M12 10c0-1.5 1-2 1-3.5S12 4 12 3M16 10c0-1.5 1-2 1-3.5S16 4 16 3"/>',
 }
+
+
+def noun(c, n=1):
+    """What one home is called in generated sentences: 'condo' for condo communities, else 'home'."""
+    w = "condo" if c.get("type") == "condo" else "home"
+    return w if n == 1 else w + "s"
+
+
+def worth_heading(c):
+    """'What's Your Arborlake Condo Worth?' / 'What's Your Condo at The Lakes Worth?' (no 'Your The ...')."""
+    n, w = c["name"], noun(c).title()
+    return f"What's Your {w} at {n} Worth?" if n.startswith("The ") else f"What's Your {n} {w} Worth?"
 ANALYSIS_TAB = ('      <button type="button" role="tab" id="tab-analysis" aria-controls="analysis" aria-selected="false" tabindex="-1">'
                 '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>'
                 '<path d="M14 3v6h6M8 13h8M8 17h5"/></svg>Analysis</button>')
@@ -374,10 +388,10 @@ def render_sales_summary(c, st):
     n = c["name"]
     parts = []
     if st["t12"]:
-        parts.append(f'In the last 12 months, {len(st["t12"])} condo{"s" if len(st["t12"]) != 1 else ""} sold at {n}, '
+        parts.append(f'In the last 12 months, {len(st["t12"])} {noun(c, len(st["t12"]))} sold at {n}, '
                      f'at a median of {money(st["t12_median"])}' + (f' ({money(st["t12_psf"])}/sq ft)' if st["t12_psf"] else '') + '.')
     # price points come from recent sales only; 5 years is for how often homes sell
-    parts.append(f'Over the last 5 years, {len(st["five"])} condo{"s" if len(st["five"]) != 1 else ""} have sold there.')
+    parts.append(f'Over the last 5 years, {len(st["five"])} {noun(c, len(st["five"]))} {"has" if len(st["five"]) == 1 else "have"} sold there.')
     if st["latest"]:
         r = st["latest"]
         desc = f'{r.get("beds_total")}-bedroom' + (f', {r["living_area"]:,} sq ft' if r.get("living_area") else "")
@@ -420,7 +434,7 @@ def render_seller(c, st):
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Thinking of Selling?</div>
-      <h2>What's Your {n} Condo Worth?</h2>
+      <h2>{worth_heading(c)}</h2>
     </div>
     <div class="seller-grid">
       <div class="seller-tile"><div class="sv" id="sv-median">{med}</div><div class="sl">Median sale price, last 12 months</div></div>

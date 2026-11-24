@@ -196,7 +196,7 @@ def explorer(comms, groups, colors, pages, area_pages, *, list_title, hint, map_
   </div>
 </section>'''
 
-    js = '''<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    js = '''<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/assets/basemap.js"></script>
 <script>
 var HUB=''' + json.dumps(mdata, separators=(",", ":")) + ''';
