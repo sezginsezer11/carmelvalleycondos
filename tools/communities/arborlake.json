@@ -397,5 +397,37 @@
       "a": "<ol class=\"faq-ol\"><li><strong>Which way it faces:</strong> patio or balcony toward the lake and landscaping, or toward parking. It's the biggest value driver.</li><li><strong>Floor level and stairs:</strong> ground-floor walk-up or upstairs, and elevator access for that building.</li><li><strong>Amenity noise:</strong> units near the tennis courts or pool hear weekend activity.</li><li><strong>Age of systems:</strong> water heater, HVAC and plumbing updates. The buildings date to 1986–1989.</li><li><strong>Carport and storage:</strong> which space and storage unit convey, and how far they are from the door.</li></ol>"
     }
   ],
-  "contact_lead": "Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+  "contact_lead": "Whether you're buying your first condo or selling in Arborlake, let's talk strategy. No pressure — just straight answers from someone who knows this community.",
+  "photos": [
+    {
+      "key": "carmel-valley/arborlake/arborlake-carmel-valley-34.jpg",
+      "cap": "The Arborlake entrance",
+      "alt": "Arborlake Carmel Del Mar entrance sign, Carmel Valley"
+    },
+    {
+      "key": "carmel-valley/arborlake/arborlake-carmel-valley-24.jpg",
+      "cap": "The central lake",
+      "alt": "The central lake at Arborlake, with condos behind it"
+    },
+    {
+      "key": "carmel-valley/arborlake/arborlake-carmel-valley-33.jpg",
+      "cap": "The pool",
+      "alt": "The Arborlake pool and sun deck"
+    },
+    {
+      "key": "carmel-valley/arborlake/arborlake-carmel-valley-32.jpg",
+      "cap": "Lawn and lake paths",
+      "alt": "Lawn and walking path beside the lake at Arborlake"
+    },
+    {
+      "key": "carmel-valley/arborlake/arborlake-carmel-valley-20.jpg",
+      "cap": "Homes along the water",
+      "alt": "Arborlake condos facing the lake"
+    },
+    {
+      "key": "carmel-valley/arborlake/arborlake-carmel-valley-29.jpg",
+      "cap": "Mature palms and gardens",
+      "alt": "Palms and gardens around the Arborlake lake"
+    }
+  ]
 }

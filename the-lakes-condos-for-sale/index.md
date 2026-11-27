@@ -91,6 +91,22 @@ Built by Baldwin Homes in 1984–1985, The Lakes is set around five small lakes 
 - **Walk to errands and schools.** Piazza Carmel is about 5 minutes on foot, and the elementary and middle schools are within half a mile.
 - **No Mello-Roos.** Older construction means no special tax on top of the property tax — a real monthly saving next to newer communities.
 
+*Around the Community*
+
+## A Look Around The Lakes
+
+![The Lakes Carmel Del Mar entrance sign, Carmel Valley](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-lakes/the-lakes-carmel-valley-03.jpg)
+
+The Lakes entrance
+
+![Landscaping at The Lakes entrance](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-lakes/the-lakes-carmel-valley-05.jpg)
+
+Entrance landscaping
+
+![The Lakes entrance from the sidewalk](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-lakes/the-lakes-carmel-valley-01.jpg)
+
+Along the street
+
 *HOA*
 
 ## The Lakes HOA: Fee & Amenities
@@ -179,7 +195,7 @@ Shares a border with The Lakes; 2- and 3-bedroom homes for buyers who need more 
 
 ## The Lakes Prices & Sales
 
-In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 24, 2026.
+In the last 12 months, 5 condos sold at The Lakes, at a median of $660,000 ($710/sq ft). Over the last 5 years, 41 condos have sold there. The most recent sale was a 1-bedroom, 951 sq ft home that closed at $650,000 on Sep 9, 2026. MLS closed sales as of Nov 27, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 

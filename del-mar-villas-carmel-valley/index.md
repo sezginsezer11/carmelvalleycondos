@@ -91,6 +91,34 @@ Del Mar Villas was built in 1990 as an apartment community and became condominiu
 - **Walk to everything else.** The recreation center and library, Piazza Carmel, One Paseo and Del Mar Highlands Town Center are all within a 12-minute walk.
 - **Low monthly dues.** Dues of about $330–$370 a month are among the lowest of any Carmel Valley condo community, and they cover water and trash.
 
+*Around the Community*
+
+## A Look Around Del Mar Villas
+
+![Del Mar Villas entrance fountain sign, Carmel Valley](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-24.jpg)
+
+The Del Mar Villas fountain sign
+
+![Del Mar Villas entrance sign at the main gate](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-13.jpg)
+
+Main entrance
+
+![Del Mar Villas condo buildings inside the entrance](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-18.jpg)
+
+Inside the community
+
+![Del Mar Villas condo building with mature trees](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-17.jpg)
+
+Red-tile buildings and mature trees
+
+![Del Mar Villas homes from the entry drive](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-11.jpg)
+
+Single-level homes
+
+![Del Mar Villas community map sign](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-20.jpg)
+
+Community map
+
 *HOA*
 
 ## Del Mar Villas Monthly Dues & Amenities
@@ -181,7 +209,7 @@ For buyers who want a multi-level townhome with more space instead of a single-l
 
 ## Del Mar Villas Prices & Sales
 
-In the last 12 months, 2 condos sold at Del Mar Villas, at a median of $599,000 ($939/sq ft). Over the last 5 years, 15 condos have sold there. The most recent sale was a 1-bedroom, 638 sq ft home that closed at $599,000 on Jul 7, 2026. MLS closed sales as of Nov 24, 2026.
+In the last 12 months, 2 condos sold at Del Mar Villas, at a median of $599,000 ($939/sq ft). Over the last 5 years, 15 condos have sold there. The most recent sale was a 1-bedroom, 638 sq ft home that closed at $599,000 on Jul 7, 2026. MLS closed sales as of Nov 27, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 

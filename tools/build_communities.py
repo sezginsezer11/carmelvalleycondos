@@ -26,6 +26,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS = os.path.join(ROOT, "tools")
 SITE = "https://www.carmelvalleycondos.com"
+PHOTO_LIB = os.path.expanduser("~/Desktop/allwebsites/photo-library")
 
 FACT_ICONS = {
     "price": '<path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
@@ -123,6 +124,34 @@ def render_life(c):
     <ul class="reasons">
 {reasons}
     </ul>'''
+
+
+def render_walk(c):
+    """Photo section from the shared photo library (photos.liveincarmelvalley.com).
+    c["photos"] = [{"key": "carmel-valley/<community>/<file>.jpg", "cap": "...", "alt": "..."}]"""
+    P = c.get("photos") or []
+    if not P:
+        return ""
+    sys.path.insert(0, PHOTO_LIB)
+    from photos import photo
+    tiles = []
+    for p in P:
+        img = photo(p["key"], alt=p.get("alt"), sizes="(max-width: 480px) 92vw, (max-width: 760px) 46vw, 360px",
+                    css="width:100%;height:100%;object-fit:cover")
+        tiles.append(f'      <figure class="walk-tile">{img}<figcaption class="cap">{p["cap"]}</figcaption></figure>')
+    return f'''<!-- ============ PHOTOS ============ -->
+<section class="walkthrough" id="photos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Around the Community</div>
+      <h2>A Look Around {c["name"]}</h2>
+    </div>
+    <div class="walk-grid">
+{chr(10).join(tiles)}
+    </div>
+  </div>
+</section>
+'''
 
 
 def render_hoa(c):
@@ -472,7 +501,7 @@ def build(slug):
         "schools_html": render_schools(c), "nearby_html": render_nearby(c),
         "glance_h2": c["glance"]["h2"], "glance_lede": c["glance"]["lede"],
         "glance_cards_html": render_glance_cards(c), "glance_n": len(c["glance"]["cards"]), "glance_after_html": render_glance_after(c),
-        "life_html": render_life(c), "hoa_html": render_hoa(c),
+        "life_html": render_life(c), "walk_html": render_walk(c), "hoa_html": render_hoa(c),
         "similar_h2": c["similar"]["h2"], "similar_intro": c["similar"]["intro"], "similar_aria": c["similar"]["h2"],
         "similar_cards_html": render_similar(c),
         "analysis_tab_html": ANALYSIS_TAB if c.get("analysis") else "",

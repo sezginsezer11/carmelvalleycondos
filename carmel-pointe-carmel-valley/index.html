@@ -352,7 +352,7 @@
   /* photo walkthrough */
   .walkthrough{background:var(--paper)}
   .walk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .walk-tile{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--white);border-radius:12px;border:1px solid var(--line)}
+  .walk-tile{position:relative;margin:0;aspect-ratio:4/3;overflow:hidden;background:var(--white);border-radius:12px;border:1px solid var(--line)}
   .walk-tile img{width:100%;height:100%;object-fit:cover}
   .walk-tile .cap{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(16,20,24,.72));color:var(--white);font-size:12.5px}
   .walk-tile.placeholder{border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--label);font-size:13px;padding:16px}
@@ -906,9 +906,9 @@
         <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g1-range">$540K&ndash;$575K</span></div>
       </div>
       <div class="glance-card" data-beds="2">
-        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count" id="g2-count">4 sales &middot; 24 mo</div></div>
+        <div class="gc-head"><h3>2 Bedroom</h3><div class="gc-count" id="g2-count">3 sales &middot; 24 mo</div></div>
         <div class="glance-row"><span class="gr-lbl">Size</span><span class="gr-val" id="g2-size">1,018&ndash;1,193 sq ft</span></div>
-        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g2-median">$835,000</span></div>
+        <div class="glance-row"><span class="gr-lbl">Median sale price</span><span class="gr-val" id="g2-median">$810,000</span></div>
         <div class="glance-row"><span class="gr-lbl">Price range</span><span class="gr-val" id="g2-range">$725K&ndash;$863K</span></div>
       </div>
       <div class="glance-card" data-beds="3">
@@ -936,6 +936,7 @@
     </ul>
   </div>
 </section>
+
 
 <!-- ============ HOA: FEE & AMENITIES ============ -->
 <section class="hoa" id="cost">
@@ -1075,7 +1076,7 @@
       <h2>Carmel Pointe Prices &amp; Sales</h2>
       <p class="data-stamp" id="px-stamp"></p>
     </div>
-    <p class="px-summary">In the last 12 months, 5 condos sold at Carmel Pointe, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 condos have sold there. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. <span class="data-stamp">MLS closed sales as of Nov 24, 2026.</span></p>
+    <p class="px-summary">In the last 12 months, 5 condos sold at Carmel Pointe, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 condos have sold there. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. <span class="data-stamp">MLS closed sales as of Nov 27, 2026.</span></p>
     <div class="px-tabs btn-tabs px-wide" role="tablist" aria-label="Carmel Pointe price and sales views">
       <button type="button" role="tab" id="tab-overview" aria-controls="px-overview" aria-selected="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Overview</button>
       <button type="button" role="tab" id="tab-sold" aria-controls="px-sold" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Recent Sales</button>
@@ -1566,7 +1567,7 @@
     <div class="faq-list">
       <details>
         <summary>What is the price range for Carmel Pointe condos?</summary>
-        <p>Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K&ndash;$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K&ndash;$863K (median $835K; 4 sales in the last 24 months) and 3-bedrooms $970K&ndash;$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.</p>
+        <p>Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K&ndash;$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K&ndash;$863K (median $810K; 3 sales in the last 24 months) and 3-bedrooms $970K&ndash;$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.</p>
       </details>
       <details>
         <summary>What do the monthly dues at Carmel Pointe cover?</summary>
@@ -1783,7 +1784,7 @@
       "name": "What is the price range for Carmel Pointe condos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K–$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K–$863K (median $835K; 4 sales in the last 24 months) and 3-bedrooms $970K–$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer."
+        "text": "Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K–$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K–$863K (median $810K; 3 sales in the last 24 months) and 3-bedrooms $970K–$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer."
       }
     },
     {

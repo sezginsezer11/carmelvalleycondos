@@ -399,5 +399,37 @@
       "a": "<p>Most listings show Carmel Del Mar Elementary (Del Mar Union), Carmel Valley Middle School and Torrey Pines High School (San Dieguito Union); some show Carmel Creek Elementary instead. Canyon Crest Academy is a district-wide option. Confirm with each district for a specific address.</p>"
     }
   ],
-  "contact_lead": "Whether you're buying your first home or selling at The Heights, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+  "contact_lead": "Whether you're buying your first home or selling at The Heights, let's talk strategy. No pressure — just straight answers from someone who knows this community.",
+  "photos": [
+    {
+      "key": "carmel-valley/the-heights/the-heights-carmel-valley-01.jpg",
+      "cap": "Spanish-Mediterranean buildings",
+      "alt": "The Heights townhomes with attached garages, Carmel Valley"
+    },
+    {
+      "key": "carmel-valley/the-heights/the-heights-carmel-valley-02.jpg",
+      "cap": "The Heights entrance",
+      "alt": "The Heights at Carmel Valley entrance sign"
+    },
+    {
+      "key": "carmel-valley/the-heights/the-heights-carmel-valley-08.jpg",
+      "cap": "The gated entry drive",
+      "alt": "Palm-lined entry drive at The Heights"
+    },
+    {
+      "key": "carmel-valley/the-heights/the-heights-carmel-valley-05.jpg",
+      "cap": "Landscaped entry",
+      "alt": "The Heights entrance landscaping"
+    },
+    {
+      "key": "carmel-valley/the-heights/the-heights-carmel-valley-03.jpg",
+      "cap": "Buildings at the entrance",
+      "alt": "The Heights buildings beside the entrance"
+    },
+    {
+      "key": "carmel-valley/the-heights/the-heights-carmel-valley-06.jpg",
+      "cap": "Palms inside the gates",
+      "alt": "Palms and buildings inside The Heights"
+    }
+  ]
 }

@@ -90,6 +90,34 @@ Built in 1993–1997, Camino Villas is one of Carmel Valley's larger condo commu
 - **Walk to the center of Carmel Valley.** The recreation center is about 8 minutes on foot, and One Paseo, Piazza Carmel and Del Mar Highlands are all within about 15 minutes.
 - **Easy to compare.** With dozens of near-identical 2-bedroom sales, it's easy to see what a unit is worth and whether a list price is fair.
 
+*Around the Community*
+
+## A Look Around Camino Villas
+
+![Camino Villas entrance sign with flowers, Carmel Valley](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/camino-villas/camino-villas-carmel-valley-05.jpg)
+
+The Camino Villas entrance
+
+![The Camino Villas pool](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/camino-villas/camino-villas-carmel-valley-10.jpg)
+
+The pool
+
+![The Camino Villas tennis court](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/camino-villas/camino-villas-carmel-valley-11.jpg)
+
+The tennis court
+
+![The sauna at Camino Villas](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/camino-villas/camino-villas-carmel-valley-09.jpg)
+
+The sauna
+
+![Camino Villas entrance and street frontage](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/camino-villas/camino-villas-carmel-valley-08.jpg)
+
+Along the community’s edge
+
+![Camino Villas community site map](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/camino-villas/camino-villas-carmel-valley-13.jpg)
+
+Community map
+
 *HOA*
 
 ## Camino Villas HOA: Fee & Amenities
@@ -182,7 +210,7 @@ A newer gated community with 1-, 2- and 3-bedroom homes on Carmel Country Road.
 
 ## Camino Villas Prices & Sales
 
-In the last 12 months, 6 condos sold at Camino Villas, at a median of $750,000 ($799/sq ft). Over the last 5 years, 47 condos have sold there. The most recent sale was a 2-bedroom, 944 sq ft home that closed at $750,000 on Oct 16, 2026. MLS closed sales as of Nov 24, 2026.
+In the last 12 months, 6 condos sold at Camino Villas, at a median of $750,000 ($799/sq ft). Over the last 5 years, 47 condos have sold there. The most recent sale was a 2-bedroom, 944 sq ft home that closed at $750,000 on Oct 16, 2026. MLS closed sales as of Nov 27, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 

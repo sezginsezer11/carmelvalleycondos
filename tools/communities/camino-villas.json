@@ -425,5 +425,37 @@
       "a": "<p>Arborlake is older (1986–1989), built around a lake, with higher dues ($450–$460) and no Mello-Roos. Camino Villas is newer and larger, with mostly 2-bedroom, 2-bath condos and lower dues, but a small Mello-Roos assessment.</p>"
     }
   ],
-  "contact_lead": "Whether you're buying your first condo or selling at Camino Villas, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+  "contact_lead": "Whether you're buying your first condo or selling at Camino Villas, let's talk strategy. No pressure — just straight answers from someone who knows this community.",
+  "photos": [
+    {
+      "key": "carmel-valley/camino-villas/camino-villas-carmel-valley-05.jpg",
+      "cap": "The Camino Villas entrance",
+      "alt": "Camino Villas entrance sign with flowers, Carmel Valley"
+    },
+    {
+      "key": "carmel-valley/camino-villas/camino-villas-carmel-valley-10.jpg",
+      "cap": "The pool",
+      "alt": "The Camino Villas pool"
+    },
+    {
+      "key": "carmel-valley/camino-villas/camino-villas-carmel-valley-11.jpg",
+      "cap": "The tennis court",
+      "alt": "The Camino Villas tennis court"
+    },
+    {
+      "key": "carmel-valley/camino-villas/camino-villas-carmel-valley-09.jpg",
+      "cap": "The sauna",
+      "alt": "The sauna at Camino Villas"
+    },
+    {
+      "key": "carmel-valley/camino-villas/camino-villas-carmel-valley-08.jpg",
+      "cap": "Along the community&rsquo;s edge",
+      "alt": "Camino Villas entrance and street frontage"
+    },
+    {
+      "key": "carmel-valley/camino-villas/camino-villas-carmel-valley-13.jpg",
+      "cap": "Community map",
+      "alt": "Camino Villas community site map"
+    }
+  ]
 }

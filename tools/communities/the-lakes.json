@@ -377,5 +377,22 @@
       "a": "<p>The Lakes and neighboring Arborlake are the two Carmel Valley condo communities built around water. The Lakes is a few years older, sells at similar prices, has a higher HOA ($560–$599 vs. $450–$460) and carport parking. Carmel Pointe is newer with garage parking and a lower HOA.</p>"
     }
   ],
-  "contact_lead": "Whether you're buying your first condo or selling at The Lakes, let's talk strategy. No pressure — just straight answers from someone who knows this community."
+  "contact_lead": "Whether you're buying your first condo or selling at The Lakes, let's talk strategy. No pressure — just straight answers from someone who knows this community.",
+  "photos": [
+    {
+      "key": "carmel-valley/the-lakes/the-lakes-carmel-valley-03.jpg",
+      "cap": "The Lakes entrance",
+      "alt": "The Lakes Carmel Del Mar entrance sign, Carmel Valley"
+    },
+    {
+      "key": "carmel-valley/the-lakes/the-lakes-carmel-valley-05.jpg",
+      "cap": "Entrance landscaping",
+      "alt": "Landscaping at The Lakes entrance"
+    },
+    {
+      "key": "carmel-valley/the-lakes/the-lakes-carmel-valley-01.jpg",
+      "cap": "Along the street",
+      "alt": "The Lakes entrance from the sidewalk"
+    }
+  ]
 }

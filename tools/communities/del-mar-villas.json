@@ -16,20 +16,62 @@
     "lng": -117.2312
   },
   "boundary": [
-    [32.94548, -117.23144],
-    [32.94547, -117.23148],
-    [32.94402, -117.23188],
-    [32.94377, -117.23189],
-    [32.94382, -117.23222],
-    [32.94335, -117.23275],
-    [32.94265, -117.2324],
-    [32.94258, -117.23218],
-    [32.94248, -117.23096],
-    [32.94437, -117.23011],
-    [32.94528, -117.22925],
-    [32.94552, -117.22921],
-    [32.94548, -117.23045],
-    [32.94548, -117.23144]
+    [
+      32.94548,
+      -117.23144
+    ],
+    [
+      32.94547,
+      -117.23148
+    ],
+    [
+      32.94402,
+      -117.23188
+    ],
+    [
+      32.94377,
+      -117.23189
+    ],
+    [
+      32.94382,
+      -117.23222
+    ],
+    [
+      32.94335,
+      -117.23275
+    ],
+    [
+      32.94265,
+      -117.2324
+    ],
+    [
+      32.94258,
+      -117.23218
+    ],
+    [
+      32.94248,
+      -117.23096
+    ],
+    [
+      32.94437,
+      -117.23011
+    ],
+    [
+      32.94528,
+      -117.22925
+    ],
+    [
+      32.94552,
+      -117.22921
+    ],
+    [
+      32.94548,
+      -117.23045
+    ],
+    [
+      32.94548,
+      -117.23144
+    ]
   ],
   "hero": {
     "eyebrow": "Carmel Valley &middot; 92130",
@@ -39,47 +81,140 @@
     "alt": "Del Mar Villas condos in Carmel Valley"
   },
   "facts": [
-    {"icon": "price", "value": "$536K&ndash;$769K", "label": "Sold (5 yrs)"},
-    {"icon": "hoa", "value": "$330&ndash;$370/mo", "label": "Monthly Dues"},
-    {"icon": "sqft", "value": "638&ndash;950", "label": "Square Feet"},
-    {"icon": "units", "value": "216", "label": "Total Homes"},
-    {"icon": "built", "value": "1990", "label": "Built (condos 2004)"},
-    {"icon": "mello", "value": "~$366&ndash;$452/yr", "label": "Mello-Roos"},
-    {"icon": "tax", "value": "~1.07%", "label": "Tax Rate"},
-    {"icon": "time", "value": "~3 weeks", "label": "Time to Sell"}
+    {
+      "icon": "price",
+      "value": "$536K&ndash;$769K",
+      "label": "Sold (5 yrs)"
+    },
+    {
+      "icon": "hoa",
+      "value": "$330&ndash;$370/mo",
+      "label": "Monthly Dues"
+    },
+    {
+      "icon": "sqft",
+      "value": "638&ndash;950",
+      "label": "Square Feet"
+    },
+    {
+      "icon": "units",
+      "value": "216",
+      "label": "Total Homes"
+    },
+    {
+      "icon": "built",
+      "value": "1990",
+      "label": "Built (condos 2004)"
+    },
+    {
+      "icon": "mello",
+      "value": "~$366&ndash;$452/yr",
+      "label": "Mello-Roos"
+    },
+    {
+      "icon": "tax",
+      "value": "~1.07%",
+      "label": "Tax Rate"
+    },
+    {
+      "icon": "time",
+      "value": "~3 weeks",
+      "label": "Time to Sell"
+    }
   ],
   "location_intro": "Central Carmel Valley on Carmel Creek Road, between Route 56 and Del Mar Heights Road, next to Carmel Grove Park and within walking distance of the recreation center, library and three shopping centers.",
   "schools": [
-    {"level": "Elementary", "name": "Carmel Del Mar Elementary", "district": "Del Mar Union Elementary School District &middot; about 0.3 miles"},
-    {"level": "Middle School", "name": "Carmel Valley Middle School", "district": "San Dieguito Union High School District &middot; about 0.3 miles"},
-    {"level": "High School", "name": "Torrey Pines High School", "district": "San Dieguito Union &middot; about 1 mile"},
-    {"level": "High School (Alt.)", "name": "Canyon Crest Academy", "district": "San Dieguito Union &middot; arts &amp; academics magnet"}
+    {
+      "level": "Elementary",
+      "name": "Carmel Del Mar Elementary",
+      "district": "Del Mar Union Elementary School District &middot; about 0.3 miles"
+    },
+    {
+      "level": "Middle School",
+      "name": "Carmel Valley Middle School",
+      "district": "San Dieguito Union High School District &middot; about 0.3 miles"
+    },
+    {
+      "level": "High School",
+      "name": "Torrey Pines High School",
+      "district": "San Dieguito Union &middot; about 1 mile"
+    },
+    {
+      "level": "High School (Alt.)",
+      "name": "Canyon Crest Academy",
+      "district": "San Dieguito Union &middot; arts &amp; academics magnet"
+    }
   ],
   "nearby": [
-    ["Carmel Grove Park", "Next door"],
-    ["Carmel Valley Recreation Center &amp; Library", "~5 min walk"],
-    ["Piazza Carmel (Vons, dining)", "~8 min walk"],
-    ["One Paseo", "~10 min walk"],
-    ["Del Mar Highlands Town Center", "~12 min walk"],
-    ["Route 56", "~0.5 miles"],
-    ["Interstate 5", "~2.5 miles"],
-    ["Del Mar beaches", "~3.5 miles"]
+    [
+      "Carmel Grove Park",
+      "Next door"
+    ],
+    [
+      "Carmel Valley Recreation Center &amp; Library",
+      "~5 min walk"
+    ],
+    [
+      "Piazza Carmel (Vons, dining)",
+      "~8 min walk"
+    ],
+    [
+      "One Paseo",
+      "~10 min walk"
+    ],
+    [
+      "Del Mar Highlands Town Center",
+      "~12 min walk"
+    ],
+    [
+      "Route 56",
+      "~0.5 miles"
+    ],
+    [
+      "Interstate 5",
+      "~2.5 miles"
+    ],
+    [
+      "Del Mar beaches",
+      "~3.5 miles"
+    ]
   ],
   "glance": {
     "h2": "What a 1-Bed vs. a 2-Bed Sells For",
     "lede": "Every home at Del Mar Villas is a single-level 1- or 2-bedroom. Here's what each has sold for recently: the last 12 months, or a longer window where fewer than three sold.",
     "cards": [
-      {"beds": 1, "count": "5 sales &middot; 5 yrs", "size": "638 sq ft", "median": "$593,000", "range": "$536K&ndash;$599K"},
-      {"beds": 2, "count": "10 sales &middot; 5 yrs", "size": "864&ndash;950 sq ft", "median": "$683,750", "range": "$650K&ndash;$769K"}
+      {
+        "beds": 1,
+        "count": "5 sales &middot; 5 yrs",
+        "size": "638 sq ft",
+        "median": "$593,000",
+        "range": "$536K&ndash;$599K"
+      },
+      {
+        "beds": 2,
+        "count": "10 sales &middot; 5 yrs",
+        "size": "864&ndash;950 sq ft",
+        "median": "$683,750",
+        "range": "$650K&ndash;$769K"
+      }
     ],
     "ratio": "About two of every three sales are 2-bedrooms. The 1-bedroom plan is one of the lowest-priced ways into a 92130 address."
   },
   "life": {
     "lead": "Del Mar Villas was built in 1990 as an apartment community and became condominiums in 2004. That history explains two things buyers notice right away: grounds with more than 30 years of mature trees and lawn, and an amenity list larger than most Carmel Valley condo complexes at this price. Every home is a single-level flat with its own patio or balcony.",
     "reasons": [
-      ["Walk to school.", "Carmel Del Mar Elementary and Carmel Valley Middle School are each about 0.3 miles away, and Torrey Pines High is about a mile."],
-      ["Walk to everything else.", "The recreation center and library, Piazza Carmel, One Paseo and Del Mar Highlands Town Center are all within a 12-minute walk."],
-      ["Low monthly dues.", "Dues of about $330&ndash;$370 a month are among the lowest of any Carmel Valley condo community, and they cover water and trash."]
+      [
+        "Walk to school.",
+        "Carmel Del Mar Elementary and Carmel Valley Middle School are each about 0.3 miles away, and Torrey Pines High is about a mile."
+      ],
+      [
+        "Walk to everything else.",
+        "The recreation center and library, Piazza Carmel, One Paseo and Del Mar Highlands Town Center are all within a 12-minute walk."
+      ],
+      [
+        "Low monthly dues.",
+        "Dues of about $330&ndash;$370 a month are among the lowest of any Carmel Valley condo community, and they cover water and trash."
+      ]
     ]
   },
   "hoa": {
@@ -89,21 +224,69 @@
     "fee": "$330&ndash;$370",
     "fee_note": "2025 sales listed $330&ndash;$365; the 2026 listings show $370, so expect about $370 now. Confirm the current amount for a specific home.",
     "amenities": [
-      ["pool", "Heated pool &amp; spa"],
-      ["gym", "Fitness center &amp; sauna"],
-      ["tennis", "Tennis, pickleball &amp; sport court"],
-      ["clubhouse", "Clubhouse, kitchen &amp; billiard room"],
-      ["bbq", "BBQ &amp; picnic areas, playgrounds"],
-      ["carport", "Covered parking &amp; storage"]
+      [
+        "pool",
+        "Heated pool &amp; spa"
+      ],
+      [
+        "gym",
+        "Fitness center &amp; sauna"
+      ],
+      [
+        "tennis",
+        "Tennis, pickleball &amp; sport court"
+      ],
+      [
+        "clubhouse",
+        "Clubhouse, kitchen &amp; billiard room"
+      ],
+      [
+        "bbq",
+        "BBQ &amp; picnic areas, playgrounds"
+      ],
+      [
+        "carport",
+        "Covered parking &amp; storage"
+      ]
     ],
     "also": "water, trash, landscaping, exterior building and roof maintenance, and common-area upkeep.",
     "compare": [
-      ["The Lakes", "$560&ndash;$599/mo", 100, false],
-      ["Martinique", "$428&ndash;$500/mo", 83, false],
-      ["Arborlake", "$450&ndash;$460/mo", 77, false],
-      ["Camino Villas", "$375&ndash;$450/mo", 75, false],
-      ["Carmel Pointe", "$340&ndash;$433/mo", 72, false],
-      ["Del Mar Villas", "$330&ndash;$370/mo", 62, true]
+      [
+        "The Lakes",
+        "$560&ndash;$599/mo",
+        100,
+        false
+      ],
+      [
+        "Martinique",
+        "$428&ndash;$500/mo",
+        83,
+        false
+      ],
+      [
+        "Arborlake",
+        "$450&ndash;$460/mo",
+        77,
+        false
+      ],
+      [
+        "Camino Villas",
+        "$375&ndash;$450/mo",
+        75,
+        false
+      ],
+      [
+        "Carmel Pointe",
+        "$340&ndash;$433/mo",
+        72,
+        false
+      ],
+      [
+        "Del Mar Villas",
+        "$330&ndash;$370/mo",
+        62,
+        true
+      ]
     ],
     "compare_note": "Del Mar Villas has the lowest monthly dues of these nearby condo communities. It does carry a small Mello-Roos tax, which The Lakes does not. Ranges are from 2025&ndash;2026 MLS listings."
   },
@@ -161,15 +344,36 @@
   "analysis": null,
   "fit": {
     "good": [
-      ["Families", "Two schools about a third of a mile away, at a price well below Carmel Valley single-family homes."],
-      ["First-Time Buyers", "1-bedrooms have sold for under $600K, with low monthly dues and big-community amenities."],
-      ["Investors", "Steady rental demand from school-zone families and the SR-56 job corridor, and dues that cover water and trash."]
+      [
+        "Families",
+        "Two schools about a third of a mile away, at a price well below Carmel Valley single-family homes."
+      ],
+      [
+        "First-Time Buyers",
+        "1-bedrooms have sold for under $600K, with low monthly dues and big-community amenities."
+      ],
+      [
+        "Investors",
+        "Steady rental demand from school-zone families and the SR-56 job corridor, and dues that cover water and trash."
+      ]
     ],
     "weigh": [
-      ["Smaller homes", "Plans run 638&ndash;950 sq ft, and there are no 3-bedrooms. For more room, look at nearby townhomes such as Elysian."],
-      ["Covered parking, no garages", "Homes come with covered parking and storage, not private garages."],
-      ["Interiors vary a lot", "Built in 1990 and converted in 2004, so some homes are fully redone and others are close to original. The price gap can reach $100K."],
-      ["Mello-Roos", "A small special tax, about $366&ndash;$452 a year, on top of the property tax."]
+      [
+        "Smaller homes",
+        "Plans run 638&ndash;950 sq ft, and there are no 3-bedrooms. For more room, look at nearby townhomes such as Elysian."
+      ],
+      [
+        "Covered parking, no garages",
+        "Homes come with covered parking and storage, not private garages."
+      ],
+      [
+        "Interiors vary a lot",
+        "Built in 1990 and converted in 2004, so some homes are fully redone and others are close to original. The price gap can reach $100K."
+      ],
+      [
+        "Mello-Roos",
+        "A small special tax, about $366&ndash;$452 a year, on top of the property tax."
+      ]
     ]
   },
   "faq_h2": "Del Mar Villas Carmel Valley FAQs",
@@ -207,5 +411,37 @@
       "a": "<p>Condition. Because the buildings date from 1990, buyers compare finishes closely, and a fully updated home can sell for $100K or more above one in original condition. Floor plan and location within the grounds matter next. I can show you which recent sales are true comparisons for your home.</p>"
     }
   ],
-  "contact_lead": "Whether you're buying your first condo or selling at Del Mar Villas, let's talk strategy. No pressure, just straight answers from someone who knows this community."
+  "contact_lead": "Whether you're buying your first condo or selling at Del Mar Villas, let's talk strategy. No pressure, just straight answers from someone who knows this community.",
+  "photos": [
+    {
+      "key": "carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-24.jpg",
+      "cap": "The Del Mar Villas fountain sign",
+      "alt": "Del Mar Villas entrance fountain sign, Carmel Valley"
+    },
+    {
+      "key": "carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-13.jpg",
+      "cap": "Main entrance",
+      "alt": "Del Mar Villas entrance sign at the main gate"
+    },
+    {
+      "key": "carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-18.jpg",
+      "cap": "Inside the community",
+      "alt": "Del Mar Villas condo buildings inside the entrance"
+    },
+    {
+      "key": "carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-17.jpg",
+      "cap": "Red-tile buildings and mature trees",
+      "alt": "Del Mar Villas condo building with mature trees"
+    },
+    {
+      "key": "carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-11.jpg",
+      "cap": "Single-level homes",
+      "alt": "Del Mar Villas homes from the entry drive"
+    },
+    {
+      "key": "carmel-valley/del-mar-villas/del-mar-villas-carmel-valley-20.jpg",
+      "cap": "Community map",
+      "alt": "Del Mar Villas community map sign"
+    }
+  ]
 }

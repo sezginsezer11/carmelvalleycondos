@@ -98,6 +98,34 @@ Built in 2003, The Heights is a gated community on Carmel Country Road with tile
 - **Walk to school and errands.** Carmel Valley Middle School is about 5 minutes on foot, and Del Mar Highlands Town Center about 11.
 - **Room to grow.** With 1-, 2- and 3-bedroom homes, you can move up within the community instead of leaving it.
 
+*Around the Community*
+
+## A Look Around The Heights
+
+![The Heights townhomes with attached garages, Carmel Valley](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-heights/the-heights-carmel-valley-01.jpg)
+
+Spanish-Mediterranean buildings
+
+![The Heights at Carmel Valley entrance sign](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-heights/the-heights-carmel-valley-02.jpg)
+
+The Heights entrance
+
+![Palm-lined entry drive at The Heights](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-heights/the-heights-carmel-valley-08.jpg)
+
+The gated entry drive
+
+![The Heights entrance landscaping](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-heights/the-heights-carmel-valley-05.jpg)
+
+Landscaped entry
+
+![The Heights buildings beside the entrance](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-heights/the-heights-carmel-valley-03.jpg)
+
+Buildings at the entrance
+
+![Palms and buildings inside The Heights](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/the-heights/the-heights-carmel-valley-06.jpg)
+
+Palms inside the gates
+
 *HOA*
 
 ## The Heights HOA: Fee & Amenities
@@ -180,7 +208,7 @@ Built around a lake with fountains and waterfalls, with no Mello-Roos.
 
 ## The Heights Prices & Sales
 
-In the last 12 months, 9 homes sold at The Heights, at a median of $790,000 ($739/sq ft). Over the last 5 years, 28 homes have sold there. The most recent sale was a 3-bedroom, 1,131 sq ft home that closed at $790,000 on Sep 22, 2026. MLS closed sales as of Nov 24, 2026.
+In the last 12 months, 9 homes sold at The Heights, at a median of $790,000 ($739/sq ft). Over the last 5 years, 28 homes have sold there. The most recent sale was a 3-bedroom, 1,131 sq ft home that closed at $790,000 on Sep 22, 2026. MLS closed sales as of Nov 27, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 

@@ -70,10 +70,10 @@ Carmel Pointe has 1-, 2- and 3-bedroom floor plans. Here's what each has sold fo
 
 ### 2 Bedroom
 
-4 sales · 24 mo
+3 sales · 24 mo
 
 - **Size:** 1,018–1,193 sq ft
-- **Median sale price:** $835,000
+- **Median sale price:** $810,000
 - **Price range:** $725K–$863K
 
 ### 3 Bedroom
@@ -188,7 +188,7 @@ For buyers who want a multi-level townhome with more space instead of a single-l
 
 ## Carmel Pointe Prices & Sales
 
-In the last 12 months, 5 condos sold at Carmel Pointe, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 condos have sold there. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. MLS closed sales as of Nov 24, 2026.
+In the last 12 months, 5 condos sold at Carmel Pointe, at a median of $575,000 ($753/sq ft). Over the last 5 years, 24 condos have sold there. The most recent sale was a 2-bedroom, 1,018 sq ft home that closed at $725,000 on Oct 27, 2026. MLS closed sales as of Nov 27, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
@@ -298,7 +298,7 @@ Who it suits best, and the honest tradeoffs to weigh before you buy.
 
 ### What is the price range for Carmel Pointe condos?
 
-Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K–$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K–$863K (median $835K; 4 sales in the last 24 months) and 3-bedrooms $970K–$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.
+Recent sales at Carmel Pointe ranged from about $540,000 to $995,000. By size: 1-bedrooms $540K–$575K (median $575K; 3 sales in the last 12 months), 2-bedrooms $725K–$863K (median $810K; 3 sales in the last 24 months) and 3-bedrooms $970K–$995K (median $970K; the last 3 sales, since Nov 2023). Condition, floor level and location in the community explain most of the gap. Ask for a current comparison before you make an offer.
 
 ### What do the monthly dues at Carmel Pointe cover?
 

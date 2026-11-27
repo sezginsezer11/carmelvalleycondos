@@ -90,6 +90,34 @@ A 190-unit condo community in southwest Carmel Valley, built by Baldwin Homes in
 - **Resort-style amenities.** Two lighted tennis courts, a heated pool, two spas, a sauna and a fitness center, all HOA-maintained.
 - **Mature, walkable grounds.** Nearly 40 years of tree canopy, greenbelts and paved walking paths.
 
+*Around the Community*
+
+## A Look Around Arborlake
+
+![Arborlake Carmel Del Mar entrance sign, Carmel Valley](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/arborlake/arborlake-carmel-valley-34.jpg)
+
+The Arborlake entrance
+
+![The central lake at Arborlake, with condos behind it](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/arborlake/arborlake-carmel-valley-24.jpg)
+
+The central lake
+
+![The Arborlake pool and sun deck](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/arborlake/arborlake-carmel-valley-33.jpg)
+
+The pool
+
+![Lawn and walking path beside the lake at Arborlake](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/arborlake/arborlake-carmel-valley-32.jpg)
+
+Lawn and lake paths
+
+![Arborlake condos facing the lake](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/arborlake/arborlake-carmel-valley-20.jpg)
+
+Homes along the water
+
+![Palms and gardens around the Arborlake lake](https://photos.liveincarmelvalley.com/cdn-cgi/image/width=960,format=auto,quality=80,metadata=keep/carmel-valley/arborlake/arborlake-carmel-valley-29.jpg)
+
+Mature palms and gardens
+
 *HOA*
 
 ## Arborlake Monthly Dues & Amenities
@@ -180,7 +208,7 @@ One of the lower-HOA condo options among nearby comparable communities — worth
 
 ## Arborlake Prices & Sales
 
-In the last 12 months, 3 condos sold at Arborlake, at a median of $755,750 ($793/sq ft). Over the last 5 years, 22 condos have sold there. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 24, 2026.
+In the last 12 months, 3 condos sold at Arborlake, at a median of $755,750 ($793/sq ft). Over the last 5 years, 22 condos have sold there. The most recent sale was a 2-bedroom, 964 sq ft home that closed at $850,000 on May 19, 2026. MLS closed sales as of Nov 27, 2026.
 
 The stats reflect the trailing 12 months; the table breaks the same data out by calendar year.
 
